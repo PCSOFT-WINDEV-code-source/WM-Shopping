@@ -1,0 +1,1103 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WM Shopping
+ major_version : 28
+ minor_version : 0
+ type : 4097
+ description : ""
+ subtype : 0
+project :
+ identifier : 0x0
+ internal_properties : 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
+ configurations :
+  -
+    name : Application iOS
+    internal_properties : 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
+    configuration_id : 1364698253181209041
+    type : 18
+    generation_directory : .\Exe\Application iOS
+    version : {}
+    language : 1
+  -
+    name : Application Android
+    internal_properties : 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
+    configuration_id : 14511823181872351813
+    type : 15
+    generation_directory : .\Exe\Application Android
+    version : {}
+    language : 1
+ elements :
+  identifier : 0x4587c86900020253
+  elements :
+   -
+     name : FEN_LISTE_CREE
+     identifier : 0x458828f201de18c0
+     internal_properties : CAAAAAgAAACY9kBcaxAYw4l2fjTOphfNljlVBc9mqx5Oyyk/K/oSFjrAPNzxEPIC7lNNq2tlHZN9hQ==
+     physical_name : .\FEN_LISTE_CREE.wpw
+     type : 2
+   -
+     name : REQ_LISTE_CONTENU
+     identifier : 0x458826ed004c3641
+     internal_properties : CAAAAAgAAACsqoSQL1Tcj0UyOCO99Hk22GUXj8vi4iJ/gHjuuO0nyU/zsgRHuTQ+Kh+ZZy+hWU+5uQ==
+     physical_name : .\REQ_LISTE_CONTENU.WDR
+     type : 5
+   -
+     name : REQ_PRODUITS
+     identifier : 0x45882607004ab0a5
+     internal_properties : CAAAAAgAAAC/m5eLOGVNXmoTma6uw4Zph6beBjQTQMSvlLdvhTDiLsZ+JRs8xJOfS/Dq1l6SbmKqqg==
+     physical_name : .\REQ_PRODUITS.WDR
+     type : 5
+   -
+     name : REQ_CATEGORIES
+     identifier : 0x458826000048958b
+     internal_properties : CAAAAAgAAADeRDbq2YauQQv0/rhXamS0EB1vJwNSK/ZD73OqbDnbNcNveK2apnqEbNHLNf3zjwHLSw==
+     physical_name : .\REQ_CATEGORIES.WDR
+     type : 5
+   -
+     name : REQ_LISTES_NBELEMENTS
+     identifier : 0x458824f1004674f7
+     internal_properties : CAAAAAgAAACvq4ebKFXdjlpDd9giMx7Pg/biSnw7fqqnZuhFx85EtAjk0SMQKAkP+yCaZi6iXlK6ug==
+     physical_name : .\REQ_LISTES_NBELEMENTS.WDR
+     type : 5
+   -
+     name : REQ_LISTES
+     identifier : 0x45880f6f004470aa
+     internal_properties : CAAAAAgAAAB716PnxIGpsr5nFtYc0262NQRstILR662u42LtK3qQcFCwFFzl08wz30S+Ovr2gnZe5g==
+     physical_name : .\REQ_LISTES.WDR
+     type : 5
+   -
+     name : FI_MENU
+     identifier : 0x45880acb00425191
+     internal_properties : CAAAAAgAAACjn5uPPGlBWmYfiXZyX1/1K0j27tBaopG0TPJVdIsL1W+hMi8AOHOrR/zm0lKOal6mrg==
+     physical_name : .\FI_MENU.wdw
+     type : 8
+   -
+     name : REQ_SOURCES_LISTE
+     identifier : 0x460bd623012de7a0
+     internal_properties : CAAAAAgAAABk4kxoVwwkx5IbeidEuwJpBntFVelYsferQQ4czrfl09Ets6SYaSpMv2dRr3dpEYdx8Q==
+     physical_name : .\REQ_SOURCES_LISTE.WDR
+     type : 5
+   -
+     name : COL_OUTILS
+     identifier : 0x4588329b0080d371
+     internal_properties : CAAAAAgAAADpZdE18q8HKDDtw0SgoxsXoY7ktASDOmyOe3qw+D3RN5l7NC9S7u29Vco0jBTMtCTsdA==
+     physical_name : .\COL_OUTILS.wdg
+     type : 7
+   -
+     name : COL_ANDROID
+     identifier : 0x4589576e00a5aa70
+     internal_properties : CAAAAAgAAAA1ER0BvpuTTATyLjWyIsrerzh6CsCylpW8gryDXqF1S+EfE5cP6WWCad7YIOAQ6NggIA==
+     physical_name : .\COL_ANDROID.wdg
+     type : 7
+     configurations :
+      -
+        configuration_id : 1364698253181209041
+        excluded : true
+   -
+     name : FEN_MES_LISTES
+     identifier : 0x458808f3002c1b8e
+     internal_properties : CAAAAAgAAADPSyd7yPW97vqjS8KqEYUandwkPJox9vyOV1fxBz7cZFxUNOcylj3vm4B6Rs4C/vLaWg==
+     physical_name : .\FEN_MES_LISTES.wpw
+     type : 2
+   -
+     name : FI_LISTE_EDITION
+     identifier : 0x458aa2ab01f8901c
+     internal_properties : CAAAAAgAAADnY8/T0I2lRhINSRZneTCOlzpWjkDhk3WkJ7crY7JY2HyAutYjnk1RM+jSLvbqlgrycg==
+     physical_name : .\FI_LISTE_EDITION.wdw
+     type : 8
+   -
+     name : FEN_LISTE_RENOMME
+     identifier : 0x458aa24b018b18ed
+     internal_properties : CAAAAAgAAABAPrjkw7jwKzHgLImKH5VE8rMJUWvtm0acflL1SqX3AfvrIvaQqTK0Vss1gwP9hXtFzQ==
+     physical_name : .\FEN_LISTE_RENOMME.wpw
+     type : 2
+   -
+     name : FEN_PARAMETRES
+     identifier : 0x458d1c3500e95222
+     internal_properties : CAAAAAgAAAD6UCJmRQIqNT/9Ihs/43lbArGJgadDiROyEs5OQdTAGCDCXGZyjhctYMU/uXl3A/XfZw==
+     physical_name : .\FEN_PARAMETRES.wpw
+     type : 2
+   -
+     name : FEN_APROPOS
+     identifier : 0x458d1c1200e4ca07
+     internal_properties : CAAAAAgAAADNT/uXYF1phqIirGMX4JPACr04Kqe4ozkbO4HyojQHZxheCOn+G+d2METzjLdT7NdI
+     physical_name : .\FEN_APROPOS.wpw
+     type : 2
+   -
+     name : FEN_LISTE
+     identifier : 0x458d682500c5f4fa
+     internal_properties : CAAAAAgAAACV50PPCLVNHtNwOZ1OpAmkq50aePQD3/lXP0EH0OwZRStTJcCWa8zPRCDb5M8rlH+Q
+     physical_name : .\FEN_LISTE.wpw
+     type : 2
+   -
+     name : FEN_CB_SCAN
+     identifier : 0x459104f000fc6bb0
+     internal_properties : CAAAAAgAAACtqYWZJhMbxJyi46vcqz/CK3oiqhjY3RxWjQAM4QQW0nr6tCfWYr4ywWZQqGiYYFC4uA==
+     physical_name : .\FEN_CB_SCAN.wpw
+     type : 2
+   -
+     name : REQ_SOURCE_LISTECONTENU
+     identifier : 0x45a8d2fa01e19231
+     internal_properties : CAAAAAgAAAB41qD8S3A4Y2k2WLxCLfnqVAvTizFQdFOj13sXhw6OmhKMhY1TttTCTvPty0uFfXNd5Q==
+     physical_name : .\REQ_SOURCE_LISTECONTENU.WDR
+     type : 5
+   -
+     name : FI_CONTENU_LISTE
+     identifier : 0x45adf7d702298e0e
+     internal_properties : CAAAAAgAAABEwqyIN2xEZ31fy+Nxc/M5FCWza2vfZ5SrIYZpskNJ7xExOdVXo6QLIgfxz1eJcWdR0Q==
+     physical_name : .\FI_CONTENU_LISTE.wdw
+     type : 8
+   -
+     name : COL_DATA
+     identifier : 0x45fffbb30aeff5b9
+     internal_properties : CAAAAAgAAACtqYWZJhMbxJwADuZkNFc516oWjjAuWcGcfD/89x785MAcQ7JKwKO4wWZQqGiYYFC4uA==
+     physical_name : .\COL_DATA.wdg
+     type : 7
+   -
+     name : REQ_RECHERCHE
+     identifier : 0x45ae616606323f0c
+     internal_properties : CAAAAAgAAACPi+c7CLX9LjoZCB1aSdeq5/beBiSp5xOk7ljJcSTuMpJSuIeUsuRtW8A6hg7CvjKamg==
+     physical_name : .\REQ_RECHERCHE.WDR
+     type : 5
+   -
+     name : FI_RECHERCHE
+     identifier : 0x45ae5e32062ab9e8
+     internal_properties : CAAAAAgAAADKQDLW1ZKaRQ/ubmrR6BgJem15adPQ8AJYh+GFKxr69sII3N1M+thWcNXPKennkwXPVw==
+     physical_name : .\FI_RECHERCHE.wdw
+     type : 8
+   -
+     name : FEN_POP_RAYONS
+     identifier : 0x45b20b9c037c1f8b
+     internal_properties : CAAAAAgAAAB/21dLeCWNnqqdmlNDH6E3C2qyKqhpXIquFH6VOewuOrIiDwB5SlKBCzCqFp5SLqJq6g==
+     physical_name : .\FEN_POP_RAYONS.wpw
+     type : 2
+   -
+     name : REQ_LISTE_CONTENU_SUPPRIMETOUT
+     identifier : 0x45ddd4eb00f5c16b
+     internal_properties : CAAAAAgAAAAVcX2hHnszbGRmQ86EjM+/s5yO3lIGhSB0I+/t7NnFwzH/TnN3gdoWSf74wECwSLgAAA==
+     physical_name : .\REQ_LISTE_CONTENU_SUPPRIMETOUT.WDR
+     type : 5
+   -
+     name : FI_CONTENU_HISTORIQUE
+     identifier : 0x45df389f031e46e6
+     internal_properties : CAAAAAgAAAAbd8PH5KEJEt4uJRy9o+BS0b4kpHSiivWqoT07BDFta1WfZdFaqfYCf6QemhrWohb+Bg==
+     physical_name : .\FI_CONTENU_HISTORIQUE.wdw
+     type : 8
+   -
+     name : REQ_HISTORIQUE_CONTENU
+     identifier : 0x45df395903262035
+     internal_properties : CAAAAAgAAAAfe3crmMVtfsoa0uarob7hk6D+lp5EHBqN8QB5GmurBQ8x5rp5ih8uq5AK9r4yzsIKCg==
+     physical_name : .\REQ_HISTORIQUE_CONTENU.WDR
+     type : 5
+   -
+     name : CListeShopping
+     identifier : 0x45fa99e60389f1b4
+     internal_properties : CAAAAAgAAACX8/8jgP21tgJtQBWv2C9IDUgE1P5/TlqK2SxtPcjCRspWuLnNfqjxY9jCPsY6xjqCgg==
+     physical_name : .\CListeShopping.wdc
+     type : 4
+   -
+     name : FEN_FICHE_ITEM
+     identifier : 0x45fbcc1c03bd13f8
+     internal_properties : CAAAAAgAAAB51aHlwr/3+ECg27/ruLWEfXgE1O6Qpa6OPIo6QcTWIt4SgIM/xDi4JRqEfAT8hHRc5A==
+     physical_name : .\FEN_FICHE_ITEM.wpw
+     type : 2
+   -
+     name : REQ_UNITES
+     identifier : 0x45fbd2b003c8c4d0
+     internal_properties : CAAAAAgAAABo5lBMeyCIk1nJBjiEZAH3CGVHn7vdBqGvMoVNXFm7RaMfTefcJ4l9/iOdG5tVLaNt9Q==
+     physical_name : .\REQ_UNITES.WDR
+     type : 5
+   -
+     name : REQ_RECHERCHE_CATEGORIE
+     identifier : 0x46000f300dbf1507
+     internal_properties : CAAAAAgAAAA/GxcLuOXN3uvpcosTuLvDo9KakrFfkPjtuZ1q5oCKvk7mJ25O/0GWyHBqVt4S7uIqKg==
+     physical_name : .\REQ_RECHERCHE_CATEGORIE.WDR
+     type : 5
+   -
+     name : CListeManager
+     identifier : 0x4601093400b7b275
+     internal_properties : CAAAAAgAAABxzan9Snc/cHm83O9QMur7TW4YWH0krAy2+Wfis3Mj7QvBsgCgWPzlGgL8xEyEfGxU3A==
+     physical_name : .\CListeManager.wdc
+     type : 4
+   -
+     name : FEN_ORDRE_RAYONS
+     identifier : 0x46015ad6039591ed
+     internal_properties : CAAAAAgAAABaMAIGpeLK1Zwf9HSsGXTy5KUj+03XQyKU1Ax7MO8t2xUt3KX/BBJMvWVfWdkX49U/xw==
+     physical_name : .\FEN_ORDRE_RAYONS.wpw
+     type : 2
+   -
+     name : REQ_CATEGORIE_LISTING
+     identifier : 0x4602d9e011408b2f
+     internal_properties : CAAAAAgAAAAfe3crmMVtfssLaN8bRQXDr/yawnN7SrXBa7Iny/uTlbe5cBsSB/kwqJAK9r4yzsIKCg==
+     physical_name : .\REQ_CATEGORIE_LISTING.WDR
+     type : 5
+   -
+     name : CObservateur
+     identifier : 0x460ba2f20d4aef5d
+     internal_properties : CAAAAAgAAADMSiRwz/S87/oTnsZomDQsbj1l7e1HYEGzvGfYR8jUDDQ+I1zpJB6kx395R88B+e/ZWQ==
+     physical_name : .\CObservateur.wdc
+     type : 4
+   -
+     name : COL_OBSERVATEURS
+     identifier : 0x460ba4000d4c10ad
+     internal_properties : CAAAAAgAAAAhHRkNuufP4OkWgyMrfWo165oy+lLspOOA+T3KZ9gy5hYunWPWNwmXynJsVNwU7NwkLA==
+     physical_name : .\COL_OBSERVATEURS.wdg
+     type : 7
+   -
+     name : FI_OPTION_LISTE
+     identifier : 0x4640cd5003733b76
+     internal_properties : CAAAAAgAAAAmLA4Skc5mCdCCOTw+aXQhIGd/p5+RKiTod5nuLeKyXpaozu1xkj5PcakT7bUr18kzMw==
+     physical_name : .\FI_OPTION_LISTE.wdw
+     type : 8
+   -
+     name : COL_IOS
+     identifier : 0x46c30b8106310848
+     internal_properties : CAAAAAgAAACgnpiEIxgQy5bHIy0vLanDTHM74/tl0/urRpG2ZcrCZuYIQNhUqrcIs2tVo2OdZVulrQ==
+     physical_name : .\COL_IOS.wdg
+     type : 7
+     configurations :
+      -
+        configuration_id : 14511823181872351813
+        excluded : true
+   -
+     name : FEN_LISTE_EDITE
+     identifier : 0x46c30b8206330b94
+     internal_properties : CAAAAAgAAABg3lhEY9hQC9YHY+5vb+LJJmk1FZhp1Qauuco5CD7eGiY0fB8T6/fIc6sV46NdJZtl7Q==
+     physical_name : .\FEN_LISTE_EDITE.wpw
+     type : 2
+   -
+     name : FEN_POP_LISTE
+     identifier : 0x46c30b8706471d66
+     internal_properties : CAAAAAgAAADSKAoerZqSTRRZubV5nUTfXt+V3f7TbEqhm9HUMfWfcYOzk5q8Sj2ONe3XIeEf2803Pw==
+     physical_name : .\FEN_POP_LISTE.wpw
+     type : 2
+   -
+     name : FEN_RAYON_EDITE
+     identifier : 0x46c30b87065b1f0c
+     internal_properties : CAAAAAgAAADsasTQ75ScTxoLV0eruxjHcDG/Z0BNdepBKJ1C3zddQ4Vto4zSfGu8Z9/ZJ+/hmQ/5eQ==
+     physical_name : .\FEN_RAYON_EDITE.wpw
+     type : 2
+   -
+     name : FEN_RAYONS
+     identifier : 0x46c30b88066f20d1
+     internal_properties : CAAAAAgAAAC5leElgv+3uAE2Uk+ipmz//f64eN1GaZ9G4+Noz1e/YecV+qbadGS3YtrEPMQ8xDScpA==
+     physical_name : .\FEN_RAYONS.wpw
+     type : 2
+   -
+     name : FENMOD_SHOPPING
+     identifier : 0x46c30b8a06832a76
+     internal_properties : CAAAAAgAAADIRjDs24Cos76/ix6HF7WzkpOpMQtNwLukYJr1SqX3wXurq/9zi49g20O9O/v1jQPNVQ==
+     physical_name : .\FENMOD_SHOPPING.wdt
+     type : 18
+   -
+     name : FI_OPTION_RAYON
+     identifier : 0x46c30b8b06972cc8
+     internal_properties : CAAAAAgAAAA6EGKmBULq9fzxwdHRpWuVOrnxqRDVKLud3YRv/ggMLCzWFpbw1tUmnYV/eTm3Q7UfJw==
+     physical_name : .\FI_OPTION_RAYON.wdw
+     type : 8
+   -
+     name : REQ_PRODUITS_LISTE
+     identifier : 0x46c30b8b06ab2e6d
+     internal_properties : CAAAAAgAAADrZ9M39LH5Ii/gMCzMxDZbHUwEXPuqx+tDYalhlAKIiIiIh6f1ycIVjLQuigrGsibudg==
+     physical_name : .\REQ_PRODUITS_LISTE.WDR
+     type : 5
+   -
+     name : REQ_RAYONS
+     identifier : 0x46c30b8c06ad3004
+     internal_properties : CAAAAAgAAAC7l+MnhMFpcn9wQF1cdqpE3awU/MvpvjyVOtBMIGa0TLQc6jZkWlKlHAT++ro2wjaepg==
+     physical_name : .\REQ_RAYONS.WDR
+     type : 5
+   -
+     name : REQ_RAYONS_LISTING
+     identifier : 0x46c30b8c06af31d8
+     internal_properties : CAAAAAgAAADPSyd7yPW97vv8zNnIxCO4PU74KB0L1t9Ro8NJWyvrxXOZfbT4zs4hmIB6Rs4C/vLaWg==
+     physical_name : .\REQ_RAYONS_LISTING.WDR
+     type : 5
+   -
+     name : REQ_RECHERCHE_RAYON
+     identifier : 0x46c30b8d06b1364d
+     internal_properties : CAAAAAgAAACkooyoF0zkh1KT70W7eZsgJrfNhaaUiA+UGt4xLUnLxQ/XdkB8inNE/yeRbzepUUexsQ==
+     physical_name : .\REQ_RECHERCHE_RAYON.WDR
+     type : 5
+  other_elements :
+   -
+     physical_name : .\Exe\data\data.fic
+     configurations :
+      -
+        internal_properties : CAAAAAgAAAAz3SEk78lPftHHUZhlRo2CX5HwoQXnDS/l3jzY9UveE10OD9+t7o9vGQ==
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\data.ndx
+     configurations :
+      -
+        internal_properties : CAAAAAgAAAAz3SEk78lPftHHUZhlRo2CX5HwoQXnDS/l3jzY9UveE10OD9+t7o9vGQ==
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\data.mmo
+     configurations :
+      -
+        internal_properties : CAAAAAgAAAAz3SEk78lPftHHUZhlRo2CX5HwoQXnDS/l3jzY9UveE10OD9+t7o9vGQ==
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\fournisseur.fic
+     configurations :
+      -
+        internal_properties : CAAAAAgAAAAz3SEk78lPftHHUZhlRo2CX5HwoQXnDS/l3jzY9UveE10OD9+t7o9vGQ==
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\fournisseur.ndx
+     configurations :
+      -
+        internal_properties : CAAAAAgAAAAz3SEk78lPftHHUZhlRo2CX5HwoQXnDS/l3jzY9UveE10OD9+t7o9vGQ==
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\fournisseur.mmo
+     configurations :
+      -
+        internal_properties : CAAAAAgAAAAz3SEk78lPftHHUZhlRo2CX5HwoQXnDS/l3jzY9UveE10OD9+t7o9vGQ==
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\unite.fic
+     configurations :
+      -
+        internal_properties : CAAAAAgAAAAz3SEk78lPftHHUZhlRo2CX5HwoQXnDS/l3jzY9UveE10OD9+t7o9vGQ==
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\unite.ndx
+     configurations :
+      -
+        internal_properties : CAAAAAgAAAAz3SEk78lPftHHUZhlRo2CX5HwoQXnDS/l3jzY9UveE10OD9+t7o9vGQ==
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\unite.mmo
+     configurations :
+      -
+        internal_properties : CAAAAAgAAAAz3SEk78lPftHHUZhlRo2CX5HwoQXnDS/l3jzY9UveE10OD9+t7o9vGQ==
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Bakery@dpi160.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Bakery@dpi240.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Bakery@dpi320.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Bakery@dpi480.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Bakery@dpi640.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Bookstore@dpi160.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Bookstore@dpi240.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Bookstore@dpi320.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Bookstore@dpi480.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Bookstore@dpi640.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Butchery@dpi160.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Butchery@dpi240.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Butchery@dpi320.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Butchery@dpi480.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Butchery@dpi640.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Clothing@dpi160.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Clothing@dpi240.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Clothing@dpi320.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Clothing@dpi480.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Clothing@dpi640.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Diy@dpi160.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Diy@dpi240.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Diy@dpi320.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Diy@dpi480.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Diy@dpi640.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Fishshop@dpi160.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Fishshop@dpi240.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Fishshop@dpi320.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Fishshop@dpi480.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Fishshop@dpi640.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Garden@dpi160.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Garden@dpi240.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Garden@dpi320.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Garden@dpi480.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Garden@dpi640.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Market@dpi160.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Market@dpi240.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Market@dpi320.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Market@dpi480.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Market@dpi640.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Pharmacy@dpi160.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Pharmacy@dpi240.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Pharmacy@dpi320.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Pharmacy@dpi480.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+   -
+     physical_name : .\Exe\data\images\suppliers\defcat_Pharmacy@dpi640.png
+     configurations :
+      -
+        internal_properties : CAAAAAgAAACgyIz/g/abg0OIcFjRU6MoPxHgdmhMlUpvgcBi+arW
+        configuration_id : 1364698253181209041
+      -
+        internal_properties : CAAAAAgAAABXAdPILp6HqWWiNgiDyzk/1KgPR6ktkoMMCHcjMGOf
+        configuration_id : 14511823181872351813
+  analysis : .\WM Shopping.ana\WM Shopping.wda
+  net_assemblies : []
+  uwp_api : []
+  external_components : []
+  internal_components :
+   -
+     physical_name : .\EANSource\EANSource.wci
+ report_and_queries_enabled : false
+ data_directory : <RepDonneesCommun>
+ languages :
+  - fr-FR
+ code_elements :
+  internal_properties : CAAAAAgAAABTZJPYQlIeJ08okTqJNGLejKM9O7CF7qIKduNWpo94H4UduZTRpBU65UF4iibahAjR57KVrhfPUr+FAwowZXtGPXTRl+odyFE7
+  type_code : 0
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAABPy1cbjYAw0TJD3DVu5uA/uv0/kdmKOel/US/BR4cPUjx5M2CNLE/2KtJypWLFrU+e9Pm1rGNGa8h1BYID+/Pcl+trD751k8WjnJ577wl787JvGwp6diNc1rsnfItVNFZQ4otES2kCvbcgzxqgfuuhmD+xD1mBraChRAnc7xDAQw==
+     code : |1+
+      
+      //
+      // WM Shopping
+      // Gestion de listes de courses
+      //
+      
+      // Structure représentant un élément de liste
+      ListeElément est une Structure
+      	ID est un entier sur 8
+      	Acheté est un booléen
+      	Rayon est une chaîne
+      	GUIDRayon est une chaîne ANSI
+      	Image est une chaîne
+      	Note est une chaîne
+      	Produit est une chaîne
+      	GUIDProduit est une chaîne
+      	Quantité est un réel
+      	QuantitéVirtuelle est un entier
+      	UnitéID est un entier
+      	UnitéNom est une chaine
+      	UnitéNomPluriel est une chaine
+      	Indice est un entier
+      	DateAjout est une dateheure
+      FIN
+      
+      // Paramètres de l'application
+      Paramètres est une structure
+      	InversionGaucheDroite est un booléen	
+      	VerrouillerEcran est un booléen
+      	EffacerProduitsAchetésAuto est un booléen
+      FIN
+      
+      // Rayon pour le listing
+      STRayon est une Structure
+      	Nom  		est une chaîne
+      	NomIndex		est une chaîne
+      	GUID 		est une chaîne	
+      	GUIDParent	est une chaîne	
+      	Niveau		est un entier
+      	Image		est une chaine
+      	Chemin		est une chaine
+      	Perso		est un booléen
+      FIN
+      
+      // Résultat de la recherche
+      STRésultat est une Structure
+      	GUIDProduit 	est une chaîne
+      	NomProduit		est une chaîne
+      	Rayon			est une chaîne
+      	Image			est une chaîne
+      	Score			est un entier
+      FIN
+      
+      // Liste
+      STListe est une structure
+      	IDListe			est un entier sur 8
+      	IDFournisseur 	est un entier sur 8
+      	Nom  			est une chaîne
+      	Image			est une chaine
+      	NbProduits		est un entier
+      FIN
+      
+      /////////////////////////////////////////////////
+      // Constantes de configuration
+      /////////////////////////////////////////////////
+      <COMPILE SI Configuration = "Application Android">
+      	CONSTANT MODE_ANDROID = Vrai
+      <SINON>
+      	CONSTANT MODE_ANDROID = faux
+      <FIN>
+      <COMPILE SI Configuration = "Application iOS">
+      	CONSTANT MODE_IOS = vrai
+      <SINON>
+      	CONSTANT MODE_IOS = Faux
+      <FIN>
+      
+      /////////////////////////////////////////////////
+      
+      
+      /////////////////////////////////////////////////
+      // Constantes générales
+      /////////////////////////////////////////////////
+      CONSTANT
+      	// Source d'image à récupérer
+      	imgURL		= 1
+      	imgBuffer 	= 2
+      	imgFichier	= 3
+      	
+      	créeDepuisScan				= 1
+      	créeDepuisSaisie 			= 2
+      	
+      	// Noms des paramètres
+      	APP_NAME					= "WM Shopping"	
+      	BASE_VERSION				= "Version"
+      	PARAM_VERROUILLER_ECRAN		= "LockScreen"
+      	PARAM_COCHE_INVERSEE		= "RightToLeft"
+      	PARAM_EFFACER_AUTO			= "EmptyAutomatic"
+      	PARAM_DATA_PATH				= "DataPath"
+      	PARAM_USER_GUID				= "USER_GUID"
+      	PARAM_USER_FAVORITES		= "Favorites"
+      	
+      	// Paramètres réinitialisables
+      	PARAM_FIRSTHELP_LISTE		= "Help_NewList_Edit"
+      	
+      	
+      	// Duplication par défaut
+      	DUPLIQUE_PRODUIT_NATIF		= vrai
+      FIN
+      /////////////////////////////////////////////////
+      
+      /////////////////////////////////////////////////
+      // Globales
+      /////////////////////////////////////////////////
+      Lancement				est un booléen = vrai
+      Surbrillance 			est un tableau d'entiers = [0x39DCCD, 0x57E1D4, 0x75E7DC, 0x9CEEE6, 0xC3F4F0, 0xE7FBF9, 0xFFFFFF]	// Couleurs de surbrillance
+      MesRayons 				est un tableau de STRayon
+      MesListes 				est un tableau de STListe
+      MesProduitsFavoris		est un tableau de chaines
+      DonnéesPerso 			est une Source de Données
+      
+      // Répertoires 
+      DATA_PATH  				est une chaine		// Répertoire de base des données
+      DATA_CACHE				est une chaine		// Cache (fichiers temporaires, ...)
+      DATA_IMAGE_SUPPLIER		est une chaine		// Dossiers des images des "fournisseurs" (magasin, enseigne, ...)
+      DATA_IMAGE_PRODUCTS		est une chaine		// Dossiers des images des produits
+      
+      // Divers
+      VERSION_BASE			est un reel	= 3		// 1 : initial ; 2+ : base de données de produit initiale
+      VERSION					est un reel
+      USER_GUID				est une chaine
+      MODE_TABLETTE			est un booléen = Faux
+      
+      <COMPILE SI MODE_ANDROID>
+      	
+      	SI PAS EnModeSimulateur() ALORS
+      		// Détermine si on est exécuté sur un écran large ( > 7' ) ou non
+      		MODE_TABLETTE = JAVA_GetScreenLayoutIsLarge()
+      	FIN
+      <SINON>
+      	
+      	SI PAS EnModeSimulateur() ALORS
+      		// Mode tablette uniquement sur iPad
+      		MODE_TABLETTE = OBJC_SysInterfaceIPAD()
+      	FIN
+      <FIN>
+      
+      // Gestionnaire des listes
+      ListeManager			est un CListeManager
+      USER_PARAMS				est un Paramètres	// Paramètres utilisateurs
+      
+      // Définition des paramètres
+      TitreSuivant(<§Rff0000af10f068c2¤fr-FR¤Initialisation des paramètres...§>)
+      InitialiseParamètres()
+      
+      // Définition des dossiers de stockage et des données HFSQL
+      TitreSuivant(<§Rff0002a8102550c5¤fr-FR¤Initialisation des données...§>)
+      InitialiseStockage()
+      InitialiseDonnées()
+      
+      // RAZ
+      TitreSuivant("")
+      
+      // Exception générale
+      CAS EXCEPTION:
+      XLOG(ExceptionInfo(errComplet))
+      
+      <COMPILE SI MODE_ANDROID>
+      	FinProgramme(<§Rff0002af10f268c2¤fr-FR¤Une erreur fatale est survenue. L'application va maintenant se terminer...§>)
+      <SINON>
+      	Erreur(<§Rff0003af10f468c2¤fr-FR¤Une erreur fatale est survenue.§>, ExceptionInfo(errMessage))
+      <FIN>	
+     type : 196608
+   -
+     code : |1-
+      
+      // En simulateur
+      si EnModeSimulateur() ALORS
+      	
+      	// Vide le répertoire cache
+      	fRepSupprime(DATA_CACHE, frRécursif + frLectureSeule)
+      FIN
+     type : 196610
+   -
+     type : 196621
+   -
+     type : 196627
+     enabled : false
+  orphans :
+   -
+     name : Application iOS
+     identifier : 0x458a7b1100d3df96
+     code_elements :
+      type_code : 159
+      p_codes : []
+   -
+     name : Application Android
+     identifier : 0x4587c869000302a1
+     code_elements :
+      type_code : 159
+      p_codes : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+rad :
+ internal_properties : CAAAAAgAAABhIL0UXeZmxDJxY3Xy0Q==
+project_explorer :
+ explorer_type : project
+ children :
+  -
+    explorer_type : windows
+    children :
+     -
+       name : Gestion des listes
+       explorer_type : custom_folder
+       children :
+        -
+          name : FEN_LISTE_CREE
+          explorer_type : element
+          type : 2
+        -
+          name : FEN_LISTE_RENOMME
+          explorer_type : element
+          type : 2
+        -
+          name : FI_LISTE_EDITION
+          explorer_type : element
+          type : 8
+        -
+          name : FI_CONTENU_LISTE
+          explorer_type : element
+          type : 8
+        -
+          name : FI_RECHERCHE
+          explorer_type : element
+          type : 8
+        -
+          name : FEN_POP_RAYONS
+          explorer_type : element
+          type : 2
+        -
+          name : FI_CONTENU_HISTORIQUE
+          explorer_type : element
+          type : 8
+        -
+          name : FEN_FICHE_ITEM
+          explorer_type : element
+          type : 2
+        -
+          name : FEN_ORDRE_RAYONS
+          explorer_type : element
+          type : 2
+        -
+          name : FI_OPTION_LISTE
+          explorer_type : element
+          type : 8
+     -
+       name : Système
+       explorer_type : custom_folder
+       children :
+        -
+          name : FEN_APROPOS
+          explorer_type : element
+          type : 2
+        -
+          name : FEN_PARAMETRES
+          explorer_type : element
+          type : 2
+        -
+          name : FEN_CB_SCAN
+          explorer_type : element
+          type : 2
+resources :
+ string_res :
+  identifier : 0x0
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAAAd98VSJfHHqE3P0QHwrwdhn7ig8dWBR6valpUTgnAMTVXiDg==

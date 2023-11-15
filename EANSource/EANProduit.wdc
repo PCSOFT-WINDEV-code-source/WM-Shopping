@@ -1,0 +1,58 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : EANProduit
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x1587da20004c328b
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      EANProduit est une Classe
+      	
+      	public
+      		Nom				est une chaine			// Nom du produit
+      		Description		est une chaine			// Nom générique ou description
+      		Image 			est une chaine			// URL de l'image associée
+      		Code			est une chaine			// Code EAN
+      		Source			est une chaine			// Source d'obtention des données
+      		Catégories		est une chaine			// Catégories du produit
+      		
+      	global public
+      		DEBUG_MODE 		est un booléen	
+      	
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1551448427631293067
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur()
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1551448427631358603
+     type_code : 28
+     code : |1-
+      PROCEDURE Destructeur()
+     type : 655360
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x1fbd47f9153550ae
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

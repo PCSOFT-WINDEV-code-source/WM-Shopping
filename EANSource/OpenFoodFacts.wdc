@@ -1,0 +1,127 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : OpenFoodFacts
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x1587d75a00445ee0
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      OpenFoodFacts est une Classe, abstraite
+      
+      	PRIVÉ
+      		CONSTANT
+      			API_ENDPOINT	= "http://fr.openfoodfacts.org/api/v0/product/"
+      		FIN
+      FIN
+      
+      OFFProduct est une structure
+      	generic_name	est une chaine
+      	product_name	est une chaine
+      	image_small_url	est une chaine
+      	code			est une chaine
+      	lang			est une chaine
+      	quantity		est une chaine
+      	categories		est une chaine
+      	brands			est une chaine
+      	brands_tags		est un tableau de chaine
+      	complete		est un booléen
+      FIN
+      
+      OFFResponse est une structure
+      	status_verbose	est une chaine
+      	status			est un entier
+      	product			est un offproduct
+      	code			est une chaine	
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1551445378203999968
+     type_code : 27
+     code : |1-
+      PROCEDURE privee Constructeur()
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1551445378204065504
+     type_code : 28
+     code : |1-
+      PROCEDURE privee Destructeur()
+     type : 655360
+   -
+     name : Get
+     internal_properties : CAAAAAgAAAArDTJIbZ6l5r/8v9qcZxhZG23s3ChtMxNHqpt4yAWPl5EUNkAbuFkN2DMTVHA+xS7/Cmqg0BSmaDrBJHkU3KpI4QU4T4kYvIwgQj7IKu7k7t9t7NeeRwqLTEwZsKtN48j5CVsVdlYlc2R2l8w=
+     procedure_id : 1551447512802915229
+     type_code : 12
+     code : |1-
+      // Résumé : Récupère les données d'un produit à partir de son code-barres
+      // Syntaxe :
+      //[ <Résultat> = ] Get (<sCodeBarre> est chaîne)
+      //
+      // Paramètres :
+      //	sCodeBarre (chaîne UNICODE) :Code-barres du produit
+      // Valeur de retour :
+      // 	EANProduit : Produit lu
+      //
+      PROCEDURE PUBLIQUE GLOBALE Get(local sCodeBarre est une chaine) : EANProduit
+      	
+      	sURL est une chaine ansi = API_ENDPOINT + ["/"] + sCodeBarre + ".jqm.json"
+      	stRéponse est un OFFResponse
+      	clProduit est un EANProduit
+      
+      	// Source
+      	clProduit.Source = "OpenFoodFacts"
+      	
+      	// 2s maximum
+      	HTTPTimeOut(2000)
+      	
+      	// Lance la requête
+      	SI HTTPRequête(sURL, "WMOFFComponent/1.0", "", "", "", "") ALORS
+      		
+      		// Lecture du résultat
+      		bufJSON est un buffer = HTTPDonneRésultat(httpRésultat)
+      		
+      		QUAND EXCEPTION DANS
+      			
+      			// Désérialise les données
+      			Désérialise(stRéponse, bufJSON, psdJSON)
+      		FAIRE
+      			VariableRAZ(stRéponse)
+      		FIN
+      	FIN
+      	
+      	// Produit incomplet
+      	si stRéponse.product.complete = 0 ALORS
+      		VariableRAZ(stRéponse)
+      	FIN
+      	
+      	// Attribution
+      	clProduit.Code 			= stRéponse.product.code
+      	clProduit.Nom  			= stRéponse.product.product_name + [" - "] + (position(stRéponse.product.product_name, stRéponse.product.brands) < 1 ? stRéponse.product.brands sinon "")  + [" - "] + stRéponse.product.quantity
+      	clProduit.Description  	= stRéponse.product.generic_name
+      	clProduit.Image			= stRéponse.product.image_small_url
+      	clProduit.Catégories	= stRéponse.product.categories
+      
+      RENVOYER clProduit
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x1fbd47f915ac514a
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

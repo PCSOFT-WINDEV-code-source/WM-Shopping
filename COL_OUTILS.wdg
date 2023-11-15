@@ -1,0 +1,448 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : COL_OUTILS
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x158832990051ccf8
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  internal_properties : CAAAAAgAAABPOo5wfzL5PtlmH9g6pVlcqG1md+uM4GM8B/k/aVja5R6ZseBzxTGWZbo12UeE8bWym5Rl91AKrNq9wTYnFyamg2lAMw==
+  type_code : 31
+  p_codes :
+   -
+     code : |1-
+      
+     type : 720896
+  procedures :
+   -
+     name : USERID
+     procedure_id : 1551545730115757489
+     type_code : 15
+     code : |1-
+      // Résumé : Renvoie l'identifiant de l'utilisateur ou du propriétaire du terminal
+      // Syntaxe :
+      // [ <Résultat> = ] USERID ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	chaîne UNICODE : Identifiant utilisateur
+      //
+      PROCEDURE USERID() : chaine
+      
+      	// En simulation
+      	si EnModeSimulateur ALORS
+      		renvoyer "PC"
+      	FIN
+      
+      renvoyer ""
+     type : 458752
+   -
+     name : UNITEDEFAUT
+     procedure_id : 1562175224441453167
+     type_code : 15
+     code : |1-
+      // Résumé : Renvoie l'unité par défaut
+      // Syntaxe :
+      // [ <Résultat> = ] UNITEDEFAUT ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	entier : ID de l'unité par défaut
+      //
+      PROCEDURE UNITEDEFAUT() : entier
+      
+      	selon nation
+      		cas nationFrançais
+      			renvoyer 1
+      		AUTRE CAS
+      			RENVOYER 1
+      	FIN
+     type : 458752
+   -
+     name : QuantitéUnité
+     procedure_id : 1563363830943963165
+     type_code : 15
+     code : |1-
+      // Résumé : Renvoie une quantité exprimée en langage naturel
+      // Syntaxe :
+      // [ <Résultat> = ] QuantitéUnité (<rQuantité> est réel, <nIDUnité> est entier)
+      //
+      // Paramètres :
+      //	rQuantité (réel) : Quantité numérique
+      //	nIDUnité (entier) : Identifiant d'unité
+      // Valeur de retour :
+      // 	chaîne UNICODE : Quantité exprimée en langage naturel
+      //
+      PROCEDURE QuantitéUnité(rQuantité est un reel, local nIDUnité est un entier = UNITEDEFAUT()) : chaine
+      	
+      	// Unité par défaut
+      	si nIDUnité <= 0 ALORS
+      		nIDUnité = UNITEDEFAUT()
+      	FIN
+      	
+      	// Formate la quantité numérique
+      	sQuantité est une chaine = NumériqueVersChaîne(rQuantité, "fS")
+      	
+      	// Supprime les 0 à droite (et le . ou , en fin de chaîne)
+      	sQuantité = SansCaractèreDroite(sQuantité, "0,.")
+      	
+      	// Ajoute le nom de l'unité
+      	HLitRecherchePremier(Unité, IDUnité, nIDUnité)
+      	si htrouve(Unité) ALORS
+      		sQuantité += [" "] + (rQuantité > 1 ? unite.NomPluriel sinon Unité.nom)
+      	FIN
+      
+      renvoyer sQuantité
+     type : 458752
+   -
+     name : XLOG
+     procedure_id : 1575661662271817527
+     type_code : 15
+     code : |1+
+      // Résumé : Enregistre une trace
+      // Syntaxe :
+      // XLOG (<MessageTrace>)
+      //
+      // Paramètres :
+      // 	MessageTrace : Message de trace
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE XLOG(MessageTrace)
+      
+      	trace(dateheuresys + " - " + MessageTrace)	
+      
+     type : 458752
+   -
+     name : FavoriAjoute
+     procedure_id : 1584142457460841471
+     type_code : 15
+     code : |1-
+      // Résumé : Ajoute un produit
+      // Syntaxe :
+      //[ <Résultat> = ] FavoriAjoute (<sGUIDProduit> est chaîne)
+      //
+      // Paramètres :
+      //	sGUIDProduit (chaîne UNICODE) :GUID du produit
+      // Valeur de retour :
+      // 	booléen : Vrai si le favori a été enregistré, Faux sinon
+      //
+      PROCEDURE FavoriAjoute(sGUIDProduit est une chaine) : booléen
+      
+      	// C'est un produit
+      	si sGUIDProduit <> "" ALORS
+      		
+      		// Vérifie si le produit est déjà dans les favoris
+      		si pas FavoriExiste(sGUIDProduit) ALORS
+      			
+      			// Enregistre le favori
+      			ajoute(MesProduitsFavoris, sGUIDProduit)
+      			SauveParamètre(PARAM_USER_FAVORITES, TableauVersChaîne(MesProduitsFavoris, ";"))
+      		FIN		
+      		
+      		renvoyer vrai
+      	FIN
+      	
+      RENVOYER faux
+     type : 458752
+   -
+     name : FavoriSupprime
+     procedure_id : 1584143037281495191
+     type_code : 15
+     code : |1-
+      // Résumé : Supprime un favori
+      // Syntaxe :
+      //[ <Résultat> = ] FavoriSupprime (<sGUIDProduit> est chaîne)
+      //
+      // Paramètres :
+      //	sGUIDProduit (chaîne UNICODE) :GUID du produit
+      // Valeur de retour :
+      // 	booléen : Vrai si le favori a été supprimé, Faux sinon
+      //
+      PROCEDURE FavoriSupprime(sGUIDProduit est une chaine)
+      
+      	// C'est un produit
+      	si sGUIDProduit <> "" ALORS
+      		
+      		// Vérifie si le produit est dans les favoris
+      		nIndice est un entier = cherche(MesProduitsFavoris, tcLinéaire, sGUIDProduit)
+      		si nIndice > 0 alors
+      			
+      			// Supprime le favori		
+      			supprime(MesProduitsFavoris, nIndice)						
+      		FIN		
+      		
+      		renvoyer vrai
+      	FIN
+      	
+      RENVOYER faux
+     type : 458752
+   -
+     name : FavoriExiste
+     procedure_id : 1584143200490355819
+     type_code : 15
+     code : |1-
+      // Résumé : Vérifie si un favori existe
+      // Syntaxe :
+      //[ <Résultat> = ] FavoriExiste (<sGUIDProduit> est chaîne)
+      //
+      // Paramètres :
+      //	sGUIDProduit (chaîne UNICODE) :GUID du produit
+      // Valeur de retour :
+      // 	booléen : Vrai si le produit est dans les favoris, Faux sinon
+      //
+      PROCEDURE FavoriExiste(sGUIDProduit est une chaine)
+      
+      	// C'est un produit
+      	si sGUIDProduit <> "" ALORS
+      		
+      		// Vérifie si le produit est dans les favoris
+      		renvoyer (cherche(MesProduitsFavoris, tcLinéaire, sGUIDProduit) > 0)		
+      	FIN
+      	
+      RENVOYER faux
+     type : 458752
+   -
+     name : SysNomPackage
+     internal_properties : CAAAAAgAAACZZMJmxfhQAuWMzKSGjO1BgTGwGfMfpwOyRMC2R2u+EFCrmEnfCpsdGjmddTUTZc9HEbEIicnHmAxeYxcOi3Nn7k/fmD1wjbRIAELMbCsb4mDElSHiFiKQO/qghqAjaaQfaexJhxibBx9yEfQnl6pRvR+c0jcTxgNYSF1q+8D3kVRiR84JQr6ca97zChjfWWqzQ/Vod0IjlAa+uUljxyRYnawZ1Sn6m5Dsa94IiTfB35kalrP4wqnfYUPfjUJV7NCVSKgfTfFantBwF0wbQNoZX5jGhi56J7vum3pQtQ918XHAz6+f5iiFgxnMc8W9JcvHOMmd4geHfXFozzTZel5rBcKcAZhGzSvMXL3GxF0kd+EyqQt7wVBaX6sLq9OD7pEoG/iHWnE=
+     procedure_id : 1585940377987156854
+     type_code : 15
+     code : |1-
+      // Résumé : Renvoie le nom du package de l'application
+      // Syntaxe :
+      // [ <Résultat> = ] SysNomPackage ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	chaîne UNICODE : Nom du package de l'application
+      //
+      PROCEDURE SysNomPackage() : chaine
+      
+      	<compile si MODE_ANDROID>
+      		RENVOYER JAVA_GetPackageName()
+      	<sinon>
+      		RENVOYER ProjetInfo(piNomEXE)
+      	<FIN>
+     type : 458752
+   -
+     name : ChaîneVersIndex
+     procedure_id : 1586307206919931560
+     type_code : 15
+     code : |1-
+      // Résumé : Renvoie une chaîne indexable pour la recherche
+      // Syntaxe :
+      // [ <Résultat> = ] ChaîneVersIndex (<sChaîne> est chaîne)
+      //
+      // Paramètres :
+      //	sChaîne (chaîne UNICODE) : Chaîne à indexer
+      // Valeur de retour :
+      // 	chaîne UNICODE : Chaîne indexable
+      //
+      PROCEDURE ChaîneVersIndex(local sChaîne est une chaine) : chaine
+      renvoyer remplace(ChaîneFormate(remplace(sChaîne, " ", caract(0)), ccSansPonctuationNiEspace + ccMinuscule + ccSansAccent), Caract(0), " ")
+     type : 458752
+   -
+     name : SysFlashEstPrésent
+     procedure_id : 1589271872542517798
+     type_code : 15
+     code : |1-
+      // Résumé : Si le flash est présent sur l'appareil
+      // Syntaxe :
+      //[ <Résultat> = ] SysFlashEstPrésent ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	booléen : Vrai si le flash est présent, Faux sinon
+      //
+      PROCEDURE SysFlashEstPrésent() : booléen
+      
+      	<compile si MODE_ANDROID>
+      		RENVOYER (VidéoListeParamètre(vipFlash) <> "")
+      	<sinon>
+      		renvoyer faux	
+      	<FIN>	
+     type : 458752
+   -
+     name : SysFlashActive
+     procedure_id : 1589272233319919526
+     type_code : 15
+     code : |1-
+      // Résumé : Active/Désactive le flash
+      // Syntaxe :
+      //[ <Résultat> = ] SysFlashActive (<bActive> est booléen)
+      //
+      // Paramètres :
+      //	bActive (booléen) : Vrai si le flash doit être activé, Faux sinon
+      // Valeur de retour :
+      // 	booléen : Vrai si le flash a été activé/désactivé, Faux sinon
+      //
+      PROCEDURE SysFlashActive(bActive est un booléen <utile>) : booléen
+      
+      	<compile si MODE_ANDROID>
+      		SI bActive ALORS
+      			RENVOYER VidéoParamètre(vipFlash, vipFlashTorche)
+      		SINON
+      			RENVOYER VidéoParamètre(vipFlash, vipFlashOff)
+      		FIN
+      	<sinon>
+      		renvoyer faux
+      	<FIN>
+     type : 458752
+   -
+     name : gCadrageEx
+     internal_properties : CAAAAAgAAADGNgNTybWJUwgL+LLzVE+Y3TjXTu7xFdcIaJZ+XR/EAZpqbg6XxpZqvrxf3OjXWbtcPedqD4njnouuyC7KpvhiQ690MYLJ7yuYZ4c7pedZoeCT3HUBROn2sMVQ9rFSjPED0mn7AINXEBINeNvaPGMGoff7lnCJbBPaByYsS9NxnP8hwXMAncajXzR2vvOXzos79dF8e3tJ8eDPtdWy8em/wVB46Dih
+     procedure_id : 1590867680671296133
+     type_code : 15
+     code : |1+
+      // Résumé : Cadre un texte ou une image dans un élément 
+      // Syntaxe :
+      //[ <Résultat> = ] gCadrageEx (<sCadrage> est chaîne, <sChaîne> est chaîne)
+      //
+      // Paramètres :
+      //	sCadrage (chaîne UNICODE) :Cadrage (voir l'aide de la fonction gCadrage)
+      //	sChaîne (chaîne UNICODE) :Chaîne à cadrée
+      // Valeur de retour :
+      // 	chaîne UNICODE : Chaîne compatible avec gCadrage
+      //
+      PROCEDURE gCadrageEx(local sCadrage est une chaine <utile>, local sChaîne est une chaine) : chaine
+      
+      	sChaineCadree est une chaîne
+      	
+      	// Hors Android
+      	<compile si TypeConfiguration <> android>
+      		
+      		// Construit une chaîne compatible avec la fonction WLangage gCadrage
+      		sChaineCadree = ChaîneConstruit(esc + "C" + sCadrage + "(" + Caract(30) + sChaîne + Caract(30) + ")")
+      	<SINON>
+      		
+      		// Sous Android, pas de cadrage possible
+      		sChaineCadree = sChaîne
+      	<FIN>
+      
+      RENVOYER sChaineCadree
+     type : 458752
+   -
+     name : Homothétie
+     procedure_id : 1591589789044594493
+     type_code : 15
+     code : |1+
+      // Résumé : Calcule l'homothétie d'une image
+      // Syntaxe :
+      //[ <Résultat> = ] Homothétie (<rLargeurOri> est entier, <rHauteurOri> est entier, <rLargeur> est réel, <rHauteur> est réel [, <bEtendu> est booléen [, <bSansAgrandissement> est booléen]])
+      //
+      // Paramètres :
+      //	rLargeurOri (entier) :Largeur originale, contiendra la nouvelle largeur
+      //	rHauteurOri (entier) :Hauteur originale, contiendra la nouvelle hauteur
+      //	rLargeur (réel) :Largeur maximum
+      //	rHauteur (réel) :Hauteur maximum
+      //	bEtendu (booléen - valeur par défaut=0) :Mode étendu
+      //	bSansAgrandissement (booléen - valeur par défaut=0) :Vrai si le calcul de l'homothétie ne doit pas dépasser les dimensions initiales, Faux sinon
+      // Valeur de retour :
+      // 	réel sur 4 octets : Ratio de l'image
+      //
+      PROCEDURE Homothétie(rLargeurOri est un entier, rHauteurOri est un entier, LOCAL rLargeur est un réel, LOCAL rHauteur est un réel, LOCAL bEtendu est un booléen = Faux, LOCAL bSansAgrandissement est un booléen = Faux) : réel sur 4
+      	
+      	rRatio		est un réel
+      	rScaleX	 	est un réel = rLargeur / rLargeurOri
+      	rScaleY		est un réel = rHauteur / rHauteurOri
+      	rMinScale	est un réel = (bEtendu ? ((rScaleX < rScaleY) ? rScaleY SINON rScaleX) SINON ((rScaleX < rScaleY) ? rScaleX SINON rScaleY))
+      	                       
+      	rLargeurAff est un réel
+      	rHauteurAff est un réel
+      	
+      	// Destination
+      	SI (bSansAgrandissement _ET_ rLargeurOri > rLargeur OU rHauteurOri > rHauteur) OU PAS bSansAgrandissement ALORS
+      		rLargeurAff = rLargeurOri * rMinScale
+      		rHauteurAff = rHauteurOri * rMinScale
+      	SINON
+      		rLargeurAff = rLargeurOri
+      		rHauteurAff = rHauteurOri
+      	FIN
+      	
+      	rLargeurOri = rLargeurAff
+      	rHauteurOri = rHauteurAff
+      	
+      	// Calcule le ratio
+      	SI rLargeurAff > rHauteurAff ALORS
+      		rRatio = rHauteurAff / rLargeurAff
+      	SINON
+      		rRatio = rLargeurAff / rHauteurAff		
+      	FIN
+      
+      RENVOYER rRatio
+     type : 458752
+   -
+     name : RedimensionnementAutomatique
+     procedure_id : 1591590854196535825
+     type_code : 15
+     code : |1-
+      // Résumé : Effectue une redimensionnement automatique de l'image spécifiée
+      // Syntaxe :
+      //[ <Résultat> = ] RedimensionnementAutomatique (<sCheminImage> est chaîne)
+      //
+      // Paramètres :
+      //	sCheminImage (chaîne UNICODE) : Chemin de l'image à traiter
+      // Valeur de retour :
+      // 	booléen : Vrai si l'image a été modifiée, Faux sinon
+      //
+      PROCEDURE RedimensionnementAutomatique(local sCheminImage est une chaine) : booléen
+      
+      	// Recadrage/Rotation automatique
+      	oImage est une image = sCheminImage
+      	nLargeur, nHauteur sont des entiers
+      	
+      	nLargeur = oImage..Largeur
+      	nHauteur = oImage..Hauteur
+      	
+      	// Calcule l'homothétie de l'image
+      	Homothétie(nLargeur, nHauteur, 720, 720, Vrai, Vrai)
+      	
+      	// Si les dimensions de l'image ont été recalculées
+      	SI nLargeur <> oImage..Largeur _OU_ nHauteur <> oImage..Hauteur ALORS
+      		
+      		// Redimensionne l'image
+      		dRedimensionne(oImage, nLargeur, nHauteur, drEtiré)
+      		
+      		// Re-sauve l'image
+      		renvoyer dSauveImagePNG(oImage, sCheminImage)
+      	FIN
+      	
+      renvoyer faux
+     type : 458752
+   -
+     name : APPTitre
+     procedure_id : 1607200234223407716
+     type_code : 15
+     code : |1-
+      // Résumé : Renvoie le titre stylisé de l'application
+      // Syntaxe :
+      //[ <Résultat> = ] APPTitre ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	chaîne UNICODE : Titre stylisé de l'application
+      //
+      PROCEDURE APPTitre() : chaine
+      renvoyer APP_NAME
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_SansNom1
+resources :
+ string_res :
+  identifier : 0x158832990050ccf8
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

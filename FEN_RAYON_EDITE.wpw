@@ -1,0 +1,439 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FEN_RAYON_EDITE
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FEN_RAYON_EDITE
+ identifier : 0x266feac537dcfc59
+ internal_properties : CAAAAAgAAABPnuZqUt+HpzMGGXCIo1UEz39WzB8AzzG8HEqOp7AZjf/2nBY1qVzyZbxFqB3tqA3r2Af4i4WMvxFofJz+TPWbpFmo+DRoqLDBbes9VHcopXbWREwUi/lH0P6Zk0gFWp5TBZPkdOWQKo45CZg86j9VvibLNtpSmuT7csZgB2AZIXDLCIOeyiAwLVp6OwzQL6urtdgDE9XI+i/heHpG8RoXUi39B+PamFPJ4efUNKjPieiT86/LYIfKltl9MQs3I7DVN7eH+FLXOO0fYaU4vMP9NV/11lO4S0JOzVIJ+omuZKUMcHi4U6H7hhxDw+kobhDJQEcE9HvUh+qoYCm9bdXjhYi9stvWJa+RcGCb9HUJkuGR0oOvF9D809X3GrvvorijGq2n7qvQDif0AlBhefkMVMa9p4wAm0cMiVzKJdEbfTuy34IEyKOUv7ZtCE/b7cFM23EcWXqlWIu7bakMKUSPVJQ3vOYIkZ3eX5yIYc2GfPY2dCLnA4aNIixw20cToLF3u5zW1psdBEbJ5GUUTdp/ZelaWBvdwD4OrlI1azKsPbj0dfX6XSKbbq/i39bQ5s0pTXgaoWlliKvwjHTgJIz4wR+KPkwafSyrQi0qiIRqzKRqNGXEj3rjE+KnoCwevtML6CxHDpRFfmbwtV/ZId1+U20cth7PGIMedrL/tDI+YYKkdJH7y89CmhIbnWR5wApKgUYJySGsv9i4QIM4NpKD0H/4jeNBqccj63FlSGRg0t4UlGilDgzcWAbLVveOENPG1q0JLu7onRJ4u3zsRXJMf8Ffti+jeSxYgbO0ccVY1rdkf6EtgALUPoA+F3YKQeDafBEYLxb7YMfHWox65xN36+zw9iKJh+wE/cIVCmOpyVNQJd1xFelynQABV4ZAhf7IOzyRHU5mPm5TqqhEOrA=
+ properties :
+  width : 316
+  height : 259
+ controls :
+  -
+    name : BTN_Abandon
+    identifier : 0x266feac537e3fc59
+    internal_properties : CAAAAAgAAAAMqoT3ZDrEnXbrhb/UqTIJuF55Pgj+k9m0hk1iAAUUPKfgHjcqAWYzmHqTB17RGB2qXZhaIJ+s67DyUCrxKYiOUIzt8LnXdtDoen9sIxZKiraaqPNzEm+uz131GUCZD829sQonmE6+p7xj+kAbx4h5RC0nnvCpHHaVTAL2lOOCC/y2y6WxLxL6Usb/uYJjAyiMXh78ZnCmzXubh8iY2v5Ri2c+++STpsr5riI5zxj0AxjSGj5tt2l4cACPUWmlEJ7qyORzWfCJlN4GGZC3ajnETBh+gVMFkwN/Ce19D8BzJCyTnDW34Zg8w5WnafxxjSZZF8d8wz1KRSxZU7XGNGTM9KtDrhMCLGrmFO2x1ZLKWO7HhlKlafCfCRrB7rdJfp+lOxQuH1MqFWHHICiQlr7KOqwdG51fI/IcpCdmOH7SOTPSHTm4+6VcAChGk2OsoUogTG6z9nDtUHDRPbV2iQ7IKs6VihKw5L0TgE9uvJSRhs+5J7zbl31siSPeJ2Bn05Q8+yWcbqWSC3R1RufYgJpOzMaeZ6Y7KFLI+gn8ULz1FiA00AqXuxfCJ88g2gdV6qjEL0Kayvu8kVS9wtAMqRRNZ2bHeazeGBsrj++Dw4sPD/mMG42u6cNZfeA/A+48aHVxYmO7KT4JF0ERFDlkjSq8g8Bet2dtpAnUSCpUtQi/7vgez7gei+ESFPPGdJx9JRa2qEK3dhQ9Ac2igkN88GqIm+QhtUhQ4de3sELchG0gsqAuQ/o/Mb4D4PJ1UmnQfQRkYdTIg1p3S3//kkdMH2QkZjFER3u8tH9M07Y/w/pKLJA+rhSnLsmPh/D8Hno5WSJlmmvolpK/rdpxI0hUSTzhlZR2tXqKHwo3e9XTGiodYmNovG8pzdqIDTnhLbjFtnQRPI9+8Ygq85BZjyj+Twm60msEgmSo8VgkMOsxdadr8rTq1764yqQIFDIfW48=
+    properties :
+     width : 44
+     height : 44
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         MaFenêtre..ValeurRenvoyée = ""
+         Ferme(FEN_RAYON_EDITE)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : COMBO_RAYON
+    identifier : 0x266feac537e4fc59
+    internal_properties : CAAAAAgAAADm1znoxP3W/uAH3ZMC3sHzjqdO5M8EPdRjcXpfuavzNg6KDZSJyuSa4Hlvp4BzsdJpR+NMTI5R68EZ/eL9aglt6YQEEaNw0tf+wE+nsFB7R/5X0W7uCCu5DOY7xLhPQc2BgXEND5a7PcduvWZ2bqBQyd0zy0sb5N4zVzEIQ8Rki9BbgxRaIFLcFWtZml2YXYIiFPUrFJ0/VvH+wuaPojX5gMoEreOde+Zg2jnsXN96jgCWjz0Jae4IQcDj/6FpYaXPcWLoNJDksyf64B5ekTlTnSCuqRXoXkDbkpxiv/syEIFt0kTmnMPOEflmdjZ9ZtQepv4yORYzHH9UoO94ZSR1xik5bNXKLg8kcMRvhs3z+FatFvjWmyA38VqdCfrVNLUzvpSmnXFl+rymtCDWKwMD1Ds/TxluK72BAPjSVBvqqBBd7IgwxX4xMzFzA40IHAUcKlNDGwQw4BbCqeCBfQO+10PxxUYkUTLEIcE+E67MMFQ1ZyrHAwTIrcmSlQrO/ciHBjlxs+ne3B1l/pUJIcNZhEpFzJ8PydG3ETrSlImjiPOcMV9ppZk53mnNNXMHMgmyqIaTzqpLbZPLTjx5x4DWtiidamz9uk6DHs7XdCV391GDrgp9EgconzxpxwDFSUJcF5ylxuz0ZboGeYkhN2akEV82xT8/Hg+0qOzdEx5PpR5t63dPcQay0EO2A93ELb+moADEvkionToHW0whEWBWQ07Nyz7D+QnmU1izU9LgMlZNnWx+Mov1Qt4JtzF39roPwJzuTfMg5oy1cY1RuzASPB5yHuGy+E790x48lhQnrqVVqtsHtrjsEYbReTGZ3S/C8A0Fd1e2TZv17q1QMZeuDz+JK9wTmZtmdwlnppCCyzoI4o0SJQV9RaSCB5UoZIJLcAjDAUuLednDRbRvxIbrlCEgFGMSZBnKdQoL2KboKZVihWiEvD4/CTzySE0jNgRDzUu69M387WFZybmPwaWt5/0At5vIj9AkteihRQ9xBpyGCGWyTSMX+0A3JbxnJ6V3ukNzWgl2Bjx6HRQLeh8ilznc+sjlYkA12mKA9+SKfkrm66H6sbNhMCwCy5+W+GQZG4dj3SYXXsVOExtVCWje8Cejh4+knhgxeVe13f9wOqFgFUZR/t0+x1veedd2ptBbI5xEfbJLjkB7m89YXHaortBq0Fehx2Z6YWbf3tzTYmeUAlr84R4ZT4jbmXZaq8+ap/v9jZlnDTsue9yawe89gqtwhdmNF+ieac34qnWmMCQRvA5W3x8gSW9PcLJli0h7gfhvhwr2zmVBJbKnY2fT+hoxPOeIh/dOA8vbLElBLMr+SCkhuV+KxEDMJz1J3rSuad1JtHapHm5/sNRe0brTQWvbp0brLjQM7n74d1z5lAI5cPtz963Z5RBU/8H3m+YSFjxpQrPAc00fsvCJxlvbf/O5PgcotWhDRJr7MgiVQEvF+DxrTBMXlI5r6H1FHRzUxHCM2rB+16yZGC5fpcfE3OFL3cN4KXVcG2q1Q4b0sjART2LFCrNlWEGLHYElcgCuSqobghdBWA0Nv62NOAISTlEkN+vSKdBZnN3g9W601kyIFyvwe6tL6ipN2Ak+kKwHQ7pFM+3ATyQVXemyfCSLQZW8bPDMwFOyXqc2wwQ32RDVjV+A2JvW5mBf3IwTfsuiImoHmOkckIKg3zHajAzZiHg7m5mOZtUIfLhKUBKVC4PQ/JW7cj9sKYH/4TsNiZ3DNrPr+R1qhpRZhPhpGgBBhDTLWwdyoGVtSMYXwoTUABvlx2SLEitWIXTv2EWy0tfMEkicvrn8
+    properties :
+     x : 56
+     y : 104
+     width : 246
+     height : 44
+    dropdown :
+     internal_properties : CAAAAAgAAAAD2PDPzNxcVjg28BCaNJxjz88WKFHCs22kkHgXcKbi1YFBH25CuOX8FQnL8tLq6K1qfjQhULq0S1p8T/lQZ6xn0FfZH9+QtVCvTXwvEC6a6EyX/sLiL4mvRzo9HUklS5TiaYIBhewrJFDubevWbbUJ84G6YpceZeApVmSLlw475LvVDtCd/crDS+JL1tM5FnX8ivRzcFi7TBBKckooH60daYe3SRLxVTM1kX8BO+EIIcLF53FXXJqri2MHj2PBQQ5noSVOJp+c72dPfGJJq48tiELsCIOoCdgGHF0j2a9+70dLFbGNwVKnsVmzYK31hNBHEM2UhhqzvjQn97N3sIvVapX1ERoLzWmUMeRDbNbrLBxqHGBDE7lC4FXlFW58nMUrwSKgjMvtHpsfUg5OuPaDFmq9rQ6IfOJeRe0n+oCYXo8LT/K9ZjxH/sE79So0xBNjOr18LqrpfV/znWw/nYfGpcurQbq8HyNdHBk+juhRPMReNWyZ8ikIrD/0fWwRpGMfImUGRo01G4+7uNNUvLMs3bmTTkS3YwQ1Bp+2kkR2Z7+tOWPgkHYa9lLQEv39lpmH8X3egt+AxaGGHFBhOrZBPy3lfrTQrSfKvr8oH6ORPp0cUE18PRvY89nbMBNU3Ndy6TIF+aj9dxfRiUdBTNZjOs+RkKTUsu258/Hw7Z/WDlllSnt+7AoL
+     type : 7
+    type : 14
+    code_elements :
+     type_code : 23
+     p_codes :
+      -
+        code : |1-
+         
+         stRayon est un STRayon
+         
+         // Active le retour par gLien
+         gLienActive(COMBO_RAYON, Vrai)
+         
+         // Racine
+         ListeAjoute(COMBO_RAYON, "..." + glien(""))
+         
+         pour toute stRayon de MesRayons
+         	
+         	// Ignore l'entrée 'Autre'
+         	si stRayon.GUID = "" ALORS
+         		continuer
+         	FIN
+         	
+         	// Ajoute l'entrée dans la liste
+         	ListeAjoute(COMBO_RAYON, SansCaractère(stRayon.Nom, TAB + ESP) + gLien(stRayon.GUID))
+         FIN
+        type : 14
+      -
+        type : 35
+        enabled : false
+      -
+        type : 17
+        enabled : false
+      -
+        type : 116
+      -
+        type : 117
+  -
+    name : SAI_LIBELLE
+    identifier : 0x266feac537e5fc59
+    internal_properties : CAAAAAgAAADYrmM8Wv628i0hJOuhKJmCkZVBQ2EAVHkaCHZBuivSGKcHi5FMqY8n7U0ffJ+7NUuSqh0sNHR6EHd5pGd3V430WWt7JRpGOqwrgwUsPlhKD7IPabQ2jud94YrnIYQLOfiysBvwcwAICNN6fi3C2v19PfURlVt236AHPsCcP0RFf72DxclQ1TtEwQhLI2c81yJp0wO11EJ5e+HovX+b4AsCwgK5HuEiIAZzsTtT26xZjalkiXhtuIwEDED/iyJrB5kQLw5M9pra3B0FBEfmYMEaA0ZEci5nz463ty8imC8/ujVWmn3aRlMoaOPf3REGM6rhI8thZ1tjKJXlI4cgFrI09jrDD5Wo3LgLDJz5jU7n7TeBPL7LSDozAwvmvlJ5tN/S9EiboZaaObxh7SxmDqsCGtMkoUnGYJTnaxmLW0xHf5mrCI8GK9FhhCPv3GGnydFt/cGTVfvChlRyFEgJ48YF1LRGRLVTf2iyBuFrIDrGeNpa6CBlrTkt4PvWL5gp5Wgk04F1T1yomW7Mi8hcaOy6qkA1CW0ZCYryCRZSDaWL2JmhgcCrWmvHbpAILZ5tT0COM0xsXXTISoTNImU+OU/R4ATkMFRKaHVv3GvfJYG5Ch/QEycnpwnEzrMpTI2dSlvcaHx+OGYzkolBRjh/cerR++Yysz57nTuo0rlN1vk2xrRz3NuxKGLAO7DIB5wumzyTZAsQdKJc8rQN8/Kl/iTaM/8seNGGajfdOvsuWNel/VJ1M47iP8KgW7jr61TJdmYjxn0sUttGKwhHdVwpCel0E1OksGVPAsG7OTltykphuIdtmeNJnd4BvWcQYGJYz/XhYTfd3zVifdZ5XHoilltvP/1a8RcNN54GHaxuDjle5EsBVVX43FzFONoWaEp3OcXZNqMVCoy6BOCrrrFUjtqZ9cCzKsIpBt3FUtSiLJVWCzy7YyvwtzHRhNlzdFMlpokuxm5lVHKifgPllXrn/BbedEMVFXhZpm5xsuYE/D41ZOJ9lgA+36F+xq15Zl7RSY8OEuQfC+1sxHc8/5b7jfWDBXnGYGnlxXUZ/PQscSMTcP2XXNUrl3EuUjQaQ8Dk5dO229CS+XNLXBSW5YvyXHTjk8pbtqa1wpHhvD2ISi9w98mHcJ9We28RItT/z9G5w6++b8M8S9ZGq2R2cFHMA9P6vH0BLOkNAMh35vzGDY+evFj1MGJrCS8WHEkDBcmVS4Q8JOyBPmL5pAj3NU/V3xuvZtQN21wcvT5t2GKDATxXO8YxlcmRANFnSnXvfjeyo2Kqs08=
+    properties :
+     x : 56
+     y : 58
+     width : 246
+     height : 44
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : IMG_SECTION_INFO
+    identifier : 0x266feac537e6fc59
+    internal_properties : CAAAAAgAAACilRokNZo3Z7POogQ3b4C33aMtzk6YGot9f9/ZoJUNKIfLhlaeEu/bfgWEcSPkOXiU0RlV42JtKgWJfyg5nQxO992agB4NheJlYQarYs6kcevWHFn3OZf6saBlDBFneVnIy5TfHZg0gL1LUvNE8B01wk7/X0k4kjw8giGWZI+r2hWKw+7Ty5xz1CbkVju24N5M4DABUIylD53Yy5sunIC0EeqyCHJNmIiK4yhqWPm+3UnfX6Pqtg5hYhCGhxaeyu5cnfnCCdNufKU/Rqh8N3PyhbJClYfpEI/bW2Xd+/4nfvnVQvl+3pbEffupFoDtHZvH/5nnUHaZbm1ko2ibVfIJwHaPTNMhlkUxYYET5Mc0F9g2gLlsWun59DKJZDYATkAqDY2DrZmeHinbKM5L8yoBk7XpFdWjgR/qO5mb31JIRDFk6Ld3UJjM044/XZ1cjeSJ+1xSFqTUW/Z129wN9KUZwxSrq3ZL7f6sA+bJo7iU/qIQTR6ZNO/QyIWrAEnu6l0Bo1gcpLnLwPNw+SLeFhA2eOVwBUq9ZOJMfog0wSY9cl63bz6K9AyUY2erag1qD+1tX8zi7019ZryJbHHFgEtmFB1oNqYOBjBiCgyp2Ds6z9PAOFAUzwRFho8N3Cdqt0qeJAE5f1jLhsGwopHK+Iq1Gl/SG3+ElqkViFgpTfOYdHTuwXXS+TDWc0dFuXjTv/DHxF6fh3zU0W+w5fd1JRKL78fgELJR72CnE9JLw1nqKNU6Fb8i+W3NMefyUl7NUqobOR6Rktq/ocfEn56G4rnhv2IU5/wv6NiraW1nOQ0b+uDZ84j0z+im1CYf/R5SKr3OgBWvymhyHvwW+CnwJI9wVoZZMQU=
+    properties :
+     x : 16
+     y : 68
+     width : 24
+     height : 24
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        type : 18
+        enabled : false
+  -
+    name : LIB_TITRE
+    identifier : 0x26bcc422300b940a
+    internal_properties : CAAAAAgAAABvUh5VgEd7Lzs70WOIhwM69fgzH3C2pugklDA1iXazS4d4D6f845IUd9ICU7SR8qYLbt0xs+WKw/bo2qAszYYB+1m0kmcX0d1UfGGFO1YuErSD1IbC1JOeSzjQnjVm382tX7qLbkok9pyMwMeOo5LMN3NjK5Mgb9iJhrGtD624apJRQEVK7pSPkMR0V2wA7PenpufrjUSz0yX8p736oiBC6kI+g9Sh7zTQuD6JW4lna+qJy6LIIgi1xlhm7TxvXnGJ5igcCr4byTJBRwq7nyGz07zbeIZvL+xvwQS5vZnaL/aK8XIAltJ3F/WqtPQaZWLSUtslewdEae3MqOxuBqbd4iMmAbk8Ed6i45LHKZjPgM0niku8FDAwtSbgWFggEya+4rkK4IVa9fpIY2G7Wrtz2RpTVExH1a8OumxkiJ97pGpV7NP9pvXDb/XVd/0pNo0rQJE2+KcBZkPPZx2oEYfTB3rdoDWNl0gk1wlXpPev6pyyVK4tOqCVbgvAaz3ZblD8U1ZrnlqFAuHzfiBjjHP6ylLlWjGHRhaaogHwVA==
+    properties :
+     x : 44
+     width : 272
+     height : 44
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 18
+  -
+    name : BTN_VALIDER
+    identifier : 0x26bcc49530b554d5
+    internal_properties : CAAAAAgAAADIf2TgTG7v6K7koPuQgIHQIUYBcAxV1VCosHoJsfr5fEB+8PRqXb1mB0rS5Jz3923g+CrVzE1RHEbRzWygKeALdBTcoXG7XZGZrD2YyD7v8Wq04JBCKd2KbTXBqpwyRU4YJcyscZnkXQP5CdI9N4UjGnLZS1vLRpU2oAscskqHbukM8+2l7QUU1slOH7DqhAtLJM4Hw0CoETmR5APRTUlBrp3QbaDaLEHEDN1Q6KDKjxQCeYo2sXoExaCVcnVb/VNsZIHS+AD3kiScMFBz5dHp+25piCfUTOtqSV/eGj2uf75dpiAFUkZKAnSrBadAFjPFPkMpTTfdPTaNhA3hiE15cSeaAxYIpq/fmbDHuRzePAfX5xX/Hs+GNVeS0ks9u/HFNEX7CJdW6OYRHmcXX6ffFt40Wg+79qpuYVO32EcfXlVLXTp7SMuQaVbaFgiGlJh8oXO7iUAl9IwWh7Dp0nXX9Ck0dTlKRnQN0SJhWRe9E5Cw/8rYgsJpR3wHMyN3yCwarqTHPsRKF3eDuKqX6EDIy8wCPGPTDr3koJ+voi15Yd7BGKP+mLK9/d09ZBVXbVl0dRqFw3b8AsVb1YKBYydjsZ8SztkS4Mve9ujn6m4WGIeD+9L0cFa8ZOWuffXCJ6sIsaBuhw3n8Jc3ks2DBE/n65RdeC9UWxh2rbiLN+596VAD657FbC00KioLUysGZ+7ry0y6RkZ2a8xIw8zX7wDTDI4tpriEPS1L6EBFX6afiJska6dGWa2CtnBPdyy7oGrxHjrQQxVjW6oJiNbpenC3g5iCg6EGgk4ERHUSq+TbM+hsGvpC0nxxmamt2nGgR/m7Q54sXAh+blrADfIDWoMFOJOOaq3XBCPrsHI9f0B6beSViBfDhWl+Xru+21ShVBoVymbv6Vs8xGDEus6yz3aQ7M6vpZH14541H0DaxHipsM0lRdr8QuxN8T0+87OAiobnVsOjwiLYeb+LJtp4ju3FRA==
+    properties :
+     x : 246
+     y : 186
+     width : 56
+     height : 56
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         
+         // Valide la fiche
+         ValideRayon()
+        type : 18
+      -
+        type : 161
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x266feac537dffc59
+  internal_properties : CAAAAAgAAACAkTRsXyckh3eLaYaIM9DmcNcEiukyWgoEGUO3hUeg1+15budaaIaELU/eVSEqxw8QkX3HWM39baoPxCEIuKDNnVLbljeu3FjwfC22HFPeGEcvoVZ7y4cHgEwdTYspmSZie+ELmKA5EwMv84AxnMOnXVQq6cMP/xsZpUo+qgqu3cXo5fDzspGpk7UzllmSY4giRWfuHVgo5nww34LIJK3Sct20Y4g0lSakwdJrBBGgsbqxEEy9AzPzUkA2v1Xzp+V46FJpsdiEZpuE4dPRaqPPayuBiQJ//KlNfM1UyYXv
+  options :
+   -
+     name : OPT_VALIDER
+     identifier : 0x266feac537e2fc59
+     internal_properties : CAAAAAgAAABp7iDllcZb+if8f9iWR7Wk6OL118Kx1vh1e2MbUV+BBaUs5Zj0yAqKrC8gNkb65NnMnDETELPEPBQ9cQkqpYYct3djBrD1nH6KfG6nvedoaZFAsYw+SKcfw67Qr+lV+tw3pwke+TXqwGCkAwRa+nPC/GS6OgexyM65o82nOEt/hlRGHYJCzuJAegyzzJJ8EgMjM+AeFuLk0Qx/2S4SQDzCAJcQnPaic8RLKv5uVOWcKrCc+oaj5AkuPR2AS+fNOInXSO0SctMDHvGv0RIhRJroqqQyW9wxd2mK/ILuTqQ7bFeldzd2oJOKLXkWPnzjw/UVo6RT
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         code : |1-
+          
+         type : 32
+  code_elements :
+   type_code : 26
+   p_codes : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAABqXR5M5wvxm/nAEIJpj++C7hZZeHyOooTSzmSVymRpd1lu4yGW0Fv/uWn+xeTjefDWcpp1Ejzr37eS4JUwRWCn/voVZ2bj3XMTt18T5EtHyKzVrYS+rTQZMiMr
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      PROCEDURE MaFenêtre(local RayonSélectionné est une chaine, LOCAL gsGUIDRayon est une chaine = "")
+      
+      	EstNouveau est un booléen
+      	
+      	MaFenêtre..ValeurRenvoyée = ""
+      	
+      	// Nouveau rayon ?
+      	si gsGUIDRayon = "" ALORS
+      		
+      		// On crée une entrée
+      		HRAZ(DonnéesPerso)
+      		EstNouveau = vrai
+      	sinon
+      		
+      		// On positionne sur le rayon
+      		HLitRecherchePremier(DonnéesPerso, GUID, gsGUIDRayon)
+      		si pâs htrouve(DonnéesPerso) ALORS
+      			ToastAffiche("Rayon introuvable")
+      			ferme
+      		FIN
+      		
+      		// Parent
+      		RayonSélectionné = DonnéesPerso.GUIDParent
+      		EstNouveau = faux
+      		
+      		// Libellé du rayon
+      		SAI_LIBELLE = DonnéesPerso.Nom
+      	FIN
+   -
+     code : |1-
+      
+      	// Attribue le rayon par défaut
+      	COMBO_RAYON = RayonSélectionné
+      	ecranpremier(SAI_LIBELLE)
+     type : 34
+   -
+     code : |1+
+      
+      
+     type : 234
+   -
+     code : |1+
+      
+      
+     type : 165
+   -
+     code : |1+
+      
+      
+     type : 177
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 40
+  procedures :
+   -
+     name : ValideRayon
+     procedure_id : 1616768923337096281
+     type_code : 14
+     code : |1-
+      // Résumé : Valide l'édition du rayon
+      // Syntaxe :
+      //ValideRayon ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE ValideRayon()
+      
+      	// Vérifie le nom
+      	si SAI_LIBELLE ~= "" ALORS
+      		ToastAffiche(<§Rff0001af10fe68c2¤fr-FR¤Veuillez saisir un nom§>)
+      		DonneFocus(SAI_LIBELLE)
+      		retour
+      	FIN
+      	
+      	sIndex est une chaine = ChaîneVersIndex(SAI_LIBELLE)
+      	sGUIDRayon est une chaine = COMBO_RAYON..ValeurMémorisée
+      	
+      	// Vérifie qu'un autre rayon ne porte pas déjà ce nom dans le même niveau de hiérarchie
+      	nIndice est un entier = cherche(MesRayons, tcLinéairepremier, "NomIndex", sIndex)
+      	tantque nIndice > 0
+      		
+      		// Même niveau
+      		si MesRayons[nIndice].GUIDParent = sGUIDRayon ALORS
+      			
+      			// En création ou, en édition si le GUID est différent
+      			si EstNouveau _ou_ MesRayons[nIndice].GUID <> DonnéesPerso.GUID ALORS
+      				ToastAffiche(<§Rff0002af110068c2¤fr-FR¤Ce nom est déjà utilisé dans ce niveau de rayon§>)
+      				DonneFocus(SAI_LIBELLE)
+      				RETOUR
+      			FIN
+      		FIN
+      		
+      		// Recherche suivante
+      		nIndice = cherche(MesRayons, tcLinéaireSuivant, "NomIndex", sIndex)
+      	FIN
+      	
+      	// Mise à jour
+      	DonnéesPerso.Nom		= sai_libelle	
+      	DonnéesPerso.NomIndex	= sIndex
+      	DonnéesPerso.GUIDParent = sGUIDRayon
+      	DonnéesPerso.Code 		= ""
+      	DonnéesPerso.Image 	 	= ""
+      	DonnéesPerso.Produit	= faux
+      	DonnéesPerso.Langue	 	= nation
+      	
+      	si EstNouveau alors
+      		DonnéesPerso.GUID = DonneGUID(guidBrut)
+      	fin
+      	
+      	// Enregistre
+      	HEnregistre(DonnéesPerso)
+      	sGUIDRayon = DonnéesPerso.GUID
+      			
+      
+      	TitreSuivant(<§Rff0003af110268c2¤fr-FR¤Veuillez patienter...§>)
+      	sablier(vrai)
+      	
+      	// Mise à jour des sources de données
+      	SourceActualise(Vrai)
+      	
+      	// Mise à jour des rayons effectuée
+      	ListeManager.DéclencheRayonsModifiés()
+      	
+      	sablier(faux)
+      	TitreSuivant("")
+      	
+      	// On renvoie le GUID
+      	mafenetre..ValeurRenvoyée = sGUIDRayon
+      	
+      	// Ferme
+      	ferme()
+     type : 458752
+   -
+     name : FenForceOriention
+     internal_properties : CAAAAAgAAAD2+FqzPNS094ztTsgIE0C3X1dZrL5HTAwU1iEKt/NPIIiquojuNZ2U4/6KZUzDWA+IMm1HAyAUlLKI4N3I69AgcU+cU99T5eXJmff+kG+ODgyVNOgLTuNigr8FsIqFXo9nc5I/FrbWclnPZw==
+     procedure_id : 1637990717883708618
+     type_code : 14
+     code : |1-
+      // Résumé : Force l'orientation selon le matériel
+      // Syntaxe :
+      //FenForceOriention ( [<bInitial> est booléen])
+      //
+      // Paramètres :
+      //	bInitial (booléen - valeur par défaut=0) : Vrai s'il s'agit du chargement initial, Faux sinon
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE FenForceOriention(bInitial est un booléen <utile> = faux)
+      
+      	<compile si mode_android>
+      
+      	// En mode téléphone, on force l'orientation portrait
+      	// En tablette, on force l'orientation paysage
+      	SI pas MODE_TABLETTE ALORS
+      		FenOrientation(fenOrientationPortrait)	
+      	FIN	
+      	
+      	<fin>
+     type : 458752
+  templates :
+   -
+     name : FEN_RAYON_EDITE
+     identifier : 0x1543dafd072ef05a
+     code_elements :
+      internal_properties : CAAAAAgAAAAhCui00Ejh+WJETqaAxKr14WvjNcHsGW/DfUz4gmyNMj+3FtPCSzgTJM2477J3f+/FeDgZURum3jkjg0kB0ifpjM0Bqa1DpGySMRE3bzO4JegUW0HPzuMlwUewCEgHU5JbFX4Efx/kujwE2nEylQ==
+      type_code : 1
+      p_codes :
+       -
+         code : |1-
+          
+          <compile si mode_android>
+          
+          // Force l'orientation selon le matériel
+          FenForceOriention(vrai)
+          
+          <fin>
+       -
+         code : |1-
+          
+         type : 34
+       -
+         code : |1-
+          
+          <COMPILE SI MODE_ANDROID>
+          	
+          	// Force l'orientation selon le matériel
+          	FenForceOriention()
+          	
+          <FIN>
+         type : 165
+       -
+         type : 180
+         enabled : false
+       -
+         type : 230
+         enabled : false
+       -
+         code : |1-
+          
+         type : 40
+      templates :
+       -
+         name : FEN_RAYON_EDITE
+         identifier : 0x1543dafd072ff05a
+         code_elements :
+          internal_properties : CAAAAAgAAADlRY7t4t14ipTBnMvFyK356dCHOVNLTE8xuVMgAIrNAEE8hbd5ibNPbor1N69df408WH89LOyFhZFVfLA6g+l6L6ErFsGJ7g==
+          type_code : 1
+          p_codes :
+           -
+             type : 180
+             enabled : false
+           -
+             type : 230
+             enabled : false
+           -
+             code : |1-
+              
+             type : 40
+           -
+             type : 11
+           -
+             type : 12
+           -
+             type : 17
+           -
+             type : 13
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAADhvPsd0/lIc7xezxCjKkBs9Vpbktj1S0Ici7MCEsczpxZIiZTBfH08nGomECeZQKqnUY2w6uzMVK5KWdftK/mAeknK/Fujee5Z3/SUONW6PpUAAiMuVPKHp6mDKZophp/oy/krDHG1YqjSe+DoLUBoxRu6/tiSdOSaJHCJrKdu7Q==
+resources :
+ string_res :
+  identifier : 0x166fe7c90f4c5699
+  internal_properties : CAAAAAgAAADGMLzgICvFZWQ7SDjzqICVzdMpVkcQ3Pl3kAo8bXzkeXlB1MFY/SokC1WwnW2C4uqEuGH26tod
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

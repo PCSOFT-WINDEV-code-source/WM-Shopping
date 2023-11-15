@@ -1,0 +1,505 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : COL_DATA
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x15fffbb10ec2ed6c
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     code : |1-
+      
+      constant CST_AUTRE = <§Rff0004af115e68c2¤fr-FR¤Autre§>
+     type : 720896
+  procedures :
+   -
+     name : RayonParent
+     procedure_id : 1585291774004660221
+     type_code : 15
+     code : |1-
+      // Résumé : Renvoie le GUID du rayon racine parent d'un rayon
+      // Syntaxe :
+      //[ <Résultat> = ] RayonParent (<sGUID> est chaîne)
+      //
+      // Paramètres :
+      //	sGUID (chaîne UNICODE) :GUID d'un rayon
+      // Valeur de retour :
+      // 	chaîne UNICODE : GUID du rayon racine parent
+      //
+      PROCEDURE RayonParent(local sGUID est une chaine) : chaine
+      
+      	// Rayon nulle
+      	si sGUID = "" ALORS
+      		renvoyer sGUID
+      	FIN
+      
+      	// Recherche le rayon demandé
+      	nIndice est un entier = cherche(MesRayons, tcLinéaire, "GUID", sGUID)
+      	si nIndice > 0 ALORS
+      		
+      		stCat est une STRayon = MesRayons[nIndice]
+      		
+      		// /!\
+      		si sGUID = stCat.GUIDParent ALORS
+      			RENVOYER sGUID
+      		FIN
+      		
+      		// Récupère le GUID du rayon parent
+      		sGUID = stCat.GUIDParent
+      		
+      		// Le rayon est un rayon racine
+      		si sGUID = "" ALORS
+      			renvoyer stCat.GUID
+      		sinon
+      			// Appel récursif
+      			renvoyer RayonParent(sGUID)
+      		FIN
+      	sinon
+      		renvoyer ""
+      	FIN
+     type : 458752
+   -
+     name : InitialiseStockage
+     internal_properties : CAAAAAgAAAADizKA4a8R6ce/RWTFR/GZ8szXB4rn1MEnyhg+seKyj73BwwiMGsjfS9XKvSov3hsGsekJm96inFJMfn8uVfRHFRtOucN0xNbRDgGtJMdtV6npDIJQ0iNQz99EzEPrivQFXOuFh4XQvQGBnQyP5P08NoE5LL0DiyqfiT27hh27+h9VpYhkjXTQxqFdpUEGiBJECOrQ4luu+ME6uvlsfk8he1LIxblsvRhwyyMpCehQfCmI0cCQPhIZOkutOEH8V/IQEA==
+     procedure_id : 1586027476120303877
+     type_code : 15
+     code : |1-
+      // Résumé : Initialise les dossiers de stockage de l'application
+      // Syntaxe :
+      //InitialiseStockage ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE InitialiseStockage()
+      
+      	si EnModeSimulateur() ALORS
+      		
+      		// En simulateur, on prend le répertoire des données du projet
+      		DATA_PATH = fRepDonnées() + [fsep] + "data"	
+      		DATA_CACHE = fRepDonnées() + [fSep] + "cache"	
+      		
+      	sinon
+      			
+      		<compile si TypeConfiguration = Android>
+      		
+      			// Dossier de cache système
+      			DATA_CACHE = fRepCache()
+      			
+      			// Dossier des données
+      			DATA_PATH = ChargeParamètre(PARAM_DATA_PATH, "")
+      			
+      			// Aucun chemin paramétré ou chemin inaccessible
+      			si DATA_PATH = "" _ou_ fRépertoireExiste(DATA_PATH) = faux alors
+      			
+      				// On prend un dossier sur la carte de stockage interne (+ le nom du projet)
+      				DATA_PATH = SysRepCarteStockage() + [fSep] + ...
+      								ChaîneFormate(APP_NAME, ...
+      								ccSansPonctuationNiEspace + ccSansAccent + ccMinuscule)
+      				
+      				// Si on a une carte de stockage externe
+      				SI SysNbStockageExterne() > 0 ALORS
+      					
+      					nCarte est un entier
+      					
+      					// Teste chaque stockage externe
+      					pour nCarte = 1 _a_ SysNbStockageExterne() 		
+      						
+      						// Le stockage doit être amovible et disponible
+      						SI SysStockageExterneAmovible(nCarte) _ET_ SysEtatStockageExterne(nCarte) = sseDisponible ALORS
+      					
+      							// On prend un dossier sur la carte de stockage externe (+ le nom du projet)
+      							DATA_PATH = SysRepStockageExterne(nCarte, sseAppFichier) + [fSep] + ...
+      											ChaîneFormate(APP_NAME, ...
+      											ccSansPonctuationNiEspace + ccSansAccent + ccMinuscule)
+      	
+      							xlog("External data path detected :" + SysRepStockageExterne(nCarte, sseAppFichier))									
+      							sortir
+      						fin
+      					fin									
+      				FIN
+      				
+      				// Sauvegarde pour le prochain lancement
+      				sauveParamètre(PARAM_DATA_PATH, DATA_PATH)
+      			fin
+      		<sinon>
+      		
+      			// Dossier temporaire
+      			DATA_CACHE = fRepTemp()
+      			
+      			// Dossier des données personnelles
+      			DATA_PATH = fRepDonnéesUtilisateur()
+      			
+      		<FIN>
+      		
+      		XLOG("Data path = " + DATA_PATH)
+      	FIN
+      		
+      	// Les images sont stockées dans un sous-répertoire des données
+      	DATA_IMAGE_SUPPLIER = fSéparateur(DATA_PATH + [fSep] + "images\suppliers")
+      	DATA_IMAGE_PRODUCTS = fSéparateur(DATA_PATH + [fSep] + "images")
+      	
+      	// Crée le répertoire des données s'il n'existe pas
+      	SI PAS fRépertoireExiste(DATA_PATH) ALORS
+      		fRepCrée(DATA_PATH)
+      	FIN
+      			
+      	// Crée le répertoire du cache s'il n'existe pas
+      	SI PAS fRépertoireExiste(DATA_CACHE) ALORS
+      		fRepCrée(DATA_CACHE)
+      	FIN
+      	
+      	// Vérifie l'existence du répertoire des images
+      	si PAS fRépertoireExiste(DATA_IMAGE_PRODUCTS) alors fRepCrée(DATA_IMAGE_PRODUCTS)
+      	SI PAS fRépertoireExiste(DATA_IMAGE_SUPPLIER) ALORS fRepCrée(DATA_IMAGE_SUPPLIER)
+     type : 458752
+   -
+     name : InitialiseDonnées
+     procedure_id : 1588521572076273937
+     type_code : 15
+     code : |1-
+      // Résumé : Initialise les données HFSQL
+      // Syntaxe :
+      // InitialiseDonnées ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE InitialiseDonnées()
+      
+      	// On ferme tous les fichiers
+      	HFerme("*")
+      				
+      	// En simulation, localise les données fixes dans le répertoire des données
+      	// (en exécution, ils sont dans l'archive / répertoire DataBase de l'application)
+      	SI EnModeSimulateur ALORS
+      		HChangeRep(Données, 	DATA_PATH)
+      		HChangeRep(Fournisseur, DATA_PATH)
+      		HChangeRep(Unité, 	 	DATA_PATH)
+      	sinon
+      		
+      		// Si nécessaire
+      		si VERSION_BASE > version alors
+      	
+      			// Extrait localement les fichiers de données de l'application
+      			HFExtraitRessource(Données)
+      			HFExtraitRessource(Fournisseur)
+      			HFExtraitRessource(Unité)
+      			
+      			VERSION = VERSION_BASE
+      			SauveParamètre(BASE_VERSION, VERSION)		
+      		fin
+      	FIN
+      
+      	// Données utilisateurs
+      	HChangeRep(Historique, 	 DATA_PATH)
+      	HChangeRep(Liste, 		 DATA_PATH)
+      	HChangeRep(ListeContenu, DATA_PATH)
+      	HChangeRep(Personnel, 	 DATA_PATH)
+      	HChangeRep(Note, 		 DATA_PATH)
+      	
+      	// Mise à jour des structures (si nécessaire)
+      	HModifieStructure(Historique, hmsSansContrôle)	
+      	HModifieStructure(Liste, hmsSansContrôle)		
+      	HModifieStructure(ListeContenu, hmsSansContrôle)	
+      	HModifieStructure(Personnel, hmsSansContrôle)	
+      	HModifieStructure(Note, hmsSansContrôle)			
+      	
+      	// Crée un alias pour la gestion des rayons
+      	HAlias(Personnel, DonnéesPerso)
+      	HChangeNom(DonnéesPerso, Personnel..Nom)
+      	HChangeRep(DonnéesPerso, DATA_PATH)
+      	
+      	// Mise à jour des sources de contenu	
+      	SourceActualise()
+     type : 458752
+   -
+     name : InitialiseParamètres
+     internal_properties : CAAAAAgAAACoA/RSx8xO6dqa9y1KNpsi70SMnELjjR6IcuyVLXRSw/bbUUwxipAVwIhq8D6W1a7k3NTlzt6NQxDcBZ7MHAQlxzCKOjyyzzKm3voc7g9wG6glgwt3OOVyDmPOQEWWCKXFHCP5ToNXEBIF8IcW8huGv4UJQMqXkinSB3aop5M5JOAi3FB5eKcS/pM1g6bu/7VjEiXYS0A=
+     procedure_id : 1588521937155329321
+     type_code : 15
+     code : |1+
+      // Résumé : Initialise les paramètres de l'application
+      // Syntaxe :
+      // InitialiseParamètres ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE InitialiseParamètres()
+      	
+      	VERSION = ChargeParamètre(BASE_VERSION, 0)
+      	xlog("Current version : " + VERSION)
+      		
+      	// Chargement des paramètres
+      	USER_PARAMS.InversionGaucheDroite = ChargeParamètre(PARAM_COCHE_INVERSEE, Faux)
+      	USER_PARAMS.VerrouillerEcran = ChargeParamètre(PARAM_VERROUILLER_ECRAN, vrai)
+      	USER_PARAMS.EffacerProduitsAchetésAuto = ChargeParamètre(PARAM_EFFACER_AUTO, vrai)
+      	USER_GUID = ChargeParamètre(PARAM_USER_GUID, donneguid(guidBrut))
+      	
+      	// Favoris
+      	ChaîneVersTableau(ChargeParamètre(PARAM_USER_FAVORITES, ""), MesProduitsFavoris, ";")
+      	
+      	// Si l'écran doit être verrouillé
+      	si USER_PARAMS.VerrouillerEcran ALORS
+      		
+      		// En réel
+      		si EnModeSimulateur = faux alors
+      			
+      			// Désactive la mise en veille
+      			SysMiseEnVeille(sysBatterie, sysVeilleInactive)
+      		FIN
+      	FIN
+      	
+      	SauveParamètre(PARAM_USER_GUID, USER_GUID)
+     type : 458752
+   -
+     name : SourceActualise
+     procedure_id : 1588570233893200391
+     type_code : 15
+     code : |1-
+      // Résumé : Met à jour la source de données permettant d'extraire les produits et rayons
+      // Syntaxe :
+      //[ <Résultat> = ] SourceActualise ( [<bActualiseRayons> est booléen])
+      //
+      // Paramètres :
+      //	bActualiseRayons (booléen - valeur par défaut=1) :Vrai si les rayons doivent être actualisés, Faux sinon
+      // Valeur de retour :
+      // 	booléen : Vrai si les données ont été actualisées, Faux sinon
+      //
+      PROCEDURE SourceActualise(local bActualiseRayons est un booléen = vrai) : booléen
+      	
+      	sTabulation est une chaine
+      	
+      	<compile si TypeConfiguration = ios>
+      		sTabulation = esp + esp
+      	<sinon>
+      		si EnModeSimulateur() ALORS
+      			sTabulation = ESP + ESP
+      		sinon
+      			sTabulation = tab
+      		FIN
+      	<FIN>
+      	
+      	TitreSuivant(<§Rff0003af116068c2¤fr-FR¤Chargement des données...§>)
+      	ChronoDébut()
+      	
+      	// Nombre d'entrées de l'historique
+      	ListeManager.NbHistorique = HNbEnr(Historique)
+      	
+      	// Exécute la requête
+      	si HExécuteRequête(REQ_SOURCE_LISTECONTENU) ALORS
+      		
+      		// Lecture du premier enregistrement
+      		HLitPremier(REQ_SOURCE_LISTECONTENU)
+      				
+      		// Mise à jour des rayons
+      		XLOG("[SourceActualise] Extraction des rayons...")
+      
+      		REQ_RAYONS.pLangue = nation
+      		si pas HExécuteRequête(REQ_RAYONS) 			alors XLOG("[SourceActualise] (REQ_RAYONS) Erreur : " + HErreurInfo)
+      		
+      		si bActualiseRayons alors
+      		
+      			xlog("[SourceActualise] Actualisation des rayons")
+      		
+      			stCatParent est une STRayon
+      			stCat est une STRayon
+      			nIndiceInser est un entier
+      			
+      			supprimetout(MesRayons)
+      					
+      			// Rayons racines
+      			REQ_RAYONS_LISTING.pGUIDParent = null
+      			SI HExécuteRequête(REQ_RAYONS_LISTING) ALORS
+      				
+      				nNiveau est un entier = 0
+      				nTotal est un entier = HNbEnr(REQ_RAYONS_LISTING)
+      				bResteParcours est un booléen
+      				
+      				boucle
+      				
+      					// Lecture des rayons
+      					hlitpremier(REQ_RAYONS_LISTING)
+      					tantque pas hendehors(REQ_RAYONS_LISTING)
+      						
+      						si nNiveau > 0 ALORS
+      							
+      							// Hors rayon racine
+      							SI REQ_RAYONS_LISTING.GUIDParent <> "" ALORS
+      								
+      								// Vérifie si on a déjà traité ce rayon
+      								si Cherche(MesRayons, tcLinéaire, "GUID", REQ_RAYONS_LISTING.GUID) < 1 alors
+      								
+      									// Cherche l'indice du rayon parent dans le cache
+      									nIndiceInser = cherche(MesRayons, tcLinéaire, "GUID", REQ_RAYONS_LISTING.GUIDParent)
+      									
+      									// Si le rayon parent a déjà été inséré
+      									si nIndiceInser > 0 ALORS
+      										
+      										// Récupère les caractéristiques du rayon parent
+      										stCatParent = MesRayons[nIndiceInser]
+      																														
+      										// Stocke l'entrée
+      										stCat = [Répète(sTabulation, (stCatParent.Niveau + 1)) + REQ_RAYONS_LISTING.Nom, REQ_RAYONS_LISTING.NomIndex, REQ_RAYONS_LISTING.GUID, REQ_RAYONS_LISTING.GUIDParent, (stCatParent.Niveau + 1)]
+      										
+      										// Chemin du rayon
+      										stCat.Chemin = stCatParent.Chemin + tab + REQ_RAYONS_LISTING.NomIndex
+      										stCat.Nom = Remplace(stCat.Nom, "&", "&&")
+      										stCat.Perso = REQ_RAYONS_LISTING.EstPersonnel
+      										Insère(MesRayons, (nIndiceInser + 1), stCat)			
+      									FIN							
+      								fin
+      							fin
+      							
+      						// Première passe
+      						sinon
+      							
+      							// Rayon racine uniquement
+      							si REQ_RAYONS_LISTING.GUIDParent = "" ALORS
+      								
+      								// Stocke l'entrée
+      								stCat = [REQ_RAYONS_LISTING.Nom, REQ_RAYONS_LISTING.NomIndex, REQ_RAYONS_LISTING.GUID, REQ_RAYONS_LISTING.GUIDparent, nNiveau, "", REQ_RAYONS_LISTING.NomIndex]
+      								stCat.Nom = Remplace(stCat.Nom, "&", "&&")
+      								stCat.Perso = REQ_RAYONS_LISTING.EstPersonnel
+      								Ajoute(MesRayons, stCat)							
+      							FIN						
+      						FIN		
+      						
+      						hlitsuivant(REQ_RAYONS_LISTING)				
+      					FIN
+      				
+      					// Vérifie si on a énuméré tous les rayons
+      					bResteParcours = (MesRayons..Occurrence < nTotal _et_ nNiveau < nTotal)
+      					nNiveau ++
+      				
+      				a faire tantque bResteParcours
+      													
+      				// Ajoute l'entrée "Autre" dans la liste
+      				stCat = [CST_AUTRE, CST_AUTRE, "", "", 0, "", CST_AUTRE]
+      				stCat.Perso = faux
+      				insère(MesRayons, 1, stCat)
+      				
+      				// Tri alphabétique et par chemin
+      				trie(MesRayons, ttMembre, "+Chemin")
+      			SINON
+      				XLOG("[SourceActualise] (REQ_RAYONS_LISTING) Erreur : " + HErreurInfo)	
+      			FIN
+      		sinon
+      			// On laisse respirer
+      			multitache(-1)
+      		fin
+      		
+      		XLOG("[SourceActualise] Extraction des produits...")
+      		REQ_PRODUITS.pLangue = Nation
+      		SI PAS HExécuteRequête(REQ_PRODUITS) 		ALORS XLOG("[SourceActualise] (REQ_PRODUITS) Erreur : " + HErreurInfo)
+      		
+      		
+      	sinon
+      		xlog("[SourceActualise] (REQ_SOURCE_LISTECONTENU) Erreur : " + herreurinfo)
+      		renvoyer faux
+      	FIN
+      	
+      	xlog("[SourceActualise] " + chronofin)
+      	
+      renvoyer vrai
+      
+      fin:
+      	TitreSuivant("")
+     type : 458752
+   -
+     name : HFExtraitRessource
+     internal_properties : CAAAAAgAAAC4Qya3JCVtYwUnsOyhMWlzyivQ/Iepwle6+pIyXCypH/GeZSNVNZIvESSwSX4XUJ2oHc2hPpnvG+UlheNQak7TY3oULpv+zYIolSqKXSY76QyH1gO+hmrMcDRzsBXqZKRE9YIF6IAapeIGHIcW9ncij4UDvhgBojkmk2Iop3M14PLFow4DXS+nQd8iWtzsejC0WQ6bSu6E1MFhuA104XwE5gZwlsvxY3xEoLHZTVlBC8Jp0UPxfJgnzbLh3ujzhLCmJx/pe6qVXw+gnAIT7T1/oSnXxD9U
+     procedure_id : 1609781707186833249
+     type_code : 15
+     code : |1-
+      // Résumé : Extrait un fichier de données de l'archive
+      // Syntaxe :
+      //HFExtraitRessource (<Fichier>)
+      //
+      // Paramètres :
+      //	Fichier : Fichier à extraire
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE HFExtraitRessource(Fichier)
+      	
+      	bExtrait est un booléen
+      	
+      	xlog("[HFExtraitRessource] " + Fichier..NomPhysique)
+      	
+      	// Reprend le nom 
+      	sFichier est une chaine = minuscule(Fichier..NomPhysique)
+      	
+      	// Supprime les fichiers locaux
+      	fsupprime(fRepDonnées() + [fSep] + sFichier + ".fic", frLectureSeule)
+      	fsupprime(fRepDonnées() + [fSep] + sFichier + ".ndx", frLectureSeule)
+      	fsupprime(fRepDonnées() + [fSep] + sFichier + ".mmo", frLectureSeule)
+      	
+      	// Extrait les fichiers
+      	bExtrait = fExtraitRessource(sFichier + ".fic", fRepDonnées() + [fsep] + sFichier + ".fic")
+      	si bExtrait alors bExtrait = fExtraitRessource(sFichier + ".ndx", 	fRepDonnées() + [fsep] + sFichier + ".ndx")
+      	si bExtrait alors bExtrait = fExtraitRessource(sFichier + ".mmo", 	fRepDonnées() + [fsep] + sFichier + ".mmo")
+      	
+      	XLOG("[HFExtraitRessource] " + sFichier + " : " + (bExtrait ? "OK" sinon "FAILED " + erreurinfo))
+     type : 458752
+   -
+     name : RayonLibellé
+     procedure_id : 1612663205326093232
+     type_code : 15
+     code : |1-
+      // Résumé : Renvoie le nom du rayon
+      // Syntaxe :
+      //[ <Résultat> = ] RayonLibellé (<sGUID> est chaîne)
+      //
+      // Paramètres :
+      //	sGUID (chaîne UNICODE) :GUID d'un rayon
+      // Valeur de retour :
+      // 	chaîne UNICODE : Nom du rayon
+      //
+      PROCEDURE RayonLibellé(local sGUID est une chaine) : chaine
+      
+      	sNom est une chaine
+      
+      	// Rayon nul
+      	si sGUID = "" ALORS
+      		renvoyer <§Rff0000af116268c2¤fr-FR¤Autre§> 
+      	FIN
+      
+      	// Recherche le rayon demandé
+      	nIndice est un entier = cherche(MesRayons, tcLinéaire, "GUID", sGUID)
+      	si nIndice > 0 ALORS
+      		
+      		// Nettoyage
+      		sNom = SansCaractère(MesRayons[nIndice].Nom, TAB + ESP)
+      				
+      		// Renvoie le nom
+      		renvoyer sNom
+      	sinon
+      		renvoyer ""
+      	FIN
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_SansNom1
+resources :
+ string_res :
+  identifier : 0x15fffbb10ec1ed6c
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

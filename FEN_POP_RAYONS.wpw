@@ -1,0 +1,333 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FEN_POP_RAYONS
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FEN_POP_RAYONS
+ identifier : 0x25b20b9a152a18c4
+ internal_properties : CAAAAAgAAADPDCeERkH0Xkyy3O3uj+kEaEyDfSTgYx9wX9X9lfOUaiC3zd0At9TgViiW6zG6l9QfRvVR9RdVKKCK4ZE6r4LsZLDWkD00w20vtAlcgp5NsUV+8+Qs3YEGnX5dJMIfwF1ryH9RryqdPZIw0SghtILr5k+aH+1XK31TADVk7AIJamqiYl/OwQJiS4Dqancp/vG19MDqaosXfjv+xmARPslVrCqrUDslFkqH6/etDzdJSYNh8Ob9XsC2ReEb7pEsQXqtLf+k9Sd8G+MHhphxT/MT+BQB9mQATX0/RgyL4GQaYT2QN9OVhnna7a0+T7wKYncTIocGGOXfvR/N8CQvMeq+m+0q3Icdx+efcHRd7DOKTBqhTJ+XZ4CmyQEWg66KGfaTjgYF54WhK3ZacjS1ko+oUwCbpxFV0Sb35kCKxP+TpLnomrw4q3o6g+hOW+uq2PEvrkZE0L/ANvglD7T8buiAOXC6yYl/tomUEbMrIgCyechVt0wPV70OtoiWWLHaNj3W8RDgc1ApmevAdVZt9sDgmgOpIS7+VvPOi1t18LbBp/c1lv3BIhvd+4+JuuufJKcba/B617qCh7h1DpKp0QudN8jEn2Y0s8r6WSl/AR0C7ypJ+VGQlAq142Z6ClsxFCpWAzfkeCCqsL5bAmaZZx/muzMuZh5SdapiAeEgk6lB8GlYGrbC0U20zkuGtp9riOK9ligIhBo3Q+uCdYkBIxiZPuLLuWQORMk743tvxpVv7IxzQ7vcqOYn
+ properties :
+  width : 320
+  height : 407
+  heightMin : 471
+ controls :
+  -
+    name : ZR_RAYONS
+    identifier : 0x2656ce4609ab4973
+    internal_properties : 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
+    properties :
+     width : 320
+     height : 407
+    controls :
+     -
+       name : LIB_RAYON
+       identifier : 0x2656ce4609af4973
+       internal_properties : CAAAAAgAAAD4KC46OsO85+MU/EE8w4FO/lC1vfI8XhOd0Hkb+QIOffJFXs28gL6Ekn7kzP9Fi74cQEVMT99jtzXP0M+nDZVZVHeARihfpTpO8bsnuFEFBLCfQZcSqw0WlmowexrOxDnzfZMG6WNCY3tBblbN6NH2+dJNcK/dTpucF8c3wKtdhgLMtM9RIBNVMvzVdofVfBN/Pljr3mN1VUDkRRDf4J9c7ZQFuBMg1QGpKl4d0dK6bxi4XvoHaX0WYDKt+Ad/2ZreKjwyf4xJl9TYW+qkVgtDT7CXw1i9nH7xs/x0nl3Evr2W70t7Bho/C+GLf/EFRcPiUrVUdwiF6rgorPw5rJA/wlYLC4tCRe5D55Nn90IY9R9g573ezbaK++mfW9G72b6IFFp2IiEry6xVlZu5ENlocrho27HP7f6Phq3vobi7ilvsHewBuT5JulyLMmYmvk876JMgeyMn22a6IsAMi20CVNxzK4OhEF9honBmedRocx+30VVepOM=
+       properties :
+        x : 16
+        y : 6
+        width : 286
+        height : 36
+       type : 3
+       code_elements :
+        type_code : 2
+        p_codes :
+         -
+           code : |1-
+            
+           type : 18
+     -
+       name : IMG_FONDLIGNE
+       identifier : 0x2656d15f0adf60f9
+       internal_properties : CAAAAAgAAAA70aStlqXBYEZrRqaUTFc4xRcxWGb5Dyn71ONzFHnJx+k6d8M7gqesUtckSOTLw/X3sIhryDZX1o77DrmXWJWmN1ZcsT6k0L/T3ajKAcMNRjZGNEJiIHH0HrZrYksC/+6BFxjPX9Lz7WUuPsqAtx7H/O4EqSH1DgwuSwTGZnnD4lfoj/fCt5gK3PPPrw+LsbTEEYftg0oA+X/K1AM5rtYFQMObWd49Y5UwHAxTBP/uZc8ybN+3+TthVm+5iJpojPOoUK+qSCbDVRsGoV8kitkSVjWOxOv3rqzVOIQ9cgn1G7DMKQ0HxsWdI4Wo5OWziRrLKz15JRYrl7TGYO/y2NpMtO1D0h4TnTAmtx1b90UO5npZq9AIq7G4EUTMRE5dCkNxg2HY9mJ1hTslqIs6Es3IMgxw7ERlIuDbeYso5AoKS5XSLFwNDCBEVIqx7UUZ77ZI+CARohx0WgL8HdWeJfOd9Xzr1PTuE+WIDNAZGDv4LilLrw/vl/p/zxKGGXQfSNKK54yWQ1/XDM0Wed71shWYiK1jth2BWxVF5+KYoOO+7inbCjAQf4jmPzNcNc0sMTcx0jw3X+3hr1aNAqYB/VmThzm2IHrJ5UpihZ/35H4WUShFp+UTPlIfLT83JFGQUMBQ/REk1nWq43bmCYp1HBoPPrirWUqJjUkWZhMDP18AzNcSG+1bJ/QzREzQKBrLsNymVb7vF7FxuvBs5Py+dB9JZCBqY0KGUyUkd5KnCfko9ZpbwqeVPYTMudJJ2AerCZUjXxys4nHxFt+871iKza4ahzQ4
+       properties :
+        width : 320
+        height : 48
+       type : 8
+       code_elements :
+        type_code : 8
+        p_codes :
+         -
+           type : 18
+           enabled : false
+    columns :
+     -
+       name : ATT_GUID
+       identifier : 0x2656ce4609ac4973
+       internal_properties : CAAAAAgAAAAnIZsDG9nNQXRjbfoY7tJZRruHhW3uL60ct4QQnZO3OeDO9fJpCFLLGVCKWZpwxQGsCHARx1aLk8xWtltVtDS3KEtcQfo6x2Ed5OefHfsQFieMfR1mzEs/SUuRQI10AYvfJGod
+       type : 3
+       content :
+        identifier : 0x2543daf40bcccd03
+        internal_properties : CAAAAAgAAAA+ydwH69gPtZH9qoG8K7G6DH/mRhLAsIA4PXnwyQx9MV8BNs7UzvWB7NTCuEJWvBmA5CdsnUFWw3dCUBfdsaykjF1uve6LPYfwNBNWYEJulQmozEPUgRf5BggPT0njovHi1TUZ3dMWVWJDzVO7BYEECF/l1PEjm665bwXVv4LK4oa6xdFXhLX48q7GZuO+5fIY2l9pbbTIT9LWlT6k
+        type : 3
+       code_elements :
+        type_code : 46
+        p_codes : []
+     -
+       name : ATT_NOM
+       identifier : 0x2656ce4609ad4973
+       internal_properties : CAAAAAgAAAAZ+EhRt8TbyzDh2eBjC2EroM9SeeY/N1X9f0zR/2PqpEgCVV1Xt/kvR7qiR6KeLkYahNR2MaEMEK7lXDsp2oK7iY2IHgU0g6f98TzucUN+W3OvwniSCkupiIux877fUD3eoUKrJLanTuIHvR34D2HGF5m8JUBsd/XJ2OOYtSOWlQ==
+       type : 3
+       content :
+        identifier : 0x2543daf40bcecd03
+        internal_properties : CAAAAAgAAAA+ydwH69gPtZH9qoG8K7G6DH/mRhLAsIA4PXnwyQx9MV8BNs7UzvWB7NTCuEJWvBmA5CdsnUFWw3dCUBfdsaykjF1uve6LPYfwNBNWYEJulQmozEPUgRf5BggPT0njovHi1TUZ3dMWVWJDzVO7BYEECF/l1PEjm665bwXVv4LK4oa6xdFXhLX48q7GZuO+5fIY2l9pbbTIT9LWlT6k
+        type : 3
+       code_elements :
+        type_code : 46
+        p_codes : []
+    type : 30
+    code_elements :
+     type_code : 42
+     p_codes :
+      -
+        type : 35
+        enabled : false
+      -
+        type : 22
+        enabled : false
+      -
+        type : 24
+        enabled : false
+      -
+        type : 23
+        enabled : false
+      -
+        type : 25
+        enabled : false
+      -
+        code : |1-
+         
+         Multitâche(-1)
+         
+         MaFenêtre..ValeurRenvoyée = ATT_GUID
+         Ferme(FEN_POP_RAYONS)
+        type : 33
+      -
+        type : 230
+        enabled : false
+      -
+        type : 241
+        enabled : false
+      -
+        type : 222
+        enabled : false
+      -
+        type : 223
+        enabled : false
+      -
+        type : 224
+        enabled : false
+ actionbar :
+  name : ACTB_MAIN
+  identifier : 0x2656d61c18b1e479
+  internal_properties : CAAAAAgAAADZdp2l25fpCpSf0pKcDGs6QTT6ABs6J+33hmRT23s5l2/01/RnMn3Hq5DAtfl0uuK2GQbpdr7Sht3VaG3Fp741rnF9UFBpttsQOlIMIrSdgPv9GYiRwt6YHsL0cTkhQuFXuVJmTkFs/BIdg5naEzlos4aJBSOcLiaF/J7vCe6DbFMWDmoK5KuxsZ/264TJIR3/bo/OKCVjrtSZShKwhw8ypaEbz6eCgrzkX6OAoij703lEyfmFiciNwpy9fn3u60FYAou/M4Hb0IUvkmTCoTKVsQ7M/B514jDKJaBdk0R0FlEw94lTDFUXmSwVQ2nYCU/ytLZZ5Avr0GnVb4iDG/YRFZuxnDd4R5CTKUsjT/R7xxmY9DL2
+  controls : []
+  code_elements :
+   type_code : 125
+   p_codes :
+    -
+      code : |1-
+       
+       mafenetre..ValeurRenvoyée = ""
+       ferme(FEN_POP_RAYONS)
+      type : 18
+    -
+      type : 229
+      enabled : false
+    -
+      code : |1-
+       
+       si OPT_RECHERCHER..Visible = Vrai ALORS
+       	OPT_RECHERCHER..Visible = faux
+       FIN
+      type : 239
+    -
+      code : |1-
+       
+       sRecherche est une chaine = ChaîneFormate(ACTB_MAIN..ValeurRecherche, ccSansPonctuationNiEspace + ccMinuscule + ccSansAccent)
+       
+       si sRecherche <> "" alors
+       
+       	nIndice est un entier = Cherche(SourceRecherche, tcLinéaire, sRecherche)
+       	SI nIndice > 0 ALORS
+       		
+       		// Positionne sur le rayon
+       		ZoneRépétéePosition(ZR_RAYONS, Max(1, nIndice - 1))
+       		
+       		// Met en évidence la ligne
+       		SurbrillanceLigne(nIndice, Surbrillance[1])	
+       		FinSurbrillance(nIndice)
+       	FIN
+       fin
+       
+       OPT_RECHERCHER..Visible = vrai
+       ActionBarRechercheVisible(faux)
+      type : 240
+ menu :
+  name : _Menu
+  identifier : 0x29f8144500a4e5ba
+  internal_properties : CAAAAAgAAAByVTsSr3/syDi1St8xf8fgHxdhV816G1q5zyODGkOm1npuSkYo5g/jXWoWFFK2H3oUBZtHLsT5rfRCnVFNNS0taWG501M84VhyiY2gqfWqbb5TaLNBc7/5X5PbRqVlZ5a3p7SznWjoHPbzt8FGrVw2pkxQ2AMTSCoEquPAoSRRZmCgf0llwPSIdkz+fkQsa3yCb/aARC1IuAmTNbEAkdknQHeBdhsRIWlMefD05RVbqvlMGzysSB4KUPZWTHHaQPB4ObHU/5KQ/VjN8jyQaoRgKuGxrJ5V23KTuMr/Zw==
+  options :
+   -
+     name : OPT_RECHERCHER
+     identifier : 0x2656d6e9192803ba
+     internal_properties : CAAAAAgAAAA+BkdNvAgJYku8TwtUz80ZfaYJXLBiyqo8UUI4u9dSTHgndis1NnfV4ZDbzWMy7RmdnHJXzyJ9Peb+49c7zeGGBedagfaO/QDARoInUxi+DuhGKWq7J9aACy9GL+YwYVnCzcgNOZCtSNublLu27ZQMyi2m9ni83G2UIq3cR6G7/G5pmmArAJlaSMpGQmSFQAbl5dha+1qTZb6G6CLipMomuVeTFbSShB0cf1Cq+3+7mHu+SEWgQT0a/Dywa8erQskpiWOK/QKnwIM2by4Kdk67NmnNaEVXm0noAYQSh5/1Dn9hgRWRwsBMBg==
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         code : |1-
+          
+          OPT_RECHERCHER..visible = faux
+          ActionBarRechercheVisible(vrai, <§Rff0000af110668c2¤fr-FR¤Rayon§>)
+         type : 32
+  code_elements :
+   type_code : 26
+   p_codes : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAABqXR5M5wvxm/nAEIJpj++C7hZZeHyOooTSzmSVymRpd1lu4yGW0Fv/uWn+xeTjefDWcpp1Ejzr37eS4JUwRWCn/voVZ2bj3XMTt18T5EtHyKzVrYS+rTQZMiMr
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      PROCEDURE MaFenêtre(Rayons est un tableau de STRayon, CatégorieSélectionnée est une chaine)
+      
+      	SourceRecherche est un tableau de chaines
+      	CurseurHolo est un entier = 1
+      
+      local
+      	stUnRayon est un STRayon
+      	nUnRayon est un entier
+      	nHauteur est un entier
+      	nRayon est un entier
+      	
+      	
+      	// Remplissage
+      	pour tout stUnRayon de Rayons
+      		
+      		// Ajoute une ligne
+      		nUnRayon = ZoneRépétéeAjouteLigne(ZR_RAYONS, stUnRayon.GUID, stUnRayon.Nom)
+      		
+      		// Cumule la hauteur
+      		nHauteur += ZR_RAYONS..Hauteurligne
+      		
+      		// Met en évidence la catégorie actuellement sélectionnée
+      		si stUnRayon.GUID = CatégorieSélectionnée ALORS
+      			ZR_RAYONS[nUnRayon].LIB_RAYON..PoliceGras = vrai
+      			nRayon = nUnRayon
+      		FIN
+      		
+      		// Conserve le nom du rayon pour la recherche
+      		ajoute(SourceRecherche, ChaîneFormate(stUnRayon.Nom, ccSansPonctuationNiEspace + ccMinuscule + ccSansAccent))
+      	FIN
+      	
+      	MaFenêtre..ValeurRenvoyée = ""
+      
+      	// Positionne l'ascenseur à l'emplacement du rayon
+      	ZoneRépétéePosition(ZR_RAYONS, max(1, nRayon - 1))	
+   -
+     code : |1-
+      
+      	
+     type : 34
+   -
+     code : |1+
+      
+      
+     type : 234
+   -
+     code : |1+
+      
+      
+     type : 165
+   -
+     code : |1+
+      
+      
+     type : 177
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 40
+   -
+     code : |1+
+      
+      
+     type : 2
+  procedures :
+   -
+     name : FinSurbrillance
+     procedure_id : 1609703976838749740
+     type_code : 14
+     code : |1-
+      PROCEDURE FinSurbrillance(LOCAL nLigneSurbrillance est un entier)
+      
+      	// Déclenche la fin de surbrillance
+      	CurseurHolo = 1
+      	FinSurbrillanceItem(nLigneSurbrillance)
+     type : 458752
+   -
+     name : FinSurbrillanceItem
+     internal_properties : CAAAAAgAAABiNQvbf418G6aleWOHU6gMtMoztyXCPnZvseK7aKMV9An6N6r+tOhLOffl/3pTfS5Heza6xPcgIxTm68p/djvqXmuzsmIFPbi193k0MoLXa/qmM3L714xcChIRV3scTJiM9dRkKOg78f3lnEAFZ/C1vRSULAiAjfAlAf8ZSYNceXTy
+     procedure_id : 1609703976838815432
+     type_code : 14
+     code : |1-
+      // Procédure automatique :
+      // La procédure est exécutée manuellement, lors d'un appel dans le code, avec un différé de 1 seconde
+      // Elle sera répétée en boucle, en attendant 5 centièmes de seconde entre chaque appel
+      // Un nouveau timer est créé pour chaque appel à la procédure
+      // 
+      PROCEDURE FinSurbrillanceItem(LOCAL nLigneSurbrillance est un entier)
+      
+      	CurseurHolo ++
+      	
+      	si CurseurHolo <= Surbrillance..Occurrence ALORS
+      		// Mise à jour de la ligne
+      		SurbrillanceLigne(nLigneSurbrillance, Surbrillance[CurseurHolo])
+      	fin
+      
+      	// Fin du timer
+      	si CurseurHolo >= Surbrillance..Occurrence ALORS
+      		FinAutomatismeProcédure()
+      	FIN
+     type : 458752
+   -
+     name : SurbrillanceLigne
+     procedure_id : 1609704067033149039
+     type_code : 14
+     code : |1-
+      PROCEDURE SurbrillanceLigne(LOCAL nLigneZR est un entier, LOCAL nCouleur est un entier)
+      
+      	// Mise à jour de la couleur de fond
+      	si 1 <= nLigneZR <= ZR_RAYONS..Occurrence ALORS
+      		ZR_RAYONS[nLigneZR].IMG_FONDLIGNE..CouleurFond = nCouleur		
+      	FIN
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAAB6ragasMBWLfpsSyU19J6lAvYEqFWd1xYOjmHr1XHVZOVmechqLo1vKvfoAJhHeXL59P8BudVQfrBZ/U9vpjDz5RFibMKKm/84EA==
+  original_name : _11
+resources :
+ string_res :
+  identifier : 0x15b20b500409f63d
+  internal_properties : CAAAAAgAAACyXVFaObH4lOGSEHJoZf1MD49w+XTw2LScZCP/urkWFwy+HYJdyQ3umA==
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

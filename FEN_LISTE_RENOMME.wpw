@@ -1,0 +1,236 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FEN_LISTE_RENOMME
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FEN_LISTE_RENOMME
+ identifier : 0x258aa24a13a2189f
+ internal_properties : CAAAAAgAAADVJoVnGEBEsfawIb9LvuEyRZpDigYGMHSeX95TYzNJf3KbuQ1OhFKrOKkIvWsDK4iZEK4ZBhZNMRDvPtT0lyou4M5yexxUkRGJ6kADz87559YeEwHvgFaKYfTrVX5dGAKuGBEoBrFgucJHOLy7WR2JdrBbuyOPPofRTwYhjHiuTT6UrQG3SOKK1Qko2Y5NByv+ZsGDYXqWogP/E7blx7CTQFhyToHYyU2gcK4LydBUPqxPyuTBld+/AF0x2Sn1rix3uHEx8LDcAit+cgiv/GICDxvn4IMUKm8Mgqe/Sw7YCTVx6nQNfKTyBCNRgyJAfOCpsPZ5IVKqGEe469HWUi4VxQ9eemOiq5uTtfCUxq92erciIfA2tJDIi3lIpl7//8I2U1fTDlBQKRpZ4PV2bDTkDTddhlFB2UwDTZILBdmQiKUhYuf6PXDWS51oXGSiEV+fla5dYuGKgHJ4sR+HbNXuxyvegjv5VN9wtrHGBXjbb9ocf+cBmdukxCmQpUaOS+dm8AZHIa7DLxkxRb/WKFdQXMR7QC7aFmOw5FOIk8rUkTVkura7ZDnHl3BD/ab9tzOnbmBpz/72r95wkDN6NxqTK/dm7MoUj9bu+ulcpqcCPjxSDrE9BTnr+D4NjpajL/eREzM2wqZ2LzuMo9Vvw54wDRhRR02pBMy9h4oWy2bjHZ27FPnusBgBJzDJxT/stxAiUgXvyAg+4ii6mOQ6zM2dbwli6erCYA48pUpJL/z8UoK+r9uMo309WZNzh5qeBbVcRFgbWEESHdXggP7jrTbgMQ==
+ properties :
+  width : 320
+  height : 290
+  heightMin : 354
+ controls :
+  -
+    name : CFI_PERSO
+    identifier : 0x258aa441154dc4ac
+    internal_properties : CAAAAAgAAAAT0AQ0jQ3pUmLWLOdv5xgHpj3fNEoc3jmULzHIKN1mn/1MUVLlIFYPRebagsiLYQ45zxMj2LV8EgGaBXkZcnLU1Fok0HjsY7KTofu7uPnK36m8d863hkueoM0et9aNv8jlX768bKtHkPYvVQ6sZEEuPqJLiIdODkzCafZVmWlhT8YoR+Nrj9tmfIA5V/DYDW8DwpH05f1DUVlfowpAhpM+1JdK3wg0ngOE2oATCv/aXcI2BUOp6JXYLwDrrJOEJIYTXJ/gPX7ZuVXNP/ofmOO0revxCruwfWLfPPm5qVrcy/rA/28zTfqTQBJlDDYhiAoVcQoGOcUKifJAj2PLlgjPIGy0EkvuiBs6YgF7fqn+2FmeghxX3S/AEFjU6MUBUTty1wZqjmJ0WH+fXN1VJcs3GoCD7LwgbYjbzjfkD/bsbrHdl7iN6jhlnKABMgJaCjecVUf9WnHXoU875CapzGWVhOfSTgrrvbJPmbAdgN9T8YIajA8f4RwV0bVACdnMWqgGfdABsU6CSWJXtv0IW9M3NAb45WqaOrmCBtGyi0/I5mvdWUTq1ggTsXMMxp2X/Cb3
+    properties :
+     width : 320
+     height : 210
+    controls : []
+    type : 31
+    code_elements :
+     type_code : 73
+     p_codes :
+      -
+        type : 33
+        enabled : false
+  -
+    name : BTN_VALIDER
+    identifier : 0x2668148114f90dc5
+    internal_properties : CAAAAAgAAAAzrYo4Z8KIcdLsdGvXxZZR3DoTW9f5tWAdifbQfkZp3ZCdsh99z9tDyvT/RW4a3NFOQJotdLWOfFkYEKPxO0iCF+CNI9SiVcgnJUQbAC0kCKknOkMpogvCHWPC4TPBN+XchylnzgIW0/bVgAdR5gTR91tiyKMPvH5V5qDYY+Jihlr0uZgKFNiO4QeomRnmkA+5yz5ZLJ4iPdcosxzdF947lLvfwqskdiDlclRJbss1X0+E3dl1wJZkB5tTFd1Utm4OP8iqRwfnaApJU8kERjbZaW10xjTt0xKV+bY/EaPrzaZ+xs1bGM7OOt+OCODOG+YwwfmXzf4wo8JYL2Mi0fMHyd0Z7t4Y6gLEBrQgZfq2ce09X6Cb/+xpOT8Touo+I6B+HxpFFgJyZjQb0CAGpg1EDhiieRat1yMTLAWNml+FFLWAT0A/9BwlLDF8Pc6654B4PkyPhxZPv1ykxxJ0+kL5WSGVj6gRkTrY9tylGzg335LTGbeNt4ItA7i3rOT7QTAniScA9K504d80iXJ73zXKsRyg5h8MzCdrkifqWqdMuDFhvwT635onmQmYXgmTibu3YzirKGUyval7I0ywwcTTpKDSTyXr0TMQHDWxAyDqbCruNGjMABDPvCi8tL9PbJ5aJO7FLwHw7D5kuCNn36nqHaG2tEKeIbZyocLG3b8Ay9ASKhPJl5DvDC7fCk2o7tqiPj+JdRIQxFz+FgKETNv3QRUVjQwiQMD3dhPyGE0Ubx5hl8t9xrelSgDfcTcDruQGWPLdRuOPy+L4dUXZWce/tyo43EJF+YzOYmBhrTVc10PMWwqzitljpjyfJkumi7d2yv0TGYXrX4+zLUPdXUSWFp6TkB5KiDc6EeRDhaJN7y/2W3mYfuL6ht+D2S8RVTtxhs+XbRSs3Ua8mGQoJorRT6ZRN2UngwHWD0ymzol7KHJ0DoDMwVf8ykicLDnE11dppMdxeYesg/bl0CnB1NlyxgI=
+    properties :
+     x : 248
+     y : 218
+     width : 56
+     height : 56
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAABDNRqAgQYd9o8MP/rkr9Dpo71svCgNQ1tPcpOAqLVv77G8Tlgz0HGNWEMjtCgGfV43mtrw4BRitM4tWE0gsF70PcFES4Vs2EiUHnJslpK4ytu5CCN6q0a3MJg9lFeBN6QlxbdhYuqhKyyOv+Q=
+        code : |1+
+         
+         // Mise à jour
+         EcranVersFichier
+         
+         // Données d'historique
+         Liste.IDModification 	= USERID
+         Liste.DateModification	= DateHeureSys
+         
+         SI CFI_PERSO.gbImageModifiée ALORS
+         	
+         	SI CFI_PERSO.IMG_PICTO_LISTE..Note <> "" ALORS
+         		fCopieFichier(DATA_CACHE + [fSep] + CFI_PERSO.IMG_PICTO_LISTE..Note + "_temp", DATA_IMAGE_SUPPLIER + [fSep] + CFI_PERSO.IMG_PICTO_LISTE..Note)
+         	FIN
+         	
+         	// Désolidarise du fournisseur initial
+         	Liste.IDFournisseur = 0
+         	Liste.Image = CFI_PERSO.IMG_PICTO_LISTE..Note
+         FIN
+         
+         // Enregistrement
+         MaFenêtre..ValeurRenvoyée = HEnregistre(Liste)
+         Ferme
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_Abandon
+    identifier : 0x2668181e28722a23
+    internal_properties : CAAAAAgAAADsFazSCiY47DWZ6xRyKCLs6mrs1mHFlsCG+hIeX7scUnx64kBifOMfpYhslJhu879Jhu/+7CRd3OIKPWwzTbFk7oBhm29GQoJfmVOIpSMbhzDCV3e7mZMTD22vqrZCKcjCRt6MsdZv62XGwRCEB/5FZYuQZwzSboApmtoyJ4Dc9JA3hawnj4lNTAX/VX3KYXkQcapbg1Oh9rvXmuKPL8Q/7phEDi2Xq6MIo6M8hRxIpe6C3aMpKFGEJ0XZYZYELCjAARHg+qYIdf8JB8E9HlwZob+suFBn1lORhlgZmb5PcyQr3Sxm1gOASYig81HkrvbklvkbZhXWYvhyDue03pCnGFza+SApDKHoRxsQkIvDrLj19+kdondk2Hm83QM+fR1DMZwU7vu0jfGRlsEPh+qFbcirLUY5YCwc0wP7qvBaYG42o1M9nzZascLYjuLkq9ZzBJC5eYdP3QG96FD6Fems+1uTOlaNTpuvvUnOczfqhkbCG1efACYLgfKRaAHQ+jHxXsFNdQa7zwgYwpnBTm4iP2o6DUnwgdBTXBgB1uisa2M0hSHhMkQn3QT0GLGVJY/7SiAo09M677f0KANykGMgEdI6CTemcG3cfpuvqt8sL6TiBmo7Md8McIq9eLrl8SBUjiYM/k4XjxvmMj4RudnaeiLnUU8SWBTqB0xbVwAgbY0aaUQe1Bg+aGnxZPbK324PiJJLSR3Gh02vs8TzUt4NfL/dETFi9t1yyAbMJo6+xkn0vfzBhwamphm08dEFteyeHw3Nbf0DdiqZc9anKy1UB7CXodU9vAPgK13yXq6zT4F+oF3Li0kFdaXjHSKwIFD2Qw+RczdSPQXc6qAFbQxZf//Lj0sRJ8JPVfNvvhFn7sJLhCDDUZDuB/6YNyGtwxDq4G7itoQD4DAu40HItvwCF3n1DgjqtZh7HSX4rz4eGZ2UVNOpphSEoMskSKhv0yFOEqwlAd8eSPAFP1vCoDoDxyB8shoxehzLDXW6Y6Um1qBzAIsvweVk
+    properties :
+     x : 2
+     y : -123
+     width : 90
+     height : 48
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         MaFenêtre..ValeurRenvoyée = Faux
+         Ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+ actionbar :
+  name : ACTB_MAIN
+  identifier : 0x258aa24a13b6189f
+  internal_properties : CAAAAAgAAAAm1g98EO4zhRPxXduP/JuFCmZqqDaA8uGD8SHJqKXzdBOEkare01cJHehi0dqcl9OkM2ABdH22hj5uGvvPHMu0orNlpIsQKTgEj6deYyGOTky3T4K/cz+fLBPsCQpV9cb8UPcEIRWT8xNAtV4wDKb3m5OEJJR29tAdCOcZzmo/sQ19vsKRLolfqEM1C+GwBkqEUbBHERz8exOmI/Iy92wpEq7RsAVDeUPANwFQ6Ao2Uu7oE7njBNzZQBWTN67/KOs6WZP/hMBpzeeb+UMucdqSF90GxyN414nxUIPAa1nDEAzmWxYXfN2V29naK9iVzl9YNUs1R0mXcDjiylfVqg3HjSL7On52RNGEkQdQ9/aNr8pe6Po+uiWFegurSY0TcmAW7Uir5kVisdPc77JCGirk3LN2/3fcpBrLbCrbS2B952kU2IHwHwTwpRpOIG9eITO6PMB56IqD7VgVwFQqeVa9ChhIoU+TdChzzwc=
+  controls : []
+  code_elements :
+   type_code : 125
+   p_codes :
+    -
+      code : |1-
+       
+       ExécuteTraitement(BTN_Abandon, trtclic)
+      type : 18
+    -
+      type : 229
+      enabled : false
+    -
+      type : 239
+      enabled : false
+    -
+      type : 240
+      enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x258828f2069f18b0
+  internal_properties : CAAAAAgAAAByVTsSr3/syDi1St8xf8fgHxdhV816G1q5zyODGkOm1npuSkYo5g/jXWoWFFK2H3oUBZtHLsT5rfRCnVFNNS0taWG501M84VhyiY2gqfWqbb5TaLNBc7/5X5PbRqVlZ5a3p7SznWjoHPbzt8FGrVw2pkxQ2AMTSCoEquPAoSRRZmCgf0llwPSIdkz+fkQsa3yCb/aARC1IuAmTNbEAkdknQHeBdhsRIWlMefD05RVbqvlMGzysSB4KUPZWTHHaQPB4ObHU/5KQ/VjN8jyQaoRgKuGxrJ5V23KTuMr/Zw==
+  options :
+   -
+     name : OPT_ENREGISTRER
+     identifier : 0x266814d514fe545e
+     internal_properties : CAAAAAgAAACZtF/TwxBV7FcLdW7HNovnkGiJ8PhlIEJLBUm0pUp/TFj8yJ/Ig/qFjHC0NFWxHZtGmPsEUuT+hItKVf5mmax0I+Am6ykmTU6pZCG2ewF9cyypA4eYDicJrCzZ5deeTFgQHFmdSqf33dnVRgJfpkubN//C2UvY23js8vgJyX/Ig8GU/m95vEYSJVTVu0CkqHxQTMnOBj4Lq7GBm4XNURN3w5+NPD6GXms09FUHPQEmlDH4WcWdwsrduViEtP7wkesk8G8rix3ELDjzHo8Jfm9uOdx1HblDEhZYBKTnukMO5FkXgh/K7Jr1rluO2fbNif3ceA==
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         code : |1-
+          
+          ExécuteTraitement(BTN_VALIDER, trtclic)
+         type : 32
+  code_elements :
+   type_code : 26
+   p_codes : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAADg14QmfbGPAXNOrqhHlYXozLCn2tIsQFIkvCpo6KnpF9nOA8EWkFufWWkexUSzKQBmYqpFAuy7r2eCMGVgAi0VTEjrEchBP9WxFT19DjFZ3kJjIx4QE56DqKmh
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      PROCEDURE MaFenêtre(IDListe est un entier sur 8)
+      
+      // Valeur renvoyée par défaut
+      mafenetre..ValeurRenvoyée = faux
+      MaFenêtre..Titre = ""
+      
+      // Mise à jour
+      Actualise()
+   -
+     code : |1-
+      
+      ecranpremier(CFI_PERSO.SAI_NOM_LISTE)
+     type : 34
+   -
+     code : |1+
+      
+      
+     type : 234
+   -
+     code : |1+
+      
+      
+     type : 165
+   -
+     code : |1-
+      
+     type : 177
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 40
+  procedures :
+   -
+     name : Actualise
+     internal_properties : CAAAAAgAAAC6ixVM22jS9VosbfTjNSfQoGdCn6JxfVz1KbSorA3IxeKNrRNztd18bahdZVxUdvcYPYHiijqMc8I4dTnwy+rtkHaGP1mHNmk2sWdclAsAlVr3rnWqbUInNcWC2TQrOIeSb3G06/iv9nO2ngVh
+     procedure_id : 1552231460339783839
+     type_code : 14
+     code : |1-
+      // Résumé : Actualise les informations
+      // Syntaxe :
+      // Actualise ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE Actualise()
+      	
+      	// Lecture
+      	HLitRecherchePremier(liste, idliste, idliste)
+      	
+      	// Affichage
+      	FichierVersEcran
+      	
+      	// Visibilité
+      	OPT_ENREGISTRER..Visible = enmodeios
+      	BTN_VALIDER..Visible = EnModeAndroid
+      	
+      	// RAZ
+      	si Liste.Image = "" alors
+      		CFI_PERSO.IMG_PICTO_LISTE..Note = ""
+      		CFI_PERSO.IMG_PICTO_LISTE = "panier.png"
+      	sinon
+      		CFI_PERSO.IMG_PICTO_LISTE..note = liste.Image
+      		CFI_PERSO.IMG_PICTO_LISTE = (EnModeSimulateur _ou_ Liste.IDFournisseur = 0 ? DATA_IMAGE_SUPPLIER + [fsep] sinon "") + liste.Image	
+      	fin
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAADfY00FsSB7qIsKGtsRaIsm817gUnBRmfthZGGrkdaVuedUR4YblVKa0/U0Lm1OjO0nj7RLBYWAskn1WOk3ypci6SbJAn6qpFwzIz/iBF1IZBK/Fe0GgvHhWfSDGA==
+  original_name : _11
+resources :
+ string_res :
+  identifier : 0x1fbd47fa1647536d
+  internal_properties : CAAAAAgAAACZEjEk9ePFZOo+39SDkDJRBhrPU5L8MGNkyQkX/peSMADIgmGIamrQQ4iQ
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

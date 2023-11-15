@@ -1,0 +1,435 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FI_RECHERCHE
+ major_version : 28
+ minor_version : 0
+ type : 8
+ description : ""
+ subtype : 0
+window :
+ name : FI_RECHERCHE
+ identifier : 0x25ae5e302384b39f
+ internal_properties : CAAAAAgAAAD7rWcBf3YJXM4XIyezneB21TcyS9b+N0/EpW/UaSG40xz0mZDjCilqW8PQ0eYZahALVHOMI5oOgEhYgN7be4r+lv/qLwudWcGoJV08BZbCI9Kljlh39V1s2FpDo569/AKv3c/96F8Uhh5VGEq3e3cmi36pn+05tPlzWPk0oHVY63Ks8r60LYC1WkbpUdhYi5C/9iMvZ9qW06e1squHl9FKBLL0NyAjX96YAlEoeCDJyQ6Z8tH3KE/GJKvcR1LoE9/Fx01aSVHO4ZRea3VR9IZ5ujvYY4wPoUozbpphjxfEiFD4GKSTOlgu8kWBXxG7+3OAhw2veuirgRVJN3YZ3SCKZTDo5oMJPX5i55x6XVEk6+2NzP41j9SqqlF9KVO3DJZeBJGlTQvm1spb6+TloeXESQ6nLS118zK4lv7qnAjpl0U0TvyyeFtPGZeHG9/3rpggNDGOqDNLDnFc5p3C4+seb98QXhDRwPuIVjZT/7SgzMlIKZIfaPpLqkUvY4VKquKEjf0mnEPsffpBipYbzBMQ4UKkdrDhMBe1N8awrHqtEFi0yPsxagYREC/PWLBnR51tV7JLpVORFP2fdztDvueSSapn5KAcFMSZ14SCpCmr1WXwBq1lnFPEIWAlrTn77v35/FU3Y9Jr1gMbBhcAm2LDsrjYa6c2QHUzu/bZvW6eoX+wQxOGZCiA+XfkHCT5iY2FZmi9r9yNg59eJNsg+iTqDo164ICTvc7e/s2VBeBb3iaUTrWfIZGllDV2UEu3RpKmUQJ9MB5EHZ6xH0qKMpzt/cSEqv0Vyp7K5vMYYh22pFtFGx+R+DZcCkNvRXvETNE3SsW0jXZ+41sUsR3/JH5BrSXH7DuG5s0ItWuX+Ay0UlC6ZlaxzjrBnSR3YC+gNrH8eoLwuTMrhhL/QoTg
+ properties :
+  width : 320
+  height : 320
+ controls :
+  -
+    name : FI_RECHERCHE
+    identifier : 0x25ae5e302385b39f
+    internal_properties : CAAAAAgAAABOVX/Fp671j4Q5UR7bLnevRVgUc8VeC3iE7kULJ6CajntgGdxCeAFuZz8tIGiRG1pQ3lS7CIooBbZoEXCMtcMaiHEoqWCEEiRI/jDFGA/IXiSMU3xmaIhKKUHsEN77JmBY5387fnhNBYqQftyDUl+QFSaypoP4YMxntOrir2GC+msFGQ5/PPKLvFc1xyp4SZlnGmxrymMscvrCR4R/bbL6MdUPqKs7XyUSGm/ZPZp3CUNVzn5omRKo6xzbdel/EXEzEfaGqtDGzyZWmZr5PBFJwq2ZFzhmcFFo509HjSfgPkRsVpxjyH796tWNwLMJ9+Zwt8XBY/qTE4jLkanigjYY0vYzTuRNDmUpFhb2A9bA2dkspVyTnq6YWlOnlexxlDr4oLIpx9s+MmebrHvokQDjKf9HFWAZAfpSIa57P/ixtmWyCxYG3XGSyWMV5fox7rNTDhWBt4OAJBMmR2gW2Ug5Lb3+lDD8zRr2wKmjb4HCC2ZWyb1J
+    properties :
+     width : 320
+     height : 320
+    controls :
+     -
+       name : ZR_RESULTATS
+       identifier : 0x25ae5e3c2399e211
+       internal_properties : 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
+       properties :
+        width : 320
+        height : 320
+       controls :
+        -
+          name : IMG_PICTO_PRODUIT
+          identifier : 0x25ae5e3c23a0e211
+          internal_properties : CAAAAAgAAAAPyr6rn99lDdfUtFAu2UUpv3/qaf5pEDIIqfwSGTyspSeMHcTu6f7WkIGpQXi6HTFla+b521f7e3hGTrCUxi9x0IaGfvr2QW3Dsh8vb4kqYN6YMhp4aJZiNBnmiZjxvqnuSx8sCFZ86UvrSZH0N3FIs2QJXwabYmsf5o7PFTWAz/1+0hJyZg3zA2BIGCxrkSEICnsIhAvA06knUwJGywvHlzcpAFrJmrS6B5YlF0lGwkCZTEWs+WEQ4BRQvdEjJjY7uKP09mK9ecefynjGPMU7ymGUzAUFzDsT8bvAR71ceip27364Spe/dhgGNAwcPomzPUhSoLFjnphCmnmKzw2HGRlrzyw+MxJaCbiQsgOiKwLN2nqqk4IoT3Efd9Xt9rfI/ETrCMmOFTu8JYwReP9fRqdO9vgJKMGp/McehR+pRRn2NbRZuj6jihTX60WGztIBcVI37H/ALUw0A9/ELUC3ByQGuojX1G6qS7PtwrO1WQnmc3epldaDTUMI4dkZ8k6NiHsO2Asr0By1F1OzHtK+e/5JCAipqBCpzOKBMS1lhiCUuetN3EYNdYAwTv0ClrumHUfNx3cGMsKqYgMPvcOtU3p23DaOaufRdQC1b+sMiPQLCaUy7//Fl8rJtfFzzkU528ffNtg6bk4F449/P0G0S1apo+beZAjVMBSGu0RYAignx1KOg9mmpIWi+hkSCA45Te4Cw3GcZ9PyfUATYdncHoydN07KSIgWB75NDucC8V9J+KJIF/XNTYkjLCfUB7aJ8hkClsILeb1ffRiL7IdaIvCzrZDL
+          properties :
+           x : 16
+           y : 6
+           width : 36
+           height : 36
+          type : 8
+          code_elements :
+           type_code : 8
+           p_codes :
+            -
+              type : 18
+              enabled : false
+        -
+          name : LIB_PRODUIT
+          identifier : 0x25ae5e3c23a1e211
+          internal_properties : CAAAAAgAAAAIcvkEYQK/pH1eMK3FkZ2azWjzsKPE2Bxuc26yKXlG07Af5uCwuMM5dWS4ex1/Ke7wp9NqbSslLWgalb/Vn+eXwFwzO3ZT8lt39W4RtZwFqynevXVjdbMRxJtJ0F+chcTbdcLE6BhEf99ItvudEvIo6TDqOKmO89RF1MKWCjRKX8BEIwSmUZGnPnEJmW/q9s4wS/+ZVbzUxfKPAyCHXvZCqm4RdElb1MyfTzyf3i/6ELFO+vEl5pclHUTwB5rbF/yVZ5yoxiuVfLixx/ksx5DHDwuoC365HLAGFBVQycbcZg+mF80M7VMPmm8X0ULIarEmnbe412nuw+RL7oEX4XaBdtFgZlyg6xjFjtPtST0/NA0HUKDk9RyCI/b7AurZOxidaGAoND3PLXqzat8G9cjtUeboyM8z+U8z8jsSy1KKFpyD5IV5G/uTRWq+1AnpRTiCAOsV+9JPJ43MuU2oXd3g9X/d2oP9bfy7aTU08DQ8kbd+fI96TrVF8f/7RLNBU1ngM+XS
+          properties :
+           x : 72
+           y : 6
+           width : 188
+           height : 25
+          type : 3
+          code_elements :
+           type_code : 2
+           p_codes :
+            -
+              code : |1-
+               
+              type : 18
+        -
+          name : LIB_RAYON
+          identifier : 0x25ae5e3c23a4e211
+          internal_properties : CAAAAAgAAAAmAMPkUfZciKoudMOqeDluYkAebko0HuYdtqugzLASUt71tw/k8jMs/8AMiCmG+/2fN1zZv+l+NHqQ/XaUswZNNQkwWSVvl4Vrk1+N+61oaE9LCgov6kgTndt7RS3DpgX58VCwrATekkTipfWfpnWkAAAnAMl3gI+bnyNHEwvMo5nQKZx0YRuhK4VDEBfKzLcyiIjXECdZrGXundCeq2lU7uFVYPLs3Fo7Hu2YvZb5D4jtZEvbJzR024zw7caAAqSI7T91gcecbaTj82NzAuONTdnzIhZyFEgDH0QAvKJe/wVrEzdx0iHFjsqrBEUKCu+y+TsGkoOyxR/dqZYFLJm9vC6svhKtPN7+EgGhacO5aw+Q3yHQ2m2YSAZ7CUGywNje4l5AOorFae/C5N22MsDYbm1dnkWDPLXTAeClwS0zzc009MnjwFtxtPH/B+57UVqPUYeGqE3r0PBZShYk+kCgC5Be2u9Wrxfnkr0k9W5+GDUIdGLRaCP5l91UctJ/fONbAWTa2H5BdcA1wN8=
+          properties :
+           x : 72
+           y : 17
+           width : 188
+           height : 25
+          type : 3
+          code_elements :
+           type_code : 2
+           p_codes :
+            -
+              code : |1-
+               
+              type : 18
+        -
+          name : BTN_AJOUTER
+          identifier : 0x25ae5e6923fb917b
+          internal_properties : CAAAAAgAAAA3UQXKhj+9PwxYctou3MDMdQvvGe8HcB22yoavn+ZZwcgLk68H11kbA46Zo/9eOhQA7EZtGIqmzpzGzlWu7X83AoDU/Ql7Dl3x3aUlpaU99jCljoHL2VwBnoJfPHZEjZnz23f8aU1hmN+2wbI6xUEw6QgQk9WFDKSyO1xo0uj8pGGwSxS4QM5SN2/Fm8dzAtjKjU7FWUuS1asSFQAsNqlj+2IZ0wemVTAPibLs4m7mazkpd3G7/oUBIWKL9kEuj6vDDGQIr29xgCModIpaDMAc1UN5xR54EY+d5KGs5hh1vexjiFQki6lWYRjp5+nHlNFkT8lQM6nCVt/hlM17Iiu8gYBoXmWQouUhQzowTFeCHSU+1bw1F+jeGaKgM2c+HUbKU4/6FpggwiiC0rNB0fmsdV+P+la12cbu816HXom7JFvtkoTf3dgEx5GN/oHbgOS1rCYVJg/yS3TxZnSGbofGn62IMWhBJc6ekrQt4aqlEsGG7pbV18sPiQIj3GhUvOA+HJYV2e0etAATdRf2J4BD9S/S2R0OisLTmtyV2Aep+yrcqNjq4Fdyet62CuhRKXg132IoeAhxrBwy1zX0kPjTRQCWF7ca1wVWwU2TZtbjWN9WOwU8NxTUEh1ykVUkpgbHytQ1IWca+jeLewhk9Vnf3EONDRdswp/Ti1Iqiy/7gNwEjgq1V5bkCrL+aUfBW1JSimr5gvAingOS1DBjjRUqMk0ibuUuGmYdolC7VBVwEad0G2mnYwCLneuf9eTRX5tRVjPhpMz2whZLvdu+9CscarWnXLHHuTd0NHSoxMEnNQZHIX/LdQd1nRwimfMLPO+oZsT2Nq9Vdi2wQLTbFEBG/zGt7AcxElVguxvrzJuO56M55zdJkSPzVS1bt2pYzmz/Inw0rFMsSSIrdVhmBsnYCGUuWzU/dZWMNq8czM4JhWHjd2vrRjXDR2XhdXhbuhM+eMTVWw36c36g8zzVrSnHYwtrX5OI1y6gYG7e2gomDXHw0CjrWv79PikYtm9fVF4iJg==
+          properties :
+           x : 268
+           y : 6
+           width : 36
+           height : 36
+          type : 4
+          code_elements :
+           type_code : 4
+           p_codes :
+            -
+              code : |1-
+               
+               // Ajoute le produit à la liste
+               si gpclUneListe = null ALORS
+               	
+               	// Produit existant
+               	si att_id <> "" ALORS
+               		
+               		// Demande la sélection d'une liste, qui sera suivi d'un ajout automatique
+               		ListeManager.DéclencheDemandeSélectionListe((att_id))
+               	
+               	// Création de produit
+               	sinon
+               		
+               		
+               		// Déclenche l'ajout de produit en externe
+               		ListeManager.DéclencheAjoutProduitExterne((ATT_ID), (att_nom))			
+               	FIN
+               sinon
+               	gpclUneListe.ProduitAjoute(att_id, 1, ATT_NOM)
+               FIN
+              type : 18
+            -
+              type : 161
+              enabled : false
+        -
+          name : IMG_FAVORI
+          identifier : 0x267152416ab435ea
+          internal_properties : CAAAAAgAAAC6JdusVX77oqX91+MSgh7NDmb9nP3xZaAfgVb3C8ZKC5PArEaxVvPVIHs4Tmw/4LF1b5rV2KQ+XdhgLApzDTBycibkCJJluFrS1HoV7gqb0mHz1do4OY7ShVB7t0iNAQHm6zOHceCSkP6HAyJBhlQtsJzT/8pl8pXZktv4K1FW7EtwiQq8JfmIMeWLRbAYL2PYaFpp7uw+4LWkly1h+IBJjg5vweRPXl5T1FahDAjYVlP77/4IlXYuadTL48ynL8CYuJFJP99QNjrUSy4VTLTfl1Z+GGzOQbQVFNdEosucHUX1Ar91mvrf8J5DJ3FuXjxvhRV8T0o/PZRl6zx82OpzwFFyDetJfoPvy7sV2bZFb3DkM1AQdT0B7nfVYLJa7i0yi8OXPlkmu4UqE8uy4FZT7BXLT0A32o+93pzc5CKd9Asm8TfCMgkhlD1d+d0xcG+3xHY6KduxA4hAzF63KW5awc1PcScl/w9dtZeh7uaYCDTSB2dfr7dtYXBBzwmYdbYK0hF9VDzHsHmALto0eMA0dIjipT9xMifE/rcSst4Ofk/wFzzVqxUAQceukiBFsQB+p7b2QcwDwRL5FmTpqgcZbd8pyf1nViZiTfSvz9NxmsXnCSjt3aPMRfYvjReOhnX+UqBiUzhMGxgbPxTXqyH/W4uuMTumOizryEVA3iQhl+JoAzAoPmZGxUFR7h3PYMs/YwUfuJjYBWVcwb9BZxgCSAoY9UKQSBF3uTmzXQf1c+qk3E6zIWMVdI8myAhEMWxMcXEhP1QXj0lsJpUVeh1w0jWe92xOwxTlLMrnBQg4lCRL/MTJuZXKQsH9Orm1LxPSTU2DcclDadea4wHXF1uFNIOclV9GUegR6FgcVzlKzJPp6adf8n7ErbmjmX2jfbNr01gGbcU5FHBSrO4t8WAOWo+DMnLIbI9AKSQLJe39Vqmp
+          properties :
+           x : 28
+           y : 17
+           width : 26
+           height : 26
+          type : 8
+          code_elements :
+           type_code : 8
+           p_codes : []
+       columns :
+        -
+          name : ATT_ID
+          identifier : 0x25ae5e3c239be211
+          internal_properties : CAAAAAgAAACSHyZUKzii5SOaFSxjKBq6/XnB/Tn9bzXHimoz8g+mtZw+zFzpv2VA4HJo51xrRtWpYSvV/yXMBzj9R/Im+ycNUCjIcAwZ3yO8Q8euGBw8LQOOBDZZOWMNYoLZXAo21jbXcw==
+          type : 3
+          content :
+           identifier : 0x2543daf40ba6cce4
+           internal_properties : CAAAAAgAAAA+ydwH69gPtZH9qoG8K7G6DH/mRhLAsIA4PXnwyQx9MV8BNs7UzvWB7NTCuEJWvBmA5CdsnUFWw3dCUBfdsaykjF1uve6LPYfwNBNWYEJulQmozEPUgRf5BggPT0njovHi1TUZ3dMWVWJDzVO7BYEECF/l1PEjm665bwXVv4LK4oa6xdFXhLX48q7GZuO+5fIY2l9pbbTIT9LWlT6k
+           type : 3
+          code_elements :
+           type_code : 46
+           p_codes : []
+        -
+          name : ATT_NOM
+          identifier : 0x25ae652f051e0834
+          internal_properties : CAAAAAgAAAAAMo5T7PR1sIshI8iKv06pCaBs3KGwzfSaNwa4DwvWzZxhJ+aeFXRMrMVSBCtzYqKGgrRDMBgpb3rZ7X9awByuS1u4GkbDr00SutsxpwtVvt7223sQhrQO4/LWipAfX9bVbpT3VGYDBg==
+          type : 3
+          content :
+           identifier : 0x2543daf40ba8cce4
+           internal_properties : CAAAAAgAAAA+ydwH69gPtZH9qoG8K7G6DH/mRhLAsIA4PXnwyQx9MV8BNs7UzvWB7NTCuEJWvBmA5CdsnUFWw3dCUBfdsaykjF1uve6LPYfwNBNWYEJulQmozEPUgRf5BggPT0njovHi1TUZ3dMWVWJDzVO7BYEECF/l1PEjm665bwXVv4LK4oa6xdFXhLX48q7GZuO+5fIY2l9pbbTIT9LWlT6k
+           type : 3
+          code_elements :
+           type_code : 46
+           p_codes : []
+       type : 30
+       code_elements :
+        type_code : 42
+        p_codes :
+         -
+           type : 35
+           enabled : false
+         -
+           type : 22
+           enabled : false
+         -
+           type : 24
+           enabled : false
+         -
+           type : 23
+           enabled : false
+         -
+           type : 25
+           enabled : false
+         -
+           code : |1-
+            
+            Multitâche(-1)
+            ExécuteTraitement(BTN_AJOUTER, trtClic)
+           type : 33
+         -
+           type : 230
+           enabled : false
+         -
+           internal_properties : CAAAAAgAAADzBTWmbOAdkMQqNxiRGSok49WE5Ww6rRtiUhyVk96/fhZURw4XAlOfbUE6xRAp/b860bedLoAUlWa6x1x4RU1pU1fIS4tZze0T5VgMFTIzKgdkrKazU5FNJhTs1rFSatbI77HSX6XCTol8wfwxQliwazQ7Ko30VT7tgtQI/KxtbJA3uprz311Oet+N+nO0n3pn9pvcyus1U8RVOOXVy96RvG32sguMI6jWvbHzFCpbxdHnFfByqPpA1dUUGjgcnX7At5MSDeE4sa++OE7pNQNBiNeUIQPis87b44pHPdfWh84d+p4+Nmhxi0j6jMWjM9ZZMD7J
+           code : |1-
+            
+            // Recherche initiale
+            si gbContenuRechercheInitiale ALORS
+            	
+            	// Suite
+            	LanceRecherche("")
+            sinon
+            	// Pas d'autres résultats
+            	renvoyer faux
+            FIN
+           type : 241
+         -
+           type : 222
+           enabled : false
+         -
+           type : 223
+           enabled : false
+         -
+           type : 224
+           enabled : false
+     -
+       name : IMG_PRODUIT
+       identifier : 0x25ae641d04dfd88c
+       internal_properties : CAAAAAgAAAAdNlCB4v05uUpTnXwPakIYt73VCDTiz7/vk4I9U4vXksHF3HQ2XYA0ZfG5awmkMBHjbqmVNdv2ZRBk7mRsYwBMuh2zIzv2SEHIqPfv8aL2/YZpm+RkWcDwMW9fBU6lYAB5EmRrcHL2iPVfNeMuWOEWL+RCLGgJy6yjTCkw0pjAFnjknfWrNDl069yKjXf5BoiCCFHU24P06yeInwxwkN9x8UVq9UWm6T9esvstmzhL0Ku26zpYGqtvV3MBisE5+CNJ+tD1zymOHYdRGaCqQyVGgc+lfF3XN7+sk7wUIX3xdatcjyj4veHi/tkhhwL0hAco0zg28BMd4xROXDyO7g5NcRepQ7yPHjyB2n5vlDuRdWnYod8Gzt0/toDi/4hnn0FrxGlnmqjATsNrpRXBBedZ03R95Dwj9lTZlj4mSOK2nvyNh0jigzXBfCCLj4aKfQywGsA2EkB+lWTrHwB53pN56lV4AeZLfKQRZ5tn1UykeSS94N+HPXdcLF+sxhuHDkU7CL1AH4KSERvqdt9eIQo+oMul8VoZx/qPTmXEQ/kuQ/47fqTgHhytcmVSu2V3OFL9aM0Nhs1jdk/+JB2XVFUmqgc0QPzUehHPuAk0ya0cVxE1Sa6K4p78P7S9TBzdyg+PTDfl9+UNNanXQhBCWqQOlFb4KpgjpZ6dv5XWDJR3SzwqBe0xa2FjyFyoNI4TfCb7m5Wrx/5eR5Gyq6kDwzQZPZXmBv4jTf7YgXDkpTDkepXYyXEm9qUbdJp9R0vYQcvKaD2yQzeS4F7rErD7/yyDETpsIwbiNFgEjZ+UVtQyBcyDLf5yaY4cBigFSW4MJTJPHziMz2H6SJUQFsn+F1UEyqgMjro=
+       properties :
+        x : -65
+        y : 6
+        width : 36
+        height : 36
+       type : 8
+       code_elements :
+        type_code : 8
+        p_codes : []
+    type : 32
+    code_elements :
+     type_code : 70
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE MaFenêtre(gpclUneListe est une CListeShopping dynamique, gnThemeCouleur est un entier, gbContenuRechercheInitiale est un booléen = faux)
+         
+         MonAlias est une chaine = (gpclUneListe <> null ? gpclUneListe.Alias sinon "") + ["."] + moimeme..nom
+         IndiceSuite est un entier
+         
+         // Observateur
+         AjouteObservateur(ListeManager.SurRechercheModifiée, MonAlias, LanceRecherche)
+      -
+        code : |1-
+         
+         // Lance la recherche
+         si gbContenuRechercheInitiale ALORS
+         	LanceRecherche("")
+         FIN
+        type : 14
+      -
+        code : |1-
+         
+         // Fin de l'observateur
+         SupprimeObservateur(ListeManager.SurRechercheModifiée, MonAlias)
+        type : 2
+ menu :
+  name : _Menu
+  identifier : 0x25ae5e26237c8b37
+  internal_properties : CAAAAAgAAAAFaI2qJX8UEB99XfCx9752u+izfpc4JSeOKmGiFAFrLKT8g2mwifkii2XXStoBIVaLzyYEll9OQWwwtVQkhOL25O5kKxgRsGgPtw/aT2D0GJ1OZgV3uLj4vAHCBNQ22RwXJabu0YQxKOIryJN6crP2TV9D9PVx1vcec+SYLIg2eE0dcKgBstk2sfz5FDcPtsdmMCrXeDcYNMx42DWT6wZ8RVpCOHhtrQu3yim4HtmZUBfg+gvgEIwKnItfuOkQw/AuJSVjoIRRvGM3zpIEKh2/5W93vf+yOn4yHr6xTEZoUURWCsrcBMNgMzFrgKK/bv0=
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar : {}
+ actionbar : {}
+ code_elements :
+  type_code : 71
+  p_codes : []
+  procedures :
+   -
+     name : LanceRecherche
+     procedure_id : 1562293271695291257
+     type_code : 14
+     code : |1-
+      PROCEDURE LanceRecherche(LOCAL sMot est une chaine)
+      
+      	bSansMot est un booléen
+      	nLigne est un entier
+      	stUnRésultat est un STRésultat
+      	tabRésultats est un tableau de STRésultat
+      	nDiffLargDPI est un entier = (ZR_RESULTATS..Largeur - ZR_RESULTATS..LargeurInitiale)
+      	sLibelléRayon est une chaine
+      	bSansMot = (gbContenuRechercheInitiale _ET_ Taille(sMot) = 0)
+      	
+      	si bSansMot ALORS
+      		
+      		si pas IndiceSuite > 0 ALORS
+      			
+      			// Vide la ZR uniquement si on est pas dans un parcours différé
+      			ZoneRépétéeSupprimeTout(ZR_RESULTATS)
+      		FIN
+      		
+      		// Lance le listing
+      		REQ_PRODUITS_LISTE.pStartResultat	= IndiceSuite
+      		REQ_PRODUITS_LISTE.pNbResultats		= 100	// 100 résultat maximum
+      		
+      		// -> on énumère les produits
+      		si HExécuteRequête(REQ_PRODUITS_LISTE) ALORS
+      			
+      			hlitpremier(REQ_PRODUITS_LISTE)
+      			tantque pas hendehors(REQ_PRODUITS_LISTE)
+      										
+      				// Enregistre le résultat
+      				stUnRésultat.Rayon		 = RayonLibelléComplet(REQ_PRODUITS_LISTE.GUIDParent)
+      				stUnRésultat.GUIDProduit = REQ_PRODUITS_LISTE.GUIDProduit
+      				stUnRésultat.NomProduit  = REQ_PRODUITS_LISTE.NomProduit
+      				stUnRésultat.Image 		 = REQ_PRODUITS_LISTE.Image
+      				stUnRésultat.Score 		 = 0
+      				
+      				Ajoute(tabRésultats, stUnRésultat)
+      				
+      				hlitsuivant(REQ_PRODUITS_LISTE)
+      			FIN
+      		sinon			
+      			XLOG("[LanceRecherche] (REQ_PRODUITS_LISTE) Erreur = " + HErreurInfo)
+      		FIN
+      		
+      	sinon
+      		
+      		IndiceSuite = 0
+      		
+      		// Au moins une lettre
+      		si Taille(sMot) > 0 alors
+      				
+      			// Vide la ZR
+      			ZoneRépétéeSupprimeTout(ZR_RESULTATS)
+      			
+      			// Ligne de création
+      			nLigne = ZoneRépétéeAjouteLigne(ZR_RESULTATS, "", sMot)						
+      			ZR_RESULTATS[nLigne].LIB_PRODUIT 			= remplace(sMot, "&", "&&")
+      			ZR_RESULTATS[nLigne].LIB_RAYON 				= <§Rff0001af10f668c2¤fr-FR¤Créer ce produit§>
+      			ZR_RESULTATS[nLigne].IMG_PICTO_PRODUIT 		= IMG_PRODUIT			
+      			ZR_RESULTATS[nLigne].IMG_FAVORI..Visible 	= Faux		
+      			
+      			// Lance la recherche
+      			REQ_RECHERCHE.pRecherche = sMot
+      			
+      			// -> on exécute la recherche
+      			si HExécuteRequête(REQ_RECHERCHE) ALORS
+      				
+      				HLitPremier(REQ_RECHERCHE)
+      				tantque pas hendehors(REQ_RECHERCHE)
+      											
+      					// Enregistre le résultat
+      					stUnRésultat.Rayon		 = RayonLibelléComplet(REQ_RECHERCHE.GUIDParent, sLibelléRayon)
+      					stUnRésultat.GUIDProduit = REQ_RECHERCHE.GUIDProduit
+      					stUnRésultat.NomProduit  = REQ_RECHERCHE.NomProduit
+      					stUnRésultat.Image 		 = REQ_RECHERCHE.Image
+      					stUnRésultat.Score		 = 0
+      					
+      					// Calcule le score
+      					stUnRésultat.Score += ChaîneCommencePar(stUnRésultat.NomProduit, sMot, ccSansCasse + ccSansAccent) * 100				// Le nom du produit commence par le texte de la recherche (100 points * <Nb caractères identiques>)
+      					stUnRésultat.Score += (100 - MotOccurrence(stUnRésultat.NomProduit) * 5)												// Plus le nombre de mots dans le produit est grand, moins le nombre de points est accordé (100 - 5 x <Nb mots>) 
+      					stUnRésultat.Score += (ChaîneOccurrence(stUnRésultat.NomProduit, sMot, SansCasse) * 10)									// Si le mot recherché est présent plusieurs fois dans le nom du produit (10 * <Nb occurrences du mot recherché>)
+      					stUnRésultat.Score += ChaîneCommencePar(RayonLibellé(REQ_RECHERCHE.GUIDParent), sMot, ccSansCasse + ccSansAccent) * 20	// Le nom du rayon commence par le texte de la recherche (20 points * <Nb caractères identiques>)
+      					stUnRésultat.Score += (Position(stUnRésultat.Rayon, sMot, ccSansCasse + ccSansAccent) > 0) * 20							// Le nom complet du rayon contient le texte de la recherche (20 points, sinon 0)
+      					stUnRésultat.Score += (REQ_RECHERCHE.EstPersonnel ? 350 SINON 0)														// Le produit est un produit créé par l'utilisateur (350 points, sinon 0)
+      					stUnRésultat.Score += (FavoriExiste(stUnRésultat.GUIDProduit) ? 250 SINON 0)											// Le produit est dans les favoris de l'utilisateur (250 points, sinon 0)
+      					
+      					Ajoute(tabRésultats, stUnRésultat)
+      				
+      					hlitsuivant(REQ_RECHERCHE)
+      				FIN		
+      			sinon			
+      				XLOG("[LanceRecherche] (REQ_RECHERCHE) Erreur = " + HErreurInfo)
+      			FIN
+      		fin
+      
+      		// Tri par score								
+      		si pas bSansMot alors 
+      			trie(tabRésultats, ttMembre, "-Score")
+      		FIN
+      	fin
+      	
+      	// Remplissage de la liste
+      	pour TOUT stUnRésultat de tabRésultats
+      		
+      		nLigne = ZoneRépétéeAjouteLigne(ZR_RESULTATS, stUnRésultat.GUIDProduit, stUnRésultat.NomProduit)
+      		IndiceSuite ++
+      		
+      		ZR_RESULTATS[nLigne].LIB_PRODUIT 			= stUnRésultat.NomProduit
+      		ZR_RESULTATS[nLigne].LIB_RAYON 				= stUnRésultat.Rayon
+      		ZR_RESULTATS[nLigne].IMG_FAVORI..visible	= FavoriExiste(stUnRésultat.GUIDProduit)
+      		ZR_RESULTATS[nLigne].BTN_AJOUTER..Visible 	= faux
+      		ZR_RESULTATS[nLigne].LIB_PRODUIT..Largeur 	= LIB_PRODUIT..LargeurInitiale + BTN_AJOUTER..largeur + 8
+      		ZR_RESULTATS[nLigne].LIB_RAYON..Largeur 	= ZR_RESULTATS[nLigne].LIB_PRODUIT..Largeur
+      		
+      		SI stUnRésultat.Image = "" _OU_ fFichierExiste(DATA_IMAGE_PRODUCTS + [fSep] + stUnRésultat.Image) = Faux ALORS
+      			ZR_RESULTATS[nLigne].IMG_PICTO_PRODUIT	= IMG_PRODUIT
+      		SINON
+      			ZR_RESULTATS[nLigne].IMG_PICTO_PRODUIT	= DATA_IMAGE_PRODUCTS + [fSep] + stUnRésultat.Image
+      		FIN
+      		
+      	FIN
+      	
+      	ActionBarRechercheVisible(Vrai)
+     type : 458752
+   -
+     name : RayonLibelléComplet
+     procedure_id : 1619345358195600830
+     type_code : 14
+     code : |1-
+      // Résumé : Renvoie le libellé complet du rayon
+      // Syntaxe :
+      //[ <Résultat> = ] RayonLibelléComplet (<sGUIDParent> est chaîne [, <sLibelléRayon> est chaîne])
+      //
+      // Paramètres :
+      //	sGUIDParent (chaîne UNICODE) :GUID du parent
+      //	sLibelléRayon (chaîne UNICODE - valeur par défaut="") : (Retour) libellé court du rayon)
+      // Valeur de retour :
+      // 	chaîne UNICODE : Libellé complet du rayon
+      //
+      PROCEDURE RayonLibelléComplet(local sGUIDParent est une chaine, sLibelléRayon est une chaine = "")
+      
+      	sLibelléRayon = RayonLibellé(sGUIDParent) 					
+      	sRayonParent est une chaine = RayonParent(sGUIDParent)
+      	
+      	// Racine
+      	SI sRayonParent = "" _OU_ sRayonParent = sGUIDParent ALORS
+      		// <Rayon>
+      		renvoyer sLibelléRayon
+      	SINON
+      		// <Parent> - <Rayon>
+      		RENVOYER RayonLibellé(sRayonParent) + [" - "] + sLibelléRayon
+      	FIN
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : FI_SansNom1
+resources :
+ string_res :
+  identifier : 0x15ae5e2606598b37
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

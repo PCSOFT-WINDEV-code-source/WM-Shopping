@@ -1,0 +1,316 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FI_LISTE_EDITION
+ major_version : 28
+ minor_version : 0
+ type : 8
+ description : ""
+ subtype : 0
+window :
+ name : FI_LISTE_EDITION
+ identifier : 0x258aa2a814918687
+ internal_properties : CAAAAAgAAAD4yxryF1P6q40OESEC7k8w4Grd5pV81XLu7EcgD+Wwj60USUrDmkhnr9FYGDtKyX7TtX9GtBh8dBH/mHGDVPYTiXq/zxvrxj6AkNZEylWgsZhV8qoo49tnUjWU9qWScieMlJTMDn511+lH5Uz+U1QwVyYX7clFL7IZLeIRC/4KZwtcDzn8clq60D5864Yvr157tX8N6WijtdGZSpIpf+T3Tl7wRx+T9pNnjDEt9BCcGR9GCToa7Vut6flS14w7hR6eW3OFfeg+lxnVitYArNAonmpCoWbyoF8E0HtD1Qto6eanBZsm1cKkug3JbB9I3TXsC/tkvCe3fHR+LA2Qc70bzbl3Vu1ieCeFF18hzCzPLUKiiWnBUbDR2bM21f7RH8RQksZJeo7D8YHYE7yZsglo/MoMVkN6BzB1BSTmQ5cntu2btjekkL0depIZdlG68tM95gS6LQN1bp3P3q4WlootOIq9biHhFOFOUpeVuAklqjBUa9jlgjuoiCxFdHPPpZbqb62DI6YHKYx8L5b5sSt9yVE52SkiRxZSsMXKHmlgB6EQ02Vm3K4oXy+/he51sdc9A1R2Gnf9M5mzTTiat/7uQ2SfxBTsXv1HLd9EwiOsLzOv80zhfbX1tLSFiD30Zet+5iqL5zR2yImlXOxnDnt0ZS2JRcpJ1BqXH5wWe5GfDBYjOLgD8DxrZFR+Xdog/1dM+scxluBUsKBJOLGG0qSP7ydzBvL9RlWaxX6jFfQaej8JcNSf9R3tpo5qLTSAA8dIW2V0h+W8bZcW0Zip8w0=
+ properties :
+  width : 320
+  height : 210
+ controls :
+  -
+    name : FI_LISTE_EDITION
+    identifier : 0x258aa2a814928687
+    internal_properties : CAAAAAgAAAB+Re/Vl/4lX5Rp4e4rfif/9ciEw7Uuu0jUnuNUynWj7wYfPj/JUTwNNgAc25fSGC/3KX32l+MrJIVpMAM7FkCXJ8BdCOsJDgpL/vitSJ84RqwEowRW+DCKCSFEsCYT/qCoZ/e7ppDtDbIYHuRTYm9InR6yzhOYWFxnVAIyNznaSjtV8Z5XlELDtM+lf5ooWRE/8kwDmvOkMqpiX+S3FbrqEeUXWNODL91qMp+x/VqH0WstzvYo2UpoC8xXmf0z3Z0P7ZJSvqSCC2r6FQ59cJ113kklo3z6DN38y6urIascmsBYYvjn7BoJvqlJFNetE7Kc4+Et516PD4w/Td0mJoJ07gK/ythxqpFNClKa9+oslWW4Idgn4tpE/rcDeeCFMCbE7N51i98qLrsfiI/yB9J/pXHpsyD77/IaiTbxt06jirmUHRgqkxs25R95J95TBOtLgKe7azFCaFcaVxjGCZiJnS1uJKBMHeqGUDnTX7ES21ZGOc05
+    properties :
+     width : 320
+     height : 210
+    controls :
+     -
+       name : SAI_NOM_LISTE
+       identifier : 0x258aa2d014b0220b
+       internal_properties : CAAAAAgAAACb4JPGDB8SbIA/BZmelO2CmQeFfOYVzuELzHBjHcwYQIzI7CkCWsrENdl4dqtIaXxLMNNm4cWtPWWkIGrSVm8yhL9+sIM4ySkTf1ZV9rjlseAhFkQiDnVXpfgPlQfsa0s0hPB43uWXeEWfNMBmZG29QUO5QVz6wCJ46BeAa9DzfnKmFSj7Cl5dgcT32ohjzUlN8BSFhjThxOfeG0J1cIzbbjexj6W2K7IF37w/smGYrgwPkJ99wWAFsAScse0rtNcfYsCaE0qizXsUeJtK/QucJlpz8NRWFTwPXh43qlLYf+vaz3vSXFODFfjQphvOVN4ioPMh+UV1FWTbiSAs2OZszVoGyPEq1Hf5pVoaejRwSFqmIvpgXE6EcSzMuNmJkVuSjZdiEQAUc0dqIv/n+RcHvL85Xn9/IhUkdPifkitlKnvd/0lieFnn+6TEBbsxiapJKMBGSvJvgDm398QhSNR25o3Zwdu/cOA3VIhRfsK5iCdGeI9vb95K/bBB8XasicI5eNYB3exLWZBPEVXZlJmb9TNN4k2WzO8xdfq/ZmXoRqSeUL76OrO+Ia6OqvVGQ8FIvp01HaL7bbwJhigB+ExjhMRBr5ClLO59jO3jmALXhFTnJgRW1PIBPYv0UIi1SX6nurtvsvxmOZ2UVg0O6Mq3nWOF5IOza8couYvALtCAiSnCdSKRjypCRromelEWEyaOutqIsUexPnZYjCgurkcZCgayTHzUIDLN0BiWnFNXH6yI2+PCbDpEidXmnVQlJnm34mgSEupTRXPoJST1eQSyy58cNBLH0bZCaD7lgoeTXH37trKchz+Ufuce+3j3fL4+E+mE5rub/l3jzKrmTJYm0aESX4ipoaUdZ8Tcw4+8FXk/fEYi6j5B845bGpcBfOVWJ4WOh4Kkz84aS7wfsc5h6+A2KbUDuZj67BWR5fsElxLGZisiv83VaxHffTcnUz4O6WjIZQxducHjxEuJzQerNlNEictlKLfjj0hpTBckkShDHSGL+RvsNCjvQVdqGelD65oQiftLGyOIPycvNCg1f4xDcQDuBCPB1rskp7usxHBGFHBGIKwtAO5CIxchSMx/9ggBbLNAK0GH8B72N+TuEDhQPY46DSqJpWrBYM8cH+cBCeC2iY+qf0DB6H+09HFzh1a/TTjpVKRRR/KfxSNx0i1BeXMR322H4GeRq8fOya0Ud/YDQL+bJA7MuYArWhACZPQW/9QSoHj2rAWa0SroVWe9arDdun+VB3h1cq+MOL6IV1j08LfYOIcegIGh8vgXtYvV0QaxKZBOaAnpx79Px7GWYQ==
+       properties :
+        x : 15
+        y : 162
+        width : 290
+        height : 40
+       type : 2
+       code_elements :
+        type_code : 3
+        p_codes :
+         -
+           type : 276
+           enabled : false
+         -
+           type : 277
+           enabled : false
+         -
+           type : 278
+           enabled : false
+     -
+       name : IMG_PICTO_LISTE
+       identifier : 0x258ac3af2a868a5c
+       internal_properties : CAAAAAgAAADScGN8E46AH9wfudRvPLsdtKnN+oxi/oncUGsq7NWeXwq2rPRpv93mSAh4ovSuZ1/l0FJf6RTlPYvHKZ4/gy1/YeMk9YwhDSAvOifGt0Fk5srh0qw5eAz7jcf8jtH90uCVFrD1PkbwziJMI5nu0n2k6ZnPAY0ClBV1MvD4t7lOFYar2F36HBPQ8oV9VXUCwlRzYEd7gIn2xodpCYZepUOwlSzyP4sY1hJYh0+Lsn+d27N9NaLgN8Vq70r5ok27+40YSPcaFAJhd5tl9ZnFPJDb9NpK/4GDDDPsxgc6d4n+N3BAeEpbd73zGCLYd50E98bJrTHJ58hKP3fHu9YUWFhw/9k/vCf9pW8scxuoaAuT05p1vdjPRkKmDmyjDYS/FhAg1Q35DXc0P1GkBN7opzD2lX21bu8muM2it93kFF6wB1Dv+38gL77uMXY8yrGgz7V3r+EZPkCyfnqfGLCkg7/Fykt+NUxNM58cwZUhFD9VW+Af8hooQt9TE59wpmPiUfWwzHUSVuegc7VLNa1F5yHnuNTyOVGATCOdYqCe8k17o81rcbTpsYji7rn7Yew+vHLm9vrQJrD9aM5RkSmPrkr7UcoZl9Xi2rAMM9zc/Uxhr3ymNsJTnOj2K4UEL0r4MSTtDNvgV0aI8BlXPyUV0y/6oR6dXhpBKijQzI7jdN0M+DMib1Na78OtYNqW0ViDv79gPq8lO0Drx/QnfRm3aBNtsd1vjBgcksQElXHMgaYuAPRfsQwXGnX+4F+veRKNAs3arv7wi0Ik/a9BIVRfXD0XLJUF0UAu2bFNFb6SZ6b2SMntKPo52n1MlEBCR+rr0NnVkFdoWGxVACL6m1p8X2mAmjHVA0gA1NGBA3nXNao3iggPr67ueygRcWOmiojshIcdMZH6e9uew120WNcDttSi40rDGSxhj9nXv5bvaV4=
+       properties :
+        width : 320
+        height : 136
+       type : 8
+       code_elements :
+        type_code : 8
+        p_codes :
+         -
+           code : |1-
+            
+            ExécuteTraitement(BTN_EDITION_PHOTO, trtclic)
+           type : 18
+         -
+           code : |1-
+            
+           type : 66049
+         -
+           code : |1-
+            
+           type : 66050
+     -
+       name : IMG_EDITER
+       identifier : 0x265448b7143594c0
+       internal_properties : CAAAAAgAAAD43X0tCAd+Sz6p8eVUvMdnJJRTt2va2njyzxhmQgsnVX9LM69JQLCsMBtwrdI2d6uj+PCF5qA8OKJXAlHBJ2vZtRqrRglKEcjOxwqSFLlbVBkDy/xFNeLtWprRl8mo659QQDvfG+AYNa+D5B2Cyb1ozjHLpSBRTNKOA+/tNYmdCmDfgNU2o16dZq4NHCnmMr61sL38rDuAIelgJUG4rJ+6+oxaaduRuRJk42EjTPKCjPvk8tj1xJw8mW8TLvhp48VMRuB5H+kXWEh21AL1drsDHmqkAZnw8vQbyaDDulU8L7HB/6+//L7LjUJ+KeOgnLg5YQmr2TeQ0IDVExjDKIW52ILAeVq/DMPDIaeGRKVf9a1PInlJ1bpb2CGVnAsPrt5N2mDX4EkquYwW+b1+EZVjmMDBF1VS/MH7FZ2eTWpW42lHnFWVJnFOXIdVO2ErAXxKGQjytOLjoRx5Njx4qIRqrc+aels2rEp7kk1XYPZWG09j9/xFnVgROz9Ok7r/bJyk1JrrHKn4vHCbCmkCnAUkALyTIaQWf7QGWzA53bjJUCkzUyzDuRTbhKxqMuygmhZW8S0fTgJoMJXPNpRieLD6gbVwGEQJzUz+jr0iZeQrX1804KEe95QnEmyywe+wM4sJWB2EbZCpr+LOM55PSaxyqMpuuiKc6D9AqZ/3Re8ssw6URfPJrhSj1BXqqXSWE5F3UVhaUCr10bL8k0XhpfrofIEiEHuv5FwPG5e6IC8bcBOiwmbQ27sCfi2q49GsZ3glpAPPJ0C1uHrGkilnKsr7QU1GztAcF4/vjJn+jRLJGLrVOCfxbdcmS6EIJ7G8nvoObdWLElI/VU0UYpLK2v4ocLcxEylQbiS7xd8xQfui63qEVYS3sG4aWG7lmL7MF6+V26BaBWqaVxVpDe217Qc=
+       properties :
+        x : 281
+        y : 8
+        width : 24
+        height : 24
+       type : 8
+       code_elements :
+        type_code : 8
+        p_codes :
+         -
+           code : |1-
+            
+            moimeme..Opacité = 45
+           type : 14
+         -
+           type : 18
+           enabled : false
+     -
+       name : IMG_SHADOW
+       identifier : 0x265705330445d71c
+       internal_properties : CAAAAAgAAAAoSmEYLasdwY7Qtmz798BHcRVMfKliqht7eBJeqSG9oRKAJSV0UbY0tznnHfq2PSns2AOTdEA6HPrzhq62N4DyReQkNwxS6Pxjr/7pSNKLGFslL1dt/ltVDvgOKb70A8U8m29JZycNI/fUofh3YTKft08HYm/8EaWK23Ozwd4RO/q2AtE1G4y2Jl/n1f5dVbinDSywJ1/zMXGWIciVVOL4gjTyrm7iDyWgM0On3qr29ENJ6O4gf4LG/mDoveVqV5fKaVjFr0OTydXQbjRHQf41trcxPxpUTbfV/Im6Jy4censfI01RnNuEhtEBHsUlNunUjXm0Bs/zIaOGG8AAtwko0ElxfsddrKcbgl6oiuVssj1BiIXcpYVdxr+J0wHgSdKbsBF/4VuSAkKhz0I0fTm5w2UeD8ZWjQ6LJyFGYJZq85lAMKix2nj/oHdaRziAqlWnC5ZPzse0Sms9tSRkg0+bdkSbEN7aTl020RdibclIruHBaoP0SCsNl2VOjLVH1X+O+x4nTO7iQWpcK8W2fnFgMylsFjwWKjlHEqmkhP4zDjHxfukFNZXWB1FqNIRk5gnXgorFzAKGEG2pTAXnYnTkWiLzYXZC4CvAYw826+Lqv8Sfnj86adIripgCLPbts0YFoza2JzndMiuDM3bltiQNaSZ4QimIgXMYRq+3yJODbVUtZEIvXLupHE0mEw1Bn8rmFIO77Z3e3ApfEDSORQv66ApNbcS7JWLIbFLv9JfoLMb3cwCFPoGW2zpN6tzMlyZQcvgbBQx+yuR/bPkL6w4qIiAvydkoBOS8oSn77Ev/bEbhauI9Ru4gqtc2Tc3LD6ve6/ciVp+z6+2amP4kHBHnLMu8NgQw+0fsLyBb7AekI940soeYFJM=
+       properties :
+        y : 136
+        width : 320
+        height : 8
+       type : 8
+       code_elements :
+        type_code : 8
+        p_codes :
+         -
+           type : 18
+           enabled : false
+     -
+       name : BTN_EDITION_PHOTO
+       identifier : 0x265705b204a5c6a8
+       internal_properties : CAAAAAgAAAA7vMfC3tJh8Hh0KP/PCI6okxapsj3frlaFvOA7VMKwAI5YutsQzOU7CaO/skP2t5TlyOsIRE58inqnr4qKH6kbJwCikg9ADPNIs/tjP7LMp+yf9y8HBg2ff04oWkfm/MNQvubKFW8XIBAxPC7royr31cVN0t8mpgm50ztXPVjw2V+Zd2EMuqMXdIk7HDAyZqS4TKUYob6SLg/X8l7hFpWsnyisp34vgPDMFxaBLIBoB/3rBDaSXsh08T1QUlINtVK+tAZ4n/1meYj8JxGZwTO7w5McMbikAR+F0rlwrRc3kRXT9F0EEmrK6ObmWM3O1Qp793dXRmvRdj63/HGa7bEqeT4HwqfOpS522i+owjPedK0zFwnYaEAqUxZ1HjStkumV0JcXpZ9XpBm5gT0GF0OQ4raM1lJbp21/j0b19Di6qCHR4pc+RviN4xe2q0P8gGg8CDk9CxXd+fKSn/C5PQbHmbfxzmzIm+Slr+nnR6d41d2iiyNBpvuwzeGnuq6k49y7qkBAId/ndkpoLkoP8fyuwx2CqLFVUfKy9TtWJZVe8fwUzJfNVjNs2c3XkU3gRcNTBSZ/q8Y8x3Of24R9kCAFR7LdCdnr8oSn/djiL9cj9u0szHJWJRLrnukHQWG4LkrFwai+Vklp9KlyzuRUXVsRlW/yOkhiMcywhkwwv7xsXfW97mxfJ6qfc5g0UykknGbPxKQPuUbT7+3Bdn6Fh+nYH+wjyU1ApnIyoB/5rejIby9OgGcKUrQSNZfBYIkuSR5ch0AwJJBfX7RXw5xBgOavP2gd3U63NmoI/7maPyyrTt35jCG5IIsIDiykyUgPNUDH9tnCpaCnwXNaQraZHn4uLvjfYPs5LF9ziFJLHeJ8aejqeUYmi+jAVSllBx5Y6c1uhaJwHJUBvgPqwMRA9Hcs7MdaM45lIMIjdWZZub7lO/Clp02ote7GPGpoyBel94NeOxs+wq+DFiBqwUO0U8rv9PqFTo+U6YZeFZXj0uB7fWW+KrnlRoEsUb250WAJO6e4Fah5YU1c/p2WC2ekUoIkGhwXkBbJYG8aaTR3iO8=
+       properties :
+        x : 80
+        y : 44
+        width : 160
+        height : 48
+       type : 4
+       code_elements :
+        type_code : 4
+        p_codes :
+         -
+           code : |1-
+            
+            OuvreMenuContextuel()
+           type : 18
+         -
+           type : 161
+           enabled : false
+    type : 32
+    code_elements :
+     type_code : 70
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE MaFenêtre()
+         
+         gbImageModifiée est un booléen
+      -
+        internal_properties : CAAAAAgAAACth7jyk+VvcsXGEyyIMyZPDQcm8F7b359tXCcK/GFJYafKyLz9ZkXddgXjOsh2KwTt2Ggoxt4LL8s6YVJj7YnpYKQ9qASlvY8tt6N5wdfjL/4UDcwNGEdWHaU+qco+jrXEXCCOCR07Gd7wEUo=
+        code : |1-
+         
+         // Ménage
+         sImageLocale est une chaîne = "user_" + ChaîneFormate(SAI_NOM_LISTE, ccSansAccent+ccSansPonctuationNiEspace+ccMinuscule) + "_temp"
+         SI fFichierExiste(DATA_CACHE + [fSep] + sImageLocale) ALORS
+         	fSupprime(DATA_CACHE + [fSep] + sImageLocale)		
+         FIN
+        type : 2
+ menu :
+  name : _Menu
+  identifier : 0x258aa29614893e04
+  internal_properties : CAAAAAgAAAAFaI2qJX8UEB99XfCx9752u+izfpc4JSeOKmGiFAFrLKT8g2mwifkii2XXStoBIVaLzyYEll9OQWwwtVQkhOL25O5kKxgRsGgPtw/aT2D0GJ1OZgV3uLj4vAHCBNQ22RwXJabu0YQxKOIryJN6crP2TV9D9PVx1vcec+SYLIg2eE0dcKgBstk2sfz5FDcPtsdmMCrXeDcYNMx42DWT6wZ8RVpCOHhtrQu3yim4HtmZUBfg+gvgEIwKnItfuOkQw/AuJSVjoIRRvGM3zpIEKh2/5W93vf+yOn4yHr6xTEZoUURWCsrcBMNgMzFrgKK/bv0=
+  options : []
+ popup_menus :
+  -
+    name : MENU_PHOTO
+    identifier : 0x258ad66a38e6b30f
+    internal_properties : CAAAAAgAAAAFlvZTBPOFUy/SZ4Q17W4esjsW+rylpb2u3/l0/H5iL5fDXgICfF/RfkVNEZy1vWQPpPgXG4q4SWx0Nbm8B+1apvAwqobP3QjmwFd5VnWYLqmf+GSjyjwkFmctJBYOf2ACwLXtgH+IT5Uwhk6xiwoIYg0lBfyS3eA02rUp5HixhkZhRpsYgjA4WW4Wg5olbt5usgslZWJUpK+/tNHtSX/YMZCY4F9Yu+PVLl308VqCOAe0W2WBTqKQhemyn7iaia+5DCB3/x3euoJALdD/iQubQyR+vqDg2MDsDwyW9cWbGiJJXbSji9LBBwgaN/4pLkSmfXgXUd1bicnpCpB966uMmfJe/weWOhP/HToi0lvsrllfVWnKKiMvWB1dvLcIPym9CZquAbKD5e4TeUqI2mW1tlvo3w==
+    options :
+     -
+       name : OPT_APP_PHOTO
+       identifier : 0x258ad69738ee64da
+       internal_properties : CAAAAAgAAACgdYE8YqLYby4B15NZJ72tYgMGhWHmqRwjeqLHlpBiBHcFvhlFBVOGVyC3QtWXQp8fvoUOjyalpPQLdQ9G0R3Pory6fJecKrhXxn72YGrci5VeJ2ZCerd9CKE1S0MaBJouk9Wq7X0uJMAxiADpyMWKvB4avJMmnB/0i/33CF7CWlO3uLrq9x+nS9jwYfOzwAtpcMuCCF7Lmblr4Yy03ekIjJxheE9loismHEvadakYMBzFYyfiAsSqliwFF179byNO8mTiZuaMtQCi9Pk0NcnROH6dMr6myKEP4fcitfntjdbkLLnR9gs1/cfLpFGMn/MrWQIFhQFnlZbgGbWfxUvMGNoE9cIafjln75rYhEHUCFrHxYWZ2J3mMKqBcvPCxrTB+8qbr3IkuhmFWMq+eKkTMOhfKUiuUKlOgSv8Y+D+NAKHgyiKNSWjYso=
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            
+            sNouvellePhoto est une chaine = PhotoLanceAppli()
+            SI sNouvellePhoto <> "" ALORS
+            	
+            	// Attribue la photo
+            	AttribueImage(imgFichier, sNouvellePhoto)		
+            FIN
+           type : 32
+     -
+       name : OPT_GALERIE_PHOTO
+       identifier : 0x258ad6a138f08a44
+       internal_properties : CAAAAAgAAAAX6RNZZp23ZslixRbJ6G51NuXHbxLMAe0bfz7UPGCBfPlmeODe7QRSqvwxNdTjcTEXx5OuoqTyHjPlS9TOW/Mwa0MoU4Fd72eP14Y2oZSICAvumBjkbfZhbLxv2na/as0FLyAIsnXATKNVZtw9XbZ8/lSs7hAaddwwmQcVZxDBO+mD06S+6pTIUHZhSxaf8r1Nc9iNGJlXHAMSenWi7n7HVRm10+CJY/OuTIr1OopEwYNwqlokwi7JNnesa3O9oDXhPhnDvHcPtLIyze5JmyrJxMc+iTZt+Rln4fSib2J2HN0i1IrGH9PjrQXNWPCS0BW8Lv0u6WS573iAnGkxXJ4eO/sBBm+m/zM5qFaGg7BuVGGX2mxj251uyioxnlYnLXvH7kfb9xQSEuB4gb6ltl4dDU+XWCNYp640VDbH+4Ghrv849A==
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            
+            AlbumSélecteur(SurSélectionImage)
+           type : 32
+     -
+       name : OPT_NO_IMAGE
+       identifier : 0x258ad6ac38f2b387
+       internal_properties : CAAAAAgAAADtBv+LDMUqmP8dL1Ak/61cO9H/YhXCORtMRjGbuJwLMDCLn+h+5VaN9tPCqSZl9xEQex6gHV1hUeg+tbOYtssJ/qMeN63RmU7eh77CNO7TSQ0/mdpDj2WYjS+OFGiXMQHHi8eAtjHEg/nkaSzVfe6yE01IpyiTxjBzETr5k/08JwBiKBReJN661868600UxGDm4Lt0kDCqVpSGsoD4qDvfztfl3LWeN4NfXm/A57TWOJe6eGbItTqaAfTVCVjl4W+Gjo9vRnGZmve5SgbRPNSG5lffod3Gk514RxXjOwQceE7n05OQQe2o8SxcfkSu5JEKOPJWMB2gGfyfZVRw8kZKpr0oWz9EfnwSvqs6SilgETgdzfgn+H7QuVUBwx9fMoh+QSyxNnMY4wz2WunZ66DhpSj866lq6dMaJvXPNNv75BEinH7K
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           internal_properties : CAAAAAgAAADZm4wHf6zlVtFqZ+hED/7/mSvebHZ3l1NxGLNe6GUpIVuOgOA92j2h8glfFrQKk3wpnChUZiq9AZmo08S5B/MPJs5/4tKfPxEjva17x0EV3Yy2DxbLUnEA87OA2/iQMJvqtqpwL51YvLIEJX4=
+           code : |1-
+            
+            // RAZ
+            IMG_PICTO_LISTE..Note = ""
+            IMG_PICTO_LISTE = "panier.png"
+            gbImageModifiée = Vrai
+           type : 32
+    controls : []
+    code_elements :
+     type_code : 26
+     p_codes : []
+ languages :
+  - fr-FR
+ message_bar : {}
+ actionbar : {}
+ code_elements :
+  internal_properties : CAAAAAgAAABA2wEueyODmVSm4SqZB/hZzy9jGpjcWdSTplIsPv7oXD4kekjE1yHdGKzUtg1UU4Dwdg2L0niQxTLT0F1jLZc=
+  type_code : 71
+  p_codes : []
+  procedures :
+   -
+     name : AttribueImage
+     internal_properties : CAAAAAgAAAAUsaP6pirLPPYpVbel4ax4yRE6HcvqEX+XFgeo2nb8yqCG2duVvyXA5NKr4aPjOnznT1d5VpUB0+DlbO4J/TaZHDjbnB9ZHdON08XkiH4gOxHHW9P5wQAUNZeDvscAwYYzcYQTWjtd9iyXNZJwaKOdQ8wFW7+/Uh4ULpmjy5MLpegAof8uuducNzhX70xQ+IVz2/vEtVbSDckadaKS7Q4ZC3JZv+Kxd5tw9yRcc0NVzu2xLf8WLiETrfIh/dcRinnSNvS9LLBVeHk2hc0ecffAgkIztHsYfw==
+     procedure_id : 1585636633625146438
+     type_code : 14
+     code : |1-
+      PROCEDURE AttribueImage(imgSource est un entier, Source)
+      
+      	bActualisé est un booléen
+      	sNomListe est une chaine = ChaîneFormate(SAI_NOM_LISTE, ccSansAccent+ccSansPonctuationNiEspace+ccMinuscule)
+      	
+      	// Aucun nom spécifié
+      	si sNomListe = "" ALORS
+      		
+      		// Utilise un GUID
+      		sNomListe = DonneGUID(guidBrut)
+      	sinon
+      		
+      		// Préfixe le nom de la liste
+      		sNomListe = "user_" + sNomListe
+      	FIN
+      	
+      	// Calcule le chemin local pour la sauvegarde de l'image
+      	sImageLocale est une chaîne = sNomListe
+      	
+      	selon imgSource
+      		
+      		// URL
+      		cas imgURL
+      			Sablier(Vrai)
+      			
+      			// Téléchargement
+      			HTTPDestination(DATA_CACHE + [fSep] + sImageLocale + "_temp")
+      			bActualisé = HTTPRequête(Source)
+      			
+      			Sablier(Faux)
+      			
+      		// Buffer
+      		cas imgBuffer
+      		
+      			// Sauve la photo
+      			bActualisé = fSauveBuffer(DATA_CACHE + [fSep] + sImageLocale + "_temp", Source)
+      			
+      		// Fichier
+      		cas imgFichier
+      		
+      			// Copie la photo
+      			bActualisé = fCopieFichier(Source, DATA_CACHE + [fSep] + sImageLocale + "_temp")
+      	FIN
+      	
+      	
+      	SI bActualisé ALORS
+      		
+      		// POST-Traitement
+      		RedimensionnementAutomatique(DATA_CACHE + [fSep] + sImageLocale + "_temp")
+      				
+      		// Actualise
+      		IMG_PICTO_LISTE..Note = sImageLocale
+      		IMG_PICTO_LISTE = "" // Force la mise à jour
+      		IMG_PICTO_LISTE = DATA_CACHE + [fSep] + sImageLocale + "_temp"
+      		gbImageModifiée = vrai
+      		
+      	sinon
+      		Erreur(<§Rff0000af10f868c2¤fr-FR¤Impossible de récupérer l'image§>, ErreurInfo)
+      	FIN		
+      	
+     type : 458752
+   -
+     name : SurSélectionImage
+     internal_properties : CAAAAAgAAABSov83baYAB3BXg9MD9y3thcgjGAFM9/y0xPiUV1ce9y6eRvbNpnwYJnR1CoK/o4koYScq3TnxjKtOeoR0VgocpxvY/RT1if1EoxUx9z9XL5ib1PyIw4yrS2DbK4Bp/VhysUqKvzIa1cVIk8y9X7TVEGb8lWPko7itItFRjoY661b4Kprr6BVwHnNF87aCRD+eR5HIH4cI6G6FAt0S7WVmHazcdKw1
+     procedure_id : 1585636633625212193
+     type_code : 14
+     code : |1+
+      PROCEDURE SurSélectionImage(sNouvellePhoto est une chaine)
+      
+      	SI sNouvellePhoto <> "" ALORS
+      		
+      		// Attribue l'image
+      		AttribueImage(imgFichier, sNouvellePhoto)
+      		
+      		<COMPILE SI MODE_IOS>
+      			// Les images, photos et vidéos récupérées par AlbumSélecteur sont copiées dans le répertoire "temp" de l'application.
+      			// On doit donc les supprimer
+      			fSupprime(sNouvellePhoto)
+      		<FIN>
+      	FIN
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACuPh6Vn4VsyC3wm62L2DwemsyYv2Tr/rJ7GFl6i65xNoj3oimWP7aYMI4evq7QO2yhxMQlel1pvhGVC7ENig==
+  original_name : FI_SansNom1
+resources :
+ string_res :
+  identifier : 0x158aa29602ce3df5
+  internal_properties : CAAAAAgAAAA7wCugPa3Llh29up4VO+T++wa3OrewuQ3WP4NJV47trUqhlqE=
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

@@ -1,0 +1,1188 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FEN_MES_LISTES
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FEN_MES_LISTES
+ identifier : 0x258956e806c6a029
+ internal_properties : CAAAAAgAAADKf5vcfv6WgAhbc6OIcasm0B8ZOkqibzUB1zKRXHzf/wP+1eomzjDvtFpwb2Z+xjrVUh9ESCtMFIa3Qw89+n5CWXHEpkj9ZJRO99qsCwYCSiAMCCNtY7gLnx9q/HRDshU9CLOHCFB271TKLXu6RWYrQtYQa/1fEKObfpSHdSfl6w7tYpleFFvSOES+VkNomhCS2SPXa6JVx8Rswj+PtyOP32hooE38JhaE6MBGUVQs+FabBlt1zMzlAQEMWJXsBtIN63zbJE6dVH6IFQ/kolTJ5B64Xfb9EbOSweUtc0i27pkS3xcs9y/C+H5IVzoB4Ak14wUxs8UMCMnIvMRSzJh4d8Q4fv+XavgQgQ8huQcfvDdwevt5+64z2SnKzY+yW7OtYYF/c8rMxeC3SquqOAif8CqssG7SL3PI0hwaUDEpY9WzCQJh7qujoXY98Ay6J3+fW7mJbwV+ewQ9tS7XkkDMG1+uWqTz9T54xPaQ5oMrGQPiEdBG0wJ732Pgcx1amDmI8bqXgnyiZ2h8L2dSj7etIGbbdJ9QAlLoctV3GAhDKZIsgeRLDNk7GUcX0D+mOzQHFpkMoIn3Qux9SAlW/xL0RxGcw+CvbdCySHRnjoGfusbBAs3WBDC+B+HEWCPYgnhmyIrJiEg2HsxlFnWR54Rp9pLmxztLJDmhO7ShegUK/+kHMMl2e6MA5F3oHcxeZuihujoeTXmPF2Nyp/trRi1vLwPBwQBvxOcLM5mrqFiUx3fqMhgvIS7IcJAI5vkMVBR58lf0rqyfrwvGe8Cd0onfx45uiVrD5gg9199IPfqu18mb/kip640mmwmiiVe4XSMNPaDx2j+IxIRnBDWjREG3YSuIEv45ZdSZupk6kXIWLK53RaKpJnr6DfM7WHK626uKGs0mDEtwwvCPfBXxGr5CnAo6bUTezFM3uI8GXJ6ybzSgM1yCG0H50Gt0B3WaaLQbsl+e5QVBGIkyty+ZifHHRg==
+ properties :
+  width : 320
+  height : 407
+  heightMin : 471
+ controls :
+  -
+    name : ZR_LISTES
+    identifier : 0x258956e806c9a029
+    internal_properties : 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
+    properties :
+     width : 320
+     height : 407
+    controls :
+     -
+       name : IMG_PICTO_LISTE
+       identifier : 0x258956e806cea029
+       internal_properties : CAAAAAgAAADr7Y2GL+zijgwSqR6K+Xz09ItHp9uTe4bIr5GPO9GAB1JN3uYrjORkrl9kf+o+ANLT3C+EzrgB79A/xJojiqj/i+lhY7TGv9BMd5/4JSBcBTPuhMe1QxEDVCiC1YzXJZZFTy7v2Mb9xt2dJSzUTMvM040mzZEH5F8qgSk0UihjHvcYBmr1JVxEgRgS7VAgOR+QNFU8mKplgTu1qeynbPDARwZE8LMSA1i2taqn15CHcGeT+bOPlrx6vQXrFuoUgexhAxprCcUTDmhsTCi8uX4rtRsL6+fMxW1NeNwJCZSiL8C2NKbYV/nHaslcAW8YpV1FM68X5Oi7xrb7ydzP0uZZPzFMbLf9rKrXgdmhH+r6CaMtgoS24JkDH7vz0MCgEklb14SgTC0tzIk5Ki6/2j3zQl0CvQB3xcE8lmASdpr0I3P2huFXPBO+erRtuW7EW+Qu0wl95J7WuD6sdyxaWeRKObgep4onNmRT1KI6sSxy50CVjsdx4DSr64l50dMWFdh+336TUHfXDyklsShPiP9M2r3xBW9s8lnjFM3tc+SB5Ih7E+6oiGuOb/5rB+5ZrpanK6AHzSGFUA1HnhaoDYtByIHuAikZ4QjrAzoO7O/AZMEwLuVjnYOE897Xlym0Ye+RalzlxfrMifUO9ZHr4ifCJKmWINbm3sL16vGtEptaZQPgGluviXLbHAN4r+769tphOnYvA5jXy4cFBR54yFU3pEr+W8cXSsciFryqPV0uUgkiHPqz6151hmtuRUXyFRWrKD5mZyWtTdEezAylV14ozyVBHG9DNtPfhXKU8A==
+       properties :
+        x : 16
+        y : 16
+        width : 40
+        height : 40
+       type : 8
+       code_elements :
+        type_code : 8
+        p_codes :
+         -
+           type : 18
+           enabled : false
+     -
+       name : LIB_NOM_LISTE
+       identifier : 0x258956e806cfa029
+       internal_properties : CAAAAAgAAADk9l37g+HbAz7b2vdGAgY7wH1inx3tB3C4/SZgA/EIu4ArEJFj4RrilpLa56i4t+Rphy1XzUj69Dv+HtzN7O6ejB/nLQmkfn8EvM8JuYxws50f9qFh882wR/CmunPEvvIOvV4U4AY18LbN+QlZvbStoRNMLkz27sOEzWO6ZuFnVl0dMuVx00Y1lXVNG0bpFmF3diwSr+w2JxIGq8ZXSXqx5KKfA0ZenjT/sBrM7SS+qQWfSO0EEYyQ+iOo/nODGM06sFiOygcBqQ+s5RFIOgMPRDGRynecPNeqnXv8Z2uiFF7HSWbk2/LXfySM/Sg3uBdnl76wno1hV8axuMlhh4rciHbqoJTAZ0/fa4z3flpP44W+6m7oCDXNuXWdjruDooLtOiQmzNPJ7+FyRRo9rt50yl8O4De9zQQik3Kx9WwaQJ4XLNEL/ZEtuQLHIS1Jw0W4LzH6BSJAYiwLPuhSHJAJkg4M9WRE5D+/OU57NS576tRrzw95wmNrHUoRwlx9D4161QTpb0uMzu4rNqE=
+       properties :
+        x : 72
+        y : 16
+        width : 232
+        height : 25
+       type : 3
+       code_elements :
+        type_code : 2
+        p_codes :
+         -
+           code : |1-
+            
+           type : 18
+     -
+       name : LIB_INFO_LISTE
+       identifier : 0x258956e806d0a029
+       internal_properties : CAAAAAgAAABOgTWfBqDW+eVbRTa/ethnKIyUY9BX1+LnzBp3+0XN8uL4nBLIGvHJGr/c9/LPfUFTtK1LlXdcF/UQXi7z6K2kt7IXj7Dosuure4MRts07ttvbbQZExdj7pAgc6mfkCENW45oSXuOEiXSIQF5HUwxsbdZpbwdqdCnpVzr0Iy1HsOync30yA3yPSIF1q0oxSLTHMeUNeRDt0SG7kal63oKFbvQa/2SjTnSiRuinhIHfE3R6BtEWwydoTBwE9SH71KGh1b6ac3/i86WMo1nN46VYeVImwH4eupiA32X9DCNWh7N86Z5Waym36Eu7P3LvQ83aYvaaJ1fUZUt5Yczw/nrMruOuvj9/9SJVAdkevKTwzfEYwiUZlT72JH/FOGhZ0R8386lCn2/eaY25+NVpIXDVy0HWyk7RyE0s9LFw1oRErYFXNjoZQB9Jmg67LwL2zO6GEaRRNArJ+SiuNSpm1FYme4nyfjSJxSL/TonKrWlmxa0DWlnXt1zZZYvhruvTXwigWll1piVp7GzWDead5jSsKTsAvxpBmeBUnhuG58Myq5u4k7/xKat9KppVlgNJtw==
+       properties :
+        x : 72
+        y : 31
+        width : 231
+        height : 25
+       type : 3
+       code_elements :
+        type_code : 2
+        p_codes :
+         -
+           code : |1-
+            
+           type : 18
+    columns :
+     -
+       name : ATT_IMAGE
+       identifier : 0x258956e806cba029
+       internal_properties : CAAAAAgAAACn+Kw721bACJO6PTXThtvPaQVOcg753hEXgeGuAXrM/XMrIB4SaaNwzQTcRsoYAz2zPtyip5ITGq8HOqfsamL6gqCH9vJ2lllHBGBnBL4xwfqvfjS2sw3gMD5xgDne02r//zU4rj3Xk3nU49+87buasbJHLq2IsYufZ9WjpkNxOi2fimrOnIxlDw==
+       type : 3
+       content :
+        identifier : 0x2543daf30a0acbca
+        internal_properties : CAAAAAgAAAA+ydwH69gPtZH9qoG8K7G6DH/mRhLAsIA4PXnwyQx9MV8BNs7UzvWB7NTCuEJWvBmA5CdsnUFWw3dCUBfdsaykjF1uve6LPYfwNBNWYEJulQmozEPUgRf5BggPT0njovHi1TUZ3dMWVWJDzVO7BYEECF/l1PEjm665bwXVv4LK4oa6xdFXhLX48q7GZuO+5fIY2l9pbbTIT9LWlT6k
+        type : 3
+       code_elements :
+        type_code : 46
+        p_codes : []
+     -
+       name : ATT_LIBELLE
+       identifier : 0x25896aec0136d150
+       internal_properties : CAAAAAgAAAAXLfQNAYAvV+1ZW1KxkfYFinD29kxUXTD74MvsKlyPD5SvPrAwoKF/ZfDJKFPxuQaD+xKop3oBPWQfkFHbu/VdQ7NEeorWWhWWTtKk0D2dUlgMm2OEezE643xxwDm9XNFRE1o22p2YxTZNgmAwdnDcyrEOIse+2bJ9Ogqv0Xhu3n0554yo
+       type : 3
+       content :
+        identifier : 0x2543daf30a0ccbca
+        internal_properties : CAAAAAgAAAA+ydwH69gPtZH9qoG8K7G6DH/mRhLAsIA4PXnwyQx9MV8BNs7UzvWB7NTCuEJWvBmA5CdsnUFWw3dCUBfdsaykjF1uve6LPYfwNBNWYEJulQmozEPUgRf5BggPT0njovHi1TUZ3dMWVWJDzVO7BYEECF/l1PEjm665bwXVv4LK4oa6xdFXhLX48q7GZuO+5fIY2l9pbbTIT9LWlT6k
+        type : 3
+       code_elements :
+        type_code : 46
+        p_codes : []
+     -
+       name : ATT_INFO_COMPTAGE
+       identifier : 0x25896aec0138d15f
+       internal_properties : CAAAAAgAAABvCpPzPO0CHf0Vzx6j75/KIGcHhTOGxRS6UZ9SJP1L+7RSHfcSI1s9Dvk98Ijh8JNwUZhVA6RML/c7nUwmlAFH29BrbFtnMho2C1++WTp7rivOlaAQC/US8X9fxuEDxu9Sb+8AwZwn6FUwjQA0Ujz9CanzzI0kVAZz7RobC5+6QIBi6g==
+       type : 3
+       content :
+        identifier : 0x2543daf30a0ecbca
+        internal_properties : CAAAAAgAAAA+ydwH69gPtZH9qoG8K7G6DH/mRhLAsIA4PXnwyQx9MV8BNs7UzvWB7NTCuEJWvBmA5CdsnUFWw3dCUBfdsaykjF1uve6LPYfwNBNWYEJulQmozEPUgRf5BggPT0njovHi1TUZ3dMWVWJDzVO7BYEECF/l1PEjm665bwXVv4LK4oa6xdFXhLX48q7GZuO+5fIY2l9pbbTIT9LWlT6k
+        type : 3
+       code_elements :
+        type_code : 46
+        p_codes : []
+     -
+       name : ATT_ID
+       identifier : 0x25896b63017aa063
+       internal_properties : CAAAAAgAAAD9XtkyXnBVdXmDaOsXePJF3GgHDhwdVCQM5WIAv2GnXPwNn6hArKvd/rsRq4Fv8idDwhHH9K6K0lbUAZ8Y5S9bRaIEidztCiqEHzzSVxCME9bwMHeD/5ZsSceS4G0Fa4571wVBF6Dl
+       type : 3
+       content :
+        identifier : 0x2543daf30a10cbca
+        internal_properties : CAAAAAgAAAA+ydwH69gPtZH9qoG8K7G6DH/mRhLAsIA4PXnwyQx9MV8BNs7UzvWB7NTCuEJWvBmA5CdsnUFWw3dCUBfdsaykjF1uve6LPYfwNBNWYEJulQmozEPUgRf5BggPT0njovHi1TUZ3dMWVWJDzVO7BYEECF/l1PEjm665bwXVv4LK4oa6xdFXhLX48q7GZuO+5fIY2l9pbbTIT9LWlT6k
+        type : 3
+       code_elements :
+        type_code : 46
+        p_codes : []
+    type : 30
+    code_elements :
+     type_code : 42
+     p_codes :
+      -
+        type : 35
+        enabled : false
+      -
+        type : 22
+        enabled : false
+      -
+        type : 24
+        enabled : false
+      -
+        type : 23
+        enabled : false
+      -
+        type : 25
+        enabled : false
+      -
+        code : |1-
+         
+         // Annule le balayage courant
+         ZoneRépétéeAnnuleBalayage(ZR_LISTES)
+         CacheFirstHelp_Liste(Faux)
+         
+         // Abandon de la sélection ?
+         si SélectionAbandon = Vrai ALORS
+         	SélectionAbandon = faux
+         	retour 
+         FIN
+         
+         // Ignore si l'appui long a été effectué juste avant
+         si mafenetre..plan = 2 alors retour
+         
+         // Ouverture de la liste
+         ListeManager.ListeOuvre(ATT_ID)
+        type : 33
+      -
+        type : 230
+        enabled : false
+      -
+        type : 241
+        enabled : false
+      -
+        code : |1-
+         
+        type : 101
+      -
+        code : |1-
+         
+        type : 102
+      -
+        type : 222
+        enabled : false
+      -
+        type : 223
+        enabled : false
+      -
+        code : |1-
+         
+         // Masque
+         si LIB_INFO_FIRST_CREATION..Visible = Vrai ALORS
+         	CacheFirstHelp_Liste()	
+         FIN
+        type : 66049
+      -
+        code : |1-
+         
+         SélectionAbandon = vrai
+         
+         // Annule le balayage courant
+         ZoneRépétéeAnnuleBalayage(zr_listes)
+         
+         <COMPILE SI MODE_ANDROID>
+         
+         	// Le tri n'est utile que si il y a plus de 1 liste
+         	si ZR_LISTES..Occurrence > 1 alors
+         	
+         		AnimationPrépare(mafenetre)
+         		
+         		ACTB_MAIN..Image = IMG_RETOUR
+         		OPT_CREER_LISTE..Visible = faux 
+         		OPT_TERMINER..Visible = vrai
+         		mafenetre..plan = 2
+         		
+         		Animationjoue(animFondu)		
+         	fin
+         <FIN>
+        type : 65659
+  -
+    name : ZR_LISTES_TRI
+    identifier : 0x258977ad0a69a2ca
+    internal_properties : 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
+    properties :
+     width : 322
+     height : 409
+    controls :
+     -
+       name : LIB_NOM_LISTE
+       identifier : 0x258977ad0a70a2ca
+       internal_properties : CAAAAAgAAAAFCcYU3VKAaUOPW60qTxx659CC5r/2RrhkIci6BNap9upcawU8SsG3ksHEK8pGtWRQpRbIpeohzNDTcCA4v1O87/QWMHXFxfqErPXWbKHLYZJESh9EcXcnf1uNvX11421R84y5KFoDHjxfU3AjduzQg+yyzTeu9kizYSffDEVnnnxoDa/EWIWOPPcsRhBoFjeBP5GD4xcIJBALkrNYVW+HlZCZmQGkwMP3Z6k34HGDHT25HJl14ej17/WTmrGhq5e/a8l8Ta1W6GrZpvK7oE/L/vvke15x/bo6lEaWN5ajwBG/8/zoqUYTzEDbebVANw4G1glllaLJrifOMkvl5naTPyiOAGadvsoKzZ0quC02I2VeWuRd9FKDzGqIEXdNy0ZU8Sp1RgbpEwje+F9c53zl9akt6fmGZUov1zDPHOGwd3I3emBoEVL7/OeJ1QUHIudfPw4wL6pTnNemFpEiuF1jZmk+Hlp8A9hiMl5BgW6rVnwcR3aC
+       properties :
+        x : 72
+        y : 16
+        width : 168
+        height : 40
+       type : 3
+       code_elements :
+        type_code : 2
+        p_codes :
+         -
+           code : |1-
+            
+           type : 18
+    columns :
+     -
+       name : ATT_LIBELLE
+       identifier : 0x258977ad0a6ca2ca
+       internal_properties : CAAAAAgAAACtxMwFhvpvqnC+xMdUAHnsfzZ4qlhjRyWmAK4hIsFt6jIajIBg/hjoNfLyJequ0tNbXgOyTiyCGBua+DtGz4kYy7YVhFRIUCb2s9/cx6CNtpOix7kJAjalcBZ6Q29ZDPiS4Rn/Rn2QSCyyhakvqG9oehqMgsRt26/IEt++9qRP2TKcrA==
+       type : 3
+       content :
+        identifier : 0x2543daf30a18cbca
+        internal_properties : CAAAAAgAAAA+ydwH69gPtZH9qoG8K7G6DH/mRhLAsIA4PXnwyQx9MV8BNs7UzvWB7NTCuEJWvBmA5CdsnUFWw3dCUBfdsaykjF1uve6LPYfwNBNWYEJulQmozEPUgRf5BggPT0njovHi1TUZ3dMWVWJDzVO7BYEECF/l1PEjm665bwXVv4LK4oa6xdFXhLX48q7GZuO+5fIY2l9pbbTIT9LWlT6k
+        type : 3
+       code_elements :
+        type_code : 46
+        p_codes : []
+     -
+       name : ATT_ID
+       identifier : 0x258977ad0a6ea2ca
+       internal_properties : CAAAAAgAAACwvUSyQSZwU60Yl6LhvrDMa4+3A5dbhVOxj6HJ2/F6qQxQKtwTmWPemBgYjyoRssGNDFykKPwl7rWckKG3WgTWeymDNR9FA9/64WXIcrKmm5EcmqDjt+WP4ABHLiQM+NR1kQ==
+       type : 3
+       content :
+        identifier : 0x2543daf30a1acbca
+        internal_properties : CAAAAAgAAAA+ydwH69gPtZH9qoG8K7G6DH/mRhLAsIA4PXnwyQx9MV8BNs7UzvWB7NTCuEJWvBmA5CdsnUFWw3dCUBfdsaykjF1uve6LPYfwNBNWYEJulQmozEPUgRf5BggPT0njovHi1TUZ3dMWVWJDzVO7BYEECF/l1PEjm665bwXVv4LK4oa6xdFXhLX48q7GZuO+5fIY2l9pbbTIT9LWlT6k
+        type : 3
+       code_elements :
+        type_code : 46
+        p_codes : []
+    type : 30
+    code_elements :
+     type_code : 42
+     p_codes :
+      -
+        type : 35
+        enabled : false
+      -
+        type : 22
+        enabled : false
+      -
+        type : 24
+        enabled : false
+      -
+        type : 23
+        enabled : false
+      -
+        type : 25
+        enabled : false
+      -
+        type : 230
+        enabled : false
+      -
+        type : 241
+        enabled : false
+      -
+        type : 101
+      -
+        type : 102
+      -
+        type : 222
+        enabled : false
+      -
+        type : 223
+        enabled : false
+      -
+        type : 224
+        enabled : false
+      -
+        type : 66049
+      -
+        type : 65659
+  -
+    name : BTN_Abandon
+    identifier : 0x25a8d1f1103e8582
+    internal_properties : CAAAAAgAAAAwKX759Q63CA3CiVySlPxgFTnzgw3za5kAwWDyA0FQUcZNtriAicharCRKV6D4NxbN38KYHdLI/zYQ/kV8e6Y+ab5ol7W8GAuc41SYbFeCAdEkNCG2wHfxw+XhUneOG2SgzNf8DBAeif3y5VD/a4iP9wrQy32gLV8y/hVL2Au7IRORNIO6z1a+LwoVpmw5TjYasPQXG8DL6jltuucD1MD/VpzJaY8w7zz6TKnsoeMsSz8DvgPOsl6mDwTprNinnyR4e8IloRzcNTmRtqs1Kczl5dtZe+BWnsuS4eLfhwj2rovR6hezZkhrZ+OfhzDImklW148IrA4Re52/0+9Mr20i+CYEJz7jwht9QDefro7fCmtlWa47IL+uF4pcQ9oD8RM6naoZRm3BfBbxXCiYU0k/vH1M911wF6AdHYiLr3ju90c93LpMupgwqZx+QgDpXWBbCmk21nHsFf0qpiqdf81bZ6wfFYRoSu9w6MkJYRbSGNB/XrPuU5eEnM5sumfmz+HUVEnb7SGc0rk1f4ZRDpztYe7PcIfFa2mI14ol7EC8aIwWj3R9g+GSZaoF8n4m6hqasgdJyKsCq0TT9dOQzr9gtRemTVWLshEgA+eEE1BB+TWtoVSg+/AZQrSPuibeJEdXuTkOAf8BUELI5gUoYq5KTE/IhhQLrOu1gxMThCz4gHOzWLBneUV+1SnDoQzzGTb5VwE3riNmT5fj4ijdTth2hnFPsXlBblPNrSRQF1PBksx1QD1IVRF28Kzf0sUVTEIgwMdqHIvhCpywv8Z1rbvWDgan5ek8eMph5w/5gC4/xrTKseG+PRp5Y3lx3Fu0UtuMva7gZsRszS5MO3uObblHiYPw8EV6i4sUyDl1KVCfLCI8tMUuNnwOsSH5okMZRQdhjqhg3t0RnF0oavEbyM28bq7TPg3lyFGAOLYtLGi9AhryR2SqwdjYjGHd2Fz4b28bpv6Ba3s6e/MLwnnyuhuEqZY/zvMSUTqiO6e45Y/Z8Hj+01W7In4v+BXeWCWhEhrGZ0kDZeDcX4eihKcJnSc=
+    properties :
+     y : -123
+     width : 90
+     height : 48
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAABfNBISf12SPxBMKc9oDEIdQhQWJKvHsF3ZOgyKJnFPkYClLe1MS/m/IiGK082EUTRbV6GH9F26twAhVTb/b3fcGXXhmTDH4Y99vprvGadWfRfU/Qfp30Hwebr30e83HuAlSS6cdn+bytqsfDueT2VZlLs5H9lkiZqBvib/pRPQUw==
+        code : |1-
+         
+         // On est sur le plan des modifications
+         SI MaFenêtre..Plan = 2 ALORS
+         	
+         	<COMPILE SI MODE_ANDROID>
+         		AnimationPrépare(MaFenêtre)
+         	<FIN>
+         	
+         	// Revient sur le plan 1
+         	MaFenêtre..Plan = 1
+         		
+         	OPT_TERMINER..Visible = faux
+         	
+         	// Option visible en IOS/Android
+         	OPT_CREER_LISTE..Visible = EnModeiOS()
+         	BTN_AJOUTER_LISTE..Visible = EnModeAndroid() 
+         	
+         	// Modifie l'image de l'action-bar
+         	SI ACTB_MAIN..Image <> IMG_MENU ALORS
+         		ACTB_MAIN..Image = IMG_MENU			
+         	FIN
+         	
+         	<COMPILE SI MODE_ANDROID>
+         		Animationjoue(animFondu)
+         	<FIN>
+         	
+         	RETOUR
+         FIN
+         
+         // Si le sliding menu est ouvert
+         SI FenCoulissanteVisible(fcGauche) ALORS
+         	
+         	// Ferme le sliding menu
+         	FenCoulissanteVisible(fcGauche, Faux)		
+         	RETOUR
+         FIN
+         
+         // Si un balayage est en cours sur la zone répétée
+         si ListeManager.BalayageEnCours ALORS
+         
+         	// Annule la balayage en cours
+         	ZoneRépétéeAnnuleBalayage(ZR_LISTES)
+         	retour
+         FIN
+         
+         // Si une liste est ouverte
+         // On ferme cette liste
+         si ListeManager.FermeTout() ALORS
+         	
+         	// Et si une liste était encore ouverte, 
+         	// on annule la fermeture de la fenêtre principale
+         	retour
+         FIN
+         	
+         ferme
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : IMG_MENU
+    identifier : 0x2601656f0744faa2
+    internal_properties : CAAAAAgAAADuswuvoBIWmc6davo1F4yMgw4fD+XFA6ROE5W1KCwMmcO1xU+6ix+Dh0hz/v8tnyJDjkvZa42HrGHvC0huqGT3hb75S6N7bFeS2be7riJlbJ7jCnAp063YATLxRDtLiqwi2k3bmikVL8aNqOZRsQiYM7D9wMnkMsLPA1sVGzBwBZDmwW5/N9875/NPZvcyui/D5g0fhTAI2Avc8YzLfxVZ82D5/+2JcJjSpAGHHRKsfWrhZXpemd6APJU39mmtphxjpQkTuXlPg/HREuUtKABhZF2QVjC39bTxi4gKtghF6anlQi+gddMBZLMxQFLnyMLhXkxJfM3YdBsWJiLnzN33CQPcLOzWMw+xLRbBLlJlR3Z+XN+GbPRCGl7shw8t47L5F1eQxLB5qtGSm96P90Gqi7zXni/qge1B4fXQ/fYSNFnC1z/TP3OSrQfsQIGW5n7kf+AFUY7l2QCViFX3t5EE6ljDMndit7WWzKy4jkBW+QqHrRvETL2BOrwZ1RXXbQ/Xcz0ayECqPwVs4m9IAERHhOOopqtNEGk75duhjbmeepo0I6251I/ZSOYtT0k+aP7QJRwCFP44rSMAFUFqmsZfXu9JaWoDGNrT4zJqsKaGlxRZdfVbQj1wfQi0UtNKUqw0joxnWJgndjWI5Bq0l6PxZWrDJj751tZJaq24Py3omNgHwt1J6RjRx8Rwe66bK9yyHna3fHSVdG2iB+DI3PsjGjzNq6lEoJkZ5mZe8PSBpY2EReTBEEUUyy74hFDhxksmvKoqBzFc0ItTBk69MI6erv22PizCDmZCsRXLMPwD7xTaksBi8AaHPb82PEeUJHPA+h0qSkcHbf1KnysoQK6IJBQPgQDRrGgDldy2jCkHXdDG45Q=
+    properties :
+     x : 93
+     y : -99
+     width : 24
+     height : 24
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : IMG_RETOUR
+    identifier : 0x26016572074805ed
+    internal_properties : CAAAAAgAAABqTY7QamqG7Szc1r3AL6DHgIRX/BXIJQqigEINYBXYZ0BqR8hE7/0RpZo8P8klfYYV2q1vRa0si+lcN7f3byTuMI4wBqMc9M1jBaOofH4bO9qyItYd+p8X7b7r9SneR/LZ4fZyKooOcLAIPIbiHQYm+lKSz9x+zult+3HbNIqT9ea0fy7ms5SkU+vp44Vy4+fek3BsmEKSmgqYnhvIrmMxW/hgKPdHjOjTxy1Xko6QWeJ8wie6u6PFDOwgY1tE4dpYMJQCIDx2TR/qd7c2f1v6zYcd8P0BF+hNieEM81ZIpNDwMle5Ves/ZW1eUopdVXDi22AXQAzQGVaANroi86A8d2J11yi0oGYE4SLevZdEnNWzmlb4u1esa3+EuDHsUJiZoJYo/NLIknD+n5uylTLRtkiZCPO186JGgQl8m1CfpjRPUyaZeAy8ZL3WkyjNjljLQDfNAEVshIbh/tNBS5ruHmZsWKqmT7zuh0PemoI4u6NMEEdVPLvNGOjr8443WldooN91LiIFPKnsSHBgsCR9BOTgAKx4vbiztOISLdnEN6beCl/G4W6NYonIaLf2zZOMbDP1X7aJiqdzNjhvuUaJ5Ot4x9chXOliFGmmU4E36rz/JvuzIW7cTl98/NzB5n2ilZgmmMJLWMHUv5IyO0xE9rIRm4Mo7uZ6rZxIeaPWroVcRraOmaR5SRP5BgI9JIAeeX09Iaj2NRVJF1gjA7eYtrSi9PNRhn/Ka2Ubh4CmJIrqrqbPJnZzFwZDz7XAmTlizVSw+cjiBE+VOg33QgZPARDh4IRjp0dHpOawmoczr/8/7HuBtdUI0W8f3sZlJxraaF0XoI/RkgCI6OdvWCHm3Ih4VIGjEF/Bpbvhmkfxd2CBFPIcEQklJe21Gu/iTd4=
+    properties :
+     x : 120
+     y : -99
+     width : 24
+     height : 24
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : IMG_FLECHE_AIDE_ANDROID
+    identifier : 0x26029858114b90ba
+    internal_properties : CAAAAAgAAACiNpI6I664DLM2Q3TAxxf9sQtazO5lBOdDsMf+unm6n3u0/ujd4f6Ra4KaqS+CmmBnZLpinGjF5+xr8e8DO86frbZdU4e8FYyCLwTV2ELWESKY/zdRhaL5eODAdM/zQz62RQ97+KIUZM0PSVMgnGwK4ckVGEpM0MApdGDrq9hycbXOjfB/aVV9TCzIxYTkeHxAuQuc1o2o5qY+OPdzDqNfLLvEoiMaHSZpSVGmUEMrCQY2ikP1CRGFMwV9HQiZmy1/on0H2+5dPw5EZtIMVSw+ocmLsYevWeSHLIxT3iE3p9OLA9izg8ZGRB1mw8bF8vsB7GowToQWzox2eNdFpj40t/zY9mW6pE+F/Yd/Bf6KTPHl0MB2efIvREHW5RybR40ttGDYqLYc9M1wJUo9qaKy9VbDv8mYnP8gL84s5b2RN826aieryexB+GPxIcXeWcM7S0P3QAtv6ZZY60HnsbVnQc+mwuSK2IUiz4FROKYNV4d3HgX5CMk5J/E98i5BbVUZABAQq5K9XNzaZb5Nghlphc7rrQSvbDpb5nIegswYDXJ8COtQMNQq/nKgx0yVRWW0IdYdVtxbQmFGWzWj3UV0JJyYAdsUJ3YMYHHAi6JMp1FUo/tKqwCAPzb4y0rf7LXQwVrpOvD56E2XYw1t18OpU+SoZh+zkqEWNPFwN8c9jxstavGMCFBkrw6DWpyLSR3HJG9P+B17EXVtubJUZ+Uki98jz0strM10FZFruzaWtau3OELcxWm2O8mo7YP/tcLwcZAyLlSbAa96tX6ypWbcJOUbWf41nLxfJ2iaUPN9YPj7lZNY4pZwCQ910u1cz7k00LgEVUTifgyAgD7chJoo88qCUaFthm+/qpRlySdAqeYIPKKuYc8eZdFeb7Sl0w==
+    properties :
+     x : 191
+     y : 216
+     width : 115
+     height : 115
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        type : 18
+        enabled : false
+  -
+    name : LIB_INFO_LISTE_VIDE
+    identifier : 0x26029858114f90c9
+    internal_properties : CAAAAAgAAADLPJS9mVx40bBBPjRAgaH8AiLWCPd6+ImSQUkAGjxvZw3XtihTCcBN2Lsa7trHBww0NJRXIiEoJFYPL0sVqGMLfSQDK63TyxmD/pO3yVkQuluOK0//m08nJVNuCSBgRWJnN5gQPlSC00r/jwyTClGXlu9hFOktP9wTS/NfcD4dBOOBYsRLt6fw1oUJXIEyAA2gJS6WdHuzf2RQIFPbNEbm2f1MeYNTNDzrwO8mQOue+aq/MjHDcZR1SgAKWGvuZiYURpTU2xmwx81L05vyn91/4VQRLXcQxEGTQ12Yz8336ef4xl8c+HDQnChPl/per4dDcRrTumiDsw4ux+j7NHk8zeOADFvR0Z3GjwOmA8bb9T8NQD8O5SgVPcrWqwr1tSDu7Wy+uk6rrrvEpNObNWZSUR+Fbz20+bs4r+gvEFOxbWQpHiMc2Csq/YmcZv3g/YE2uAR1lNUFYBw6/UIzc/xROOifKviAzc9pJqHflqMHrxQ8twuW02smwRulEFgpkgv0U0bMKqTmAB2V8IAhXIpnJIZJe+m2JoJgLz+r0um+WNSjDIkYabnhhcKslQj7WP4v
+    properties :
+     x : 109
+     y : 79
+     width : 197
+     height : 144
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+         <compile si MODE_IOS>
+         	LIB_INFO_LISTE_VIDE..Ancrage = ancreDroite
+         	LIB_INFO_LISTE_VIDE..TauxAncrageDroite = 1000
+         <sinon>
+         	LIB_INFO_LISTE_VIDE..Ancrage = ancreDroite + ancreBas
+         	LIB_INFO_LISTE_VIDE..TauxAncrageDroite = 1000
+         	LIB_INFO_LISTE_VIDE..TauxAncragebas = 1000
+         <FIN>
+        type : 14
+      -
+        code : |1-
+         
+        type : 18
+  -
+    name : IMG_FLECHE_AIDE_IOS
+    identifier : 0x260d0d1a38a5ec1e
+    internal_properties : CAAAAAgAAAArzdpx6E+lco7OCXF2fRBUMgjCsRxChLS1LK09RVVi/0TTNHY+FHDpBum0T35khrBb/A9neFrTxUSFp8Z58p9+igALIWP+6p9QX7PuEimokxvqn6jbXAnW1HirHt+F4bur5+Elzl0KMXm1URChWaIfZ04IwI9DcOz1M7FmDCf5SVaV8XkL/MfKpUXOWIqFdFAPeduflREAquerGOc6sTJ20+SV5zcVCu6ygOBXx0okJoat7pyO4PUbV2aQEe+enYtyb6McV2C0SeU2p2X+OXHxxFpfVhaAaFgsGWKCUjkiQPW3Z3nMPvlRbMtRbCtO4f/JDduhSyrgE71UXFjmVHzzO1mmNnzLrVsQCnLBqhyHqA7zFclPH9wvVI6j+59yEsWocONNF16n51PaLRl7a8ng5kYfKd5Qnkr3uGVHTdsYRNKmRU4EOGlGHhELdWUAfkHG6PiS79oy0nflGJwidmJOJioBX9HOF/jZhDcc8/e02zqaAYyLP3Rl2TM0sbQRkzICNjXDlglEn9CWFM+WFf3UCYk6Gd4cvTz9NRsUw/dggxiaJYIbL/HCnNyay26vtxvknToOnnn+88iLWuDn0aaFi8kdM7IFX+IhlSI/O36wwc8FMXX2/D0Y+5vsz5lmqRFnTEvPbIbM7iSS/nT7oWJKQHvpnTqE9yH20A6T7iROnvIMQX/TI5/eVC4/WvPzUfAvUiaOhE9P87auzFAaJLEYtofim1HG/2KBS1AOVbkPz7NSSmeBxyIvc53Pkv3LjrLoIf74V+2Yb7zY5wE9IliO0qLQtUkYAUR4JCelcQ4RQRagMuU+JO5E9TfXmUPQ/Z0aLp0zavj1DdtK3U/HKn2d3m8iKgN8EB8gpd7xIOgLim0EIZky6kKO3SckJ20cWg==
+    properties :
+     x : 214
+     y : 16
+     width : 115
+     height : 115
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        type : 18
+        enabled : false
+  -
+    name : BTN_AJOUTER_LISTE
+    identifier : 0x2645a63f18359d74
+    internal_properties : CAAAAAgAAABbTn0M5Y7rh/GZiClY5w3v2wH4YDdz7OL1XfqeB/kg9VTGGpJ6arjiHGYQLqav0Flrixh+7hg0QWqEG84RsY9uPaqKNsDCd8rQQjzow64jRg46rlrDWZrLDD7EuTE4rZuzqqJ50BzgLeOazM2g8ee8yKdIscdyu8gQUctPYemM97VbFhiy16+DGR2yhE2uOmFPp9MBniM8+ZYfBXzxp8523O8vlLwDbHwdylctuOUe/AH9YBm+9/W8Jg4zE7+yVlArPKX15LBhEXQ/QQgqxNewcq/fRzLCNOfJJzDrleyI1ZThS+dfbGYKbV1k8DG0q5qZs/xTKDsRLbYje3U+nLLyuleayISg0EtJyNpkbDuN4JAlln7zmRY/plFakmtH9fbhqGJg7YE3od0dqVcQLH3hw+eyQGFHR3dPopvefOOi2MRInTazYtaa//TDiwlNSJDd+6y5M6WC7XUk4D6Pzr4SC/mVdpFQKkkFvdpdl2E+2i8RTlYHLGHeUxy9m6n7BR+D1MctmvFfhpBJBHGYmz7I2JNgrxtSYMAAjnke10cyKpaA3pEI79xwRzcmuekgd5TrWdPiOGoeWvJksfYnPFOG7Ryg2vcBaZea87bQlOTaIZZlEwqMv/UseIvGTUkTBcZ7LjBjtJucnlWboi6hoFketDBP0jVv8Qjo6EWYsJCfZBaTgHEBbaFxdUiqPbDRUCEf49cz7ogPxd++ZhcSYM/5ZdmcBHj/p+R5QU4FiaVNnFuBWyuK6FRBTs7FkikcLX+EayJBCYN/nfcGyFBonlAX5REwk6d+AaG68bCOhTdWEw/Yk8zmXchwnFcetapuILYTefzZ8PpwlAjZ+9K77JuKuJQLVKU8stCsHh1k0lhXgCEb/C65YEaRHa5YGaC7srIpREEGkEhXww5YSpaGzNIlo7rj4FSvuFZKkKv3fLSA7UkVRWC6q7tcm4uYC/yWM9vjyE9X0Oenbi2lfJmNWHPmYML/vqG72Ahm6MN0Ung3o84Yae62t/CmDlfI0MeZU+oIzJG2wtsq8es=
+    properties :
+     x : 248
+     y : 335
+     width : 56
+     height : 56
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         // Annule le balayage en cours
+         ZoneRépétéeAnnuleBalayage(ZR_LISTES)
+         
+         // Ouvre la fenêtre de création
+         OuvreFenêtreMobile(FEN_LISTE_CREE)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : LIB_INFO_FIRST_CREATION
+    identifier : 0x26546e91350c7205
+    internal_properties : CAAAAAgAAADYkQfjl7st2OY3OqcMRKZkvFft3Q+eMSciMSwiRJe4MUYN0GrNu5tIr9O4gq4rsfxB3YRcnXFeBCr4t1Q5YjGfbZLQkAmygHo0CFVsF96ES8/HOVm2jXfrIokErDAxKtCr73ZJ0OMN7ym28DwxQa1EsfsLt4D/5u6m1II4K7RAmhOsbAT5G56ROUqt7bAr6kjQMGO1CFdzvK8FXtLknlWUCSgeY8XmT++EP0sInaCNdKBUkb+NB6VfxfGkfOnI5txG8chOwO8arOS2au76o1daiVhlZM9m+yUObAG+rih+cXnwBb8bTC5M00Kuo9K6Bt/B7r/KZhCtXYkDJzxS45hidk3csNQWu3jmHPmM9y1AH5tIsOsr8Slq5CxlibwpORkwjdEAv7mXyXp394hinYQo4RBx4HtVRVlLhAwEykomckFYaL2GIk5LuDfmyHhdQ2VJebKjwHCySrW6A9AFeYGWla1+Ec4jf0neDvaJazltE27awz3op9oUEsZ2L7EOZy3KYcvKq7WQqbNld9KTR+vTUL7RpOnvkbKtfIBqw1pZRmSPQFXBczmA/xSOmLIWGS6bnbsgbQN7OKEz+nSs5J+BlItwPkYq6bvwd2NeTs+DN93AtYI=
+    properties :
+     x : 16
+     y : 73
+     width : 288
+     height : 72
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 18
+ actionbar :
+  name : ACTB_MAIN
+  identifier : 0x258956e806d3a029
+  internal_properties : CAAAAAgAAACuNc6WauqVRviqSeaQiWSxJ6oR22w52JkFrI+deUYZ8DC36grXUisuCe0sjojORb4k9hFwGy0BsGDh3GdQovxkcW3va0/udcOnjxSAXwdTPg17pISP/GHrLhZCs9PxGum+yMeiA1vDGpPORwwfGhWbMOR3QHM9nRsMfnxribc8VbL8nPnUiF4Mi3W4SgI1DPt+Rvt+jP1GwKW6Pk2EG2KUqMNpIfl2TSYFEPez9IJKjiXJcnyeUPIU7ij0oKrBC/IWp8RG6uK/UTEbuTT52OxAX90/JennxLvqxd39amPYiaUrPuK0v1s6JraoFd1edtdbn/YEzKpEFqIQpzbL7ZEauIxjAUHu2fjdIXcWHXo=
+  controls : []
+  code_elements :
+   type_code : 125
+   p_codes :
+    -
+      internal_properties : CAAAAAgAAACzharR6S93Bk/cb+qEz6ApQ53c7MiNc3tfUlNguKUPnyHMDrgDoDG9eDMTpKiGDV7X+ooAIHTaHOYlkEX4eAZc1Slcgx1UcDAMlkqk7rqAErOBYHsS0/6fKHA1TK9J/yx97c9Zesy6+vzeD1Q=
+      code : |1-
+       
+       selon mafenetre..plan
+       	
+       	// Sélection
+       	cas 1
+       		
+       		// Si la fenêtre coulissante n'est pas visible
+       		si FenCoulissanteVisible(fcGauche) = faux ALORS
+       			
+       			// Affiche la fenêtre coulissante
+       			FenCoulissanteVisible(fcGauche, vrai)
+       
+       		sinon
+       			
+       			// Cache la fenêtre coulissante
+       			FenCoulissanteVisible(fcGauche, faux)
+       		FIN
+       		
+       	// Edition des listes
+       	cas 2
+       	
+       		// Validation
+       		ExécuteTraitement(OPT_TERMINER, trtOptionMenu)
+       		
+       FIN
+      type : 18
+    -
+      type : 229
+      enabled : false
+    -
+      type : 239
+      enabled : false
+    -
+      type : 240
+      enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x258956e806d1a029
+  internal_properties : CAAAAAgAAAByVTsSr3/syDi1St8xf8fgHxdhV816G1q5zyODGkOm1npuSkYo5g/jXWoWFFK2H3oUBZtHLsT5rfRCnVFNNS0taWG501M84VhyiY2gqfWqbb5TaLNBc7/5X5PbRqVlZ5a3p7SznWjoHPbzt8FGrVw2pkxQ2AMTSCoEquPAoSRRZmCgf0llwPSIdkz+fkQsa3yCb/aARC1IuAmTNbEAkdknQHeBdhsRIWlMefD05RVbqvlMGzysSB4KUPZWTHHaQPB4ObHU/5KQ/VjN8jyQaoRgKuGxrJ5V23KTuMr/Zw==
+  options :
+   -
+     name : OPT_TERMINER
+     identifier : 0x26015ed71c823577
+     internal_properties : CAAAAAgAAAD/b30z/lBFo5gF0f72ZVQiffauelAkTIzQ/7WQeDkzydQzbpVRJFPx7UVz4Zt8khcA3OlFGQyKuJ8v70a6cfbj/NnByhzHD/28ZyXOwqmle0XkhKZa+bBeboZQjzgnAfIwRL9Bs5+oSPTpq4t9A8nOwRCyVgNkrlMiYmhEUrXCQQ/PByCbZdJRRtasy5R2IFl9BVKKRKAdfvy5JUccgp/ck9AFBDWm0cPL3pqJomjpRgQKWgzu2jl+qN5E4SCwXPtcO15VQawiNy3Ru8gcrLgBLQVwKfuhA6YniukJLanrb5QX0QsUSzQBp+aSdzz7mfUAFcfLK7/1UEQLLmdjs1EaS/WSseOtK+000Buw
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         code : |1-
+          
+          // Enregistre les nouvelles positions
+          nIndice est un entier
+          
+          // Réordonne
+          POUR TOUTE LIGNE nIndice DE ZR_LISTES_TRI
+          	
+          	HLitRecherchePremier(Liste, IDListe, ZR_LISTES_TRI.ATT_ID)
+          	SI HTrouve(Liste) ALORS
+          		
+          		// Ré-écrit la position
+          		Liste.Position = nIndice
+          		HModifie(Liste)
+          	FIN	
+          FIN
+          
+          <COMPILE SI MODE_ANDROID>
+          	AnimationPrépare(mafenetre)
+          <FIN>
+          
+          // Mise à jour
+          MaFenêtre..Plan = 1
+          ListeManager.DéclencheListesActualisées()
+          
+          <COMPILE SI MODE_ANDROID>
+          	animationjoue(animfondu)
+          <FIN>
+         type : 32
+   -
+     name : OPT_CREER_LISTE
+     identifier : 0x260160b51e4e81ff
+     internal_properties : CAAAAAgAAABpEp/Ocq9WS1mSM3PQekNEDcd6T8maW7/IngClj/bj18JDgp+1GdT/WmphdyI/fzhY0b8sW+f/bsbq466X5ikh4+LnJYx4bWrsZtyq5t2PJWq/weVj5pd6f1HR3mwZK4tz5VNLQ0wXYK7rZ7dq+VTrjzg6ra1/pVO7PI8l6Ummi7JGoGxtRDEUUCNcTW//L0rBHi1U8WaAtWOh5hYaaX62N+WD599bZxBtp24MEbElvBtlNGNIxFQ3IIXUq37iH7ThJBUSRwCMW9mSCbuGUV+LZl/QRXOkCH6bJ2wCTnRVubz3ncnRcLCaz2ZTsEgCyRDGBso=
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         code : |1-
+          
+          ExécuteTraitement(BTN_AJOUTER_LISTE, trtclic)
+         type : 32
+  code_elements :
+   type_code : 26
+   p_codes : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAADU20iqQbWTBV+icvyLacmsiHxj9m6Y3O7I2EaMRVoJQ00WRwXKPPt/PcFWhYBRy+Y45AjjYFL1cS3UnpP2Zbmp4OQPfVz16wHt0Xk5wm2lqo43DyIcD5L33J2V
+ code_elements :
+  internal_properties : CAAAAAgAAAArFMLlpoDCWvPbdj1zCMWdYTPUfKXXzMuNGUhLxa8O1HpA9hFNXIPh0Z7mWsY9tGZqjvtgqRXWJlDHL6Q0DURY3cj18rA41RaxnYQ79wbiRihrrlEviZXnA3r6vgzKTpHnHWYR
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      PROCEDURE MaFenêtre(local IDListeDéfaut est un entier sur 8 = 0)
+      
+      SélectionAbandon est un booléen
+      
+      // Observateurs
+      AjouteObservateur(ListeManager.SurListesActualisées, mafenetre..nom, SurListesActualisées)
+      AjouteObservateur(ListeManager.SurListeEffacée, MaFenêtre..Nom, SurListeEffacée)
+      AjouteObservateur(ListeManager.SurDemandeOuverture, MaFenêtre..Nom, SurDemandeOuverture)
+      AjouteObservateur(ListeManager.SurDemandeInfoID, MaFenêtre..Nom, SurDemandeInfoID)
+      
+      // Aide
+      IMG_FLECHE_AIDE_ANDROID..visible = faux
+      IMG_FLECHE_AIDE_IOS..visible = faux
+      LIB_INFO_LISTE_VIDE..visible = faux
+      OPT_CREER_LISTE..Visible = EnModeiOS() 
+      
+      // Modifie l'image de l'action-bar
+      ACTB_MAIN..Image = IMG_MENU
+      
+      // Titre stylisé
+      mafenetre..titre = APPTitre()
+   -
+     code : |1-
+      
+      // Plan initial
+      MaFenêtre..Plan = 1
+      
+      <compile si TypeConfiguration = Android>
+      	
+      	// Ligne de commande
+      	si IDListeDéfaut > 0 ALORS
+      		
+      		// Ouverture de la liste
+      		ListeManager.ListeOuvre(IDListeDéfaut, vrai)
+      		
+      	sinon
+      		ListeManager.DéclencheListesActualisées()
+      		
+      		// Au cas où
+      		AidePremièreListe()	
+      	FIN
+      <sinon>
+      	ListeManager.DéclencheListesActualisées()
+      	
+      	// Au cas où
+      	AidePremièreListe()	
+      <fin>
+     type : 34
+   -
+     code : |1-
+      
+      // Fermeture d'une liste
+      si MaFenêtreFille..Nom = "FEN_LISTE" ALORS
+      	
+      	// Met à jour la liste des listes
+      	MaFenêtre..Plan = 1
+      	ListeManager.DéclencheListesActualisées(faux, faux)
+      	
+      	// Si il n'y avait qu'une liste, aide à la modification
+      	AidePremièreListe()	
+      FIN
+      
+      // Création d'une nouvelle liste
+      si MaFenêtreFille..Nom = "FEN_LISTE_CREE" ALORS
+      	
+      	// On a bien créé une nouvelle liste
+      	si MaFenêtreFille..ValeurRenvoyée = vrai ALORS
+      		
+      		// Met à jour la liste des listes
+      		MaFenêtre..Plan = 1
+      		ListeManager.DéclencheListesActualisées()			
+      						
+      		// Une seule liste
+      		SI ZR_LISTES..Occurrence = 1 ALORS
+      			
+      			// Ouverture de la liste
+      			ListeManager.ListeOuvre(ZR_LISTES.ATT_ID[1])			
+      		sinon
+      						
+      			// Aide à la modification
+      			AidePremièreListe()
+      		FIN		
+      	FIN	
+      FIN
+      
+      // Création d'une nouvelle liste
+      si MaFenêtreFille..Nom = "FEN_LISTE_RENOMME" ALORS
+      	
+      	// On a bien créé une nouvelle liste
+      	si MaFenêtreFille..ValeurRenvoyée = vrai ALORS
+      		
+      		// Met à jour la liste des listes
+      		ListeManager.DéclencheListesActualisées()				
+      	FIN	
+      FIN
+     type : 177
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 40
+   -
+     code : |1-
+      
+      SupprimeObservateur(ListeManager.SurDemandeInfoID, mafenetre..nom)
+      SupprimeObservateur(ListeManager.SurDemandeOuverture, mafenetre..nom)
+      SupprimeObservateur(ListeManager.SurListeEffacée, mafenetre..nom)
+      SupprimeObservateur(ListeManager.SurListesActualisées, mafenetre..nom)
+      
+      libérer ListeManager	
+     type : 2
+   -
+     code : |1-
+      
+     type : 12
+   -
+     code : |1-
+      
+      // Si un balayage est en cours sur la zone répétée
+      SI ListeManager.BalayageEnCours ALORS
+      	
+      	// Annule la balayage en cours
+      	ZoneRépétéeAnnuleBalayage(ZR_LISTES)
+      FIN
+     type : 221
+  procedures :
+   -
+     name : SurListesActualisées
+     internal_properties : CAAAAAgAAAAutNpBlrS0yaOgLUAq2pWWby2+DBBk/XLU6V0AgXHDHwx1obiaW1pmWVYOaDeYFrTK5kj2Z3OE5x4fPoyerh1cDZnPTlnLVZrFLe3lv5oxegfo18FhY5RURvuR0FcydA+8irI+B9Sk4LUpp1NbvvcNN46jArwd+KzKQoHe9EmNc+RGA8pDnamKnRCjNll85ir7IdOUW/rq5TFh96wmdiJbrPR9t6gE+agKk9jpsOBEXzcrMgvFEiQED5flkdSj2Q==
+     procedure_id : 1551867101049888809
+     type_code : 14
+     code : |1-
+      // Résumé : Met à jour l'affichage des listes
+      // Syntaxe :
+      //SurListesActualisées ( [<void>])
+      //
+      // Paramètres :
+      //	void (valeur par défaut=0) :Vrai si le plan actuel doit rester identique
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE SurListesActualisées(void <utile> = null)
+      
+      	sInfoComptage est une chaine
+      	nNbListes	  est un entier	
+      	stListe 	  est une stliste
+      	
+      	// Annule le balayage en cours
+      	ZoneRépétéeAnnuleBalayage(ZR_LISTES)
+      	
+      	// Vide
+      	ZoneRépétéeSupprimeTout(ZR_LISTES)
+      	
+      	// Le tri n'est disponible que sur Android
+      	<COMPILE SI TypeConfiguration = Android>
+      	ZoneRépétéeSupprimeTout(ZR_LISTES_TRI)
+      	<fin>
+      	
+      	OPT_TERMINER..Visible = (MaFenêtre..Plan = 2)
+      		
+      	// Option visible en IOS/Android
+      	OPT_CREER_LISTE..Visible = (MaFenêtre..Plan = 2 ? Faux SINON EnModeiOS())
+      	BTN_AJOUTER_LISTE..Visible = EnModeAndroid() 
+      		
+      	// Modifie l'image de l'action-bar
+      	si mafenetre..plan = 1 ALORS
+      		si ACTB_MAIN..Image <> IMG_MENU ALORS
+      			ACTB_MAIN..Image = IMG_MENU			
+      		FIN
+      	sinon
+      		si ACTB_MAIN..Image <> IMG_RETOUR ALORS
+      			ACTB_MAIN..Image = img_retour			
+      		FIN
+      	FIN
+      	
+      	pour tout stListe de MesListes
+      	
+      		nNbListes ++
+      					
+      		// Infos
+      		si stListe.NbProduits > 0 ALORS
+      			sInfoComptage = chaineconstruit(<§Rff0000af112468c2¤fr-FR¤%1 produit%2 à acheter§>, stListe.NbProduits, (stListe.NbProduits > 1 ? "s" sinon ""))
+      		
+      		sinon
+      			sInfoComptage = <§Rff0001af112668c2¤fr-FR¤Aucun produit dans la liste§>
+      		FIN
+      								
+      		// Le tri n'est disponible que sur Android								
+      		<compile si TypeConfiguration = Android>
+      		ZoneRépétéeAjouteLigne(ZR_LISTES_TRI, 	stListe.Nom, stListe.IDListe)
+      		<fin>
+      		
+      		ZoneRépétéeAjouteLigne(ZR_LISTES, 		(EnModeSimulateur _ou_ stListe.IDFournisseur = 0 ? DATA_IMAGE_SUPPLIER + [fsep] sinon "") + stListe.Image, ...
+      												stListe.Nom, sInfoComptage, stListe.IDListe)
+      	FIN
+      	
+      	// Aide
+      	bAideVisible est un booléen = (nNbListes <= 0)
+      	LIB_INFO_LISTE_VIDE..Visible = bAideVisible
+      	
+      	<compile si MODE_IOS>
+      		IMG_FLECHE_AIDE_IOS..Visible = bAideVisible
+      		IMG_FLECHE_AIDE_ANDROID..Visible = faux
+      	<sinon>
+      		IMG_FLECHE_AIDE_ANDROID..Visible = bAideVisible
+      		IMG_FLECHE_AIDE_IOS..Visible = faux
+      	<FIN>
+      		
+      	// Lancement terminé
+      	Lancement = faux
+     type : 458752
+   -
+     name : SurListeEffacée
+     procedure_id : 1552293935045216738
+     type_code : 14
+     code : |1-
+      // Résumé : Efface et supprime la liste indiquée
+      // Syntaxe :
+      //SurListeEffacée (<nIDListe> est entier sur 8 octets)
+      //
+      // Paramètres :
+      //	nIDListe (entier sur 8 octets) :ID de la liste
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE SurListeEffacée(local nIDListe est un entier sur 8)
+      
+      	nLigne	est un entier
+      		
+      	// On recherche dans les autres listes
+      	nLigne = ZoneRépétéeCherche(ZR_LISTES_TRI.ATT_ID, nIDListe)
+      	SI nLigne > 0 ALORS ZoneRépétéeSupprime(ZR_LISTES_TRI, nLigne)		
+      	
+      	// On recherche dans les autres listes
+      	nLigne = ZoneRépétéeCherche(ZR_LISTES.ATT_ID, nIDListe)
+      	SI nLigne > 0 ALORS ZoneRépétéeSupprime(ZR_LISTES, nLigne)		
+      	
+      	si ZR_LISTES..Occurrence = 0 ALORS
+      		
+      		// Aide
+      		LIB_INFO_LISTE_VIDE..Visible = vrai
+      		
+      		<COMPILE SI MODE_IOS>
+      			IMG_FLECHE_AIDE_IOS..Visible = vrai
+      			IMG_FLECHE_AIDE_ANDROID..Visible = Faux
+      		<sinon>
+      			IMG_FLECHE_AIDE_ANDROID..Visible = vrai
+      			IMG_FLECHE_AIDE_IOS..Visible = Faux		
+      		<FIN>		
+      	FIN
+     type : 458752
+   -
+     name : SurDemandeOuverture
+     procedure_id : 1588276586885244456
+     type_code : 14
+     code : |1-
+      // Résumé : Traite la demande d'ouverture d'une liste
+      // Syntaxe :
+      // SurDemandeOuverture (<nIDListe> est entier sur 8 octets)
+      //
+      // Paramètres :
+      //	nIDListe (entier sur 8 octets) : ID de la liste
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE SurDemandeOuverture(local nIDListe est un entier sur 8)
+      
+      	// Ouvre
+      	ListeManager.ListeOuvre(nIDListe)	
+     type : 458752
+   -
+     name : SurDemandeInfoID
+     procedure_id : 1603767619187991921
+     type_code : 14
+     code : |1-
+      // Résumé : Renvoie l'ID d'une liste à partir de son indice
+      // Syntaxe :
+      //[ <Résultat> = ] SurDemandeInfoID (<nIndiceListe> est entier)
+      //
+      // Paramètres :
+      //	nIndiceListe (entier) :Indice de la liste
+      // Valeur de retour :
+      // 	entier sur 8 octets : ID de la liste
+      //
+      PROCEDURE SurDemandeInfoID(LOCAL nIndiceListe est un entier) : entier sur 8
+      
+      	nIDListe est un entier sur 8 = ZR_LISTES.ATT_ID[nIndiceListe]
+      	
+      renvoyer nIDListe
+     type : 458752
+   -
+     name : CacheFirstHelp_Liste_Différé
+     internal_properties : CAAAAAgAAAAR5Lq5g/aWJlUHPUwGHDilHUhAWsYKkIZ94OWpQB21U3MeZWoZpgPbbXW4AknW+I5v66hH0ewqclI64FhCG//AbwNLBhQ/kptw6ybwWHDXuMWuMwyFqVwP3m3903YOFnMVUHIR0xXTxNU2ORsArySxrD5RQbB+ZWGX/gOEsRZZ7RkBGN8=
+     procedure_id : 1609033824930170404
+     type_code : 14
+     group : 2
+     code : |1-
+      // Résumé : Cache l'aide à l'édition de la liste
+      // Syntaxe :
+      //CacheFirstHelp_Liste_Différé ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Procédure automatique :
+      // La procédure est exécutée manuellement, lors d'un appel dans le code, avec un différé de 4 secondes
+      // 
+      
+      PROCEDURE CacheFirstHelp_Liste_Différé()
+      
+      	// Exécution
+      	CacheFirstHelp_Liste()
+     type : 458752
+   -
+     name : CacheFirstHelp_Liste
+     procedure_id : 1609034164232664882
+     type_code : 14
+     group : 2
+     code : |1-
+      // Résumé : Cache l'aide à l'édition de la liste
+      // Syntaxe :
+      //CacheFirstHelp_Liste ( [<bAnimation> est booléen])
+      //
+      // Paramètres :
+      // 	bAnimation (booléen - valeur par défaut=1) : <indiquez ici le rôle de bAnimation>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE CacheFirstHelp_Liste(bAnimation est un booléen <utile> = vrai)
+      
+      	<COMPILE SI MODE_ANDROID>
+      		si bAnimation alors AnimationPrépare(LIB_INFO_FIRST_CREATION)		
+      	<FIN>
+      	
+      	LIB_INFO_FIRST_CREATION..Visible = Faux
+      	
+      	<COMPILE SI MODE_ANDROID>
+      		SI bAnimation ALORS AnimationJoue(animDéfilementDroite)		
+      	<FIN>	
+     type : 458752
+   -
+     name : AidePremièreListe
+     procedure_id : 1609461504563573217
+     type_code : 14
+     code : |1-
+      // Résumé : Aide à la première création de liste
+      // Syntaxe :
+      // AidePremièreListe ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE AidePremièreListe()
+      
+      	<compile si TypeConfiguration =Android>
+      		si pas BTN_AJOUTER_LISTE..Visible alors BTN_AJOUTER_LISTE..Visible = vrai
+      	<FIN>
+      
+      	// Il faut au moins une liste
+      	SI ZR_LISTES..Occurrence > 0 ALORS
+      	
+      		// Première création
+      		SI EnModeTest _OU_ ChargeParamètre(PARAM_FIRSTHELP_LISTE, "") = "" ALORS
+      			SauveParamètre(PARAM_FIRSTHELP_LISTE, "OK")
+      			
+      			// Un seul item dans la liste
+      			SI ZR_LISTES..Occurrence = 1 ALORS
+      				
+      				// On affiche l'aide en dessous
+      				LIB_INFO_FIRST_CREATION..Y = ZR_LISTES..Y + ZR_LISTES..HauteurLigne + 1
+      				
+      				// Moins de 4 items dans la liste
+      			SINON SI ZR_LISTES..Occurrence < 4
+      				
+      				// On affiche l'aide au dessus de l'item ajouté
+      				LIB_INFO_FIRST_CREATION..Y = ZR_LISTES..Y + (ZR_LISTES..HauteurLigne * ZR_LISTES..Occurrence) + 1
+      				
+      				// Moins de 6 items dans la liste
+      			SINON SI ZR_LISTES..Occurrence < 6
+      				
+      				// On affiche l'aide au dessus de l'item ajouté
+      				LIB_INFO_FIRST_CREATION..Y = ZR_LISTES..Y + (ZR_LISTES..HauteurLigne * (ZR_LISTES..Occurrence - 2)) + 1
+      				
+      				<COMPILE SI MODE_ANDROID>
+      					LIB_INFO_FIRST_CREATION..CadrageVertical = cvBas					
+      				<FIN>
+      				
+      			SINON
+      				
+      				// Autrement, on affiche l'aide en première ligne
+      				LIB_INFO_FIRST_CREATION..Y = ZR_LISTES..Y
+      				
+      				<COMPILE SI MODE_ANDROID>
+      					LIB_INFO_FIRST_CREATION..CadrageVertical = cvBas
+      				<FIN>
+      			FIN
+      			
+      			LIB_INFO_FIRST_CREATION..Visible = Vrai			
+      			CacheFirstHelp_Liste_Différé()
+      		FIN
+      	fin
+     type : 458752
+   -
+     name : FenForceOriention
+     internal_properties : CAAAAAgAAADtpLmq/3SAR1jB0i5eBbgimzMG5bdeU7plYYD5I5lShRzsQbvfXR1jLHmxlirxmABCVwuE8ECeX+vDq9klm0e027yh+RfaRx4vVXk5K7cJehwXcQ+Ol3sgwQAt/l0vERgiFDBi2rdr7eyWknZZDotp5HA=
+     procedure_id : 1637990709284728902
+     type_code : 14
+     code : |1-
+      // Résumé : Force l'orientation selon le matériel
+      // Syntaxe :
+      //FenForceOriention ( [<bInitial> est booléen])
+      //
+      // Paramètres :
+      //	bInitial (booléen - valeur par défaut=0) : Vrai s'il s'agit du chargement initial, Faux sinon
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE FenForceOriention(bInitial est un booléen <utile> = faux)
+      
+      	<compile si mode_android>
+      
+      	// En mode téléphone, on force l'orientation portrait
+      	// En tablette, on force l'orientation paysage
+      	SI pas MODE_TABLETTE ALORS
+      		FenOrientation(fenOrientationPortrait)	
+      	FIN	
+      	
+      	<fin>
+     type : 458752
+  templates :
+   -
+     name : FEN_MES_LISTES
+     identifier : 0x1543dafd0715f01b
+     code_elements :
+      internal_properties : CAAAAAgAAABseMnKdATYQVKYSjpgp8Wx1Sd797s9H77PUsOelFCZZVke7cpvJWd4yEe00frn4eo/PIB5qXJ1iW/fdB8=
+      type_code : 1
+      p_codes :
+       -
+         code : |1+
+          
+          
+       -
+         code : |1+
+          
+          
+         type : 34
+       -
+         code : |1+
+          
+          
+         type : 234
+       -
+         code : |1+
+          
+          
+         type : 165
+       -
+         code : |1+
+          
+          
+         type : 177
+       -
+         type : 180
+         enabled : false
+       -
+         type : 230
+         enabled : false
+       -
+         code : |1-
+          
+         type : 40
+       -
+         code : |1+
+          
+          
+         type : 2
+   -
+     name : FEN_MES_LISTES
+     identifier : 0x1543dafd0716f01b
+     code_elements :
+      internal_properties : CAAAAAgAAADNEw/w/UMAP7I6dN6onBJdfOwK+JY7YpLGBEOacZIK7xRV89dheV5TKFxTJZhmlguZKCfx7XrDkxj35rEBNcs/ULyjxzJEBJTEoxAUWrRFqbT/UF3EK6DfIx6bsLh2oQt2/WdBZGx/jrHMGWiiY8FA
+      type_code : 1
+      p_codes :
+       -
+         code : |1-
+          
+          <compile si mode_android>
+          
+          // Force l'orientation selon le matériel
+          FenForceOriention(vrai)
+          
+          <fin>
+       -
+         code : |1-
+          
+         type : 34
+       -
+         code : |1-
+          
+          <COMPILE SI MODE_ANDROID>
+          	
+          	// Force l'orientation selon le matériel
+          	FenForceOriention()
+          	
+          <FIN>
+         type : 165
+       -
+         type : 180
+         enabled : false
+       -
+         type : 230
+         enabled : false
+       -
+         code : |1-
+          
+         type : 40
+      templates :
+       -
+         name : FEN_MES_LISTES
+         identifier : 0x1543dafd0717f01b
+         code_elements :
+          internal_properties : CAAAAAgAAADlRY7t4t14ipTBnMvFyK356dCHOVNLTE8xuVMgAIrNAEE8hbd5ibNPbor1N69df408WH89LOyFhZFVfLA6g+l6L6ErFsGJ7g==
+          type_code : 1
+          p_codes :
+           -
+             type : 180
+             enabled : false
+           -
+             type : 230
+             enabled : false
+           -
+             code : |1-
+              
+             type : 40
+           -
+             type : 11
+           -
+             type : 12
+           -
+             type : 17
+           -
+             type : 13
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAADZv1WQHjfzn/lkqrCKk2LonXjLJhXnbc1MhImXSCjpiHWJzOpVpPUkiU39VXEKf/NW92knmLuBvgXgFPKMpVpfot7sk4K6jdWSrl/xNdLKijaBGLaUnrfRmkvs6fY0Q5qFrhJsXHgNlUeR6TKf4YloIFAuHjBOxx9Auok6tPfQnff5w3aSALsC6i54ZwEoARhYL3L675wonngPgDr6c+sxPOF6Plnp3eaopaQhEkGOEY2mSg==
+  original_name : _11
+resources :
+ string_res :
+  identifier : 0x158808c40001631c
+  internal_properties : CAAAAAgAAACx3qu6q4bV85Ci6F79HzVn1La33esUvPrXqt0q983WBQJ5jAQEMmlYYNMnGkSgtqxys6qAU0eo/FbRW40ydQ==
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

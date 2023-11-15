@@ -1,0 +1,1263 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FEN_LISTE
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FEN_LISTE
+ identifier : 0x258d682500fdf4cb
+ internal_properties : CAAAAAgAAAAXWJ0V+6WIfVtEiBIw2uqDDOf7/7l4NOjfAQaLh90Vxi04C+oO229QbVOyYtO8YhZHLAMPS/3/mW8/DA6N2SrTIoc5ZQlYC4rU4Z5xmaIpmBMYRxtKZcbSyLGlG9viX9X5KPcoTE96wvy3YhrImUjirgq3sVUMpsQYVWsfUTLc9dcRmyqp+sGh05Goprwpt4tB+QWHs6fxwHKwakbkK/M/PIMg2Za3SKXnRKgNjB3DTyfR7odvQhxDGv+oh2FnyVl45AX0K2kPpLPO8XgU2XGWVQDVaC79fMg8oGycsNT5bTSy1p09015eAGRiFdlsrdhAU0jmMc4VcDkSxE3aicQ2ZRvWZ+lH3kXNbWlbK+I8Ag9QUmmZBmxukWEcW3OAu5g8+yuKcAC9D3Q9YKSdjzHUkgLCFbd3hLbEAuqKRJKMdaDFRHO0pgvdnTJ6zRFPIXYh+QoN2MI6CRwUQwYnw0EIRsYBN7zAjEHIWpAfgmHTnFPzbAEI5U6tooo3DXa5nYgGRKsIo6D1V5LMz3EGEglQZk6w5wYc6ieBxKqEGPAw3DaamNPLyNl+m/n4h6cgikujJnchIuN2gLR41/QppqaCcBnX8TaaLCB+ohmv1yNmyZtY5zzUupLHKtWO4WJExy1RB0RM2ONNOWYhSS6nUUMLHQaYjo0Kl9lpJd60iyBVLWfcAWSfQ5yF+iQXTyMvc/ll+waeBzg2A1I7VgaQPzZlwX0uG24I0rGjwOyGYy9RT66+BnFU2b2U4ZJ2phm/em50PwQiMBf2oEU953ycJbQMD8ebfoSzyz7QwxS2eQSBR/F5m1H7Xb6T5VdY3GrUbWH6kq/XyKlakUGc080cYlIM+T2TUP2/wLG4mxLtM5BajtMGUE6H0fF2l9KwuD6vLoUZyQ9VKdKolCA8O5k3OJaReYCOV7wvCOIiblsbSJVyJ7R8cBYfZK/iZGFGfKtQvExr3lLKfZM+jyz7nAcXZHJZh8qY+fQy79o5yQbH1OgcZ5mr8vA4gFn+PPUhBBZF/fD5thHY/QFhr2D2SL34na2j0A2ivEIz16fpbzf9g0I12onN+nSh5uarr1i3pu75QafnQrb8J/QLzsHuUM8ymRexz5A0QSIhMmqdmsOHOmnZKw4lhblbTxnhyO4ZEy/CQgDgyZ/Ub5EYn3jbwSgyLeHfD2RK6t7m4kgWYyvuPX7SbA8oSrWCl5yggvWckbf0DuINPYlw47ySkNLU6/jKqKDwq4rYHWMvQsb2EzEBTju2gkZ6ylxZNTbd8ymQ5b3YjunCHVtn97LHupjrgM2lCyJCVjh/aZhXbPs6dZ3R08P19BJWstbdsMgL3cA/rHQZMdfDumLxPA9ii29JmLyZmmtdtDvK56SxSn+MyxXNXg6Jt947J3VsDBvjzBXUT4k8Jn7ML34CTdxLpFLFnXAmC1+fyA5Jh73DsZHoyq9WXn0rL90E53UA8vVYhYWZDU1Dm46rJbb/4Os=
+ properties :
+  width : 320
+  height : 320
+  heightMin : 401
+ controls :
+  -
+    name : CFI_ZAB_CONTENU
+    identifier : 0x25ae084c087c319b
+    internal_properties : CAAAAAgAAAArzjGVhC/PUFiYzftKBj9/Emx40MpMK8vsOgHacakos5F3Eahw9EtBZbgjjsqBuBoTtushH5AAjFw127vh4J++QsJXPWUE6XXBbpxOMbBAnm1/bPAX9mcdeYLffNZrrwlH/VN0DXfk4C96L9ltuQI046unf3dDjVNrqXGDgsvEGG/llHtID8JUFWDyrL4JcQXwpZtMFuhcZpBNPvFy4FiZAsJv5Xm2PCXXGXP9yoBBFn6TEQMP30W6lvS77c9h3C2abhNJyTKbadhLimsq7zpPtbDr852oZ3hZbfI4ObMmIpLLLKP+pdCRhHletVr5NwayYo/K0zY/BYnh+iAjrvXChnJeF8kTEFECyyBiH0BT9dsPDtGFUwPZbUrs0IF70/CaJnrsfbFID7R9ynHT7PTUjATJkCTc9M1jfgUQfHLdFIEGQlC64E/ksSwR5p6ytO+/sQ2GKIAXYFU9jnOet7/Y7bwck6WbRtxqcSvFNQTrR1EgpXDrHvwuTmJ41/COhF58YSf8JDYbt4CNAyLiboqSB49/tMOJKBzrDe/k
+    properties :
+     width : 320
+     height : 320
+    controls : []
+    type : 31
+    layout :
+     -
+       width : 320
+       height : 320
+     -
+       width : 320
+       height : 326
+    code_elements :
+     type_code : 73
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAAC7/aL5WfbONg8MPzqkbxDpo/3s/GjNg1uPMtMAqDVvL3E8jlgz0PHN2MMj9GhGPd632tqwIFRClO5NuO3AEP5UXaEkayVMOCi0vlKMtvLYKvsZaEOaiyaX0LidNHfhV4TFpReBAvtKItTmB1w=
+        code : |1-
+         // Pour ajouter des fenêtres internes pour le balayage, vous pouvez utiliser
+         // la fonction FIListeAjoute( ) à l'initialisation de votre fenêtre.
+         // Exemple : 
+         //  
+         //  FIListeAjoute(CFI_SansNom1, FI_MaFenêtreInterne1, Paramètre1, Paramètre2)
+         //  FIListeAjoute(CFI_SansNom1, FI_MaFenêtreInterne2)
+         //  FIListeAjoute(CFI_SansNom1, FI_MaFenêtreInterne3)
+         //
+         // Veuillez consulter la documentation en ligne pour obtenir plus d'information sur cette fonctionnalité.
+        type : 33
+  -
+    name : BTN_Abandon
+    identifier : 0x25ae0af6095897b7
+    internal_properties : CAAAAAgAAACQWWAmnjIM0Cmt3ziGZG4oJiYoEq2ZYqziBtHF204f34GP2e+1I6aavpnVPXE5mkTqd/5996vI5z93Nm2clFhZUzVs5nJBRUFA4uwF8rbaNJ3XylJeTFDdda+xdzwgizZ0ZDxydzDVMROM1xb6lZijVwnmHXJs7MY/0CAo/dbG6hJFy1qdkZ/7SnMNS2Pw24+i18WKn79dUkfbAkZ782DHHjyounHrF3eMJzu4gRDshSa2ee9tRMXgqzlBndrISIBYpaUsnmqUGePVZ7WZaqD5EXOwrEwbalfl2gBd9eojg+RfeZiSyg9UpSx4N10ICu68Qs1fwmHSJlS+DttY4lSvqIhODRQ1AI0s80NkrB8vvCjZ0zVh7iOwlNUsYecyoYUj1QCoYtcYIc31bp07s0ZFZSwXYXI1XLhIf5tvhoR2EG4Cp7/hU6ruPbZYos6AXz5rEAyVhftjaQVJ6LR+ifVcG0dvXjIpKvcr4XEqz3vmHuZODwvDPNrn/e55XPMSuG+TQM+Pv+Sh2XoKIEP7eJzISXyQ9+su16p9ttZDgCJqoT0OQ9OzaHLRt77KQhsPuw191E5KPXnYobn2Js0EEuGuQ8xIe0F8/p8mODGJvHGyjQaMLKT1v6WOCmSLasTf/w6mWHS+SNxdcZ14SOCT6yegVAztayF4BgbEMWIVKTKWg3dEZ7YQKrZQmstH1vDEfeTpIhjFy7MEcWcZIVb9XFybTslrg8PIJLf8wnSeoEiMbNM+4zYbvQSAQGMKG/sv4/oQQTt/t9v5IIy7KRhhZeuSKVLFg4+TGu3yveO0iGiBpRtQRoeaQdM/U1MB/1xmah6EEe1Dza0c1+PKyIJXC04/RQXx2X3X8Xw1+zkh+MeJrAAJ2mp19yoYHXQeqQPTrX5wNiaaCFLJiEqYT91cHioSwWPZ2qbEl9yR432g5/ZgzdtSFINj/Dr8KtXArMR7NZ00uDylC90QpLbLD1NqRJ7nK4zQ7t51xuiHSTHGd7ESwoxnDP+7fZmY
+    properties :
+     y : -123
+     width : 90
+     height : 48
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAACvZOKib23Of7gs+RewbNqNkpz+JKPfcBV9mlxqNqHPATCFHS0MG6m/AhFKY23EIbQbx8H3hP36B1BBpZYP3/fMAW3ZkViPqTfVRoL3Yf9OJf+s1T/Rx6lY8eK/GTcvNoit4Ub0/qdDBh5oiDeKi5nNqFdtI3UozVYlzjbvVUMgIw==
+        code : |1-
+         
+         // La recherche est active
+         bRechercheActive est un booléen
+         
+         <COMPILE SI MODE_ANDROID>
+         	bRechercheActive = pas OPT_RECHERCHE_AJOUTER..Visible
+         <SINON>
+         	bRechercheActive = (BTN_AJOUTER_PRODUIT_IOS..etat = inactif)
+         <FIN>
+         
+         si bRechercheActive ALORS
+         	
+         	// Fin de la recherche
+         	FinRecherche("")	
+         	RETOUR
+         FIN
+         
+         // Si on est sur la liste des produits + historique
+         SI FIListePosition(CFI_ZAB_CONTENU) = 2 ALORS
+         	
+         	// On passe au contenu de la liste
+         	FIListePrécédent(CFI_ZAB_CONTENU)	
+         	ModifieIconeMenuSelonPlan()
+         	retour
+         
+         // Si on est sur la liste des résultats de la recherche
+         sinon SI FIListePosition(CFI_ZAB_CONTENU) = 3 ALORS
+         	
+         	// On passe au contenu de la liste
+         	FIListePosition(CFI_ZAB_CONTENU, 1)	
+         	ModifieIconeMenuSelonPlan()
+         	retour
+         FIN
+         
+         // Si le sliding menu est ouvert
+         SI FenCoulissanteVisible(fcGauche) ALORS
+         	
+         	// Ferme le sliding menu
+         	FenCoulissanteVisible(fcGauche, Faux)		
+         	RETOUR
+         FIN
+         
+         ferme
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : IMG_MENU
+    identifier : 0x260173431d17ff10
+    internal_properties : CAAAAAgAAAAhVgnZWRKFqF61vwrdMQzcAI6QIIpWARc5v9B9mez8BiQtvsw0UP260cGvSQvREScf0atfnAMiHF0gsuE5GyM9OQPIXj6ojAAZFT2b4c0US84mn1odcZTM3jlk9BcqwWaXm4zALyu3Ok53EJ2x3h1X54bUKnUffp++pHBOy82eHyQsbSwahOJA9Zhm/QF62Bi9hJSiFAJinmK0VuXEeC9KLpRUYNxK5Qy/0LkjYQNM7O+6ocjYHnNZqYyj7J2SaZ9MM7t0wzliKy9q8XybtQovIYegvcANjmK3waQgwIFLyS4X7GhPlIajdYRwJ2Y0NocjVs/udh9cWSdA50m21j0v1KbiuogMFlLIeMSsTl3mazTveI7p86aTWaeghT0WtIzi+mS/0ljKWEPMxKKFSjFS6tNPX5IpcE2KRtwvvo/885RkLE4YrGwXcpgCm+SkQOj6kVtj9IDFjQEcSrCIlz+K9Ka2Hq5413ENxVAFd9DqYeyd8uq3YJGNyfWSfI6qrYunjmYu4wIy2JG+maADqChfWpV7rKr/nFEWxmnWWjNUaP4UDk0SMv2zQWHloARQuCLUjaUSSSxE1UR3mcT/ZuUE59yXJNhjcmAEcszl2TIaPwaHMIVlHv0c2iuMTRaCXpRiCEFhjC6Wk/dc8yKKKMzk/C3/MVZmJQsdAL66d6yF7xO+vDwHKJO2hVTN8x4GKsoGrpGbx+zfmlpVl7nj4AUlgA5uHfSwOdyNBPEubuPkJox34a3hJYwJr9jllKAix7a5K8CUcJvM4wyavqHZKqm3HuqP7kV6pWZ+Kq638bFjUdpcNfb+/dOh5MgKEeToW8ci6rwabvmt/D/DoJ/xqN2wjYko/tT6VIPXoEZGZiC0f6vjVNEWvQ==
+    properties :
+     x : 93
+     y : -99
+     width : 24
+     height : 24
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : IMG_RETOUR
+    identifier : 0x260173431d1bff10
+    internal_properties : CAAAAAgAAACxI4LPIkFHzXTEF33kODK3L03vio6RX1t4D9E2d5FeHBYpy0bn7GSl3x43pYhjBCTDB0ZoJWtzmDaZmYMxocoP+NQlzaVk9Es+Z+eEIAZG3wrISAddeJPoeyLOUZQ8J2GelOiaUZWpwSD99E/DIPHeOb1TaDaK0pSxidPaXjNbLNAcfDHM4Ve7DrBxzSAsXQ6hS/doZvj2YaNlbpvm2YUHkf+KYD+aS/AJ26FS9pZ0/1SHSTDE3TR3ZCEJ5rN6xRbqmjTrjmA21xQe+pRjmCE+ZXYzB6QJO2lBIJV1SlbdRk0xycKJFtDHLjsbNEZm5fZajmpdk/OIz5/417WcSwUhe4Mi6kWo8/4Z6eCaStevtBe4Rvrwpw5MF3bHwoRCk2YeVJnIyGROEkzLvKQb8lKNUnmjQ8BQSQA6UcZRFE1FQiIdYy5d2d20SXDV5az2wU5TiD8HOLITaCFBbX/BgTjAIM5rfacoolpPoFlYQf2kZLa86LXMUYrr85aSjenotIMVNcq+Q7KX0lP1Hq+ctF0arlk+ixri+YrJHhNECLsQJ38Fm9A1lcN/roA+boWYqAYmwNT3o5iAU1BKQH8G81YNvQEM4ZFR09hZPGQGBU4w1PRLSXm1xRA1rRV+22pFqWsvH+jb3NbyZZP6H23OaCJN8/6++tk4axwJVwThRvZ0Pjm0AXd1OfJZfpx4tXl5VYSvWrwhJi+Vc1Mi405wTijQVwGb9xwpwIMuZCpp3LYzy5/AQzSVhROC97+d+FeQFhYGGEr+pf9c35soUOrRgtkXrPVbh3m+wijszAu5FQYcriaREAecGNlV+vw79ymwzYUQtkglnTR6NpmxVIiJWDPuCXgzxHc+3L3AUW3qGQOUEHMF4uThbekmCTfUb8+6xA==
+    properties :
+     x : 120
+     y : -99
+     width : 24
+     height : 24
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : BTN_MENU
+    identifier : 0x260d39765fca3543
+    internal_properties : CAAAAAgAAABWRcKa8G/NoMQkX82m6SF3d/3DuAuulaJudu4P5lJMNKtlhmmJdCF1Xsy86AGvM5a1ZF0bK8GmFyE5O06S1hwUJeKNj1qxhFaSp/4F5utsYPo1detVrT03xAptTAQyRqUzLW1C5u3fbdzmCqRWgEKXFZdDAnROMIRUjJH7oESQvkQVnWM0ltVAJqHGxiUOp+3mp4fAvWTZkzv/3NZqdAbr7XmWYDDCmm109N70Nkrk22JtxUh52AjxZSXoLdiamK5xLfgC825YKYvywVV753Ml49UXQQLuerUguvGota8F8GalJ0rDg1qKzpyQa6qJG7jTQahzdV0cy1M80edvtY5taC0fQhyLcdtln2MuQpRxRjxugot3uA/xg50duuKJUtVIyVR2EbGJXhfWQRWP2CejjXlcZHy7y+j79W3UGvrq6XBLzpu0iGqo53byLwZil5HZw8VLlPZDveGJ0LVyapumEtLw/xgGlEaDEHs+PM4IZdjj98zXX7Ci0UGhqnXcwpICpQL+qAVXn2EwgoiGTvS1zYJQ4woq1ESRLp3SPFFzPQGea5eYQCf5kSxZbflWmJsDnp5mOHXJj21G54puZYCYmba+Mfz0pWmaWagoRW+UfdR0q+PErQppxeD/q15CNQGm+NiFxPGx+YI08Q/n2z8uZU3JCwQWqp4dVMTaAzsHE9BIWsYxDFstGS88fbGWagVxseuNTTteUCyKBy9pgNKGOXmhkT/Is9kvrVmBNd4RA5golllKV4QC82SW4ObDYOrzmc+X3flcilnhuW9jtDWCa7n4eaLG3MFz1OpEmB9tt/u3JX53uB+bab9ZLi2DKaDdgBUMR87sr2ZvGahCyVDGXKjDLKcw
+    properties :
+     x : 80
+     y : 96
+     width : 160
+     height : 48
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         <COMPILE SI MODE_IOS>
+         	OuvreMenuContextuel(MENU_AVANCE)
+         <FIN>
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : IMG_NAVBAR_IOS
+    identifier : 0x26695f4341ed11c0
+    internal_properties : CAAAAAgAAABOWjtPE8gtwdF+LMf6utLIhtKULHtTopAefxsTdsxYj3SQUaGvHDYuoQBKsAED0LjIuxnM6JZpZ2EAi5QOOUydwzrkRTJNUAbfyG0/4m6289vaF3Rpcs2yDXbqqZBCpBS6ZI1zAx7vygksaaVTjP+aIV8pzNBzJ/HtBugg7O+0+GxU17kPEVdjmEC8Gm4++XMqt3euyPT80GPmZjp/jZRG81RYdFFDDPXlGCG8sXRb6ch1hVlapOIcs42h+0Hi7qKKkOZ1O2B4YS0m1tg9QkriGbyVQs1M9LQTTx7y8smSCClUF8k4J2jboYPfXG6jvg+xJDxLJJC4YAhMuXbwZ+jDnpISywo4FEU5d3Crn3teOXT1wjisBmb24eLBP0Sbr4uM6ObnRuET5kvQnySCEyLDOgeWi8y704KmamBovy0/E0LYqaomll71ACzVKHZMoPyFroapZoQutALppfEuvhrOb72LpufZcpqELQrttatf+Xhta2OAZUBf5kqt8lZ6g4xMBWT7EtKoSanSrWxCpxcV4ar749yIY+KtC51NKYToFAqL+mRkT/GdmN+6eSEfuNKdNp45CsDxKRNz2KEV5udZ+/TybHjpCT1Ft8FAt5w5Ujdk6+6e6J4kgHXKS0+hwXQR8DsT+SsAnxt0PWgtpn46hNU9YNbQh92L0lNSI+UD8L90qsx5nLj1HrwlXOgMTrswFNkUzPe6PXt9F3hKaKMPg/m/pKIZ2Ck4eiuWOrQ7tVsoCYKBT1A+Ee096vszMnOl/4rq19G62xw0Y+WWJicPt/Bh4kyQeYA/H3inaPU+PaX30AFBza122VseeiXB5nx0CM/Wkc44aXgfhfqV6PZsAwYQ/BbGsdwnZYoB
+    properties :
+     y : 273
+     width : 320
+     height : 48
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+         moimeme..CouleurFond = ACTB_MAIN..CouleurFond
+        type : 14
+      -
+        type : 18
+        enabled : false
+  -
+    name : BTN_AJOUTER_PRODUIT_IOS
+    identifier : 0x26695fcc425426c5
+    internal_properties : CAAAAAgAAADuo9HSJvoeatxQfio8Rw0MnlTPwIUyAhG1x+akga7XwgMuRrznaizdOKp1uTnjG9Pw0idaJ68avI/Mmjb0rbY5pSZdbtymGhWkf3nhK8nktOoXg7wwpn/TL0ub6damP7JXLEKcaJS90LZI2V5Gj/Te+UFCRwWKPA4ayTY4UpTZtOorZOoIxIEoB679tnuTRAfp1f+ewhZMg6yIYL9ocuOEbXK0BlTQnwDB8gyii9k0LPc2gTJIj77OV196XlgUTVJam9RbbXGzrVrQ4iKZcjY3nZFpK9x6/zwV1s6aFRVpKFd4qJowsqVJ2/KmTr55FPwwXHK/rhfiLnjN7fbtOgjxPMQJ0iZ6qJk99m5cxkpEb6Z4nLbZlNAgkQwBRyFAQnrL4KMzpumcJ9IXzEOTklXJgW0BkT8sYDn6rbuRMEBsP5/Glkf19nanDD19DYTRexUxAaCBgq9si/O/jPTziVwrDjF3Xew/2fx12ofIqAIftWCbdPCIBY4qRCb2no1A+/DlrnbDqftW3cS8vTUFXS8SV01+zHHxW5wli+w8KZmWS/Am27cRTkLxa94SRs3c4dD0Yf9TfR9d3b5fgPwWJyNyA7q9Oz9GkyIhG+8XhtkU2rUpNfkv98zu4j1LUkJJFwMnvJFLnFN/FBGfKXt1JX3mzq1Q5cvzffFrZSJISbO/jCSFjDz7/CwleveMXT0cztb9G/JB2+PFqGo8/t0XwqrmQDimPTgD7cOzMZA56SAgRY1owU2tqKvjIj+IVmcofeWtjMSkp98ha9HjlEPMZccLt+FvVbPLmTjjTwnu8DGCXixw9f0q7RcTpNcvSJE8QjWnv8/6NW3tTvc75Hh/D5ID/K1JGqfjS8SN3DHvlM3it/02aFTsd2v7Tc9Uubrp0NDckWG0kg7WvSC/lHARZgxWuIlNdh4/R7IGvJRmXFm6SWOZUaY/HR0ojtqrKh5V2gzeJvOxcMMMB9sKTStFRvqSELvpC+vOj5y5c+sBOyP3UnNBJTXjCyOE7ZlGhGZvvbjE6uHc4C+l4qhq02zCSO8eJGSI11DKhtjNkm1sepHMbpz7jGlvGMMhPLZGyyvMKuXZ+jFvxw==
+    properties :
+     x : 80
+     y : 273
+     width : 80
+     height : 46
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         ExécuteTraitement(OPT_RECHERCHE_AJOUTER, trtOptionMenu)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_SCAN_IOS
+    identifier : 0x266960324262b68d
+    internal_properties : CAAAAAgAAABKkzCyfll6ENSIXkiTr17GVdFnt/M8+IKq8vI6mi8JgZ9c+BFLl4YCpBB73gGBVSFJzyaCxKDdrJ2RCS1zS51zc2vjt3JqMm+zJl4EnWzBl4Cc1S0C+yX/O9W9kxoWQKRIGzfzeVDzhe0TU2zEQR7g+5Xmm90ItQCanGJjE8L/kGGlNrYjv6kLhcJ6w0IznbI+Jz4mImyLm6kwXElEsf0jHJD2G+BUPpl+LXA1JbJJaUHV7TV4gAtP4fEMjCRnLn80YQmCstiSEiRQ8Biu9GFsrsKqWp1XhzPXIQUojnn/3O8PuuLqt+w5yA5rUJHgSTJzpMFAC9RcCmlZFt5m9VpQqG7+xpo/cnyefL7YHV8uLGs4GkCN4FjIgTuei9DAgaiItxPNm7A9qF8pMW0dmwbzq6XZcH41E/i9MGp/vHu6PU+qvRQ/ouhYDC2lLgexlW7WKQ8b2UzFyAMxxCY+9pawV93mdGmazOU+xTUiH0d8bvS5kjk587jjcvK2zNauSRMAD2yE/TP2szuW/5GmGIBp8aK6euop6tSPqYXVLRgEHcdJrho3iNQ+epiH2bSCLS9ljCqoJ2JaJRY6sBLQBoNVW3gTfuey4Peu72pd+d9v0U765qqu0AlndHNbmHz9a/XljKC4ZPGKsEXjScnCy3SS5Gh3dpCPhCadWrI+YUcH0UPtYIAOj802YxzvrjNX1zQQ9IPwnO3oby2RLfRrlSvL36tpf3rrUtpfF3Jv4ZuQW4Mi9MxTVaW9jUGw8YH27BBGMajLM0McGOp33zCl/FzZprl+LN1aqRHO+5J2BeNSPm2jWKbT1Vlk4s6YtwG4anNvwTkgDWs0kAdKcI2Cx3mnMzO8f0eWFPpQBN62aCsQBGKILLd4S7a+tNBXdt2ZORTRXc9kfaJqnf6MineRQ7Tn4DhuGrKxq5IHHMSaLGhAP543BL7gbcThtuVA4L9lbMAyRoHos4CPTuo4nxuEnL+/TlqrzWhgIBadqfV6h7sj0d1uhUhLtvGw6aZ/8ssHsHLU1r8HIi98XUrEzeVPJ50=
+    properties :
+     x : 160
+     y : 273
+     width : 80
+     height : 46
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         ExécuteTraitement(OPT_SCAN, trtOptionMenu)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_HISTORIQUE_IOS
+    identifier : 0x2669801c572760ad
+    internal_properties : CAAAAAgAAABKGhM7RxbWIgIJIOUIMJ/xTwNHJqPFt/UveMMvDXj14WkdkHlMopmvyxCKj31ZLw7EKxY28fqbQBi9Y3itIKWQs/SIDG1T84UQVwKKDQYQwPthzDWs4EYj4mtCwjUktrLmr8+W7RK3SacyTry+JlNg3Bb4sh3OSbuU+dgj9db64ZaLTBFmeGm9hNMRXoWWlmnyfmvI3rtcV2yI/Pasz9HO80LcQ0J4/Hor/i1r7Rc4yd7J4RuIfVLI6z0OfgTw9siLRiyH2tfnvTbv9ws6e9hO3n9ivFaIH2KQRfFQwCzbtY3WYgXE5RzbTFua5Ia91hjg6//hjbMq9U3D3LcJ4Mo/MewXWaDX114ItFEH8NVFOIPCDQPkrD+rD+DRUys7aD5Q8IEvumKADec75p4Cwc0+fdh9GFTbHUZSG5hpxKr+gD83/OV2Ba4QbROjoh9yjBSKH3jysslb/MsokmlUw+pxBK/eY43JY8f+H0vHRSF5fCixhQAccHQExAoS1wsGcqz65GWdYny7DiHZ1u33aZ/4m7GYTp/QDqu6HxBWTs8wZgmgGYTU0J6OO0gjimEjM8vszO6OGsNfIa8i6hbkFCy5rPXaS5m74JbBnHbkv50hWMhH8b1hQn7PYquryUY7Zgf/mjrM6aYJzVeSnTH8tDL6Sivga3NMwyrBugM6ioQOAH9EWTSVZN91bmxgbPo6xvza5Y4wgkQrD7luqIeZQFC/wP9NvRs/Q3YwEBq9WfpY9n6NxAMwYSsU+lyL0O57WNz5CMh7qRuOKva3U2F32YVnQAybW6/R0Jpe9/Q21WTglku5c0gnEkC2v1+PwTBE9GGAE6F4r+1gupyBWvGTzOa1bds1zcixDyR7mddCPcLVqWKRSls3RXHQk5Mn3S77l4xQWw7OaBir3UEGc4jvS+EhG1fJkQIle6CfHllY0tkyA7COI0gqQQiu2JTe6UmEMxGSed6IBtvq7dm+d40+aDyK+q5bmP4wEMjYCVmClkLgVVjfng3M3TQoA6JeuZftpxRjs08o
+    properties :
+     x : 240
+     y : 273
+     width : 80
+     height : 46
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         
+         ExécuteTraitement(OPT_HISTORIQUE1, trtOptionMenu)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_MA_LISTE
+    identifier : 0x2671a35bded60659
+    internal_properties : CAAAAAgAAAAsaKON9/+f6MmkqNtpsp4K7Ly/qpzI58a+lLzxCra3xr2pRpgTSvdrGSzy1MbBAwgn8Q1EX5RlxCa6GfvhGEInFtRlqel2IMdYLGW0I9G3JQqy1rGQLNPElStRHRa9qUo3nI3yXnCN171uVMCyKb2dNEkWjfYhUIVhMEWSLbqLeiT9QEuMaFg3l5i2mWRUQcnwBoz9FKAFRdRAtS5aSECToBYyc4Gw1GADaYGxWX9fTp5cnvRRMafR+LTFRSQxK33YUm/NnBBcn4p6jHj+fGoHI63mdleUXVN3D4wZTy58TwqNFR3Z2EfwH356O1t+cs3h9pWgCjOC2r8e7SdmPwbDGWFeotHG4KHV14G5JKHVcExtOR6qMUmdRp4ZlRx+UcUV5zVXpdc6d+OYEDf1p7kwNsapanss1K5JJCDk6tOjWbarKR0tMwCSSuPjGLyfr3bQl3hovIDZ00WoACWiPpAral9oaq4o18JB7liAVQRgVuhpA389Lc5CqF04lm8Z1YppsTYS/9J5s4qdTs5kJPESWnGRdImZ6OuQGtTT6Aj/5YwW84CHwFHNgpzoX1HE/jKqmdI6m6HEkV10zR7wNLebVkCycN0XplaqEjptDfZNNg4ww81rtk5RzEzjIS1iOA/J9pixesO/Zm9tNTFy54/pt31c9gbzlvN5vaCudy3Frt4wXDQNOMwmeueH7/k37OB4kkJxHvEVi99W+Fa0n3T/5sTdMfAqPuJFUjjZUt6sqElwaQeXJiCoPV1MIuWIJ/6OTy3/KiDMqXGf23zHa2kxK8ok7vaqzUv4u48uRQPEiTc49wi24OB0JyQif/PNY2oIgtDiNL/tqIWIEVNuTvz3NR5zDrniwbU3WHbYdT3xZavTacqWEytKsc7CAmSsTgvUWw92SB5lefha7lw+EKOH11SCzJHxSDaKN3G0VqGGG/mLPhA7DrXPgrcbxx5W5j5iA/f+r64ZFmfR7hEVTwnXJ4SZJ2Mfy3FRW+RhyIZ4adQC/sLdVZKVNLaKwNfvQFM5PQ==
+    properties :
+     y : 273
+     width : 80
+     height : 46
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         // Fin de la recherche
+         FinRecherche()	
+         
+         // Retour
+         FIRetourContenu()	
+         
+         // Mise à jour de l'icône selon le plan
+         ModifieIconeMenuSelonPlan()
+        type : 18
+      -
+        type : 161
+        enabled : false
+ actionbar :
+  name : ACTB_MAIN
+  identifier : 0x258d682500fef4cb
+  internal_properties : CAAAAAgAAACurA2RagvTIzHbfr+FZDML1m3PGiqA3abPzCTAJAP9yT2sl/5i84qIo59ZhQOICR21gPDJN0Tpw2D6s4SPdLXsEXiTuJA1tiwwC6CqpiSsn4A1mNRH4OY3G3LHv0JVZDnduOl/f5VxqCCzBBP9YuAIwFsqEsGrgBNgnhk80vR/pxLHbYDXxbEcXoGd74VrJjx0YgFdYbCOdZiuZiV0jNwNYswTVxeCA7BEsUK+kVxQiKL6PAuGXwXnpLQQ/F9gTTFE1/saq5HeQvf8MObKRzTNufJpBSTJWwV6SzrDDrYBfrrTD7nkaRyxJcNUBELZIhbnOmU+PqXJYffe4h17fVlCRIwhWmxbSA3o8m9YSdQl7CPjT1fP5rr1BQ/iaL4GINySuCE5s4eBa7vp5O16ZJeGWgFaKF7H5di2R5P2KoEGs7/FHStW7SBQJQfZmlaQGeADWlWmlmeEvDc+KKz2KX6u/KGt
+  controls : []
+  code_elements :
+   type_code : 125
+   p_codes :
+    -
+      internal_properties : CAAAAAgAAADR2S5eXkfkGtXwCMpTzaCE+65hYSS8SuCfIwNZuqJcHkTzoD53mE9L2oHA/KnmcJX4GQADBQfZvYOO8RQSYxkyM8oT+2CIjDBV59Lye3t5NMnHQTe7ElCBnxt39Bk71dPz6OIUiOREzdZd3CrWdUxMPDDVnxshBlgoRI/5xxxm
+      code : |1-
+       
+       si FIListePosition(CFI_ZAB_CONTENU) = 1 _ET_ PAS ActionBarRechercheVisible() ALORS
+       		
+       	<COMPILE SI MODE_IOS>
+       				
+       		// Si le sliding menu est ouvert
+       		SI FenCoulissanteVisible(fcGauche) ALORS
+       			
+       			// Ferme le sliding menu
+       			FenCoulissanteVisible(fcGauche, Faux)		
+       			RETOUR
+       		FIN
+       		
+       		Ferme
+       		
+       	<sinon SI MODE_ANDROID>
+       		
+       		// Si la fenêtre coulissante n'est pas visible
+       		SI FenCoulissanteVisible(fcGauche) = Faux ALORS
+       			
+       			// Affiche la fenêtre coulissante
+       			FenCoulissanteVisible(fcGauche, Vrai)
+       			
+       		SINON
+       			
+       			// Cache la fenêtre coulissante
+       			FenCoulissanteVisible(fcGauche, Faux)
+       		FIN
+       		
+       	<FIN>
+       	
+       sinon
+       	
+       	// Fin de la recherche
+       	FinRecherche()	
+       	
+       	// Retour
+       	FIRetourContenu()	
+       FIN
+       
+       // Mise à jour de l'icône selon le plan
+       ModifieIconeMenuSelonPlan()
+      type : 18
+    -
+      type : 229
+      enabled : false
+    -
+      code : |1-
+       
+       // Lance la recherche contextuelle
+       SurSaisieRecherche()
+      type : 239
+    -
+      code : |1-
+       
+       sRecherche est une chaine = ACTB_MAIN..ValeurRecherche
+       
+       // Abandon de la recherche ?
+       si sRecherche = "" ALORS
+       		
+       	// Fin de la recherche
+       	FinRecherche()	
+       	
+       	// Retour
+       	FIRetourContenu()	
+       	
+       	// Mise à jour de l'icône selon le plan
+       	ModifieIconeMenuSelonPlan()
+       FIN
+      type : 240
+ menu :
+  name : _Menu
+  identifier : 0x258827b604814537
+  internal_properties : CAAAAAgAAACIQ8FkyGFYwCbjRN85U3/KT6WRjQHoh/Ihrb1n/ismAOpcFogMLN/TqVSw+F7iaxy8i3OdgpItxRhMV33ptSXLzZM5yYt6QWBq9/u4qVHaO47xcAHlqS8555mddq0BQ8AbcWTp6b64vKqtSeEemdmjdSOvf2jIS83Ll9Dbujk6T3MDcnBa7W8j3eEDJTFduNm5pqHLLSZXJ0jUzogNgt4Ul170ITRaaDRrRsUD+u4Q34w/KktxpXnlT09/o16LoWmzPHCXSAtPmDfqn7NF26UJdSR0Kx0krO9pztDxEQ==
+  options :
+   -
+     name : OPT_RECHERCHE_AJOUTER
+     identifier : 0x259103d1048e0b34
+     internal_properties : CAAAAAgAAAC6vYO7gWv3jSalw8mzWJmGBiIhEdMtmHr75nCEWxOCALzr2jZZuF3tRoOIFdgCn1wYQbZSPTtsOxTDh31kaelXD9NjoPDuKY9aeW+ah3D2Ocg0Ys3/xxI5NRnDUunCFYpOnxmxEBtE7PW6meEJC6jErr0sOEmZun89i7iflVgwkF02uByG506b5zdu4arugXFWAuyKt0RUmY9fEetTlMrBnJeLoaLz2eL1Yflm58udmw2OFsw1L7/0JEx1CW4jg4p5oAgkN9bfP5Xan6Dnck7eOHFaBIFBC+QkV4V/N6b6+NKlAQV8LI0A26n1dYgeyLXVIKJfOcKLNj+1ImZI6giWmkvK196s8wpul9mYXfkWS17c9+0QjHIVqRKz6fk12KJ2dj2VbRQDLdz06HuwcW93j62x
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         internal_properties : CAAAAAgAAACfF1dDJG+M/dTppm6JrnKCQ8V8MWWzXmT12wNZevrcHmRrQLavkD9zmmHYBAEWuN3wCWgThVcRPQtmUURCC8nGV/bPT/SUiDShs952zw/9WP3jLQs/jqyVqwcTiI2/mbfXxA44LADigyhSwPj/HUam5ruI3JRRT+poVpEYAdIo
+         code : |1-
+          
+          // Si le sliding menu est ouvert
+          SI FenCoulissanteVisible(fcGauche) ALORS
+          	
+          	// Ferme le sliding menu
+          	FenCoulissanteVisible(fcGauche, Faux)		
+          FIN
+          
+          // Active la recherche
+          ActionBarRechercheVisible(vrai, <§Rff0006af113468c2¤fr-FR¤Ajouter un produit§>)
+          
+          <COMPILE SI MODE_ANDROID>
+          	OPT_RECHERCHE_AJOUTER..Visible = faux
+          <SINON>
+          	
+          	BTN_AJOUTER_PRODUIT_IOS..Couleurfond = 0x101010
+          	BTN_AJOUTER_PRODUIT_IOS..Opacité = 60
+          	BTN_AJOUTER_PRODUIT_IOS..etat = inactif
+          	
+          	SI BTN_HISTORIQUE_IOS..Etat = Inactif ALORS
+          		BTN_HISTORIQUE_IOS..CouleurFond = IMG_NAVBAR_IOS..CouleurFond
+          		BTN_HISTORIQUE_IOS..Opacité = 100
+          		BTN_HISTORIQUE_IOS..Etat = Actif
+          	FIN
+          	
+          	SI BTN_MA_LISTE..Etat = Inactif ALORS
+          		BTN_MA_LISTE..CouleurFond = IMG_NAVBAR_IOS..CouleurFond
+          		BTN_MA_LISTE..Opacité = 100
+          		BTN_MA_LISTE..Etat = Actif
+          	FIN
+          	
+          	OPT_AVANCES..Visible = Faux
+          <FIN>
+          
+          si ListeManager.nbHistorique > 0 ALORS
+          	
+          	// Plutôt que d'afficher la liste de course actuelle
+          	// On affiche le plan d'historique
+          	FIListePosition(CFI_ZAB_CONTENU, 2)
+          	ActionBarRechercheVisible(Vrai)
+          	
+          	// Actualise l'historique
+          	MaListe.DéclencheActualisationHistorique()
+          	ActionBarRechercheVisible(Vrai)
+          FIN
+         type : 32
+   -
+     name : OPT_SCAN
+     identifier : 0x2591040a048fea88
+     internal_properties : CAAAAAgAAACBL+lN58UmLqbOS3uZYO7nRi1kKxDTGXZT8hnex28Hras0JPWUsSqaQuyiNi/umjMy9VNBMGGMOo2ydiOuPlh1R5O5rkR0h01sy1Vtc0DC3PsUPrVo6IkcKZ2aDajjDq+EVnlc4oBKvgkLcdig5edVrrYfqfg8nrI6w0ds3Nsq+uw/VZputZbabQdBpUJ7hALzKnLly2D2tE06bj3SNJZR4XljYWHYadHGmzoYhnjsqDF5WnTvdLgZX90FnE0vEovXLHvMLRU2ofoUlsv7Hd5PP83ljaBSaq/RmBESY6dCcF/q4aBgWIoHFaCsFM5DAKIVggOOaZFzWIDvl6Rb2OympeFMYpV/oyQD3O78YjPCElYwJ9uQiByUM+Gg6po4rm0=
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         internal_properties : CAAAAAgAAAAFrd15ckGyP7ofPBSzvKAg4TM6z6Nchl57OeXp0CpmlCiV8NyBoDPx0F922EOCNrcYZ8wNU1PZo8G8l+yY40+Xhps8ApPfx5PAmAODLKZmxXh0tnLOgcNwjrhEWYbaRqC+Mbu7d0sxjv9IJtKBa+Ac7FHW3kbHmbRmhFdSe0iy
+         code : |1-
+          	
+          	// Si le sliding menu est ouvert
+          	SI FenCoulissanteVisible(fcGauche) ALORS
+          		
+          		// Ferme le sliding menu
+          		FenCoulissanteVisible(fcGauche, Faux)		
+          	FIN
+          
+          	// Annule la recherche courante
+          	FinRecherche("")
+          
+          	si EnModeSimulateur() ALORS
+          	
+          		// Bonbons La Vosgienne - Sève de pin (Snacks, bonbons, confiserie)	
+          		sCode est une chaine = "3014680009175"
+          		
+          		// Ajoute le produit scanné
+          		maliste.ProduitAjoute("", 1, "", sCode)
+          		
+          	sinon
+          	
+          		// Ouvre le scanner
+          		OuvreFenêtreMobile(FEN_CB_SCAN)
+          	FIN
+         type : 32
+   -
+     name : OPT_HISTORIQUE1
+     identifier : 0x260d366f5eb860b3
+     internal_properties : CAAAAAgAAADFJuq+gEYBluLhJjSEysyXd+WSuGfB5odZCKDnowsFGUxv7//AkumqSZTdSi1txt47v3WKSMJwSs2nEag1s3KeT2QbVnYvIeq3kTsCZDTIot6kw0CpgahOrt2v2owk4If3xMsozKDEWwM/S8rYLN/xXEuCL1fzMmLKOAp3JXcVX6y1OvjVtWG91mDSILj9COtjK/9OU1xppSKwp6l9j2DSDRoOfdLY4YmHtp1h1VwfPt2sgCa4euaYj25lgktYeQEIfEmYl4h4x9fcIYlcSJDoMWWL6lyXs9aHNwZtIKmZ2sTfDruvSvwBS+RjyyZASXeA4GAYn5jd
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         internal_properties : CAAAAAgAAACfF1dDJG+M/dTppm6JrnKCQ8V8MWWzXmT12wNZevrcHmRrQLavkD9zmmHYBAEWuN3wCWgThVcRPQtmUURCC8nGV/bPT/SUiDShs952zw/9WP3jLQs/jqyVqwcTiI2/mbfXxA44LADigyhSwPj/HUam5ruI3JRRT+poVpEYAdIo
+         code : |1+
+          
+          // Si le sliding menu est ouvert
+          SI FenCoulissanteVisible(fcGauche) ALORS
+          	
+          	// Ferme le sliding menu
+          	FenCoulissanteVisible(fcGauche, Faux)		
+          FIN
+          
+          // Annule la recherche courante
+          FinRecherche("")
+          
+          //
+          FIListePosition(CFI_ZAB_CONTENU, 2)
+          ModifieIconeMenuSelonPlan()
+          
+          // Actualise l'historique
+          MaListe.DéclencheActualisationHistorique()
+         type : 32
+   -
+     name : OPT_ORDRE_RAYON1
+     identifier : 0x260d36415eb0aab1
+     internal_properties : CAAAAAgAAAB7byrjQqv/mkPhLkyQ/VmSWP3ksdVeZj9KvadPdriQQBwFUdNGf8gc2Pm4C+R4ZoY26HKSDbKXx6RB+soAAat4Xd1jmouZ0/hzFr7C7PRIZMUGzBxzA3iC/lz0RG6NnqPNdwUU9nR4Waz8WRhTEhqWrpQdW3p2VWZhm/HPjqn4q9zIZ7mhbmeIQ8bk6N0YIzqWNnJ0HoL+ArinFcl8OT76c9ewi7NYMsMyUAEJcrGeM8SWZX7YbzLiXSxs5G3BdMpVSo0PC2uBsvTnAy0BkyKIzj/71zoib8/YMyxLTJ5jEsS1E1Oc0VAB3B9nm/TKHETrv0GuM7ItWJFwuESg
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         code : |1-
+          
+          ExécuteTraitement(OPT_ORDRE_RAYON, trtOptionMenu)
+         type : 32
+   -
+     name : OPT_SUPPRIMER_ACHETES1
+     identifier : 0x260d364b5eb2d2ca
+     internal_properties : CAAAAAgAAACrw1HBE9SHLr2TWBlVGaAaKT1pWOB9nxWQvPL2uoI9qxaFpe25LZqhN3kWfabLC+WeBeIrMNqNy0Aquspa/Zn6bXR2WiH91R4kW0zAyZZocljQtnCl44Am5XTJ3G0VVhOUoDVU4+j98593Xo4HRVHGqXlpDiNlJkkS+M/tfNuetGrTOuqdhJsWeq0lnoDqRP3RkSJSSJ3gUE2AanjZffe1vUGh7SQzg3eKNeLxJ0QPr5HueZacimUYYgRGc5NYBkOzVs6WPq7/ZZgsamzLng0HWkHGoRNRp3p9kcEbQix5f9DsG/6hiVdTkC4yN1jPAjL/4DL714fLIaLDOuLPtFcsmQdtNijvLsdYpG9k
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         code : |1+
+          
+          ExécuteTraitement(OPT_SUPPRIMER_ACHETES, trtOptionMenu)
+         type : 32
+   -
+     name : OPT_VIDER_LISTE1
+     identifier : 0x260d36545eb4f769
+     internal_properties : CAAAAAgAAADcnssri/Cy8YZmyd30LYh3ty6yJ+E5ncAESSyQgs3swS55zwoX/KO0ksrrBMGvRbM/ieAKrv1TIdyMvvoOLC1wYOA8I1NcfdY9RjlAdAXlDU2wF9TqQFesA6tfWl+EcPqQN2EFsHpnoEJpoAETkhXVxbyyhEvtrJ/FXag3r17fw4TDW06s1CpR/Qj9tal175Hs8ZRm7lIlj7sXZKqDixwYE/I2JnDSyQnSmRYeSNG/990UC7NlGePaM4CAeaGWsZmFxrGbPfxUedBZ3C5jqsmrk4xjp/bYJLLCw8QZpXM1efTM0NNSyKDQ+u4RRj7VxOi7kjz7WtmtAPYu
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         code : |1+
+          
+          ExécuteTraitement(OPT_VIDER_LISTE, trtOptionMenu)
+         type : 32
+   -
+     name : OPT_ENVOI_MAILSMS1
+     identifier : 0x260d36655eb63732
+     internal_properties : CAAAAAgAAAADPwAA+KVRdunBjD6wIhVRFw9I6cP1qNt4+8g66HQuoNlG1916OuxhPNAn1sQDAuk2lRxIlqYwLb2eNKGPeXz8sQdXULipLeTf6Y3VGgkZrnu7a3uCnPl11CAwM1Y7Ey5lnNHcMg3fZZnD6ZnBfE+6Jx9fVXR3kmwkRB3N6b1NumDyx0P/oHgINqcKBDTZqkZdkCw/cSh/O/8u6+ji33UQ146p9jbDHCoM54sJdUvZSznFdfE9NUk+PD6PSFWLUfHzzIL0OelQ84XLC/tw+mLw/MGNxzdXEksAV9BnFntLKdEvjfhX/lzEPKZdirJWokgpVdI2TMOthwW7l4AQtw==
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         code : |1+
+          
+          ExécuteTraitement(OPT_ENVOI_MAILSMS, trtOptionMenu)
+         type : 32
+   -
+     name : OPT_AVANCES
+     identifier : 0x260d33bf5b26e1a0
+     internal_properties : CAAAAAgAAAC6MBi2NYNkStPom9r5qYzCMEVVCZ/ZMBxobYUy74o31jpwVzxEIR+xQ6/Ucxne6n0Gh2CzVL2+SSzKObWE7TP35umE8EAklCj4UTVuS7kCOE7CxUeywv6tQJZs72EI+GcsaBf1y0O9+hm9oZD0tVtSPWW70UR+4zt39ZKGTzavo1UAbiaqRZqGouzkg1B4oNHVymFdHaCqsCi77eOcCrs/EbbpE4NcX6ibFvalv+K+IPNhs8ACxx/ElKpxzY6iUJpJWFlXXVUbLyiUD+cZfy03KyiFqSLhC8M0RKiQaRUbP8Q/2Qhh+vmk7mVpnyUyhz6bM7zvtg2/Tv7FShEal7S7WfgPXigojGS/k151
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         internal_properties : CAAAAAgAAACsRb5THH8Xl1Yr7fQlAZzG7mmkfaw7VHveuGPYHItl3+LjLVibQo/yfy66AtR7l6b6j0EMpz2NMxR/xmBjN5QVeG7OWVWZRNO8NfvM1A0Gn0Vpf5EQdV9qZF/QvDNn2lQalgmujzezPGgiyQLzpObN2nvRo7y3Dw9/ufCjJw==
+         code : |1-
+          
+         type : 32
+  code_elements :
+   type_code : 26
+   p_codes : []
+ popup_menus :
+  -
+    name : MENU_AVANCE
+    identifier : 0x260d333f5b02eb8d
+    internal_properties : CAAAAAgAAABbDepwzKDVLcCI1RK71AjfgO3rn3+1hmt1geFjMKo06UIZhfitcnNibnzwHLsDdwYPoSuyWRBnmNCj7oahF476OSVqUvp7r4p47ezvUos7ZE5XxF0c4GsdqPY/sYsM/bYrRpFzAkMV49O+W9QHuP7u/YJ+6cTIe55OCLnpgftt9SClVdw8tnyC7oP9eGI9e0HI5FBlKhq2V1hGqaGB+nHtEb0UkvtYnZhPNY2RizWMp8Cj2LH3V6A5/lBKgZtgeV1qRhQVXKc4RclafqCUS1FVPe/5lU8wlVUJ+wWYyxclHRzEofA0kH2xND7wb0xGMH9PO20NdIDiBI9XN8d+PJam97q/CGf4/qX9IkYaT1NViE/IZGxG6nB6PQkaysYyOru32Fzm0p+87ytEmmph2RmT1WtmNZP1Pg==
+    options :
+     -
+       name : OPT_ORDRE_RAYON
+       identifier : 0x260d33485b120f9f
+       internal_properties : CAAAAAgAAADWocFOuOH+Fs1Up0zS99HaTdkHR5UOe5SvExOlOlsI5aZlIgfquwsnWLouJsAOyVvMeRao7pDeLvsloxxA0J2Iqh7Fo/tkciH1mjSlkwi5NY9YEZI/CYZakqH1dGBrqFCPBuRjTULAXa99hmbZpZJXbSE5jU7iAozFlacpa74IbMjXcpqsSoA3UJyLXfKyhxHv1UrRGya262i7QTXDYotmkl7GSFlAglBBrPmNSezFsHSvRD1czaC0TmQnwViAkG18b/CjHukssSu2o0JlAD/c0uFk/JI1t8hgJXD6R9KGtCrYgLLakjoV1L2NfvHBy8muPm26bGMUpe7e9pSscOlliOVQkyF4/vlVwjan1HM8ry29V0LvOSqQ8vbjuYxjCtBxFoRyEhh4z5XJd0bj9WLNm7FN
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           internal_properties : CAAAAAgAAACfF1dDJG+M/dTppm6JrnKCQ8V8MWWzXmT12wNZevrcHmRrQLavkD9zmmHYBAEWuN3wCWgThVcRPQtmUURCC8nGV/bPT/SUiDShs952zw/9WP3jLQs/jqyVqwcTiI2/mbfXxA44LADigyhSwPj/HUam5ruI3JRRT+poVpEYAdIo
+           code : |1-
+            
+            // Si le sliding menu est ouvert
+            SI FenCoulissanteVisible(fcGauche) ALORS
+            	
+            	// Ferme le sliding menu
+            	FenCoulissanteVisible(fcGauche, Faux)		
+            FIN
+            
+            <compile si TypeConfiguration = Android>
+            
+            	// Ouvre la fenêtre de gestion des rayons
+            	OuvreFenêtreMobile(FEN_ORDRE_RAYONS, maliste)
+            <fin>
+           type : 32
+     -
+       name : OPT_SUPPRIMER_ACHETES
+       identifier : 0x260d334c5b142143
+       internal_properties : CAAAAAgAAAAZ6Zzl8ZqF9T0tDFvLcl574tbG9rBIB+JtRJ9i+Mps5UtFfbwRwzL3SOgUuAhQx5OGPfa74j8fyQd+i1QZGcqTEXb+UdC/0Y4vVUpTTOq2f+HlvhtWsObUygqfPvn7EW18OlzTxm6AuYR1mCz7me+fsOBXlrHL4KPOQqMDa0emsUbNPCLhn1a8V21uP3x6sQ23hoPP8gzXcQXS+teY6/Cr5tVK887ApiLbmxTmfKI1KiXLJp7JZl2DaSGY9nVYZEwduBc0Z7ISOIa1QxYFmXWzEVz5345tSOwdciPPCEeL7iwo8k524sYUklwyFC/Tpjnp/o4AQf9olS4+FG4EH1COT4Rnim4pcATiyv+R1SF9/eHDX908clGjzPShra6+o/p8C5Wh7Z//+2yqFB2hyzLZid8oc7gplnSLsrredG3uDQ82+g==
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           internal_properties : CAAAAAgAAACfF1dDJG+M/dTppm6JrnKCQ8V8MWWzXmT12wNZevrcHmRrQLavkD9zmmHYBAEWuN3wCWgThVcRPQtmUURCC8nGV/bPT/SUiDShs952zw/9WP3jLQs/jqyVqwcTiI2/mbfXxA44LADigyhSwPj/HUam5ruI3JRRT+poVpEYAdIo
+           code : |1-
+            
+            // Si le sliding menu est ouvert
+            SI FenCoulissanteVisible(fcGauche) ALORS
+            	
+            	// Ferme le sliding menu
+            	FenCoulissanteVisible(fcGauche, Faux)		
+            FIN
+            
+            // Annule la recherche courante
+            FinRecherche("")
+            
+            //
+            TitreSuivant(MaListe.Nom)
+            
+            // Avertissement
+            SI PAS OKAnnuler(<§Rff0004af113068c2¤fr-FR¤Tous les produits achetés seront supprimés de cette liste§>) ALORS RETOUR
+            
+            // Supprime les produits achetés
+            MaListe.SupprimeTousProduits(Vrai)
+            
+            fin:
+            TitreSuivant("")
+           type : 32
+     -
+       name : OPT_VIDER_LISTE
+       identifier : 0x260d33505b1630d3
+       internal_properties : CAAAAAgAAADK6NfzsoIsjFHfHlHgY4H6bNdPoIo6H5UIVwS2XzO+iEa/G8sJfefGZEk9d24EbF+dBvPNXsRYTua3H2vMm6o/b2ahcdyrrTxnE3yI8SXTu/+NRu5jGhWgrTEvMtkxWdFfo9sHVuJZrU4ziMMTcvkHwIJHG0N/SRLqib5/2AGYwJnDb80+UalmyCmHJATDxdchK/5zWXtrUKFcO3N2wO3/IQsquQV0SIhQLt3EgwC/SU4zWecEufnfQkT7fVFjB7Qz4eLa1wANt6zx5n+CUdOjchZi8zyVqsv4doEHyGCTTjSU+zmruwIlZLFjveiJLgH60wvh2UezEOcJjQCYmZQU+XO0cBikbWLod6LDsEHufyJZAjtTMog7fiT0SEizZBQ3g0WK8WWTwJ3vLtPYpx0=
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           internal_properties : CAAAAAgAAACfF1dDJG+M/dTppm6JrnKCQ8V8MWWzXmT12wNZevrcHmRrQLavkD9zmmHYBAEWuN3wCWgThVcRPQtmUURCC8nGV/bPT/SUiDShs952zw/9WP3jLQs/jqyVqwcTiI2/mbfXxA44LADigyhSwPj/HUam5ruI3JRRT+poVpEYAdIo
+           code : |1-
+            
+            // Si le sliding menu est ouvert
+            SI FenCoulissanteVisible(fcGauche) ALORS
+            	
+            	// Ferme le sliding menu
+            	FenCoulissanteVisible(fcGauche, Faux)		
+            FIN
+            
+            // Annule la recherche courante
+            FinRecherche("")
+            
+            // 
+            TitreSuivant(MaListe.Nom)
+            
+            // Avertissement
+            si pas OKAnnuler(<§Rff0005af113268c2¤fr-FR¤Tous les produits seront supprimés de cette liste et transférés dans l'historique§>) ALORS retour
+            
+            // Supprime tout
+            malistE.SupprimeTousProduits(faux)
+            
+            FIN:
+            TitreSuivant("")
+           type : 32
+     -
+       name : OPT_ENVOI_MAILSMS
+       identifier : 0x260d33545b183e50
+       internal_properties : CAAAAAgAAABAifKDXgvmWyVGmYZ/e/hR9bZD163hMoa1Jzy6+KqEwTMtZ9D4iF1rjdyQDYYUAPEsEQO2cCMYMRC2DNAGGacJ3GfJqkW8t8ch3gxrwhlVm1rFXs8kOqhkkKWb+TxXgk1PkUgMugyjZSVlvpL/U2wRlXx/yfypNMGnduJyt7FxXsOVBu11m+Rq4vwzuly/7rythmfUNbGVy5VXwKNtQiRcq+GzsJvYgQHF39EkaQhMXAdAvwUkF89F5jvBCFjGa0pyJ+KK/6J00G7oLAituAm9mEiVyi1gkKUjGPgt/mfdYoRpwZ83FimStnQpKVRKbZnlBUGCNcOxy/u6kGriej6R7fupjzAC1yCn18DGcpxO5nFL9+QcHqmqJc4EpTfydBCIp/l8+jGYFY3q4lpn1sdr1HVcnr8k
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           internal_properties : CAAAAAgAAAAFrd15ckGyP7ofPBSzvKAg4TM6z6Nchl57OeXp0CpmlCiV8NyBoDPx0F922EOCNrcYZ8wNU1PZo8G8l+yY40+Xhps8ApPfx5PAmAODLKZmxXh0tnLOgcNwjrhEWYbaRqC+Mbu7d0sxjv9IJtKBa+Ac7FHW3kbHmbRmhFdSe0iy
+           code : |1-
+            
+            	// Si le sliding menu est ouvert
+            	SI FenCoulissanteVisible(fcGauche) ALORS
+            		
+            		// Ferme le sliding menu
+            		FenCoulissanteVisible(fcGauche, Faux)		
+            	FIN
+            
+            	// Annule la recherche courante
+            	FinRecherche("")
+            
+            	// Déclenche l'export
+            	maliste.DéclencheExportEmail()
+           type : 32
+    controls : []
+    code_elements :
+     type_code : 26
+     p_codes : []
+ layout :
+  -
+    widthClient : 320
+    heightClient : 320
+  -
+    widthClient : 320
+    heightClient : 372
+ languages :
+  - fr-FR
+ message_bar :
+  internal_properties : CAAAAAgAAADI/3yuRamXeVumBtCfXf2wxIivMqpUmLocpDJ5uLNrZ2NyM5e0dpc5I1HMXzR29M1Jb7V8Ee+4qETjr8zvuTT9VFDjKaCpp72pHTVF1nmRlpo7CyYYC5b70IGJ
+ code_elements :
+  internal_properties : CAAAAAgAAAArFMLlpoDCWvPbdj1zCMWdYTPUfKXXzMuNGUhLxa8O1HpA9hFNXIPh0Z7mWsY9tGZqjvtgqRXWJlDHL6Q0DURY3cj18rA41RaxnYQ79wbiRihrrlEviZXnA3r6vgzKTpHnHWYR
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      PROCEDURE MaFenêtre(MonAlias est une chaine, IDListe est un entier sur 8)
+      
+      MaFenêtre..Alias = monalias
+      
+      MaListe est une CListeShopping dynamique = CListeShopping::Charge(idliste, monalias)
+      ThemeCouleur est un entier = ACTB_MAIN..CouleurFond
+      
+      // Nom de la liste en titre de fenêtre
+      mafenetre..titre = maliste.Nom
+      
+      // Effacement automatique : à faire automatiquement avant la déclaration des 
+      // observateurs pour éviter les mises à jour superflues
+      SI USER_PARAMS.EffacerProduitsAchetésAuto ALORS
+      	
+      	// Si on n'a pas encore nettoyé la liste
+      	SI ListeManager.ListeNettoyée[IDListe]..Vide ALORS
+      		
+      		// Recherche si il y a au moins un produit acheté dans la liste
+      		HRecherchePremier(ListeContenu, AchetéDansListe, [idliste, Vrai])
+      		si htrouve(ListeContenu) ALORS
+      			
+      			// Supprime les produits achetés
+      			MaListe.SupprimeTousProduits(Vrai)
+      			ListeManager.ListeNettoyée[IDListe] = vrai
+      			
+      			ToastAffiche(<§Rff0007af112a68c2¤fr-FR¤Les produits achetés ont été placés dans l'historique§>, toastLong)
+      		sinon
+      			ListeManager.ListeNettoyée[IDListe] = Faux
+      		FIN		
+      	FIN		
+      sinon
+      	// Marquage pour éviter un effacement à la prochaine ouverture
+      	// si l'option d'effacement automatique a été modifiée entre-temps
+      	ListeManager.ListeNettoyée[IDListe] = faux
+      FIN
+      
+      // Observateurs
+      AjouteObservateur(MaListe.SurListeModifiée, MonAlias, SurListeModifiée)
+      AjouteObservateur(MaListe.SurListeMiseAJour, MonAlias, SurListeMiseAJour)
+      AjouteObservateur(ListeManager.SurDemandeFinRecherche, MonAlias, FinRecherche)
+      
+      // Liste originale
+      CFI_ZAB_CONTENU..BalayageActif = faux
+      ACTB_MAIN..image = IMG_MENU
+      
+      // Mise à jour
+      Actualise()
+      
+      FIListeAjoute(CFI_ZAB_CONTENU, FI_CONTENU_LISTE, MaListe, ThemeCouleur)
+      FIListeAjoute(CFI_ZAB_CONTENU, FI_CONTENU_HISTORIQUE, MaListe, ThemeCouleur)
+      FIListeAjoute(CFI_ZAB_CONTENU, FI_RECHERCHE, MaListe, ThemeCouleur)
+   -
+     code : |1-
+      
+      ModifieIconeMenuSelonPlan()
+     type : 34
+   -
+     code : |1-
+      
+      // Fermeture du scanner
+      SI MaFenêtreFille..Nom = "FEN_CB_SCAN" ALORS
+      	
+      	sCode est une chaine = mafenetrefille..ValeurRenvoyée
+      	si sCode <> "" alors
+      	
+      		// Ajoute le produit
+      		maliste.ProduitAjoute("", 1, "", sCode)
+      	fin
+      FIN
+      
+      // Fermeture des rayons
+      SI MaFenêtreFille..Nom = "FEN_RAYONS" ALORS
+      	
+      	sRayon est une chaine = mafenetrefille..ValeurRenvoyée
+      			
+      	// On se positionne sur le rayon
+      	MaListe.PositionneRayon(sRayon)	
+      FIN
+      
+      // Fermeture d'une fiche produit, ou de l'ordre des rayons
+      SI MaFenêtreFille..Nom dans ("FEN_FICHE_ITEM", "FEN_ORDRE_RAYONS") ALORS
+      	
+      	si mafenetrefille..ValeurRenvoyée alors
+      		
+      		// Mise à jour
+      		maliste.DéclencheActualisation()
+      	FIN
+      FIN
+     type : 177
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 40
+   -
+     code : |1-
+      
+      // Fin des observateurs
+      SupprimeObservateur(MaListe.SurListeMiseAJour, MonAlias)
+      SupprimeObservateur(MaListe.SurListeModifiée, MonAlias)
+      
+      // Ferme la liste
+      si ListeManager <> null alors
+      	SupprimeObservateur(ListeManager.SurDemandeFinRecherche, MonAlias)
+      	ListeManager.ListeFerme(IDListe, MonAlias)
+      fin
+     type : 2
+   -
+     code : |1-
+      
+     type : 12
+   -
+     code : |1-
+      
+      // Fin de la recherche
+      FinRecherche()
+     type : 221
+   -
+     type : 238
+  procedures :
+   -
+     name : Actualise
+     procedure_id : 1553012444268638763
+     type_code : 14
+     starred : true
+     code : |1-
+      // Résumé : Actualise les données
+      // Syntaxe :
+      //Actualise ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE Actualise()
+      
+      	OPT_VIDER_LISTE..Visible 				= faux
+      	OPT_ENVOI_MAILSMS..Visible 				= faux
+      	OPT_SUPPRIMER_ACHETES..Visible 			= faux	
+      	
+      	// Sous IOS, cache les options de menu avancé
+      	// -> elle seront accessibles par le menu principal
+      	<compile si MODE_IOS>
+      		
+      		OPT_SUPPRIMER_ACHETES1..Visible 	= Faux
+      		OPT_VIDER_LISTE1..Visible 			= Faux
+      		OPT_ENVOI_MAILSMS1..Visible 		= Faux				
+      		OPT_HISTORIQUE1..Visible 			= Faux
+      		OPT_ORDRE_RAYON1..Visible 			= Faux
+      		OPT_ORDRE_RAYON..Visible 			= Faux
+      		OPT_RECHERCHE_AJOUTER..visible 		= faux
+      		BTN_AJOUTER_PRODUIT_IOS..Visible 	= vrai
+      		BTN_MA_LISTE..Visible 				= vrai
+      		BTN_SCAN_IOS..Visible 				= vrai
+      		BTN_HISTORIQUE_IOS..Visible 		= vrai
+      		IMG_NAVBAR_IOS..Visible				= vrai
+      		OPT_SCAN..Visible 					= Faux
+      		OPT_AVANCES..Visible 				= faux
+      	<sinon>
+      		
+      		OPT_VIDER_LISTE1..Visible 			= OPT_VIDER_LISTE..Visible
+      		OPT_ENVOI_MAILSMS1..Visible 		= OPT_ENVOI_MAILSMS..Visible
+      		OPT_SUPPRIMER_ACHETES1..Visible 	= OPT_SUPPRIMER_ACHETES..Visible	
+      		
+      		BTN_AJOUTER_PRODUIT_IOS..Visible 	= faux
+      		BTN_MA_LISTE..Visible 				= faux
+      		BTN_SCAN_IOS..Visible 				= Faux
+      		BTN_HISTORIQUE_IOS..Visible 		= Faux
+      		IMG_NAVBAR_IOS..Visible 			= Faux
+      		OPT_RECHERCHE_AJOUTER..Visible 		= Vrai
+      		OPT_SCAN..Visible 					= Vrai
+      		OPT_HISTORIQUE1..Visible 			= vrai
+      		OPT_ORDRE_RAYON..Visible 			= Vrai
+      		OPT_ORDRE_RAYON1..Visible 			= Vrai
+      		OPT_AVANCES..Visible 				= Faux
+      	<FIN>
+     type : 458752
+   -
+     name : FinRecherche
+     procedure_id : 1562198773746547538
+     type_code : 14
+     group : 2
+     code : |1-
+      PROCEDURE FinRecherche(VOID <utile> = null)
+      	
+      	// Si la recherche n'est pas active
+      	<COMPILE SI MODE_ANDROID>
+      		si OPT_RECHERCHE_AJOUTER..Visible ALORS retour
+      	<sinon>
+      		SI BTN_AJOUTER_PRODUIT_IOS..etat = actif ALORS RETOUR	
+      	<fin>
+      	
+      	// Cache la recherche
+      	ActionBarRechercheVisible(Faux)
+      	
+      	<COMPILE SI MODE_ANDROID>
+      		OPT_RECHERCHE_AJOUTER..Visible = Vrai
+      	<sinon>
+      		BTN_AJOUTER_PRODUIT_IOS..CouleurFond = IMG_NAVBAR_IOS..CouleurFond
+      		BTN_AJOUTER_PRODUIT_IOS..Opacité = 100
+      		BTN_AJOUTER_PRODUIT_IOS..etat = actif
+      	<FIN>
+      	
+      	nPlan est un entier = CFI_ZAB_CONTENU..Note
+      	
+      	// Si on est sur la liste des produits + historique
+      	SI FIListePosition(CFI_ZAB_CONTENU) - nPlan = 1 ALORS
+      		
+      		// On passe au contenu de la liste
+      		FIListePrécédent(CFI_ZAB_CONTENU)		
+      	sinon
+      		
+      		FIListePosition(CFI_ZAB_CONTENU, nPlan)
+      	FIN
+      
+      	ModifieIconeMenuSelonPlan()
+     type : 458752
+   -
+     name : FIRetourContenu
+     procedure_id : 1576288143371046086
+     type_code : 14
+     code : |1-
+      PROCEDURE FIRetourContenu()
+      
+      	si FIListePosition(FEN_LISTE.CFI_ZAB_CONTENU) > 2 ALORS
+      		FIListePosition(FEN_LISTE.CFI_ZAB_CONTENU, 1)
+      	sinon SI FIListePosition(FEN_LISTE.CFI_ZAB_CONTENU) <> 1 ALORS
+      		FIListePrécédent(FEN_LISTE.CFI_ZAB_CONTENU)
+      	FIN
+     type : 458752
+   -
+     name : SurListeModifiée
+     procedure_id : 1583750576095763732
+     type_code : 14
+     group : 4
+     code : |1-
+      PROCEDURE SurListeModifiée(PARAMS est un tableau d'entiers = [0, -1])
+      
+      	SI PARAMS[1] DANS ( CListeShopping.lsmodAjout, CListeShopping.lsmodModification ) ALORS
+      		maliste.IDItemAjoutéModifié = PARAMS[2]
+      	FIN		
+      
+      	// Fin de la recherche
+      	FinRecherche()			
+      	
+      	// Autre écran que l'écran de liste
+      	si CFI_ZAB_CONTENU..FenêtreSource <> "FI_CONTENU_LISTE" alors
+      					
+      		// Retour au contenu de la liste
+      		FIRetourContenu()
+      	FIN
+      	
+      	// Restaure l'icône de menu
+      	ModifieIconeMenuSelonPlan()
+      		
+      	// Mise à jour
+      	actualise()
+      	
+     type : 458752
+   -
+     name : SurListeMiseAJour
+     procedure_id : 1583771097450022055
+     type_code : 14
+     group : 4
+     code : |1-
+      PROCEDURE SurListeMiseAJour(VOID <utile> = null)
+      	
+      	bAvancé est un booléen
+      	bProduitsAchetés est un booléen = (MaListe.ProduitsAchetésOccurrence > 0)
+      	bListeNonVide est un booléen = (MaListe.ProduitsOccurrence + MaListe.ProduitsAchetésOccurrence > 0)
+      	
+      	// Menus
+      	si OPT_VIDER_LISTE..Visible <> bListeNonVide 			alors OPT_VIDER_LISTE..Visible 			= bListeNonVide
+      	si OPT_ENVOI_MAILSMS..Visible <> bListeNonVide 			alors OPT_ENVOI_MAILSMS..Visible		= bListeNonVide
+      	si OPT_SUPPRIMER_ACHETES..Visible <> bProduitsAchetés 	alors OPT_SUPPRIMER_ACHETES..Visible 	= bProduitsAchetés
+      	
+      	bAvancé = (bProduitsAchetés _ou_ bListeNonVide)
+      		
+      	// Sous IOS, cache les options de menu avancé
+      	// -> elle seront accessibles par le menu principal
+      	<COMPILE SI mode_ios>
+      		
+      		si OPT_SUPPRIMER_ACHETES1..Visible 	alors OPT_SUPPRIMER_ACHETES1..Visible = Faux
+      		si OPT_VIDER_LISTE1..Visible 		alors OPT_VIDER_LISTE1..Visible = Faux
+      		si OPT_ENVOI_MAILSMS1..Visible		alors OPT_ENVOI_MAILSMS1..Visible = Faux
+      		
+      		si OPT_HISTORIQUE1..Visible 		alors OPT_HISTORIQUE1..Visible = faux
+      		si OPT_ORDRE_RAYON..Visible 		alors OPT_ORDRE_RAYON..Visible = Faux
+      		si OPT_ORDRE_RAYON1..Visible 		alors OPT_ORDRE_RAYON1..Visible = Faux
+      		si OPT_AVANCES..Visible <> bAvancé	alors OPT_AVANCES..Visible = bAvancé
+      	<SINON>
+      		
+      		SI OPT_VIDER_LISTE1..Visible <> bListeNonVide 			ALORS OPT_VIDER_LISTE1..Visible 		= bListeNonVide
+      		SI OPT_ENVOI_MAILSMS1..Visible <> bListeNonVide 		ALORS OPT_ENVOI_MAILSMS1..Visible 		= bListeNonVide
+      		SI OPT_SUPPRIMER_ACHETES1..Visible <> bListeNonVide 	ALORS OPT_SUPPRIMER_ACHETES1..Visible 	= bProduitsAchetés
+      		
+      		si OPT_HISTORIQUE1..Visible = faux 		alors OPT_HISTORIQUE1..Visible = Vrai
+      		SI OPT_ORDRE_RAYON..Visible = Faux 		ALORS OPT_ORDRE_RAYON..Visible = Vrai
+      		SI OPT_ORDRE_RAYON1..Visible = Faux 	ALORS OPT_ORDRE_RAYON1..Visible = Vrai
+      		si OPT_AVANCES..Visible 				alors OPT_AVANCES..Visible = Faux
+      	<FIN>
+      
+      	// Nom de la liste en titre de fenêtre
+      	sTitre est une chaine = chaineconstruit("%1 (%2)", MaListe.Nom, MaListe.ProduitsQuantitéTotale)
+      	si FEN_LISTE..Titre <> sTitre alors FEN_LISTE..Titre = sTitre
+      
+      	// Mise à jour
+      	ListeManager.DéclencheListesActualisées(faux, vrai, (maliste.IDListe))
+     type : 458752
+   -
+     name : ModifieIconeMenuSelonPlan
+     internal_properties : CAAAAAgAAAAIYxRyaKQnMSamK2VKCgsu88D0PKLf2U5UvoDVNcAiP1LHYZyJ9pRVLGRmJbZ0oZp+jmYb/oTRo94akeaMWgy9NYaQ5DAMu44EjM6tlYJJMqc0lKKmi3APnTLtPXhlnfhks0T4Da6SzcHcipGYnK3U8bczxjzR1OvkqQhyEeW7qoJcHkZjcnHMsMUX1eiIMWgGskU46+A=
+     procedure_id : 1585692309347843208
+     type_code : 14
+     code : |1-
+      PROCEDURE ModifieIconeMenuSelonPlan()
+      
+      	SELON FIListePosition(CFI_ZAB_CONTENU)
+      		
+      		// Contenu de la liste
+      		CAS 1
+      			
+      			<COMPILE SI MODE_android>
+      				
+      				SI ACTB_MAIN..Image <> IMG_MENU ALORS
+      					ACTB_MAIN..Image = IMG_MENU				
+      				FIN
+      				
+      			<sinon>
+      			
+      				// Si le sliding menu est ouvert
+      				SI FenCoulissanteVisible(fcGauche) ALORS
+      					
+      					// On reste avec l'image du menu
+      					SI ACTB_MAIN..Image <> IMG_MENU ALORS
+      						ACTB_MAIN..Image = IMG_MENU				
+      					FIN
+      				SINON
+      					
+      					// On reste avec l'image de retour
+      					SI ACTB_MAIN..Image <> IMG_RETOUR ALORS
+      						ACTB_MAIN..Image = IMG_RETOUR
+      					FIN
+      				FIN
+      				
+      			<FIN>			
+      						
+      			// Nom de la liste en titre de fenêtre
+      			sTitre est une chaine = chaineconstruit("%1 (%2)", MaListe.Nom, MaListe.ProduitsQuantitéTotale)
+      			SI FEN_LISTE..Titre <> sTitre ALORS FEN_LISTE..Titre = sTitre
+      			
+      			<COMPILE SI MODE_IOS>
+      				
+      				SI BTN_HISTORIQUE_IOS..Etat = Inactif ALORS
+      					BTN_HISTORIQUE_IOS..CouleurFond = IMG_NAVBAR_IOS..CouleurFond
+      					BTN_HISTORIQUE_IOS..Opacité = 100
+      					BTN_HISTORIQUE_IOS..Etat = Actif
+      				FIN
+      				
+      				BTN_MA_LISTE..CouleurFond = 0x101010
+      				BTN_MA_LISTE..Opacité = 60
+      				BTN_MA_LISTE..Etat = Inactif
+      			<FIN>
+      									
+      		// Historique
+      		CAS 2
+      			SI ACTB_MAIN..Image <> IMG_RETOUR ALORS
+      				ACTB_MAIN..Image = IMG_RETOUR
+      			fin
+      			
+      			<compile SI MODE_IOS>
+      				BTN_HISTORIQUE_IOS..CouleurFond = 0x101010
+      				BTN_HISTORIQUE_IOS..Opacité = 60
+      				BTN_HISTORIQUE_IOS..etat = inactif
+      				
+      				SI BTN_MA_LISTE..Etat = Inactif ALORS
+      					BTN_MA_LISTE..CouleurFond = IMG_NAVBAR_IOS..CouleurFond
+      					BTN_MA_LISTE..Opacité = 100
+      					BTN_MA_LISTE..Etat = Actif
+      				fin
+      				
+      				OPT_AVANCES..Visible = Faux
+      			<FIN>
+      			
+      			FEN_LISTE..Titre = <§Rff0002af112c68c2¤fr-FR¤Historique§>
+      			
+      			
+      		// Recherche
+      		CAS 3	
+      			SI ACTB_MAIN..Image <> IMG_RETOUR ALORS
+      				ACTB_MAIN..Image = IMG_RETOUR
+      			FIN
+      			
+      			<COMPILE SI MODE_IOS>
+      				si BTN_HISTORIQUE_IOS..etat = inactif alors
+      					BTN_HISTORIQUE_IOS..CouleurFond = IMG_NAVBAR_IOS..CouleurFond
+      					BTN_HISTORIQUE_IOS..Opacité = 100
+      					BTN_HISTORIQUE_IOS..Etat = actif
+      				fin
+      				
+      				SI BTN_MA_LISTE..Etat = Inactif ALORS
+      					BTN_MA_LISTE..CouleurFond = IMG_NAVBAR_IOS..CouleurFond
+      					BTN_MA_LISTE..Opacité = 100
+      					BTN_MA_LISTE..Etat = Actif
+      				FIN
+      			<FIN>
+      			
+      			FEN_LISTE..Titre = <§Rff0003af112e68c2¤fr-FR¤Recherche§>
+      	FIN
+     type : 458752
+   -
+     name : SurSaisieRecherche
+     procedure_id : 1617585143244310060
+     type_code : 14
+     code : |1+
+      // Résumé : Lors de la saisie de la recherche...
+      // Syntaxe :
+      // SurSaisieRecherche ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE SurSaisieRecherche()
+      
+      	// Si on est sur l'historique
+      	SI FIListePosition(CFI_ZAB_CONTENU) = 2 _ET_ PAS ACTB_MAIN..ValeurRecherche ~= "" ALORS
+      		
+      		// Conserve l'écran
+      		CFI_ZAB_CONTENU..Note = FIListePosition(CFI_ZAB_CONTENU)
+      		
+      		// On passe à la recherche	
+      		FIListeSuivant(CFI_ZAB_CONTENU)	
+      		ActionBarRechercheVisible(Vrai)
+      		
+      	SINON SI FIListePosition(CFI_ZAB_CONTENU) = 1 ALORS
+      		
+      		// Conserve l'écran
+      		CFI_ZAB_CONTENU..Note = FIListePosition(CFI_ZAB_CONTENU)
+      		
+      		// Recherche
+      		FIListePosition(CFI_ZAB_CONTENU, 3)	
+      		ActionBarRechercheVisible(Vrai)
+      	FIN
+      	
+      	// Exécute la recherche
+      	ListeManager.DéclencheRecherche(ACTB_MAIN..ValeurRecherche)
+      	
+      	// Pas de recherche ?
+      	SI ACTB_MAIN..ValeurRecherche ~= "" ALORS
+      		
+      		// Si on est positionné sur le plan de recherche
+      		SI FIListePosition(CFI_ZAB_CONTENU) = 3 ALORS
+      			
+      			// On a des entrées d'historique
+      			SI ListeManager.NbHistorique > 0 ALORS
+      				
+      				// On passe à l'historique
+      				FIListePosition(CFI_ZAB_CONTENU, 2)		
+      			SINON
+      				
+      				// On repasse à l'écran précédent
+      				FIListePosition(CFI_ZAB_CONTENU, Val(CFI_ZAB_CONTENU..Note))		
+      			FIN
+      			
+      			ActionBarRechercheVisible(Vrai)				
+      		FIN
+      	FIN
+     type : 458752
+   -
+     name : FenForceOriention
+     internal_properties : CAAAAAgAAACBaS+UMDgAvcdDuVOYn/Ce/drzzUannXZzYo0P2PF5KTTXTC+pNLNJpbieCUVm58NqmQgMm3y37ANRDLuUnFjt6jA1NmZobjTDnLs+btRqYun28O5h/91Tu4RMWbUNbbxwgCUTLdyVsgMCfSY=
+     procedure_id : 1637990713580744930
+     type_code : 14
+     code : |1-
+      // Résumé : Force l'orientation selon le matériel
+      // Syntaxe :
+      //FenForceOriention ( [<bInitial> est booléen])
+      //
+      // Paramètres :
+      //	bInitial (booléen - valeur par défaut=0) : Vrai s'il s'agit du chargement initial, Faux sinon
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE FenForceOriention(bInitial est un booléen <utile> = faux)
+      
+      	<compile si mode_android>
+      
+      	// En mode téléphone, on force l'orientation portrait
+      	// En tablette, on force l'orientation paysage
+      	SI pas MODE_TABLETTE ALORS
+      		FenOrientation(fenOrientationPortrait)	
+      	FIN	
+      	
+      	<fin>
+     type : 458752
+  templates :
+   -
+     name : FEN_LISTE
+     identifier : 0x1543dafd06ffef8f
+     code_elements :
+      internal_properties : CAAAAAgAAADK82ZnqpfbKH/U4d2tdOnTMFIr2tphlveg/DofM7Jvk8Npbfh5V65FjzHfGzxNooWQvvAUp8vUVCvWkuK2irSlOycuHCwNpNGEBqDSojCWtYmU1CxnvvQ7rDvoO5IaLDXBq1+zi8Z8/P959cv2YT6eu08=
+      type_code : 1
+      p_codes :
+       -
+         code : |1-
+          
+          <compile si mode_android>
+          
+          // Force l'orientation selon le matériel
+          FenForceOriention(vrai)
+          
+          <fin>
+       -
+         code : |1-
+          
+         type : 34
+       -
+         code : |1-
+          
+          <COMPILE SI MODE_ANDROID>
+          	
+          	// Force l'orientation selon le matériel
+          	FenForceOriention()
+          	
+          <FIN>
+         type : 165
+       -
+         type : 180
+         enabled : false
+       -
+         type : 230
+         enabled : false
+       -
+         code : |1-
+          
+         type : 40
+      templates :
+       -
+         name : FEN_LISTE
+         identifier : 0x1543dafd0700ef8f
+         code_elements :
+          internal_properties : CAAAAAgAAADlRY7t4t14ipTBnMvFyK356dCHOVNLTE8xuVMgAIrNAEE8hbd5ibNPbor1N69df408WH89LOyFhZFVfLA6g+l6L6ErFsGJ7g==
+          type_code : 1
+          p_codes :
+           -
+             type : 180
+             enabled : false
+           -
+             type : 230
+             enabled : false
+           -
+             code : |1-
+              
+             type : 40
+           -
+             type : 11
+           -
+             type : 12
+           -
+             type : 17
+           -
+             type : 13
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAADhvPsd0/lIc7xezxCjKkBs9Vpbktj1S0Ici7MCEsczpxZIiZTBfH08nGomECeZQKqnUY2w6uzMVK5KWdftK/mAeknK/Fujee5Z3/SUONW6PpUAAiMuVPKHp6mDKZophp/oy/krDHG1YqjSe+DoLUBoxRu6/tiSdOSaJHCJrKdu7Q==
+  original_name : _11
+resources :
+ string_res :
+  identifier : 0x158d68250014f4cb
+  internal_properties : CAAAAAgAAADGMLzgICvFZWQ7SDjzqICVzdMpVkcQ3Pl3kAo8bXzkeXlB1MFY/SokC1WwnW2C4uqEuGH26tod
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

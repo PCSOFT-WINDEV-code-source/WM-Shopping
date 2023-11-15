@@ -1,0 +1,130 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FENMOD_SHOPPING
+ major_version : 28
+ minor_version : 0
+ type : 18
+ description : ""
+ subtype : 0
+window :
+ name : FENMOD_SHOPPING
+ identifier : 0x26bb464a8f9b002b
+ internal_properties : CAAAAAgAAAAQOIE60pYc5ELeQDqz30vCXWc99WodEVuPoWUzdONfggBKOd+PSk/2inoni8n8YjCJHHKXZqJ85DMQ2tEX1pasXoWYHBXzmcfEfR6XKrq/kPGHkIX9RnYpMU7EsYyh3BxyCM1S85scYwYbfMsmULgd8u5SWgHmevLvCPxaub8tyfD3Q82B4VUucWs44X9Jxfv/MVu+D+furBcuMVjV2c93FjAUNXZ0gZwMxfuRfHsRo5g/NUo174OWWcbKDPRGpAn7aswg7eI7PZCX8DSC3R2VzMJDfVA/EWIi6wegEBJzQwS4nAuEzcKVM0N7UqlwKsfbbqB8XagyPc2P7Z0wnz7RSWZP7TWKfL8HYUTZw6r7QuNkAHicbsWXaBV/1FfpbWkGjbRVJzrwebDA0cI46OzqKEWizvkZMjfaOZ4XXsYvSZ9UEiGJyT+w2NG6+SU7AyVbczGMTF77s/EEP6EMssKVY6tZXGRE78G7HkvAbA3HBxHe0UpVePEZQAM680YCavK8KrSEWhQzw3qWD7C/G2Ez0+XG/bep+SLlQp8kmiR9BmSpZaRNXVoszEYcM9yGHewWG2TyGWZTvrxdsVfbseW3omh6ySAnOua7Vo8SuHqCoLb7VZM/nwKMvEGlZKLGjDyel1XqKnoHCCibRxfg+OIhRBPCQKb2B955J/zK7xvE79hr4DYs2nJzVdikJcMl8o8vRtYMYIwTM2HSDvEl7VoCvsdiGH5QkdltytwICGseLON/MnLgAoj3/lecBOjfFYWWV3MgXdYh7QUz7Lc=
+ properties :
+  width : 320
+  height : 508
+ controls : []
+ menu :
+  name : _Menu
+  identifier : 0x29f8144500a4e5ba
+  internal_properties : CAAAAAgAAAByVTsSr3/syDi1St8xf8fgHxdhV816G1q5zyODGkOm1npuSkYo5g/jXWoWFFK2H3oUBZtHLsT5rfRCnVFNNS0taWG501M84VhyiY2gqfWqbb5TaLNBc7/5X5PbRqVlZ5a3p7SznWjoHPbzt8FGrVw2pkxQ2AMTSCoEquPAoSRRZmCgf0llwPSIdkz+fkQsa3yCb/aARC1IuAmTNbEAkdknQHeBdhsRIWlMefD05RVbqvlMGzysSB4KUPZWTHHaQPB4ObHU/5KQ/VjN8jyQaoRgKuGxrJ5V23KTuMr/Zw==
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAABKff4sxysR+9kg8GIJ708iDvb5GJxqytSUKL54fomJ9xlu42EWUFv/+en+BSQDmdB2krqVslwL/1eyQDVw8sffQk7lF3aDfZNzV/+zROsnKAy1jaSejRR5UgML
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      
+      <compile si mode_android>
+      
+      // Force l'orientation selon le matériel
+      FenForceOriention(vrai)
+      
+      <fin>
+   -
+     code : |1-
+      
+     type : 34
+   -
+     code : |1-
+      
+      <COMPILE SI MODE_ANDROID>
+      	
+      	// Force l'orientation selon le matériel
+      	FenForceOriention()
+      	
+      <FIN>
+     type : 165
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 40
+  procedures :
+   -
+     name : FenForceOriention
+     procedure_id : 1637990541779915860
+     type_code : 14
+     code : |1-
+      // Résumé : Force l'orientation selon le matériel
+      // Syntaxe :
+      //FenForceOriention ( [<bInitial> est booléen])
+      //
+      // Paramètres :
+      //	bInitial (booléen - valeur par défaut=0) : Vrai s'il s'agit du chargement initial, Faux sinon
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE FenForceOriention(bInitial est un booléen <utile> = faux)
+      
+      	<compile si mode_android>
+      
+      	// En mode téléphone, on force l'orientation portrait
+      	// En tablette, on force l'orientation paysage
+      	SI pas MODE_TABLETTE ALORS
+      		FenOrientation(fenOrientationPortrait)	
+      	FIN	
+      	
+      	<fin>
+     type : 458752
+  templates :
+   -
+     name : FENMOD_SHOPPING
+     identifier : 0x16bb464a1ff8002b
+     code_elements :
+      internal_properties : CAAAAAgAAADlRY7t4t14ipTBnMvFyK356dCHOVNLTE8xuVMgAIrNAEE8hbd5ibNPbor1N69df408WH89LOyFhZFVfLA6g+l6L6ErFsGJ7g==
+      type_code : 1
+      p_codes :
+       -
+         type : 180
+         enabled : false
+       -
+         type : 230
+         enabled : false
+       -
+         code : |1-
+          
+         type : 40
+       -
+         type : 11
+       -
+         type : 12
+       -
+         type : 17
+       -
+         type : 13
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAAB6ragasMBWLfpsSyU19J6lAvYEqFWd1xYOjmHr1XHVZOVmechqLo1vKvfoAJhHeXL59P8BudVQfrBZ/U9vpjDz5RFibMKKm/84EA==
+  original_name : _11
+resources :
+ string_res :
+  identifier : 0x1fbd47fa168e5542
+  internal_properties : CAAAAAgAAACyXVFaObH4lOGSEHJoZf1MD49w+XTw2LScZCP/urkWFwy+HYJdyQ3umA==
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

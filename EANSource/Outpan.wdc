@@ -1,0 +1,161 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : Outpan
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x1587c9c5003b4fde
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAAD7sQwPwKguPQf/zECNTzsD4TqgSTAbyzzyrC7tJ3fxwQsZi7bYCctoLT6rmyJOg7edcjgttVDRzmtvU7XJkMMCLsYZJ6l41yu+tQOdrfNtm/COsbQuBoaoLFcHd6B44RBXvsJlHgmDQySeW56whobgLxFdbXG2y67RN7jf9RxSUxvVFh3zIN5jMlhLybDpiNJg46BEm7QXfMeaAFnt/2BlAVB0l+EEVPo3L3n8zv5Nqr0f9bHE/CotZUoVnZgop8+e5RVh7kyuQCRALRRgWVhbr9b7VVlABpTFNV93pFIBYWPpjfLbE/H6iY86PyrdjPpXs/5WnIw4ncEeusZG1bojkjgwfdorc+wfP6FCmS1iAia879hWYTKCXJQUHEbVfJpuQg6A44ztUIbYzGHIx7hHnRrbAO1BsdtHxRARMNtlQwaNRlaCmSQs7foftA==
+     code : |1-
+      Outpan est une Classe, abstraite
+      	
+      	prive
+      		constant
+      			API_KEY 		= "36ed042de3655cd1c093d3e24a67014c"
+      			API_ENDPOINT	= "https://api.outpan.com/v1/products/"
+      		fin
+      		
+      	public 
+      		constant
+      			API_ENDPOINT_NAME		= "name"
+      			API_ENDPOINT_ATTRIBUTES	= "attributes"
+      			API_ENDPOINT_IMAGES		= "images"
+      			API_ENDPOINT_VIDEOS		= "videos"
+      		fin
+      FIN
+      
+      OutpanAttributes est une structure
+      	brand		est une chaine	
+      FIN
+      
+      OutpanObject est une structure
+      	gtin		est une chaine
+      	name		est une chaine
+      	images		est un tableau de chaines
+      	videos		est un tableau de chaines
+      	attributes	est un OutpanAttributes
+      FIN
+      
+      //	
+      //	Documentation : 
+      //	https://www.outpan.com/developers.php
+      //	
+      //	The Outpan API allows you to programmatically interact with Outpan and integrate its data and functionalities into your software systems.
+      //	Outpan is a free service under the terms of CC BY-SA 3.0; you may use the data for commercial/non-commercial purposes as long as you provide attribution.
+      //	
+      //	Before you start
+      //	- Create an account to get your unique API Key.
+      //	- Follow @OutpanTech for the latest API news and upcoming releases.
+      //	- We encourage you to not cache/copy the results of an API call since the data on Outpan is constantly being updated. Whenever you need the data just call the API and get the most recent version of the product information.
+      //	- Do you have any questions? Contact us.
+      //	
+      //	Legacy API
+      //	The documentation for the legacy API is available here. The legacy API is deprecated and will be phased out on July 1, 2015.
+      //	
+      //	Authentication
+      //	Outpan uses HTTP Basic Auth for authentication to the API. Provide your API key as the basic auth username. You do not need to provide a password.
+      //	
+      //	For example (assume that XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX is a valid API Key):
+      //	
+      //	curl https://api.outpan.com/v1/products/0796435419035 -u XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:
+      //	
+      //	curl uses the -u flag to pass basic auth credentials (adding a colon after your API key will prevent it from asking you for a password).
+      //	
+      //	All API requests must be made via HTTPS. Calls made over plain HTTP will fail. Unless otherwise stated, you must authenticate for all requests.
+      //	
+      //	Endpoints
+      //	You can use the following endpoints to gain access to Outpan's data.
+      //	
+      //	GET https://api.outpan.com/v1/products/GTIN
+      //	GET https://api.outpan.com/v1/products/GTIN/name
+      //	GET https://api.outpan.com/v1/products/GTIN/attributes
+      //	GET https://api.outpan.com/v1/products/GTIN/images
+      //	GET https://api.outpan.com/v1/products/GTIN/videos
+      //	
+      //	Rate Limit
+      //	Every user can make a maximum of 50,000 API calls per day.
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1551430444602118110
+     type_code : 27
+     code : |1-
+      PROCEDURE privee Constructeur()
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1551430444602183646
+     type_code : 28
+     code : |1-
+      PROCEDURE PRIVÉE Destructeur()
+     type : 655360
+   -
+     name : Get
+     procedure_id : 1551432012265349667
+     type_code : 12
+     code : |1-
+      // Résumé : Récupère les données d'un produit à partir de son code-barres
+      // Syntaxe :
+      //[ <Résultat> = ] Get (<sCodeBarre> est chaîne [, <sPropriété> est chaîne])
+      //
+      // Paramètres :
+      //	sCodeBarre (chaîne UNICODE) :Code-barres du produit à récupérer
+      //	sPropriété (chaîne UNICODE - valeur par défaut="") :Propriété spécifique à récupérer plutôt que l'ensemble
+      // Valeur de retour :
+      // 	EANProduit : Produit dont les données ont été récupérées
+      //
+      PROCEDURE PUBLIQUE GLOBALE Get(LOCAL sCodeBarre est une chaine, local sPropriété est une chaine = "") : EANProduit
+      
+      	sURL est une chaine ansi = API_ENDPOINT + ["/"] + sCodeBarre + ["/"] + sPropriété
+      	stProduit est un OutpanObject
+      	clProduit est un EANProduit
+      	
+      	// Source
+      	clProduit.Source = "Outpan"
+      	
+      	// 2s maximum
+      	HTTPTimeOut(2000)
+      	
+      	// Lance la requête
+      	si HTTPRequête(sURL, "WMOutpanComponent/1.0", "", "", "", api_key) ALORS
+      		
+      		// Lecture du résultat
+      		bufJSON est un buffer = HTTPDonneRésultat(httpRésultat)
+      				
+      		quand exception dans
+      		
+      			// Désérialise les données
+      			deserialise(stProduit, bufJSON, psdJSON)
+      		faire
+      			VariableRAZ(stProduit)
+      		fin
+      	FIN
+      	
+      	// Attribution
+      	clProduit.Code 	= stProduit.gtin
+      	clProduit.Nom  	= stProduit.name + [" - "] + (Position(stProduit.name, stProduit.attributes.brand) < 1 ? stProduit.attributes.brand SINON "")
+      	clProduit.Image	= (stProduit.images..Occurrence > 0 ? stProduit.images[1] sinon "")
+      		
+      renvoyer clProduit
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x1fbd47f9153e50cd
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

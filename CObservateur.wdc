@@ -1,0 +1,108 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : CObservateur
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x160ba2f02a0be942
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      // Représente un observateur
+      CObservateur est une Classe
+      	
+      	public constant
+      		Conteneur		est une chaine			// Nom du conteneur
+      		Callback		est une procedure			// Callback à exécuter
+      
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1588542445959571778
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur(local sConteneur est une chaine, local pCallback est une procedure)
+      	
+      	// Valeurs par défaut
+      	Conteneur = sConteneur
+      	Callback  = pCallback	
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1588542445959637314
+     type_code : 28
+     code : |1+
+      PROCEDURE Destructeur()
+      
+     type : 655360
+   -
+     name : Déclenche
+     procedure_id : 1588542738017481552
+     type_code : 12
+     code : |1-
+      // Résumé : Déclenche l'observateur
+      // Syntaxe :
+      // Exécute ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE Déclenche(PARAMETRE)
+      	
+      	QUAND EXCEPTION DANS
+      		
+      		// Exécute la callback
+      		Callback(PARAMETRE)
+      	FAIRE
+      		
+      		XLOG("[CObservateur." + Conteneur + "] Erreur : " + ExceptionInfo + RC + dbgInfo(dbgPile))
+      	FIN
+     type : 458752
+   -
+     name : DéclencheAvecRetour
+     procedure_id : 1603768765946230654
+     type_code : 12
+     code : |1-
+      // Résumé : Déclenche l'observateur
+      // Syntaxe :
+      //[ <Résultat> = ] DéclencheAvecRetour (<PARAMETRE>)
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Type indéterminé : Valeur de retour
+      //
+      PROCEDURE DéclencheAvecRetour(PARAMETRE)
+      	
+      	QUAND EXCEPTION DANS
+      		
+      		// Exécute la callback
+      		renvoyer Callback(PARAMETRE)
+      	FAIRE
+      		
+      		XLOG("[CObservateur." + Conteneur + "] Erreur : " + ExceptionInfo + RC + dbgInfo(dbgPile))
+      		renvoyer faux
+      	FIN
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x1fbd47f9154950ec
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

@@ -1,0 +1,326 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FEN_LISTE_EDITE
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FEN_LISTE_EDITE
+ identifier : 0x2672ee118752d867
+ internal_properties : CAAAAAgAAAApBS9NRZJ+tiqXtZw39UfTY+GAE6xGd0ilyc1xdXY31lFofM43UE0KKuaoFobMbatwvRdzoH6RAl9maweljyijxrwACf08HjKo3tu5qYoulT18YVMZVaBwP4XvjgwxPoj9NuTG+gE1i6dvO2ajYGQpmB90YZY37KKN3mFEaa+8wuuNuJAePuwZb+suDNH/Wld1PXyPJx+lK33xFrkcbXs9pTUQemOj8ADYLMU/LbNfGYW6VAaDDIVT1YiIttkkAX/SwbaXLyvcI043I79r7jK1cr8iOxR5wfvZ5vK6laKM4lJT9wCOziedCQLHQyC3PQf6cDSaxs/C5kcw4FS2ChHyLp/ikjAe9zuj9pnsYkdVHMgJmE6tVqjqTFoNEafGG5VS7QbrprUnaox3w1DWQdYp3PiSGr2M4/v9I/a4JtbzTr9kU7SFgvf7meAT44LBBJd/+5rNawVT/KZnt7vjUF7i13HANU0loYhXfZkBwXUvVA10dq2XfBhfHP3h9j6npmAMn6TQsJ+1iEp3OnSiu0C1dGrXFAvsgsIdh2fM+FyTC2zHJSDkvRGGwTVAyHyxmtrSZL+AHTd5wD0nfms/qhR9+24Zdxnq0n8UKpFpZ09ODkqb/TOHCO7jHE+Y04cLYqcBLW9wkJwydMieLyH0vfiN11WX3nwafkH0ELigN6RozUY3zs95tFi/RLsE8ig8tCtl3ubI8oq8AZoVzy41aF8M3FqerwuKro7Fr2nzyiNtrv1IJSrewjCB4YauJlLxqMy2UNKOoQAHVsFSLqaw0TwxmDG+31LqlDWe5v/eDoD7XEYcvADeAhADm2CFw+hG5Vdkwq8J+dCgJzgmbbl/BKIpjTbb1zl4LRZ7vetcIBbS1/mGUAAWAd/EdOSIFR8fK6Ocq8TUZpTQL+kU3ziHGJKcpIDsuL9NNrgAg/RQsA==
+ properties :
+  width : 320
+  height : 380
+  heightMin : 444
+ controls :
+  -
+    name : CFI_PERSO
+    identifier : 0x2672ee118755d867
+    internal_properties : CAAAAAgAAAAT0AQ0jQ3pUmLWLOdv5xgHpj3fNEoc3jmULzHIKN1mn/1MUVLlIFYPRebagsiLYQ45zxMj2LV8EgGaBXkZcnLU1Fok0HjsY7KTofu7uPnK36m8d863hkueoM0et9aNv8jlX768bKtHkPYvVQ6sZEEuPqJLiIdODkzCafZVmWlhT8YoR+Nrj9tmfIA5V/DYDW8DwpH05f1DUVlfowpAhpM+1JdK3wg0ngOE2oATCv/aXcI2BUOp6JXYLwDrrJOEJIYTXJ/gPX7ZuVXNP/ofmOO0revxCruwfWLfPPm5qVrcy/rA/28zTfqTQBJlDDYhiAoVcQoGOcUKifJAj2PLlgjPIGy0EkvuiBs6YgF7fqn+2FmeghxX3S/AEFjU6MUBUTty1wZqjmJ0WH+fXN1VJcs3GoCD7LwgbYjbzjfkD/bsbrHdl7iN6jhlnKABMgJaCjecVUf9WnHXoU875CapzGWVhOfSTgrrvbJPmbAdgN9T8YIajA8f4RwV0bVACdnMWqgGfdABsU6CSWJXtv0IW9M3NAb45WqaOrmCBtGyi0/I5mvdWUTq1ggTsXMMxp2X/Cb3
+    properties :
+     width : 320
+     height : 210
+    controls : []
+    type : 31
+    code_elements :
+     type_code : 73
+     p_codes :
+      -
+        type : 33
+        enabled : false
+  -
+    name : BTN_VALIDER
+    identifier : 0x2672ee118756d867
+    internal_properties : CAAAAAgAAAB98EgAOZcW+V/CR2pdSdrTIsGCMeWosLe1gx9msrdOO6GZXXqDB8jtDi13geF8PJA22CRkj2FfekIewXJpS0biS2YKnKwBxlZY/k1T68PEPwV84nLcqQl56iZaGnsLkIR2n+jOeeF04Q++lmzlpentZw6ttgAT9PvnzrdjSR/PjR56bYRxhohw32HfXzx/bxsAqyo6YJ7gNVW7KBFJKFWl8NvQVog1S5MB7wYImiugN7Ayi04cysBbgpnD7iY4K15zdX7l7z0yoaK3bTy0o8FVOYLXPnfQlXenSRkxu6HQDGezIqf2oJ0+lXFzrFO+dLzXz/iZkvhrq+JYWciazKwuxmJLBvy5q6L+n9Su9PBxPuNi8NCOF97xN5zFsdnAJ6JPRKR8ultQCbkIXFTBK9xcoiPxQdF7XaYAxZV6rizWXmiwru4EOVwvWLsCXJ8jzMH5UmGP7U4DDSCcMZ1WywlIMDXtxpdRjK2vX1YI5v4nKbDJce56t+Z9f8+qICHz7BUQROKXsGp63oRBxSSP+7aFqg9UcDRsh/LRc+que9L4knWbrBhDheCwaOx9qJME1+bHJY3PSo/ehDYlAdI3kt16NFaZElN6cv9kgXs+Me8GLY6cjMm+wmiWW9VSz1HsG8dagYhd7g5f45TUT/jyG8qMgDFyk0IN405sxzONB6SFaen4Iyn44WFe7Km2IgudzOkhINDCR+p0XwpQQ2gXayo4ERtW7DgQM3b9gCfqL377SSR6pFpg1ilMdPpCPczWY8PYig0Nssw+x0l5T4S7RJElyyWhw1nBe1q/dczAGZ/L9ni746+ZyE1WI9EKdubcyekQjNCZToCapSmlCJW+noUNjBiJZ4GbiQj/lXslhLknlxbujgJlhJp96yQYRe15QGvT3HkrwUmVSXhoAc+SvzvZFoTeZ9jZMzav6W7DgDwt9M8h2UhazGYdi82GNf3cXs6tnptdBJAKyOJCdZMRNIBQ8Q==
+    properties :
+     x : 248
+     y : 308
+     width : 56
+     height : 56
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAABDNRqAgQYd9o8MP/rkr9Dpo71svCgNQ1tPcpOAqLVv77G8Tlgz0HGNWEMjtCgGfV43mtrw4BRitM4tWE0gsF70PcFES4Vs2EiUHnJslpK4ytu5CCN6q0a3MJg9lFeBN6QlxbdhYuqhKyyOv+Q=
+        code : |1+
+         
+         // Mise à jour
+         EcranVersFichier
+         
+         // Données d'historique
+         Liste.IDModification 	= USERID
+         Liste.DateModification	= DateHeureSys
+         
+         SI CFI_PERSO.gbImageModifiée ALORS
+         	
+         	SI CFI_PERSO.IMG_PICTO_LISTE..Note <> "" ALORS
+         		fCopieFichier(DATA_CACHE + [fSep] + CFI_PERSO.IMG_PICTO_LISTE..Note + "_temp", DATA_IMAGE_SUPPLIER + [fSep] + CFI_PERSO.IMG_PICTO_LISTE..Note)
+         	FIN
+         	
+         	// Désolidarise du fournisseur initial
+         	Liste.IDFournisseur = 0
+         	Liste.Image = CFI_PERSO.IMG_PICTO_LISTE..Note
+         FIN
+         
+         // Enregistrement
+         MaFenêtre..ValeurRenvoyée = HEnregistre(Liste)
+         Ferme
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_Abandon
+    identifier : 0x2672ee118757d867
+    internal_properties : CAAAAAgAAADsFazSCiY47DWZ6xRyKCLs6mrs1mHFlsCG+hIeX7scUnx64kBifOMfpYhslJhu879Jhu/+7CRd3OIKPWwzTbFk7oBhm29GQoJfmVOIpSMbhzDCV3e7mZMTD22vqrZCKcjCRt6MsdZv62XGwRCEB/5FZYuQZwzSboApmtoyJ4Dc9JA3hawnj4lNTAX/VX3KYXkQcapbg1Oh9rvXmuKPL8Q/7phEDi2Xq6MIo6M8hRxIpe6C3aMpKFGEJ0XZYZYELCjAARHg+qYIdf8JB8E9HlwZob+suFBn1lORhlgZmb5PcyQr3Sxm1gOASYig81HkrvbklvkbZhXWYvhyDue03pCnGFza+SApDKHoRxsQkIvDrLj19+kdondk2Hm83QM+fR1DMZwU7vu0jfGRlsEPh+qFbcirLUY5YCwc0wP7qvBaYG42o1M9nzZascLYjuLkq9ZzBJC5eYdP3QG96FD6Fems+1uTOlaNTpuvvUnOczfqhkbCG1efACYLgfKRaAHQ+jHxXsFNdQa7zwgYwpnBTm4iP2o6DUnwgdBTXBgB1uisa2M0hSHhMkQn3QT0GLGVJY/7SiAo09M677f0KANykGMgEdI6CTemcG3cfpuvqt8sL6TiBmo7Md8McIq9eLrl8SBUjiYM/k4XjxvmMj4RudnaeiLnUU8SWBTqB0xbVwAgbY0aaUQe1Bg+aGnxZPbK324PiJJLSR3Gh02vs8TzUt4NfL/dETFi9t1yyAbMJo6+xkn0vfzBhwamphm08dEFteyeHw3Nbf0DdiqZc9anKy1UB7CXodU9vAPgK13yXq6zT4F+oF3Li0kFdaXjHSKwIFD2Qw+RczdSPQXc6qAFbQxZf//Lj0sRJ8JPVfNvvhFn7sJLhCDDUZDuB/6YNyGtwxDq4G7itoQD4DAu40HItvwCF3n1DgjqtZh7HSX4rz4eGZ2UVNOpphSEoMskSKhv0yFOEqwlAd8eSPAFP1vCoDoDxyB8shoxehzLDXW6Y6Um1qBzAIsvweVk
+    properties :
+     x : 2
+     y : -123
+     width : 90
+     height : 48
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         MaFenêtre..ValeurRenvoyée = Faux
+         Ferme()
+        type : 18
+      -
+        type : 161
+        enabled : false
+ actionbar :
+  name : ACTB_MAIN
+  identifier : 0x2672ee11875ad867
+  internal_properties : CAAAAAgAAAA7UCLVr22b1GJx3S74avoZrlGCLgfMc6fu9D152z8kUQGqsrrTg4zl+PsdBizUG0hZwFOhk5cZNh2++mCmFntswKth9AorrAN44SMK63MHj/M84PMBtMr0xxKcchdxG69SYqnNSqx2vHhhTfRxW8iOHF5oex4wJXMSOUi9kVT03JaBZ63VGCh+HkL+d9uzkDUJiEcJXb5S60jseKUEeB0nJryl+a7DS/CLtJBiDgUig5Ukb2nz3UVY+vXRiH8vM+VVTalwNEk6uIFXCQSfD9/kKhms4q03VmLlYtfjxuX2HnWA3dPNU0juXXEQLCk1JxH53b04OYx+ccDc2DRaFCqfNkyPnesAk1RCtqgbP5UZ5r1amJkmmKwKY6km9sGqaFNXNzKKlQ28XhEUT9mpBAiyz0YAvbtFld1LyijYSG7d4l87Nafj/bxzGvmTzjtJC9SXK/Iyypcpp4ktPTpXZRx/9Rc5o8hUMjM=
+  controls : []
+  code_elements :
+   type_code : 125
+   p_codes :
+    -
+      code : |1-
+       
+       ExécuteTraitement(BTN_Abandon, trtclic)
+      type : 18
+    -
+      type : 229
+      enabled : false
+    -
+      type : 239
+      enabled : false
+    -
+      type : 240
+      enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x2672ee118758d867
+  internal_properties : CAAAAAgAAAByVTsSr3/syDi1St8xf8fgHxdhV816G1q5zyODGkOm1npuSkYo5g/jXWoWFFK2H3oUBZtHLsT5rfRCnVFNNS0taWG501M84VhyiY2gqfWqbb5TaLNBc7/5X5PbRqVlZ5a3p7SznWjoHPbzt8FGrVw2pkxQ2AMTSCoEquPAoSRRZmCgf0llwPSIdkz+fkQsa3yCb/aARC1IuAmTNbEAkdknQHeBdhsRIWlMefD05RVbqvlMGzysSB4KUPZWTHHaQPB4ObHU/5KQ/VjN8jyQaoRgKuGxrJ5V23KTuMr/Zw==
+  options :
+   -
+     name : OPT_ENREGISTRER
+     identifier : 0x2672ee118759d867
+     internal_properties : CAAAAAgAAACZtF/TwxBV7FcLdW7HNovnkGiJ8PhlIEJLBUm0pUp/TFj8yJ/Ig/qFjHC0NFWxHZtGmPsEUuT+hItKVf5mmax0I+Am6ykmTU6pZCG2ewF9cyypA4eYDicJrCzZ5deeTFgQHFmdSqf33dnVRgJfpkubN//C2UvY23js8vgJyX/Ig8GU/m95vEYSJVTVu0CkqHxQTMnOBj4Lq7GBm4XNURN3w5+NPD6GXms09FUHPQEmlDH4WcWdwsrduViEtP7wkesk8G8rix3ELDjzHo8Jfm9uOdx1HblDEhZYBKTnukMO5FkXgh/K7Jr1rluO2fbNif3ceA==
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         code : |1-
+          
+          ExécuteTraitement(BTN_VALIDER, trtclic)
+         type : 32
+  code_elements :
+   type_code : 26
+   p_codes : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAADg14QmfbGPAXNOrqhHlYXozLCn2tIsQFIkvCpo6KnpF9nOA8EWkFufWWkexUSzKQBmYqpFAuy7r2eCMGVgAi0VTEjrEchBP9WxFT19DjFZ3kJjIx4QE56DqKmh
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      PROCEDURE MaFenêtre(IDListe est un entier sur 8)
+      
+      // Valeur renvoyée par défaut
+      mafenetre..ValeurRenvoyée = faux
+      mafenetre..titre = ""
+      
+      // Mise à jour
+      Actualise()
+   -
+     code : |1-
+      
+      ecranpremier(CFI_PERSO.SAI_NOM_LISTE)
+     type : 34
+   -
+     code : |1+
+      
+      
+     type : 234
+   -
+     code : |1+
+      
+      
+     type : 165
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 40
+  procedures :
+   -
+     name : Actualise
+     internal_properties : CAAAAAgAAAC6ixVM22jS9VosbfTjNSfQoGdCn6JxfVz1KbSorA3IxeKNrRNztd18bahdZVxUdvcYPYHiijqMc8I4dTnwy+rtkHaGP1mHNmk2sWdclAsAlVr3rnWqbUInNcWC2TQrOIeSb3G06/iv9nO2ngVh
+     procedure_id : 1617616973638260839
+     type_code : 14
+     code : |1-
+      // Résumé : Actualise les informations
+      // Syntaxe :
+      // Actualise ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE Actualise()
+      	
+      	// Lecture
+      	HLitRecherchePremier(liste, idliste, idliste)
+      	
+      	// Affichage
+      	FichierVersEcran
+      	
+      	// Visibilité
+      	OPT_ENREGISTRER..Visible = enmodeios
+      	BTN_VALIDER..Visible = EnModeAndroid
+      	
+      	// RAZ
+      	si Liste.Image = "" alors
+      		CFI_PERSO.IMG_PICTO_LISTE..Note = ""
+      		CFI_PERSO.IMG_PICTO_LISTE = "panier.png"
+      	sinon
+      		CFI_PERSO.IMG_PICTO_LISTE..note = liste.Image
+      		CFI_PERSO.IMG_PICTO_LISTE = (EnModeSimulateur _ou_ Liste.IDFournisseur = 0 ? DATA_IMAGE_SUPPLIER + [fsep] sinon "") + liste.Image	
+      	fin
+     type : 458752
+   -
+     name : FenForceOriention
+     internal_properties : CAAAAAgAAABBoy4vn0eoCtgPRDJvKMp7nYDTYusBiZO9N8BjFte//EkupN+2wdYR+UoU9nEyT0oG8fFjXcIsebkCjhg+gbJE2+aH8hMO5tjb+zpuTo8MvbAhPbh5fVEeDA/SucBwMsE=
+     procedure_id : 1637990713586381776
+     type_code : 14
+     code : |1-
+      // Résumé : Force l'orientation selon le matériel
+      // Syntaxe :
+      //FenForceOriention ( [<bInitial> est booléen])
+      //
+      // Paramètres :
+      //	bInitial (booléen - valeur par défaut=0) : Vrai s'il s'agit du chargement initial, Faux sinon
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE FenForceOriention(bInitial est un booléen <utile> = faux)
+      
+      	<compile si mode_android>
+      
+      	// En mode téléphone, on force l'orientation portrait
+      	// En tablette, on force l'orientation paysage
+      	SI pas MODE_TABLETTE ALORS
+      		FenOrientation(fenOrientationPortrait)	
+      	FIN	
+      	
+      	<fin>
+     type : 458752
+  templates :
+   -
+     name : FEN_LISTE_EDITE
+     identifier : 0x1543dafd0722f03a
+     code_elements :
+      internal_properties : CAAAAAgAAAAhCui00Ejh+WJETqaAxKr14WvjNcHsGW/DfUz4gmyNMj+3FtPCSzgTJM2477J3f+/FeDgZURum3jkjg0kB0ifpjM0Bqa1DpGySMRE3bzO4JegUW0HPzuMlwUewCEgHU5JbFX4Efx/kujwE2nEylQ==
+      type_code : 1
+      p_codes :
+       -
+         code : |1-
+          
+          <compile si mode_android>
+          
+          // Force l'orientation selon le matériel
+          FenForceOriention(vrai)
+          
+          <fin>
+       -
+         code : |1-
+          
+         type : 34
+       -
+         code : |1-
+          
+          <COMPILE SI MODE_ANDROID>
+          	
+          	// Force l'orientation selon le matériel
+          	FenForceOriention()
+          	
+          <FIN>
+         type : 165
+       -
+         type : 180
+         enabled : false
+       -
+         type : 230
+         enabled : false
+       -
+         code : |1-
+          
+         type : 40
+      templates :
+       -
+         name : FEN_LISTE_EDITE
+         identifier : 0x1543dafd0723f03a
+         code_elements :
+          internal_properties : CAAAAAgAAADlRY7t4t14ipTBnMvFyK356dCHOVNLTE8xuVMgAIrNAEE8hbd5ibNPbor1N69df408WH89LOyFhZFVfLA6g+l6L6ErFsGJ7g==
+          type_code : 1
+          p_codes :
+           -
+             type : 180
+             enabled : false
+           -
+             type : 230
+             enabled : false
+           -
+             code : |1-
+              
+             type : 40
+           -
+             type : 11
+           -
+             type : 12
+           -
+             type : 17
+           -
+             type : 13
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAABPHYHdsVSOHJJE1IXOuvvVmB9we8+dwMcxF/0/zeZGnjj+bRwNUdmsK3h2Sado3DN63iVophug7K1EvCUZhyTinULLkLIGLw+rK8bI0KXtHJcKphM7F/iBb5yR2Ok/YujHnUGzxA/ETeQ13zbMaLyOd9ZoFDGFtF22D7hOnydBXcaCLmL0htGOHEtTyrfuYKM=
+  original_name : _11
+resources :
+ string_res :
+  identifier : 0x16c30b87085c1ce9
+  internal_properties : CAAAAAgAAADwlTU/TDjUXC5Oyq+6JmPfhcKGK6lcM6W06BDcn8S8X+wjm8c/LGo+/C8zJh6W21WqWMID9oF5+A==
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

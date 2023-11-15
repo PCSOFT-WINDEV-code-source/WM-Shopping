@@ -1,0 +1,608 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : CListeManager
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x1601093200a6ac79
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      // Classe CListeManager
+      // - Gère les listes
+      CListeManager est une Classe
+      	
+      	PUBLIC CONSTANT
+      		IDListeOuverte				est un entier sur 8
+      		ListeOuverte 				est une chaine
+      				
+      	PUBLIC
+      		ListeNettoyée				est un tableau associatif de booléens
+      		NbHistorique				est un entier	
+      		
+      		BalayageEnCours				est un booléen
+      		SurListeModifiée			est un tableau de CObservateur dynamique
+      		SurListeEffacée				est un tableau de CObservateur dynamique
+      		SurListesActualisées		est un tableau de CObservateur dynamique
+      		SurDemandeOuverture			est un tableau de CObservateur dynamique
+      		SurDemandeInfoID			est un tableau de CObservateur dynamique
+      		SurFermeture				est un tableau de CObservateur dynamique
+      		SurParamètresModifiés		est un tableau de CObservateur dynamique
+      		SurRayonsModifiés			est un tableau de CObservateur dynamique
+      		SurDemandeObjetListe		est un tableau de CObservateur dynamique
+      		SurRechercheModifiée		est un tableau de CObservateur dynamique
+      		SurDemandeFinRecherche		est un tableau de CObservateur dynamique	
+      		SurDemandeSélectionListe	est un tableau de CObservateur dynamique	
+      
+      FIN
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1585558654175128697
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructeur()
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1585558654175194233
+     type_code : 28
+     code : |1-
+      PROCEDURE Destructeur()
+      
+      // Fermeture
+      FermeTout()
+     type : 655360
+   -
+     name : ListeEfface
+     procedure_id : 1585559745118833771
+     type_code : 12
+     code : |1-
+      PROCEDURE ListeEfface(LOCAL nIDListe est un entier sur 8) : booléen
+      
+      	bSupprimé est un booléen
+      		
+      	HLitRecherchePremier(Liste, IDListe, nIDListe)
+      	SI HTrouve(Liste) ALORS
+      		
+      		// On pose la question
+      		TitreSuivant(liste.Nom)
+      		si dialogue(<§Rff0000af10ec68c2¤fr-FR¤Cette action ne peut pas être annulée.§> + rc + <§Rff0001af10ea68c2¤fr-FR¤Supprimer la liste et son contenu ?§>, [<§Rff0002af10e868c2¤fr-FR¤Supprimer§>, <§Rff0003af10e668c2¤fr-FR¤Annuler§>], 2, 2) = 1 alors
+      		
+      			// Liste personnalisée
+      			si liste.IDFournisseur = 0 ALORS
+      				
+      				// Image personnalisée
+      				si liste.Image <> "" ALORS
+      					
+      					// Supprime l'image associée
+      					fSupprime(DATA_IMAGE_SUPPLIER + [fSep] + Liste.Image, frLectureSeule)
+      				FIN
+      			FIN
+      			
+      			// Supprime la liste physiquement
+      			bSupprimé = HSupprime(Liste)		
+      		FIN
+      	
+      		TitreSuivant("")
+      	fin
+      	
+      	// Si la suppression a eu lieu
+      	si bSupprimé ALORS
+      		DéclencheObservateurs(SurListeEffacée, nIDListe)
+      	FIN
+      	
+      renvoyer bSupprimé
+     type : 458752
+   -
+     name : ListeOuvre
+     internal_properties : CAAAAAgAAAAPqvRorca/ULoiLwOM3Rq5VZgH6bNOiRtaNgApaWvW24OUimKs2LLFQWrkS3X04t8g9n7SWt4xQw+bYebmZZGuKQhpooX/qx5VGRzcsY4mtICDcwSW6UfUsS9xT9NYef2m25bVcHPOafR9vfMrJ9+vvW1BySE+wUCgVC1QNqpisaACCg==
+     procedure_id : 1585560470968345051
+     type_code : 12
+     code : |1-
+      // Procédure automatique :
+      // La procédure est exécutée manuellement, lors d'un appel dans le code, avec un différé de 5 centièmes de seconde
+      // 
+      
+      PROCEDURE ListeOuvre(LOCAL nIDListe est un entier sur 8, local bDepuisOuverture est un booléen = faux)
+      	
+      	sListeAFermer est une chaine 
+      		
+      	// Aucune liste ouverte
+      	SI ListeOuverte = "" ALORS
+      		
+      		// On crée une nouvelle liste
+      		ListeOuverte = "LISTE_" + NumériqueVersChaîne(nIDListe, "06x") + "_" + DateHeureSys
+      		IDListeOuverte = nIDListe		
+      	FIN
+      	
+      	// Liste déjà ouverte et différente
+      	SI IDListeOuverte <> nIDListe ALORS
+      		
+      		// 
+      		SI FenEtat(ListeOuverte) <> Inexistant ALORS
+      			sListeAFermer = ListeOuverte
+      		FIN
+      		
+      		// RAZ
+      		ListeOuverte = "LISTE_" + NumériqueVersChaîne(nIDListe, "06x") + "_" + DateHeureSys
+      		IDListeOuverte = nIDListe
+      		
+      	// Liste déjà ouverte et identique
+      	SINON
+      		
+      		// 
+      		SI FenEtat(ListeOuverte) <> Inexistant ALORS
+      			
+      			// Repasse au plan du contenu
+      			QUAND EXCEPTION DANS
+      				ExécuteTraitement(ListeOuverte + ".FIRetourContenu", trtProcédure)
+      				RETOUR
+      			FAIRE
+      				XLOG("[CListeManager.ListeOuvre] (" + ListeOuverte + ".FIRetourContenu" + ") Exception : " + ExceptionInfo)
+      				
+      				// Ouverture classique
+      				sListeAFermer = ListeOuverte
+      				
+      				// RAZ
+      				ListeOuverte = "LISTE_" + NumériqueVersChaîne(nIDListe, "06x") + "_" + DateHeureSys
+      				IDListeOuverte = nIDListe
+      			FIN
+      		FIN	
+      	FIN
+      		
+      	// Ouvre la liste
+      	OuvreFenêtreMobile(FEN_LISTE, (ListeOuverte), nIDListe)
+      	
+      	// Si la une liste est déjà ouverte
+      	SI sListeAFermer <> "" ALORS
+      		SI FenEtat(sListeAFermer) <> Inexistant ALORS
+      			
+      			// On la ferme
+      			ferme(sListeAFermer)			
+      		FIN
+      	FIN
+      
+      	// Mise à jour
+      	DéclencheListesActualisées(bDepuisOuverture, bDepuisOuverture)
+     type : 458752
+   -
+     name : DéclencheListesActualisées
+     internal_properties : CAAAAAgAAADdHdJZviczJRjNZ/6bU+wMAjXlN5a1Odz9sIYPmrN37C4ba98zCkW+uEJRLz1/uq0jEk6U23B3tY42t/m/1I0sINj64z0Or2pXLNEhR2kOQU4neFsW2I+AH8q6YYQQhC2vyvi3mc95DrOI4LTznMc2W72stm2HWp23qr6vjiKoQRQMOYLAiLLzARDVBbshiOeJM8+m
+     procedure_id : 1585561149573269924
+     type_code : 12
+     code : |1-
+      PROCEDURE DéclencheListesActualisées(local bActualiseSourceDonnées est un booléen = vrai, LOCAL bActualiseCompteurs est un booléen = vrai, local nIDListeActualisée est un entier sur 8 = -1)
+      
+      	// Listes
+      	si bActualiseSourceDonnées alors
+      		
+      		SI pas HExécuteRequête(REQ_LISTES) ALORS
+      			XLOG("[DéclencheListesActualisées] (REQ_LISTES) Erreur = " + HErreurInfo)
+      		FIN
+      		
+      		// RAZ
+      		supprimetout(MesListes)
+      		
+      		// Mise en cache
+      		<compile SI TypeConfiguration = Android>
+      			
+      			stListe est une stliste
+      			
+      			// Remplissage
+      			hlitpremier(REQ_LISTES)
+      			tantque pas hendehors(REQ_LISTES)
+      				
+      				FichierVersMémoire(stListe, REQ_LISTES)
+      				stListe.Nom = remplace(stListe.Nom, "&", "&&")
+      				ajoute(MesListes, stListe)
+      				
+      				hlitsuivant(REQ_LISTES)
+      			FIN
+      			
+      		<sinon>
+      			FichierVersTableau(MesListes, REQ_LISTES)			
+      		<FIN>
+      		
+      		bActualiseCompteurs = vrai
+      		nIDListeActualisée = -1
+      	fin
+      	
+      	// Si les compteurs doivent être actualisés
+      	si bActualiseCompteurs alors
+      	
+      		si nIDListeActualisée <= 0 ALORS
+      			
+      			pour tout stListe de MesListes
+      				
+      				stListe.NbProduits = 0
+      				
+      				// Compte le nombre de produit dans cette liste
+      				REQ_LISTES_NBELEMENTS.pIDListe = stListe.IDListe
+      				
+      				SI HExécuteRequête(REQ_LISTES_NBELEMENTS) ALORS
+      					HLitPremier(REQ_LISTES_NBELEMENTS)
+      					SI PAS HEnDehors(REQ_LISTES_NBELEMENTS) ALORS
+      						stListe.NbProduits = REQ_LISTES_NBELEMENTS.QuantitéPièce
+      					FIN
+      				FIN
+      			FIN
+      			
+      		sinon
+      			
+      			// Cherche la liste dans le cache
+      			nIndice est un entier = cherche(meslistes, tcLinéaire, "IDListe", nIDListeActualisée)
+      			
+      			// Met à jour le compteur de la liste
+      			si nIndice > 0 ALORS
+      				
+      				// RAZ
+      				meslistes[nIndice].NbProduits = 0
+      			
+      				// Compte le nombre de produit dans cette liste
+      				REQ_LISTES_NBELEMENTS.pIDListe = nIDListeActualisée
+      				
+      				SI HExécuteRequête(REQ_LISTES_NBELEMENTS) ALORS
+      					HLitPremier(REQ_LISTES_NBELEMENTS)
+      					SI PAS HEnDehors(REQ_LISTES_NBELEMENTS) ALORS
+      						MesListes[nIndice].NbProduits = REQ_LISTES_NBELEMENTS.QuantitéPièce
+      					FIN
+      				FIN
+      			FIN		
+      		FIN
+      	fin
+      	
+      	// Appel des listeners
+      	DéclencheObservateurs(SurListesActualisées, null)				
+     type : 458752
+   -
+     name : ListeFerme
+     internal_properties : CAAAAAgAAABxSWYNsh4VS/CVqS6PG0wUPml9fQx7d+YFKOSntsNHnFLPjyFlfKOcxLa7r7kDOg3nzkq2FUIxN+qayTkjIKVMGEh+xV+QEWznlIRs9JwjdIHir7LD+6qlUN9tlJHjQRi6zUuSUmYg95j5v7O8qzy5XqiXQXYu8fIIG4WGz+F5oPN71LWRb6Eg8gVcrBwIlPO153sK
+     procedure_id : 1585564134602777942
+     type_code : 12
+     code : |1-
+      PROCEDURE ListeFerme(LOCAL nIDListe est un entier sur 8, local sAlias est une chaine)
+      	
+      	// Le code de fermeture de la fenêtre interne FI_MENU (fenêtre coulissante) n'est pas exécutée
+      	// Appel des listeners 
+      	DéclencheObservateurs(SurFermeture, sAlias)
+      	
+      	si IDListeOuverte = nIDListe ALORS
+      		
+      		ListeOuverte = ""
+      		IDListeOuverte = 0
+      	FIN	
+     type : 458752
+   -
+     name : DemandeOuverture
+     internal_properties : CAAAAAgAAAD1xeqRbgxtZ7xpRRK//0Q8aq0VITgPV0JhJBj7Bj8n5C6TR7WZWEPoqIpniwnnUl0bmroCgT5x8y6mpa27jD08vFwu+cPkgZBzCIpirtL5TnPs5bCNMfBj8l1L4tOp34oMn5nYJMR+TcKvjZmmCWJj6NJN1whcL7A6GSskGW/XIs1V8lvz3Q9WJPOyYjYuWB9Ba/eO
+     procedure_id : 1588276745799137084
+     type_code : 12
+     code : |1-
+      PROCEDURE DemandeOuverture(nIDListe est un entier sur 8)
+      
+      	// Appel des listeners
+      	DéclencheObservateurs(SurDemandeOuverture, nIDListe)
+     type : 458752
+   -
+     name : FermeTout
+     internal_properties : CAAAAAgAAACq/LmeAJQXDujzNHZqHMazchjPsNHb8Qq76F41sZ243FIF876Yx69x2T3npg9GRBYD/PrZVUZB7YzoQ7wTACiaOcmnKX5DoGd/vlOfKx6SFPSk04X2dX9PcjPs1Rbx+mSzx48TwdrbU/j/WPjFQz8P+YrPrEPc8limr/xVtn/wRKqDylTaPbBKNJUZpXlGs4+A9CI7Cw==
+     procedure_id : 1588293088128533523
+     type_code : 12
+     code : |1-
+      PROCEDURE FermeTout()
+      
+      	bRetour est un booléen = faux
+      	
+      	si ListeOuverte <> "" ALORS
+      		
+      		// Le code de fermeture de la fenêtre interne FI_MENU (fenêtre coulissante) n'est pas exécutée
+      		// Appel des listeners 
+      		DéclencheObservateurs(SurFermeture, ListeOuverte)
+      		si fenetat(ListeOuverte) <> inexistant alors
+      			ferme(ListeOuverte)
+      		fin
+      		
+      		bRetour = vrai
+      	FIN
+      	
+      	// RAZ
+      	ListeOuverte = ""
+      	IDListeOuverte = 0
+      	
+      renvoyer bRetour
+     type : 458752
+   -
+     name : DéclencheParamètresModifiés
+     internal_properties : CAAAAAgAAADV+j3FLP1E+zWJJKUexiUO7QAgy2h/pfLj6mtxwd04S3ZGyDxL+3Y/Yrj/fpT5//403Ff6mkhatu8x/zMhBFAdJEuCf+rBqrf4odml3rOkVX51YMCVT7DDR/tWUkHz8shJ
+     procedure_id : 1588522547074315858
+     type_code : 12
+     code : |1-
+      PROCEDURE DéclencheParamètresModifiés()
+      
+      	// Mise à jour
+      	DéclencheObservateurs(SurParamètresModifiés, null)
+     type : 458752
+   -
+     name : ListeCrée
+     internal_properties : CAAAAAgAAADzTi/euIcyPqMYfJS3NgtO09L59CPgTC85q4pP0Jic9tBtfPsZzp9g3cMOJEMntZ+uQ+mmrx2/5+iQuuHYnUoF+eFv
+     procedure_id : 1590828849672091103
+     type_code : 12
+     code : |1-
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //ListeCrée (<nIDFournisseur> est entier sur 8 octets [, <sNom> est chaîne [, <sImage> est chaîne]])
+      //
+      // Paramètres :
+      //	nIDFournisseur (entier sur 8 octets) : ID du fournisseur
+      //	sNom (chaîne UNICODE - valeur par défaut="") : Nom du fournisseur
+      //	sImage (chaîne UNICODE - valeur par défaut="") : Image du fournisseur
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE ListeCrée(local nIDFournisseur est un entier sur 8, local sNom est une chaine = "", local sImage est une chaine = "")
+      
+      	nPosition est un entier
+      
+      	// Récupère la dernière position
+      	hlitdernier(Liste, Position)
+      	si pas hendehors(Liste) ALORS
+      		nPosition = liste.Position + 1
+      	sinon
+      		nPosition = 1
+      	FIN
+      	
+      	// Si on a un fournisseur prédéfini
+      	si nIDFournisseur > 0 ALORS
+      		
+      		// Lecture du fournisseur
+      		HLitRecherchePremier(Fournisseur, IDFournisseur, nIDFournisseur)
+      		si htrouve(Fournisseur) ALORS
+      			
+      			// Nom + Image
+      			sNom = Fournisseur.Nom
+      			sImage = Fournisseur.image
+      		FIN
+      	FIN
+      
+      	// RAZ
+      	hraz(liste)
+      	
+      	// Journalisation
+      	Liste.DateCréation 		= dateheuresys
+      	Liste.DateModification	= Liste.DateCréation
+      	Liste.IDCréation		= USERID()
+      	Liste.IDModification	= Liste.IDCréation
+      	
+      	// Données
+      	Liste.IDFournisseur		= nIDFournisseur
+      	Liste.Nom				= sNom
+      	Liste.Image				= sImage
+      	Liste.Position			= nPosition
+      	Liste.OrdreRayons		= ""
+      	
+      	// Enregistre
+      	si HEnregistre(Liste) ALORS				
+      		ferme("", vrai)
+      	FIN
+     type : 458752
+   -
+     name : ListeID
+     internal_properties : CAAAAAgAAABxSWYNsh6VS/CVqS6PG0wUPml9fQx7d+YFKOSntsNHnFLPjyFlfKOcxLa7r7kDOg3nzkq2FUIxN+qayTkjIKVMGEh+xV+QEWznlATsdByj9AFiLzJDeyol0F/tFBFjwZg6TcsS0uagdxh5PzM8K7w53igXwfaucXKImwUGT2H5IHP7VDUR7yGgcoXcLJwIlPO153sK
+     procedure_id : 1603768104520588892
+     type_code : 12
+     code : |1-
+      // Résumé : Renvoie l'ID de la liste à partir de son indice (utile pour les fenêtres internes de ZR)
+      // Syntaxe :
+      //[ <Résultat> = ] ListeID (<nIndice> est entier)
+      //
+      // Paramètres :
+      //	nIndice (entier) :Indice
+      // Valeur de retour :
+      // 	entier sur 8 octets : ID de la liste ou 0 en cas d'erreur
+      //
+      PROCEDURE ListeID(nIndice est un entier) : entier sur 8
+      
+      	// Appel des listeners 
+      	renvoyer DéclencheObservateursAvecRetour(SurDemandeInfoID, nIndice)
+     type : 458752
+   -
+     name : ListeObjetEnCours
+     internal_properties : CAAAAAgAAABxSWYNsh6VS/CVqS6PG0wUPml9fQx7d+YFKOSntsNHnFLPjyFlfKOcxLa7r7kDOg3nzkq2FUIxN+qayTkjIKVMGEh+xV+QEWznlATsdByj9AFiLzJDeyol0F/tFBFjwZg6TcsS0uagdxh5PzM8K7w53igXwfaucXKImwUGT2H5IHP7VDUR7yGgcoXcLJwIlPO153sK
+     procedure_id : 1608975580414416948
+     type_code : 12
+     code : |1-
+      // Résumé : Renvoie la liste en cours
+      // Syntaxe :
+      //[ <Résultat> = ] ListeObjetEnCours ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Type indéterminé : Liste en cours
+      //
+      PROCEDURE ListeObjetEnCours()
+      
+      	// Appel des listeners 
+      	renvoyer DéclencheObservateursAvecRetour(SurDemandeObjetListe, null)
+     type : 458752
+   -
+     name : DéclencheRayonsModifiés
+     internal_properties : CAAAAAgAAADgDnLj4hUrkgG7sIG9MUyP8PZwwGDqbxdCbS2yHT9GYzYlz4nty6jKguOoEpyurOXR+uBkprkOd1DpeyZnNK0GHfe5lVoyOE6tnQmABNNhqurUNgcVgg==
+     procedure_id : 1616774150315479030
+     type_code : 12
+     code : |1-
+      PROCEDURE DéclencheRayonsModifiés()
+      
+      	// Mise à jour
+      	DéclencheObservateurs(SurRayonsModifiés, null)
+     type : 458752
+   -
+     name : RayonSupprime
+     procedure_id : 1616812912669049991
+     type_code : 12
+     code : |1-
+      // Résumé : Supprime un rayon
+      // Syntaxe :
+      //[ <Résultat> = ] RayonSupprime (<sGUIDRayon> est chaîne)
+      //
+      // Paramètres :
+      //	sGUIDRayon (chaîne UNICODE) :GUID du rayon à supprimer
+      // Valeur de retour :
+      // 	chaîne UNICODE : GUID de substitution
+      //
+      PROCEDURE RayonSupprime(local sGUIDRayon est une chaine) : chaine
+      	
+      	TitreSuivant(<§Rff0004af10ee68c2¤fr-FR¤Veuillez patienter...§>)
+      	Sablier(Vrai)
+      	
+      	// Récupère le rayon parent
+      	sGUIDParent est une chaine
+      	sGUIDParent = DonnéesPerso.GUIDParent
+      	
+      	// Tous les éléments de ce rayon (produits, sous-rayons) doivent changer de niveau
+      	HLitRecherchePremier(DonnéesPerso, GUIDParent, sGUIDRayon)
+      	TANTQUE HTrouve(DonnéesPerso)
+      		
+      		// Modifie le parent
+      		DonnéesPerso.GUIDParent = sGUIDParent
+      		HEnregistre(DonnéesPerso)
+      		
+      		// Rayon suivant
+      		HLitRecherchePremier(DonnéesPerso, GUIDParent, sGUIDRayon)
+      	FIN
+      	
+      	// Suppression effective
+      	HLitRecherchePremier(DonnéesPerso, GUID, sGUIDRayon)
+      	SI HTrouve(DonnéesPerso) ALORS
+      		HSupprime(DonnéesPerso)
+      	FIN
+      	
+      	// Mise à jour des sources de données
+      	SourceActualise(Vrai)	
+      	
+      	TitreSuivant("")
+      	Sablier(Faux)
+      	
+      	// Déclenche les observateurs pour la mise à jour des rayons
+      	DéclencheRayonsModifiés()
+      	
+      renvoyer sGUIDParent
+     type : 458752
+   -
+     name : DéclencheRecherche
+     procedure_id : 1619078516417702845
+     type_code : 12
+     code : |1-
+      PROCEDURE DéclencheRecherche(sMot est une chaine)
+      
+      	// Déclenche la recherche
+      	__SurRechercheModifiée(sMot)
+     type : 458752
+   -
+     name : __SurRechercheModifiée
+     internal_properties : CAAAAAgAAAASNOKPPwZ5oOJ3GMjoKHKPYKDtqLsVfZwtbBqHL7F8YKyhvXpSdcf/++lvaAXqyBLZRLTd21C1U4Zcj1qN4KiaZ2nlIdRhCK2pIprSMM+jmRvN5LTnZu4+bd4nsMsyO7EOEHj+Tq+mjmfed7O6lGSQaIPQU6RV6UNdhucAO9jhaXFAx6+nivMhx2h4jBr7vsYiC8qDsw==
+     procedure_id : 1619078572252880705
+     type_code : 12
+     code : |1-
+      PROCEDURE PRIVÉE __SurRechercheModifiée(sMot est une chaine)
+      
+      	// Déclenche les listeners
+      	DéclencheObservateurs(surRechercheModifiée, sMot)
+     type : 458752
+   -
+     name : __SurDemandeFinRecherche
+     internal_properties : CAAAAAgAAAASNOKPPwZ5oOJ3GMjoKHKPYKDtqLsVfZwtbBqHL7F8YKyhvXpSdcf/++lvaAXqyBLZRLTd21C1U4Zcj1qN4KiaZ2nlIdRhCK2pIprSMM+jmRvN5LTnZu4+bd4nsMsyO7EOEHj+Tq+mjmfed7O6lGSQaIPQU6RV6UNdhucAO9jhaXFAx6+nivMhx2h4jBr7vsYiC8qDsw==
+     procedure_id : 1619078808476660945
+     type_code : 12
+     code : |1-
+      PROCEDURE PRIVÉE __SurDemandeFinRecherche()
+      
+      	// Déclenche les listeners
+      	DéclencheObservateurs(surDemandeFinRecherche, null)
+     type : 458752
+   -
+     name : DéclencheDemandeFinRecherche
+     procedure_id : 1619078907262963713
+     type_code : 12
+     code : |1-
+      PROCEDURE DéclencheDemandeFinRecherche()
+      
+      	// Déclenche la demande
+      	__SurDemandeFinRecherche()
+     type : 458752
+   -
+     name : DéclencheDemandeSélectionListe
+     internal_properties : CAAAAAgAAABqvPpX52b/yFafNER09F7TtGg1nM/VEUTRJB7LW2XgxFBxbfYm5VPvd7lrLNEeTBZ1DPx533hBQ/Is+0bJXBwWKzmV9QA5bM31GiA0pnUFK40/ViZ1nIhkX9AVgplALbsYmtJIvMXArFmA1WVogjZiii1S1epLUym3MH1KoW6Le2Oy8UnVWFX/4XIOLvhZ7m5KM+L7Sw==
+     procedure_id : 1619100004210606945
+     type_code : 12
+     code : |1-
+      // Résumé : Demande une sélection de liste
+      // Syntaxe :
+      //DéclencheDemandeSélectionListe (<sGUIDProduit> est chaîne)
+      //
+      // Paramètres :
+      //	sGUIDProduit (chaîne UNICODE) :GUID du produit à associer à la liste
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE DéclencheDemandeSélectionListe(local sGUIDProduit est une chaine)
+      	
+      	// Déclenche les listeners
+      	DéclencheObservateurs(SurDemandeSélectionListe, sGUIDProduit)
+     type : 458752
+   -
+     name : DéclencheAjoutProduitExterne
+     internal_properties : CAAAAAgAAAAGSTsHywxaeZLfNJFgkK/qNlJRB82uQctn7arAjjjPz3fb7eDw+XlqrYQwi8wMMEiYDzGrW7EyNddBeFHs9ATfulmJc/yTprYVYq5jazmuvT6J7UYl8auWG6kbBtKyzr4sOQuBJP544ng0mOOaEosqDOW7ansOFSMCILQkKbMklRAW
+     procedure_id : 1619102289134330569
+     type_code : 12
+     code : |1-
+      // Résumé : Ajouter un produit sans posséder de liste
+      // Syntaxe :
+      //DéclencheAjoutProduitExterne ( [<sGUID> est chaîne [, <sNom> est chaîne [, <sCodeBarre> est chaîne]]])
+      //
+      // Paramètres :
+      //	sGUID (chaîne UNICODE - valeur par défaut="") :GUID du produit (ou chaine vide pour en créer un)
+      //	sNom (chaîne UNICODE - valeur par défaut="") :Nom du produit à créer
+      //	sCodeBarre (chaîne UNICODE - valeur par défaut="") :Code-barres du produit
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Procédure automatique :
+      // La procédure est exécutée manuellement, lors d'un appel dans le code, avec un différé de 1 centièmes de seconde
+      // 
+      PROCEDURE DéclencheAjoutProduitExterne(local sGUID est une chaine = "", LOCAL sNom est une chaine = "", LOCAL sCodeBarre est une chaine = "")
+      
+      	sGUIDParent est une chaine
+      	
+      	// Ajoute le produit
+      	pclProduit est un EANProduit dynamique = CListeShopping.ProduitEnregistre(sGUID, sGUIDParent, sNom, sCodeBarre)
+      	SI pclProduit <> Null ALORS
+      		
+      		// Le produit est inconnu, on doit le créer 
+      		OuvreFenêtreMobile(FEN_FICHE_ITEM, (Null), DonneGUID(guidBrut), Vrai, pclProduit, sGUIDParent)
+      	SINON
+      		
+      		// On connaît le produit, pas d'édition
+      		DéclencheDemandeSélectionListe(sGUID)
+      	FIN			
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x1601093200a3ac79
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

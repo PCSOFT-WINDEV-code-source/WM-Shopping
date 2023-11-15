@@ -1,0 +1,889 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : CListeShopping
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x15fa99e504fdedeb
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1-
+      // Classe CListeShopping
+      // - Contient les éléments de "dialogue" pour gérer la liste de shopping
+      CListeShopping est une Classe
+      
+      	public
+      		IDItemAjoutéModifié			est un entier sur 8
+      		
+      	public constant
+      		IDListe 					est un entier sur 8
+      		Alias						est une chaine
+      		Nom 						est une chaine
+      		OrdreRayon	 				est un tableau de chaines
+      		Rayons	   	 				est un tableau de chaines
+      		ProduitsAchetésOccurrence	est un entier
+      		ProduitsOccurrence			est un entier		
+      		ProduitsQuantitéTotale		est un entier		
+      		
+      	public
+      		SurListeModifiée			est un tableau de CObservateur dynamique
+      		SurListeMiseAJour			est un tableau de CObservateur dynamique
+      		SurHistoriqueModifié		est un tableau de CObservateur dynamique
+      		SurExportEmail				est un tableau de CObservateur dynamique
+      		SurDemandePositionRayon		est un tableau de CObservateur dynamique
+      		SurDemandeInfoContenuID		est un tableau de CObservateur dynamique		
+      		
+      FIN
+      
+      constant
+      	lsmodAjout			= 0x1	// Ajout de produit
+      	lsmodModification	= 0x2	// Modification de produit (achat, ...)
+      	lsmodSuppression	= 0x4	// Suppression de produit
+      fin
+     type : 131072
+  procedures :
+   -
+     name : Constructeur
+     procedure_id : 1583747427884527083
+     type_code : 27
+     code : |1-
+      PROCEDURE privee Constructeur(nIDListe est un entier sur 8, sAlias est une chaine)
+      	
+      	// Recherche la liste
+      	HLitRecherchePremier(Liste, IDListe, nIDListe)
+      	
+      	// Copie le nom et l'ID
+      	IDListe = nIDListe
+      	Nom = Liste.Nom
+      	Alias = sAlias
+     type : 589824
+   -
+     name : Destructeur
+     procedure_id : 1583747427884592619
+     type_code : 28
+     code : |1-
+      PROCEDURE Destructeur()
+     type : 655360
+   -
+     name : __SurListeModifiée
+     internal_properties : CAAAAAgAAABKXJr3hwZfWJb/lCQ0dH6zNGgVvM/1keQRBH6rG+UApNDxjVbmBdPP95lLTFGebHY1zFwZX9hB4/KM26bJnHw2a/n1lQDZLG11ujDEFsW1O51PRnbF7Ng0b0ClEkmQnYto6oLYTJUQfGkwJbWYUuYymr3CpTrb47nHoI3a0T57C7OCoRklKCXP8eKePug5jo5q0wLbaw==
+     procedure_id : 1583749772936824186
+     type_code : 12
+     code : |1-
+      PROCEDURE PRIVÉE __SurListeModifiée(ACTION est un entier, nIDItem est un entier sur 8 = -1)
+      
+      	tabParams est un tableau d'entiers = [ACTION, nIDItem]
+      
+      	// Déclenche les listeners
+      	DéclencheObservateurs(SurListeModifiée, tabParams)	
+     type : 458752
+   -
+     name : ProduitAjoute
+     internal_properties : CAAAAAgAAADAM6Sz4mg1+WUjybtlImDogVGA+/coEUCGK3DqyAAFBwNX40diSdklMpemf6UiOmbzVhy+vg4B/NXtnoa+XliUesdOgbcAf/aNjAcfE/Q3KbPPEjQCE3+CH2Ucf5qwrMIR3K6TvSe8UmfZ8+Io8Vrx5S5iAfvdlj3eLD6j1xvbX4ZMHFvpYD3gdKWoda+ycu24uUVCWjtx6Z91QuBpKcIZmE7waHXkafF20bJdDzJwUJDO6wQaJsa6ol8/updjMfQbCjDEoAVj18VXgjf1caJmfANlUoXuwyko8xuG
+     procedure_id : 1583767713015333362
+     type_code : 12
+     code : |1+
+      // Résumé : Ajoute un produit dans la liste
+      // Syntaxe :
+      //ProduitAjoute (<sGUID> est chaîne, <rQuantité> est réel [, <sNom> est chaîne [, <sCode> est chaîne [, <nIDUnité> est entier]]])
+      //
+      // Paramètres :
+      //	sGUID (chaîne UNICODE) :GUID du projet à ajouter
+      //	rQuantité (réel) : Quantité à ajouter
+      //	sNom (chaîne UNICODE - valeur par défaut="") : Nom du produit à ajouter
+      //	sCode (chaîne UNICODE - valeur par défaut="") : Code-barres du produit à ajouter
+      //	nIDUnité (entier - valeur par défaut=0) : Unité de produit
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE ProduitAjoute(LOCAL sGUID est une chaîne, LOCAL rQuantité est un réel, LOCAL sNom est une chaîne = "", LOCAL sCode est une chaîne = "", local nIDUnité est un entier = 0)
+      
+      	sGUIDParent est une chaîne
+      	nRetour est un entier sur 8
+      	nAction est un entier = lsmodAjout
+      	bAjoutNécessaire est un booléen = Vrai
+      	
+      	// Enregistre les infos du produit
+      	si ProduitEnregistre(sGUID, sGUIDParent, sNom, sCode, objet) <> null alors
+      		retour
+      	FIN
+      			
+      	// Vérifie si on a déjà le produit dans la liste (et qu'il n'est pas marqué comme 'Acheté')
+      	HLitRecherchePremier(ListeContenu, ProduitListé, [IDListe, sGUID])
+      	SI HTrouve(ListeContenu) ALORS
+      		
+      		bAjoutNécessaire = Faux
+      		
+      		// Si l'item est marqué comme acheté
+      		SI ListeContenu.Acheté ALORS
+      			
+      			// Cherche une autre occurrence
+      			TANTQUE HTrouve(ListeContenu) _ET_ ListeContenu.Acheté
+      				HLitSuivant(ListeContenu)
+      			FIN
+      			
+      			// Toutes les occurrences sont marquées comme acheté ou on a atteint la fin de la liste
+      			SI PAS HTrouve(ListeContenu) OU HEnDehors(ListeContenu) ALORS
+      				// Il faut recréer une entrée
+      				bAjoutNécessaire = Vrai
+      			FIN			
+      		FIN
+      		
+      		// Quantité nulle pour "ajouter"
+      		si rQuantité = 0 ALORS
+      			
+      			// On corrige
+      			rQuantité = 1
+      		FIN
+      	FIN
+      	
+      	SI PAS bAjoutNécessaire ALORS
+      		
+      		// Augmente la quantité
+      		ListeContenu.Quantité 			+= rQuantité
+      		ListeContenu.DateModification 	= DateHeureSys
+      		ListeContenu.IDModification 	= USERID		
+      		
+      		// Prévient avec un toast
+      		ToastAffiche(sNom + [RC] + <§Rff0001af10e268c2¤fr-FR¤Quantité modifiée : §> + QuantitéUnité((ListeContenu.Quantité), (ListeContenu.IDUnité)), toastCourt, cvMilieu, chCentre)
+      		
+      		nAction = lsmodModification
+      	SINON
+      		
+      		HRAZ(ListeContenu)
+      		ListeContenu.GUIDProduit		= sGUID
+      		ListeContenu.GUIDCatégorie		= RayonParent(sGUIDParent)
+      		ListeContenu.IDListe 			= IDListe
+      		ListeContenu.IDUnité 			= nIDUnité
+      		ListeContenu.Quantité	 		= rQuantité
+      		ListeContenu.DateCréation		= DateHeureSys
+      		ListeContenu.DateModification	= ListeContenu.DateCréation
+      		ListeContenu.DateAchat			= ""
+      		ListeContenu.IDCréation			= USERID
+      		ListeContenu.IDModification		= USERID
+      		ListeContenu.IDAchat			= ""		
+      	FIN
+      	
+      	// Si la quantité est suffisante
+      	SI ListeContenu.Quantité > 1 ALORS
+      		// Si aucune unité n'a été spécifiée
+      		SI ListeContenu.IDUnité <= 0 ALORS
+      			// Force l'unité de base
+      			ListeContenu.IDUnité = UNITEDEFAUT
+      		FIN
+      		
+      	// Quantité non nulle
+      	sinon si ListeContenu.Quantité = 0 alors
+      		ListeContenu.Quantité = 1
+      	FIN
+      	
+      	// Quantité "virtuelle" pour le comptage
+      	ListeContenu.QuantitéVirtuelle = (ListeContenu.IDUnité DANS (0, UNITEDEFAUT()) ? ListeContenu.Quantité SINON 1)
+      	
+      	// Ajout dans la liste ?
+      	SI ListeContenu..NouvelEnregistrement ALORS
+      		
+      		// Reprend la dernière note associée au produit
+      		HLitRecherchePremier(Note, GUID, sGUID)
+      		SI HTrouve(Note) ALORS
+      			ListeContenu.Note = Note.Note
+      		FIN
+      	FIN
+      	
+      	// Enregistre le contenu de la liste
+      	HEnregistre(ListeContenu)
+      	
+      	// 
+      	nRetour = ListeContenu.IDListeContenu
+      
+      RETOUR
+      
+      FIN:
+      	SI nRetour > 0 ALORS
+      		// Mise à jour des listeners
+      		__SurListeModifiée(nAction, nRetour)
+      	FIN
+     type : 458752
+   -
+     name : SetProduitsOccurrence
+     internal_properties : CAAAAAgAAACylEJ4Gk4UboRLgGJe+EK/ngBHZO3LxUonKFrJbWGE0G5Va+IcN6uRXU2TuptCMCrHpBKlWe5V3ZCApzCXjIxmtakvpeI7tA/LfknpEQT8/t6W1afse2lFfD2Cn/wH7Ab1AVmdrwj9eWqhpqqrSempE7TRbqlKZDZYAWoHBO3K1ty9XBboa9IA/k9f57/sXGSn6yojEw==
+     procedure_id : 1583769203369135310
+     type_code : 12
+     code : |1-
+      // Résumé : Définit le nombre de produits présents dans la liste
+      // Syntaxe :
+      // SetProduitsOccurrence (<nProduitsOccurrence> est entier [, <nProduitsAchetésOccurence> est entier])
+      //
+      // Paramètres :
+      //	nProduitsOccurrence (entier) : Nombre total de produits
+      // 	nProduitsAchetésOccurence (entier - valeur par défaut=0) : Nombre de produits achetés
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE SetProduitsOccurrence(nProduitsOccurrence est un entier, nProduitsAchetésOccurence est un entier = 0, nQuantitéTotale est un entier = 0)
+      
+      	// Mise à jour
+      	ProduitsAchetésOccurrence = nProduitsAchetésOccurence
+      	ProduitsOccurrence = nProduitsOccurrence
+      	ProduitsQuantitéTotale = nQuantitéTotale
+      	
+      	// Mise à jour des listeners
+      	DéclencheListeMiseAJour()
+     type : 458752
+   -
+     name : SetRayons
+     procedure_id : 1583769400937741915
+     type_code : 12
+     code : |1-
+      // Résumé : Définit les rayons de la liste
+      // Syntaxe :
+      // SetRayons (<tabRayons> est tableau)
+      //
+      // Paramètres :
+      //	tabRayons (tableau) : Liste des noms des rayons
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE SetRayons(tabRayons est un tableau de chaines)
+      
+      	// Mise à jour
+      	rayons = tabRayons
+     type : 458752
+   -
+     name : DéclencheListeMiseAJour
+     internal_properties : CAAAAAgAAAASNOKPPwZ5oOJ3GMjoKHKPYKDtqLsVfZwtbBqHL7F8YKyhvXpSdcf/++lvaAXqyBLZRLTd21C1U4Zcj1qN4KiaZ2nlIdRhCK2pIprSMM+jmRvN5LTnZu4+bd4nsMsyO7EOEHj+Tq+mjmfed7O6lGSQaIPQU6RV6UNdhucAO9jhaXFAx6+nivMhx2h4jBr7vsYiC8qDsw==
+     procedure_id : 1583770599233765817
+     type_code : 12
+     code : |1+
+      PROCEDURE PRIVÉE DéclencheListeMiseAJour()
+      
+      	// Déclenche les listeners
+      	DéclencheObservateurs(SurListeMiseAJour, null)
+     type : 458752
+   -
+     name : MarquerCommeAcheté
+     internal_properties : CAAAAAgAAABRmq360CiXbYZLOn+L3jQgmW+KV1Si+p8Fw6Hpp8Wx8mdYJJlHB4GeHaltskCYoQFTgaMdEuQUD+T1kYZMDVU4IV6CS+aB+2HtUb264wlp9vnEmIUsFYRTZwHnE7dNBEUKIZWBfuJ+37dQAiRY/X6AWY1RzoiLVptqjy501FeocKLxDiHH5Esr8KvxEQH7r0Zjyf757zg8DtuXfEyWF3Jc28rhIbA4YXc5GCzY0bW7/U+LQpz6F1xpjYjiLjmtq5m9yWasXKCBL8Hz9bHS1Q==
+     procedure_id : 1583771758875074697
+     type_code : 12
+     code : |1-
+      // Résumé : Marque un produit comme 'Acheté'
+      // Syntaxe :
+      // MarquerCommeAcheté (<ID>, <bAcheté> est booléen)
+      //
+      // Paramètres :
+      // 	ID : ID de l'item dans la liste
+      //	bAcheté (booléen) : Flag d'achat
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE MarquerCommeAcheté(LOCAL ID, LOCAL bAcheté est un booléen)
+      
+      	HLitRecherchePremier(ListeContenu, IDListeContenu, ID)
+      	SI HTrouve(ListeContenu) ALORS
+      		
+      		// Change l'état
+      		ListeContenu.Acheté 	= bAcheté
+      		ListeContenu.IDAchat	= USERID()
+      		ListeContenu.DateAchat	= DateHeureSys
+      		
+      		// Enregistre
+      		HModifie(ListeContenu)
+      		
+      		si ListeContenu.Acheté ALORS
+      			// On transfère dans l'historique
+      			TransfèreHistorique((listecontenu.GUIDProduit), (ListeContenu.Quantité))
+      		sinon
+      			// On annule le transfert
+      			TransfèreHistorique((ListeContenu.GUIDProduit), -(ListeContenu.Quantité))
+      		FIN
+      		
+      		// On démarque un produit
+      		si bAcheté = faux ALORS
+      			
+      			sGUID est une chaine = listecontenu.GUIDProduit
+      			rQuantité est un reel = listecontenu.quantite
+      			sNote est une chaine = listecontenu.Note
+      			nIDUnité est un entier  = listecontenu.IDUnité
+      			bModifié est un booléen = faux
+      			
+      			// Quantité nulle = 1
+      			si rQuantité = 0 ALORS
+      				rQuantité = 1
+      			FIN
+      			
+      			// Vérifie si le même produit existe déjà en non acheté
+      			HLitRecherchePremier(ListeContenu, ProduitListé, [IDListe, sGUID])
+      			tantque htrouve(ListeContenu)
+      				
+      				// Item non acheté et différent de l'item modifié
+      				si ListeContenu.Acheté = faux _et_ ListeContenu.IDListeContenu <> ID ALORS
+      					
+      					// Si l'item a une note
+      					si listecontenu.Note <> "" ALORS
+      						// et si elle est différent
+      						si listecontenu.note <> sNote ALORS
+      							// On conserve alors cet item
+      							// (on peut vouloir acheté XX éléments 'comme ci' et YY élément de ce même produit mais 'comme ça')
+      							HLitSuivant(ListeContenu)
+      							continuer
+      						FIN
+      					FIN
+      					
+      					// Si on a fourni un type d'unité
+      					si listecontenu.IDUnité <> 0 ALORS
+      						
+      						// Si on n'a pas déjà un type d'unité
+      						si nIDUnité = 0 ALORS							
+      						
+      							// On récupère ce type d'unité
+      							nIDUnité = ListeContenu.IDUnité
+      						FIN
+      					FIN
+      					
+      					// Récupère la quantité
+      					rQuantité += ListeContenu.Quantité
+      					
+      					// Supprime l'item de la liste
+      					hsupprime(listecontenu)
+      					bModifié = vrai
+      				FIN
+      				
+      				// Produit suivant
+      				HLitSuivant(ListeContenu)
+      			FIN
+      			
+      			// On a modifié des valeurs de l'item en cours
+      			si bModifié ALORS
+      				
+      				// Unité par défaut si les quantités ont changé
+      				si rQuantité > 1 _et_ nIDUnité = 0 ALORS
+      					nIDUnité = UNITEDEFAUT()
+      				FIN
+      				
+      				// On repasse sur l'item
+      				HLitRecherchePremier(ListeContenu, IDListeContenu, ID)
+      				
+      				// Met à jour la quantité
+      				ListeContenu.Quantité = rQuantité
+      				ListeContenu.IDUnité = nIDUnité
+      				
+      				// Quantité "virtuelle" pour le comptage
+      				ListeContenu.QuantitéVirtuelle = (ListeContenu.IDUnité DANS (0, UNITEDEFAUT()) ? ListeContenu.Quantité SINON 1)
+      				
+      				hmodifie(ListeContenu)
+      			FIN
+      		FIN
+      		
+      		// Mise à jour des listeners
+      		__SurListeModifiée(lsmodModification)
+      	FIN
+     type : 458752
+   -
+     name : ProduitEstAcheté
+     internal_properties : CAAAAAgAAADl7k9cVsYi23bWADa89VnrtJprQozb26u2VSwJKX5uhT89/ybI2DdvPfmd79IobkOJVwr9cmNKTG1Hnkt4zR5w4Q==
+     procedure_id : 1583771758875140420
+     type_code : 12
+     code : |1-
+      PROCEDURE ProduitEstAcheté(local sGUID est une chaine) : booléen
+      
+      	hrecherchepremier(ListeContenu, ProduitListé, [idliste, sGUID])
+      	si htrouve(ListeContenu) ALORS
+      		
+      		// Le produit est dans la liste
+      		renvoyer vrai	
+      	FIN
+      	
+      renvoyer faux
+     type : 458752
+   -
+     name : ProduitSupprime
+     internal_properties : CAAAAAgAAADrAXfoF6CUI3BqDy5s4DuakxFdJV3VZBRdGPGeGckGJzjfkff1ERweHH3cc7+FcWig2cEzxeTxWHsExtNUJ7ALANKcsj8VJb3cTLjRVWLQG31nQQwSjQ==
+     procedure_id : 1583771758875206003
+     type_code : 12
+     code : |1-
+      // Résumé : Supprime un produit de la liste
+      // Syntaxe :
+      //ProduitSupprime (<sGUID> est chaîne [, <rQuantité> est réel [, <bDéfinitif> est booléen [, <nIDItem> est entier sur 8 octets [, <bSansNotification> est booléen]]]])
+      //
+      // Paramètres :
+      //	sGUID (chaîne UNICODE) :GUID du produit
+      //	rQuantité (réel - valeur par défaut=-1) :Quantité à supprimer
+      //	bDéfinitif (booléen - valeur par défaut=0) :Vrai si le produit doit être définitivement supprimé
+      //	nIDItem (entier sur 8 octets - valeur par défaut=0) :ID de l'item
+      // 	bSansNotification (booléen - valeur par défaut=0) : Vrai si les notifications doivent être ignorées
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE ProduitSupprime(LOCAL sGUID est une chaine, LOCAL rQuantité est un réel = -1, local bDéfinitif est un booléen = faux, local nIDItem est un entier sur 8 = 0, local bSansNotification est un booléen = faux)
+      			
+      	// Vérifie si on a déjà le produit dans la liste
+      	HLitRecherchePremier(ListeContenu, ProduitListé, [idliste, sGUID])
+      	si htrouve(ListeContenu) ALORS
+      		
+      		si bDéfinitif _ou_ rQuantité <= 0 ALORS
+      			
+      			si bDéfinitif ALORS
+      				
+      				// Recherche le produit utilisateur
+      				HLitRecherchePremier(Personnel, GUID, sGUID)
+      				si htrouve(Personnel) ALORS
+      					
+      					// Si une image a été spécifiée
+      					si personnel.Image <> "" ALORS
+      						
+      						// Supprime l'image associée
+      						fsupprime(DATA_IMAGE_PRODUCTS + [fSep] + Personnel.Image, frLectureSeule)
+      					FIN
+      					
+      					// On le supprime
+      					hsupprime(Personnel)
+      				FIN				
+      				
+      				// On le supprime également de l'historique
+      				HLitRecherchePremier(Historique, GUIDProduit, sGUID)
+      				si htrouve(Historique) ALORS
+      					
+      					// Suppression
+      					HSupprime(Historique)
+      				FIN
+      				
+      				// On supprime aussi les notes attachées
+      				HLitRecherchePremier(note, GUID, sGUID)
+      				si htrouve(Note) ALORS
+      					
+      					// Suppression
+      					HSupprime(Note)
+      				FIN
+      			FIN
+      			
+      			// On nous a fourni un item
+      			si nIDItem <> 0 ALORS
+      				tantque htrouve(listecontenu) _et_ ListeContenu.IDListeContenu <> nIDItem
+      					HLitSuivant(ListeContenu)
+      				FIN				
+      			FIN
+      			
+      			// Supprime l'item
+      			si htrouve(ListeContenu) alors
+      			
+      				// On supprime le produit
+      				hsupprime(ListeContenu)
+      				si pas bSansNotification alors __SurListeModifiée(lsmodSuppression)
+      			fin
+      			
+      		sinon
+      			
+      			// Augmente la quantité
+      			ListeContenu.Quantité -= rQuantité
+      					
+      			// Si la quantité est suffisante
+      			si ListeContenu.Quantité >= 1 ALORS
+      				// Si aucune unité n'a été spécifiée
+      				si ListeContenu.IDUnité <= 0 ALORS
+      					// Force l'unité de base
+      					ListeContenu.IDUnité = UNITEDEFAUT
+      				FIN
+      				
+      				ListeContenu.DateModification 	= DateHeureSys
+      				ListeContenu.IDModification 	= USERID	
+      				
+      				// Quantité "virtuelle" pour le comptage
+      				ListeContenu.QuantitéVirtuelle = (ListeContenu.IDUnité DANS (0, UNITEDEFAUT()) ? ListeContenu.Quantité SINON 1)				
+      				
+      				// Enregistre le contenu de la liste
+      				HEnregistre(ListeContenu)
+      				SI PAS bSansNotification ALORS __SurListeModifiée(lsmodModification)
+      			sinon
+      			
+      				// On supprime le produit
+      				HSupprime(ListeContenu)
+      				SI PAS bSansNotification ALORS __SurListeModifiée(lsmodSuppression)
+      			FIN
+      		FIN		
+      	FIN		
+     type : 458752
+   -
+     name : TransfèreHistorique
+     internal_properties : CAAAAAgAAAAOXyFqPiTnfuS5afJQRrOS8NP1gCf46H5otG9xJrBTDkdQ/lWXJIi7obl84M1Y20iGtLi8e2/uo5krNmns4PiVbj8jC6dsgnSWG9Cvgb9UxQhYyDM1kZaBrEQ=
+     procedure_id : 1583771758875271586
+     type_code : 12
+     code : |1-
+      PROCEDURE TransfèreHistorique(local sGUIDProduit est une chaine, local rQuantité est un reel, LOCAL bAvecMAJ est un booléen = vrai) : booléen
+      
+      	bTransféré est un booléen
+      	
+      	// Vérifie si on a déjà le produit dans l'historique
+      	HLitRecherchePremier(Historique, GUIDProduit, sGUIDProduit)
+      	si pas htrouve(Historique) ALORS
+      		
+      		// Quantité négative (suppression)
+      		si rQuantité <= 0 ALORS
+      			renvoyer faux
+      		FIN
+      		
+      		hraz(Historique)
+      		Historique.GUIDProduit = sGUIDProduit
+      	
+      	FIN
+      	
+      	// Mise à jour du compteur
+      	Historique.Compteur += rQuantité
+      	
+      	// On ne peut pas avoir 0 au compteur
+      	si Historique.Compteur <= 0 ALORS
+      		Historique.Compteur = 1
+      	FIN
+      	
+      	// Enregistrement
+      	bTransféré = HEnregistre(Historique)
+      	si pas bTransféré alors xlog("[CListeShopping.TransfèreHistorique] HEnregistre(Historique) a échoué : " + herreurinfo)
+      	
+      	// Nombre d'entrées de l'historique
+      	si bTransféré _et_ historique..NouvelEnregistrement
+      		ListeManager.NbHistorique ++
+      	fin
+      	
+      	si bTransféré _et_ bAvecMAJ ALORS
+      		
+      		// Mise à jour de l'historique
+      		__SurHistoriqueModifié()		
+      	FIN
+      		
+      renvoyer bTransféré
+     type : 458752
+   -
+     name : __SurHistoriqueModifié
+     internal_properties : CAAAAAgAAAASNOKPPwZ5oOJ3GMjoKHKPYKDtqLsVfZwtbBqHL7F8YKyhvXpSdcf/++lvaAXqyBLZRLTd21C1U4Zcj1qN4KiaZ2nlIdRhCK2pIprSMM+jmRvN5LTnZu4+bd4nsMsyO7EOEHj+Tq+mjmfed7O6lGSQaIPQU6RV6UNdhucAO9jhaXFAx6+nivMhx2h4jBr7vsYiC8qDsw==
+     procedure_id : 1583772579214084394
+     type_code : 12
+     code : |1-
+      PROCEDURE PRIVÉE __SurHistoriqueModifié()
+      
+      	// Déclenche les listeners de <SurHistoriqueModifié>
+      	DéclencheObservateurs(SurHistoriqueModifié, null)
+     type : 458752
+   -
+     name : DéclencheExportEmail
+     internal_properties : CAAAAAgAAAASNOKPPwZ5oOJ3GMjoKHKPYKDtqLsVfZwtbBqHL7F8YKyhvXpSdcf/++lvaAXqyBLZRLTd21C1U4Zcj1qN4KiaZ2nlIdRhCK2pIprSMM+jmRvN5LTnZu4+bd4nsMsyO7EOEHj+Tq+mjmfed7O6lGSQaIPQU6RV6UNdhucAO9jhaXFAx6+nivMhx2h4jBr7vsYiC8qDsw==
+     procedure_id : 1583775336583206434
+     type_code : 12
+     code : |1-
+      PROCEDURE DéclencheExportEmail()
+      
+      	// Déclenche les listeners de <SurExportEmail>
+      	DéclencheObservateurs(SurExportEmail, null)
+     type : 458752
+   -
+     name : SupprimeTousProduits
+     internal_properties : CAAAAAgAAAAescNwJFwRqu+oGeAScn2arQRRvbHkWAbLRrOUGSew3iBqrqZNsBvhlhc4n1AfaSul0qKOnAINQPydnMgg8lTYk777Gfa4utpF8pJfM5iZv9bExk0ipFPEs44e33jMoPmdoILhLfO/zC1uJAgzXHdm5eeCIvetcLN5FPYVakaOQm+HvEEZd5kgAkn+wFZWMKc7eLV1Z7pRd8u8hn8ieGBOIBCTZA==
+     procedure_id : 1583776281476166018
+     type_code : 12
+     code : |1-
+      PROCEDURE SupprimeTousProduits(bUniquementAchetés est un booléen = faux)
+      
+      	// Enumère les produits de la liste
+      	HLitRecherchePremier(ListeContenu, idliste, idliste)
+      	tantque pas hendehors(listecontenu)
+      	
+      		si bUniquementAchetés _ou_ ListeContenu.Acheté alors
+      			
+      			// On transfère dans l'historique
+      			TransfèreHistorique((ListeContenu.GUIDProduit), (ListeContenu.Quantité), Faux)
+      		fin
+      		
+      		hlitsuivant(ListeContenu)
+      	FIN
+      
+      	// Exécute la requête de suppression
+      	REQ_LISTE_CONTENU_SUPPRIMETOUT.pIDListe = IDListe
+      	REQ_LISTE_CONTENU_SUPPRIMETOUT.pAcheté = (bUniquementAchetés ? vrai sinon null)	
+      	si pas HExécuteRequête(REQ_LISTE_CONTENU_SUPPRIMETOUT) ALORS
+      		xlog("[CListeShopping.SupprimeTousProduits] (REQ_LISTE_CONTENU_SUPPRIMETOUT) Erreur : " + herreurinfo)
+      	FIN
+      	
+      	// Mise à jour des listeners
+      	__SurListeModifiée(lsmodSuppression)
+     type : 458752
+   -
+     name : SetOrdreRayons
+     procedure_id : 1583781164869208248
+     type_code : 12
+     code : |1-
+      // Résumé : Définit l'ordre des rayons de la liste
+      // Syntaxe :
+      // SetRayons (<tabRayons> est tableau)
+      //
+      // Paramètres :
+      //	tabRayons (tableau) : Indice des noms des rayons
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE SetOrdreRayons(tabOrdreRayons est un tableau de chaines, local bHFUpdate est un booléen = faux)
+      
+      	// Mise à jour
+      	ordrerayon = tabOrdreRayons
+      	
+      	si bHFUpdate ALORS
+      		HLitRecherchePremier(liste, idliste, idliste)
+      		si htrouve(liste) ALORS	
+      			
+      			// Mise à jour		
+      			liste.OrdreRayons = TableauVersChaîne(OrdreRayon, ",")
+      			henregistre(Liste)
+      		FIN
+      	FIN
+     type : 458752
+   -
+     name : DéclencheActualisation
+     procedure_id : 1584053263866493030
+     type_code : 12
+     code : |1-
+      PROCEDURE DéclencheActualisation()
+      
+      	// Déclenche l'actualisation
+      	__SurListeModifiée(lsmodAjout)
+     type : 458752
+   -
+     name : DéclencheActualisationHistorique
+     procedure_id : 1584072952020167209
+     type_code : 12
+     code : |1-
+      PROCEDURE DéclencheActualisationHistorique()
+      
+      	// Déclenche l'actualisation
+      	__SurHistoriqueModifié()
+     type : 458752
+   -
+     name : PositionneRayon
+     internal_properties : CAAAAAgAAAAaj7h8gyg6aAbRId0l8dxLsl4mLgh8rbMWtHp2PN6RH6nEjcoEDdkIJSUucv3nEkrj/5xkgO6Sau+zt3OO59hWFMSox7w1Fu9dpctc9v08XFUSab/AAKK6g1v1ZcMan374vgkQdO/OQmiDcf2zB6+yUYBu3ofeYI3YH5MvD4OdHM7XLSqu+SCR5fEwRr+oGVD4zxj8WaK8WBQDCgbQvqC6oDJiM0inZLF6BdSvjXC4QSALepz54SNL65ClHU+xgK7nroG2XLizx3D6mqYB+NVW
+     procedure_id : 1585643050331439017
+     type_code : 12
+     code : |1-
+      PROCEDURE PositionneRayon(LOCAL sUnRayon est une chaine)
+      
+      	// Déclenche les listeners
+      	DéclencheObservateurs(SurDemandePositionRayon, sUnRayon)
+     type : 458752
+   -
+     name : ProduitCrée
+     internal_properties : CAAAAAgAAAAPqvRorca/ULoiLwOM3Rq5VZgH6bNOiRtaNgApaWvW24OUimKs2LLFQWrkS3X04t8g9n7SWt4xQw+bYebmZZGuKQhpooX/qx5VGRzcsY4mtICDcwSW6UfUsS9xT9NYef2m25bVcHPOafR9vfMrJ9+vvW1BySE+wUCgVC1QNqpisaACCg==
+     procedure_id : 1587912523928894625
+     type_code : 12
+     code : |1-
+      // Procédure automatique :
+      // La procédure est exécutée manuellement, lors d'un appel dans le code, avec un différé de 5 centièmes de seconde
+      // 
+      PROCEDURE ProduitCrée(pclProduit est un EANProduit dynamique, sGUIDParent est une chaine)
+      
+      	// Ouverture de la fenêtre de création
+      	OuvreFenêtreMobile(FEN_FICHE_ITEM, objet, DonneGUID(guidBrut), Vrai, pclProduit, sGUIDParent)
+     type : 458752
+   -
+     name : ListeContenuID
+     internal_properties : CAAAAAgAAABxSWYNsh6VS/CVqS6PG0wUPml9fQx7d+YFKOSntsNHnFLPjyFlfKOcxLa7r7kDOg3nzkq2FUIxN+qayTkjIKVMGEh+xV+QEWznlATsdByj9AFiLzJDeyol0F/tFBFjwZg6TcsS0uagdxh5PzM8K7w53igXwfaucXKImwUGT2H5IHP7VDUR7yGgcoXcLJwIlPO153sK
+     procedure_id : 1608972865994191325
+     type_code : 12
+     code : |1-
+      // Résumé : Renvoie le GUID de l'item de la liste à partir de son indice (utile pour les fenêtres internes de ZR)
+      // Syntaxe :
+      //[ <Résultat> = ] ListeContenuID (<nIndice> est entier)
+      //
+      // Paramètres :
+      //	nIndice (entier) :Indice
+      // Valeur de retour :
+      // 	chaîne UNICODE : GUIID de l'item de la liste ou 0 en cas d'erreur
+      //
+      PROCEDURE ListeContenuID(nIndice est un entier) : chaine
+      
+      	// Appel des listeners 
+      	renvoyer DéclencheObservateursAvecRetour(SurDemandeInfoContenuID, nIndice)
+     type : 458752
+   -
+     name : ProduitEnregistre
+     procedure_id : 1619010282020651426
+     type_code : 12
+     code : |1-
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] ProduitEnregistre (<sGUID> est chaîne, <sGUIDParent> est chaîne [, <sNom> est chaîne [, <sCode> est chaîne [, <pclListe> est CListeShopping dynamique]]])
+      //
+      // Paramètres :
+      //	sGUID (chaîne UNICODE) :<indiquez ici le rôle de sGUID>
+      //	sGUIDParent (chaîne UNICODE) :<indiquez ici le rôle de sCode>
+      //	sNom (chaîne UNICODE - valeur par défaut="") :<indiquez ici le rôle de sCode>
+      //	sCode (chaîne UNICODE - valeur par défaut="") :<indiquez ici le rôle de sCode>
+      //	pclListe (CListeShopping dynamique - valeur par défaut=0) :<indiquez ici le rôle de pclListe>
+      // Valeur de retour :
+      // 	Type indéterminé : // 	Aucune
+      //
+      PROCEDURE PUBLIQUE GLOBALE ProduitEnregistre(sGUID est une chaîne, sGUIDParent est une chaîne, sNom est une chaîne = "", sCode est une chaîne = "", pclListe est un CListeShopping dynamique = null)
+      
+      	SI sCode <> "" ALORS
+      				
+      		// Cherche si on connaît ce code
+      		HLitRecherchePremier(REQ_PRODUITS, CodeBarre, sCode)
+      		SI HTrouve(REQ_PRODUITS) ALORS
+      			
+      			sGUID = REQ_PRODUITS.GUID
+      			sGUIDParent = REQ_PRODUITS.GUIDParent
+      			sNom = REQ_PRODUITS.Nom
+      			
+      		SINON
+      			
+      			clProduit est un EANProduit
+      			
+      			// On cherche sur OpenFoodFacts
+      			clProduit = OpenFoodFacts.Get(sCode)
+      			SI clProduit.Code <> sCode ALORS
+      				
+      				// On cherche sur OutPan
+      				clProduit = Outpan.Get(sCode)			
+      			FIN
+      			
+      			// On ignore les "0" en début de chaîne
+      			SI SansCaractèreGauche(clProduit.Code, "0") = SansCaractèreGauche(sCode, "0") ALORS
+      				
+      				// Récupère les catégories attribuées au produit
+      				tabCatégories est un tableau de chaînes
+      				sRayon est une chaîne
+      				ChaîneVersTableau(clProduit.Catégories, tabCatégories, ",")
+      				
+      				// Normalise les noms des catégories pour la recherche
+      				POUR TOUT sRayon DE tabCatégories
+      					sRayon = "'" + ChaîneVersIndex(sRayon) + "'"
+      				FIN
+      				
+      				REQ_RECHERCHE_RAYON.pNoms = TableauVersChaîne(tabCatégories, ";")
+      				SI HExécuteRequête(REQ_RECHERCHE_RAYON) ALORS
+      					HLitPremier(REQ_RECHERCHE_RAYON)
+      					SI PAS HEnDehors(REQ_RECHERCHE_RAYON) ALORS
+      						sGUIDParent = REQ_RECHERCHE_RAYON.GUID
+      					SINON
+      						sGUIDParent = ""
+      					FIN
+      				SINON
+      					XLOG("[CListeShopping.ProduitAjoute] (REQ_RECHERCHE_RAYON) Erreur = " + HErreurInfo)
+      				FIN	
+      			SINON
+      				sGUIDParent = ""
+      			FIN
+      			
+      			// On ne connaît pas le produit	
+      			SI SansCaractèreGauche(clProduit.Code, "0") <> SansCaractèreGauche(sCode, "0") _OU_ clProduit.Nom = "" ALORS
+      				
+      				// Création d'un produit
+      				clProduit.Code = sCode
+      				
+      				si pclListe <> null alors
+      					pclListe.ProduitCrée(clProduit, sGUIDParent)
+      					
+      					// Affiche un toast pour prévenir que le produit est inconnu
+      					ToastAffiche(<§Rff0000af10e468c2¤fr-FR¤Produit inconnu§>, toastCourt, cvMilieu, chCentre) 				
+      				fin
+      				
+      				renvoyer clProduit
+      			SINON
+      				
+      				// Crée une entrée
+      				Personnel.GUID 		= DonneGUID(guidBrut)
+      				Personnel.GUIDParent= (sGUIDParent)
+      				Personnel.Produit 	= Vrai
+      				Personnel.Nom		= clProduit.Nom
+      				Personnel.NomIndex	= ChaîneVersIndex(Personnel.Nom)
+      				Personnel.Langue	= Nation
+      				Personnel.Code		= sCode
+      				Personnel.Image		= ""
+      				
+      				// Si une image est fournie
+      				SI clProduit.Image <> "" ALORS
+      					
+      					// Calcule le chemin local pour la sauvegarde de l'image
+      					sImageLocale est une chaîne = ChaîneVersIndex(Personnel.GUID)
+      					
+      					// Télécharge l'image localement
+      					HTTPDestination(DATA_IMAGE_PRODUCTS + [fSep] + sImageLocale)
+      					SI HTTPRequête(clProduit.Image) ALORS
+      						
+      						// Conserve le chemin relatif
+      						Personnel.Image = sImageLocale						
+      					FIN
+      				FIN
+      				
+      				// Enregistre le produit
+      				HAjoute(Personnel)
+      				
+      				sGUID = Personnel.GUID
+      				sNom = Personnel.Nom
+      				
+      				// Mise à jour des sources de données
+      				SourceActualise(faux)
+      			FIN				
+      		FIN
+      		
+      	SINON
+      		
+      		SI sGUID = "" ALORS
+      			
+      			// Création d'un produit
+      			clProduit est un EANProduit
+      			clProduit.Nom = sNom		
+      			clProduit.Code = sCode	
+      			
+      			SI pclListe <> Null ALORS
+      				pclListe.ProduitCrée(clProduit, sGUIDParent)
+      			fin
+      			
+      			RENVOYER clProduit
+      		SINON
+      			
+      			// Cherche si on connaît ce code
+      			HLitRecherchePremier(REQ_PRODUITS, GUID, sGUID)
+      			SI HTrouve(REQ_PRODUITS) ALORS
+      				
+      				sGUIDParent = REQ_PRODUITS.GUIDParent
+      				sNom = REQ_PRODUITS.Nom
+      			FIN
+      		FIN		
+      	FIN
+      	
+      RENVOYER null
+     type : 458752
+   -
+     name : Charge
+     procedure_id : 1619103977058378460
+     type_code : 12
+     code : |1-
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] Charge (<nIDListe> est entier sur 8 octets, <sAlias> est chaîne)
+      //
+      // Paramètres :
+      //	nIDListe (entier sur 8 octets) : ID de liste
+      //	sAlias (chaîne UNICODE) : Alias de la liste
+      // Valeur de retour :
+      // 	CListeShopping : Liste
+      //
+      PROCEDURE globale Charge(nIDListe est un entier sur 8, sAlias est une chaine) : CListeShopping
+      	
+      	pclListe est une CListeShopping dynamique = allouer un CListeShopping(nIDListe, sAlias)
+      	
+      renvoyer pclListe
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Classe1
+resources :
+ string_res :
+  identifier : 0x15fa99e504faeddb
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

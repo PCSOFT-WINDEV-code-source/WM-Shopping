@@ -1,0 +1,447 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FEN_ORDRE_RAYONS
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FEN_ORDRE_RAYONS
+ identifier : 0x26092e3d0a2e0ea7
+ internal_properties : CAAAAAgAAAAG8zqLvqrLih/DKAymTKM73HEbfZqPxD7AGbSWctb1wTMpxOiAeEzDEeosoyEBp5as9KXD2mLFp4QEkytdnDRgStUJekW9mt+9X3mNWMf3f4eHx2zi1XGlOL+jYvYPzBqPlZ9LSp/VH1b/2PQsRtB+4PwmCq7+PaveVnrsHeotMnlIZk9SG74tsY7E5yQvurqKNP2oPXmmba2t1mzO5VrgG14kzqvyVaDHD43CqFpHyIz4EJqiHXo2t50c/Gz2YlF0qLoBVEUo6WNniNPNy42kgb+LcrMOMCE3Aq48kTo+4k2RyojdRmTbKp0JliGflNEuIhz0L91rmASPGaHdY+J1kz4UQ1MlO8aX60lW7VtVKlLQYUtCuDQ+Ij2WKOR33p/KmfGC7l3y/F+XlElmr1wqted3Lp8HNlqNesH4NrkVI+0wfWQxiMOoaJloaDD9u3IwzUTsnKvgNtoGBnARqRPXfd/XfEUbvhHv1ovtqpQaoPDHDUcmcvavOdYSjt5IVKaZthA2UZFAT1J7/SOoOFk7QHZ28I7Cuzno9X1GbOpGOdUwkRcl9pK6+DXLOXYWBHRo+YuQcF4r9tH4/UnMam66vZVLJ94cDBx1nJosV7FDcRTAVFb+KoR0kvvfKfsz8+6Tyqb6ZvuOEnXcTucUTpSrli3LIh164A0aPSsXGaBCor4MG4Gi6ftz/ScyjYjCku7puBWtuwWWO1yKOBrq1s0UHdf0ZJMY4F5bvJVYDSSCa8GShaMX7bXWde4QM79wCCEqqTRXmlw3EB9yCpKJ/cMo5VLo8YFFUGxgfznLz2eeYfJrJR0hglh7TZSVw1ZuCinpSNdUcJEd65NESMzmkfcpZnTsWwsjp1Wvqk3n0W/Ls2qckFb5N4bnZIqx9bG6M41ZP1UgMScPDg==
+ properties :
+  width : 320
+  height : 407
+  heightMin : 471
+ controls :
+  -
+    name : BTN_Abandon
+    identifier : 0x26092e3d0a2f0ea7
+    internal_properties : CAAAAAgAAAA0/cQ6Qs7QBL0RU4z64JqUYuJ0Tuldvmg+gvqn3lMEqlRCWogaJDvXHQBULBAmO1dBzmcmhEz19PrChSSrJVlcpujZ4+euWrqXEbtAPbtDP0iKjz+TtTUWHFxCv8SoM37ctPS6F3i9yYNUR5aqNQinku+wn3oMKMA5+tyofaY4LhivFwhF4eMlOMH59wccgctqIyc30wuZ3kt/KtKPzyTfrmDUbkV3u0OQwzvUrfQgncaiRasZcDm8l+2ZQVbEHOiwyQEgsubItRcJn1m19uRRGS908HB/HuvB/ojJGY4/IySD/ewu1iNQsejYq6kclv7MloHDFm0+igiKTqcE7uCnGKTaGRgpfKFAJxNoeDNbxFD1D3Gd2h8caPEM3TN+Td2D2Yz0JptEPfmBroknHwLd9SjTJTbRaHSMi4N7usAKQB5Os3MFrwYKeTKQ5srck77r1BjROe/XhXHliHAqlYncC+Mzut7tXrtHbaGGS59iDm7SE1+vyO6TQWrhqBVkdoWNuiXZ4SrfkyzMdjXVIuqm+/au+VW0lTSXEEydGmwYP38Q6a3thkjrURiYdAVpYbPH1sTUP1fOk6t4rE821H8kPT6u9dPapOEAQs8rjmNIM1AOKqZ3BdOwFP4h1B753WQAKloIChKLI4/6xlp1LQXeVk5L7aum3Jhum9AnG0QMcal2rfBq+Hzy3B0lMLoee+LrNCYnVTHau1EzN3C3tnpR+GvhDc3GKuF2XKoYGoJKukXwMQg9K2q6Kg24/cVpMXDqm/HJeWGHui6dZ2LrPxlIQ7wbLVHhYOeED7Gu4iKvs21a5HmDsIzMAgK+epcbPW27iErWMi7NcqgP9xPwTiNwNi6EpiiMFgyhFzV1VEMNOPTNBp7ZE1bkaQCaLb9fG+IysK4y5uRTABBeg+HYljwi9xmFrmg6FWgrffXoL64OCe1kNIN55iTkwDukiBjvsyFOEhylAc/e+MDFD1P6+OKrb0gUKpK5AqRDta1C6y2eTjiLKNPXGT08
+    properties :
+     x : 2
+     y : -123
+     width : 90
+     height : 48
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         MaFenêtre..ValeurRenvoyée = Faux
+         Ferme(FEN_ORDRE_RAYONS)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : ZR_RESULTATS
+    identifier : 0x26092e3d0a300ea7
+    internal_properties : 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
+    properties :
+     width : 320
+     height : 407
+    controls :
+     -
+       name : IMG_CAT
+       identifier : 0x26092e3d0a330ea7
+       internal_properties : CAAAAAgAAADSBLMVAAaArZYK9Z1M43bSlfMxvbHTgfXUK+ebZ4NESEE5yD33KE+Ol0McRUJ4fZqHBQyXk0KI6vMfGGSTj0hu6SAHLchG/YkcW6SljudQUN1C3RNOGo6NBPYEu7vqkx6HouvW8mbu6hOkrMcJG/lItvKGbNfx0WKnTT/9wnTP8MpP+DikIWvRffgiqwqp7FMNg0YE0ni0621Sk+9gmjpMNJPhLMPvDlx8hYiL4yQPdHeDzsJhp2WOzDGcAbfZDD74HIFeB7p2AG21ts3/OEYdrEzpmvCvTaW3qMC0kNvxWYESOoiVNtuy3yIH8RXl2cLNk2yWwD4JXIZPPiNSNizdaRayZX/pTl27gAuODSyQHzn7LPGDC3IkrizRpcOOeSgbm72sJAsSHGxSDZioNn/t+yT6GWSdyt68HSFdD7zLBhzwZbAoyEWGh/monqmEL9zhAApSkwAzxAVVcEoY3+DG9DgYwNKsyueegQC/cq9P2mq5qGbAIZZoxbw1/UnixnqMYwkP8ujw6cY5qBVej3qJm0Wj9H8wZJ6YmOB7+OOMiEqXYhfk3MCdUD86OcB6DKeFtxiIJrRqnV4e/MV3zF0KpjlCnNhHydgrJ+doxQJVE703oDwSpKPhVRM77xM5cwCGKczZTB+3DGl2z4MXSwDfHsGGp1AZH1DuyNiqwdkES93iw6xZ7kmWq5sN3j/ZH/yYIhU4D3+UikZeLpY1sIb6n7hYGzq2QsLcVbk1QR8TV8QTObq5ryxfvhW7wd8OBgeFZ9z0gU5ieFqJ7T2XkSTS2fLiaZr7rtdbI5mtyQ==
+       properties :
+        x : 16
+        y : 6
+        width : 36
+        height : 36
+       type : 8
+       code_elements :
+        type_code : 8
+        p_codes :
+         -
+           type : 18
+           enabled : false
+     -
+       name : LIB_Rayon
+       identifier : 0x26092e3d0a340ea7
+       internal_properties : CAAAAAgAAABQkn6K0aowEi8PaddWWJ909XpnktzQBfW/nA+Xr/3bcY0B5eZGJa5ICIh8Ij4f5zXrRJPwCksw1dtyPF2NJ4EMQp4qEhi6x6qPQmVPeZKk5loCsgf8fxHZpLwUcGGHscDR3dz6QRXX3NFaoylD2PJGfVHNUVwC+0qmw2Bqn+GvlTwYIJ1netUZq5gU37ZRc2Q04hGy6uIb3/5Dhl7SwFTgTjqX2BfNxeZEtJHTrSUyDWhzi/g1lNBZlu8QskR4MAkTgkbIDgZhHpnjniG/XvPP+xRVtXhzkrr8as//DD046vjh/OZfyB7TDW9vnq5U8R1kQIOESmwCUi3KhPtgCgRReJyl1y2xH3McJ5PDv0ALof/Bi/kRigIok4Vd4a4QS5t4qiO0vaX+EnaywCSiTzbO5L8xQXC3wHAePMU0SrVGo1LkVDzyW3E4hfmQAm7EfxZ6gIMuBBXf0K3/a7YuSzriUGgDIAssQDmF0dcvSw==
+       properties :
+        x : 16
+        y : 6
+        width : 272
+        height : 36
+       type : 3
+       code_elements :
+        type_code : 2
+        p_codes :
+         -
+           code : |1-
+            
+           type : 18
+    columns :
+     -
+       name : ATT_ID
+       identifier : 0x26092e3d0a310ea7
+       internal_properties : CAAAAAgAAACzvke1NsuN9jZtPMt6n1MDOjgCPvwAEj5C9yuVcaNqnZPDD7T7KdPmWMCoV9IZMnk9ePCAXMiJmgk4xL0bxlinX/RwWLz8bFKXTtJbzVd77kJNS38CUHwkdZXsQTcZ9dd2kg==
+       type : 3
+       content :
+        identifier : 0x2543daf40c8dcdaf
+        internal_properties : CAAAAAgAAAA+ydwH69gPtZH9qoG8K7G6DH/mRhLAsIA4PXnwyQx9MV8BNs7UzvWB7NTCuEJWvBmA5CdsnUFWw3dCUBfdsaykjF1uve6LPYfwNBNWYEJulQmozEPUgRf5BggPT0njovHi1TUZ3dMWVWJDzVO7BYEECF/l1PEjm665bwXVv4LK4oa6xdFXhLX48q7GZuO+5fIY2l9pbbTIT9LWlT6k
+        type : 3
+       code_elements :
+        type_code : 46
+        p_codes : []
+     -
+       name : ATT_NOM
+       identifier : 0x26092e3d0a320ea7
+       internal_properties : CAAAAAgAAABhEBCp3xwTUwipeWSrG0mb8CdaWd739+0Nxomdq2emVLzGmZnry0VDR6aCW0Z6YnYOgHBCPYgq7WrTkUnH1L5tMCQRnWQst0FmqgYEVz0IzSnllBZwaCX3hkFraawJco90P+QJ+lS7CnaTuQnkC2V66+VwudCE/11hILvAnUvubQ==
+       type : 3
+       content :
+        identifier : 0x2543daf40c8fcdaf
+        internal_properties : CAAAAAgAAAA+ydwH69gPtZH9qoG8K7G6DH/mRhLAsIA4PXnwyQx9MV8BNs7UzvWB7NTCuEJWvBmA5CdsnUFWw3dCUBfdsaykjF1uve6LPYfwNBNWYEJulQmozEPUgRf5BggPT0njovHi1TUZ3dMWVWJDzVO7BYEECF/l1PEjm665bwXVv4LK4oa6xdFXhLX48q7GZuO+5fIY2l9pbbTIT9LWlT6k
+        type : 3
+       code_elements :
+        type_code : 46
+        p_codes : []
+     -
+       name : ATT_INDICE
+       identifier : 0x260d02ae129135d1
+       internal_properties : CAAAAAgAAACfrRn+uckmC+hGBiMt6KX0RB+rE87JEpPHXbZwHZo86CC+LF781458dLXcpq3VxuwEBETbDRPiqE0cumIV7efRRl499VfnzmBmTvIcCqA4gwWdctTJzf3Zvh2BJ3U6urMwwWekufmQlQ==
+       type : 3
+       content :
+        identifier : 0x2543daf40c91cdaf
+        internal_properties : CAAAAAgAAAA+ydwH69gPtZH9qoG8K7G6DH/mRhLAsIA4PXnwyQx9MV8BNs7UzvWB7NTCuEJWvBmA5CdsnUFWw3dCUBfdsaykjF1uve6LPYfwNBNWYEJulQmozEPUgRf5BggPT0njovHi1TUZ3dMWVWJDzVO7BYEECF/l1PEjm665bwXVv4LK4oa6xdFXhLX48q7GZuO+5fIY2l9pbbTIT9LWlT6k
+        type : 3
+       code_elements :
+        type_code : 46
+        p_codes : []
+    type : 30
+    code_elements :
+     type_code : 42
+     p_codes :
+      -
+        type : 35
+        enabled : false
+      -
+        type : 22
+        enabled : false
+      -
+        type : 24
+        enabled : false
+      -
+        type : 23
+        enabled : false
+      -
+        type : 25
+        enabled : false
+      -
+        type : 230
+        enabled : false
+      -
+        type : 241
+        enabled : false
+      -
+        type : 101
+      -
+        type : 102
+      -
+        type : 222
+        enabled : false
+      -
+        type : 223
+        enabled : false
+      -
+        type : 224
+        enabled : false
+ actionbar :
+  name : ACTB_MAIN
+  identifier : 0x26092e3d0a370ea7
+  internal_properties : CAAAAAgAAAAi6STE6Nn6j50WF3dJP14l9oG5vayxpP5w1TXQTDp4pkyRYu2AcUpcUGsF8jqLrcW/Hk3Cg8Fri1LYtZ4qyokgLfC6Xj63fOG2oKxGaJbTxmFTi9bnkKTePMDqy6/beG+134xsfDDMGgQh/xdMsyV8oebjiQGeMsS7vGZd854jzDE2qIY8MuvvH/eROsWW2mqqi6wtyUaCYZvQDV39ILTrjA54bhgLGdcLlrKfuw2cUZdad0sXH+KnaFLDkG+8pZ/WACkRzY/t4usl/OJQa+BH80BWFrr3YLSOyTSj3ypGFkGurV+35qvjFSgV1cGaB+MGRsizfFElmCGdt+L79eQNMbFnro/GiVBTKXPxG5oVptoRfbl9
+  controls : []
+  code_elements :
+   type_code : 125
+   p_codes :
+    -
+      code : |1-
+       
+       ExécuteTraitement(BTN_Abandon, trtclic)
+      type : 18
+    -
+      type : 229
+      enabled : false
+    -
+      type : 239
+      enabled : false
+    -
+      type : 240
+      enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x26015ad61ade9160
+  internal_properties : CAAAAAgAAAByVTsSr3/syDi1St8xf8fgHxdhV816G1q5zyODGkOm1npuSkYo5g/jXWoWFFK2H3oUBZtHLsT5rfRCnVFNNS0taWG501M84VhyiY2gqfWqbb5TaLNBc7/5X5PbRqVlZ5a3p7SznWjoHPbzt8FGrVw2pkxQ2AMTSCoEquPAoSRRZmCgf0llwPSIdkz+fkQsa3yCb/aARC1IuAmTNbEAkdknQHeBdhsRIWlMefD05RVbqvlMGzysSB4KUPZWTHHaQPB4ObHU/5KQ/VjN8jyQaoRgKuGxrJ5V23KTuMr/Zw==
+  options :
+   -
+     name : OPT_ENREGISTRER
+     identifier : 0x260d033012ae3143
+     internal_properties : CAAAAAgAAACZtF/TwxBV7FcLdW7HNovnkGiJ8PhlIEJLBUm0pUp/TFj8yJ/Ig/qFjHC0NFWxHZtGmPsEUuT+hItKVf5mmax0I+Am6ykmTU6pZCG2ewF9cyypA4eYDicJrCzZ5deeTFgQHFmdSqf33dnVRgJfpkubN//C2UvY23js8vgJyX/Ig8GU/m95vEYSJVTVu0CkqHxQTMnOBj4Lq7GBm4XNURN3w5+NPD6GXms09FUHPQEmlDH4WcWdwsrduViEtP7wkesk8G8rix3ELDjzHo8Jfm9uOdx1HblDEhZYBKTnukMO5FkXgh/K7Jr1rluO2fbNif3ceA==
+     code_elements :
+      type_code : 26
+      p_codes :
+       -
+         code : |1-
+          
+          // Valide
+          ValideListe()
+         type : 32
+  code_elements :
+   type_code : 26
+   p_codes : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAABypRa07wP5syGYSEohNydKpi4BEJR2uozq9uyv6kIpz6G+IwG2KItPeanOHXSXFSzq9h45VvCnIyMWZCksR17PhgItX36LhZtLf5fbrJP/AGQNVWzGpSwROjsz
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      PROCEDURE MaFenêtre(gpclUneListe est une CListeShopping dynamique)
+      
+      MonAlias est une chaine = moimeme..nom
+      
+      mafenetre..ValeurRenvoyée = faux
+   -
+     code : |1-
+      
+      ActualiseRayons()
+     type : 34
+   -
+     code : |1-
+      
+     type : 165
+   -
+     code : |1-
+      
+     type : 177
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 40
+  procedures :
+   -
+     name : TriOrdreRayon
+     procedure_id : 1587851183191363239
+     type_code : 14
+     code : |1-
+      PROCEDURE TriOrdreRayon(stRayon1 est une STRayon, stRayon2 est une STRayon)
+      
+      	nPos1 est un entier
+      	nPos2 est un entier
+      	
+      	// Produit hors-rayon
+      	SI stRayon1.Nom = "" ALORS nPos1 = 999999998
+      	SI stRayon2.Nom = "" ALORS nPos2 = 999999998
+      	
+      	// Si un ordre des rayons a été fourni
+      	SI gpclUneListe.OrdreRayon..Occurrence > 0 _ET_ nPos1 = 0 ALORS nPos1 = Cherche(gpclUneListe.OrdreRayon, tcLinéaire, stRayon1.GUID)
+      	SI gpclUneListe.OrdreRayon..Occurrence > 0 _ET_ nPos2 = 0 ALORS nPos2 = Cherche(gpclUneListe.OrdreRayon, tcLinéaire, stRayon2.GUID)
+      	
+      	// Selon la position
+      	SI nPos1 > nPos2 ALORS RENVOYER 1
+      	SI nPos1 < nPos2 ALORS RENVOYER -1		
+      	
+      	// En dernier recours, ordre alphabétique de rayons
+      	RENVOYER ChaîneCompare(stRayon1.Nom, stRayon2.Nom, ccSansCasse)
+     type : 458752
+   -
+     name : ActualiseRayons
+     procedure_id : 1588930233623767535
+     type_code : 14
+     code : |1-
+      // Résumé : Actualise les rayons
+      // Syntaxe :
+      //ActualiseRayons ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE ActualiseRayons()
+      	
+      	tabRayons est un tableau de STRayon
+      	stCat est un STRayon
+      	nLigne est un entier
+      	
+      	ZoneRépétéeSupprimeTout(ZR_RESULTATS)
+      	
+      	// Duplique les rayons racines
+      	pour toute stCat de MesRayons
+      		si stCat.GUIDParent = "" ALORS
+      			Ajoute(tabRayons, stCat)
+      		FIN
+      	FIN
+      	
+      	// Tri effectif selon l'ordre établi pour la liste en cours
+      	Trie(tabRayons, ttFonction, TriOrdreRayon)
+      		
+      	POUR TOUT stCat DE tabRayons
+      		
+      		nLigne = ZoneRépétéeAjouteLigne(ZR_RESULTATS)
+      		ZR_RESULTATS[nLigne].ATT_ID 	= stCat.GUID
+      		ZR_RESULTATS[nLigne].ATT_NOM 	= stCat.Nom
+      		ZR_RESULTATS[nLigne].ATT_INDICE	= nLigne
+      	FIN
+     type : 458752
+   -
+     name : ValideListe
+     procedure_id : 1614563788235067128
+     type_code : 14
+     code : |1+
+      // Résumé : Valide la liste
+      // Syntaxe :
+      // ValideListe ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE ValideListe()
+      	
+      	tabOrdre est un tableau de chaines
+      	bOrdreModifié est un booléen
+      	nLigne est un entier
+      	
+      	POUR TOUTE LIGNE nLigne DE ZR_RESULTATS
+      		Ajoute(tabOrdre, ATT_ID)
+      		
+      		// Détermine si l'ordre a été modifié
+      		SI nLigne <> ATT_INDICE[nLigne] ALORS bOrdreModifié = Vrai
+      	FIN
+      	
+      	// Si l'ordre a été modifié
+      	SI bOrdreModifié ALORS
+      		
+      		// Modifie l'ordre des rayons
+      		gpclUneListe.SetOrdreRayons(tabOrdre, Vrai)
+      	FIN
+      	
+      	MaFenêtre..ValeurRenvoyée = bOrdreModifié
+      	Ferme(FEN_ORDRE_RAYONS)
+     type : 458752
+   -
+     name : FenForceOriention
+     internal_properties : CAAAAAgAAACzge+buzMicl+3GD8rDVxB32i6tmvilA3xVslV5hPXQKAbzG+hvmDClVVtbERkcoPogSzss25Z1Db6KfvuJSJWQPdL7n5mi4vksOqUJNuoZPJ0kH+fDg/dZuFsqitla0LVx2i/dz4ftx9aiDYqqtlX59QuOQ==
+     procedure_id : 1637990713587168302
+     type_code : 14
+     code : |1-
+      // Résumé : Force l'orientation selon le matériel
+      // Syntaxe :
+      //FenForceOriention ( [<bInitial> est booléen])
+      //
+      // Paramètres :
+      //	bInitial (booléen - valeur par défaut=0) : Vrai s'il s'agit du chargement initial, Faux sinon
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE FenForceOriention(bInitial est un booléen <utile> = faux)
+      
+      	<compile si mode_android>
+      
+      	// En mode téléphone, on force l'orientation portrait
+      	// En tablette, on force l'orientation paysage
+      	SI pas MODE_TABLETTE ALORS
+      		FenOrientation(fenOrientationPortrait)	
+      	FIN	
+      	
+      	<fin>
+     type : 458752
+  templates :
+   -
+     name : FEN_ORDRE_RAYONS
+     identifier : 0x1543dafd071cf03a
+     code_elements :
+      internal_properties : CAAAAAgAAABnOMUPHQmLUZaBL729U1fefXP7SxtTZh8B6RT3dTGGzflwOmdmVtMU4QeV6ioh0y6G8COt+vMaZqIwnhlz2AMSCIXa7/nGazhg58i3ImlKNCNBcBFuJ3Pqhygsfyxwjg==
+      type_code : 1
+      p_codes :
+       -
+         code : |1-
+          
+          <compile si mode_android>
+          
+          // Force l'orientation selon le matériel
+          FenForceOriention(vrai)
+          
+          <fin>
+       -
+         code : |1-
+          
+         type : 34
+       -
+         code : |1-
+          
+          <COMPILE SI MODE_ANDROID>
+          	
+          	// Force l'orientation selon le matériel
+          	FenForceOriention()
+          	
+          <FIN>
+         type : 165
+       -
+         type : 180
+         enabled : false
+       -
+         type : 230
+         enabled : false
+       -
+         code : |1-
+          
+         type : 40
+      templates :
+       -
+         name : FEN_ORDRE_RAYONS
+         identifier : 0x1543dafd071df03a
+         code_elements :
+          internal_properties : CAAAAAgAAADlRY7t4t14ipTBnMvFyK356dCHOVNLTE8xuVMgAIrNAEE8hbd5ibNPbor1N69df408WH89LOyFhZFVfLA6g+l6L6ErFsGJ7g==
+          type_code : 1
+          p_codes :
+           -
+             type : 180
+             enabled : false
+           -
+             type : 230
+             enabled : false
+           -
+             code : |1-
+              
+             type : 40
+           -
+             type : 11
+           -
+             type : 12
+           -
+             type : 17
+           -
+             type : 13
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAABPHYHdsVSOHJJE1IXOuvvVmB9we8+dwMcxF/0/zeZGnjj+bRwNUdmsK3h2Sado3DN63iVophug7K1EvCUZhyTinULLkLIGLw+rK8bI0KXtHJcKphM7F/iBb5yR2Ok/YujHnUGzxA/ETeQ13zbMaLyOd9ZoFDGFtF22D7hOnydBXcaCLmL0htGOHEtTyrfuYKM=
+  original_name : _11
+resources :
+ string_res :
+  identifier : 0x1fbd47fa165353ab
+  internal_properties : CAAAAAgAAADwlTU/TDjUXC5Oyq+6JmPfhcKGK6lcM6W06BDcn8S8X+wjm8c/LGo+/C8zJh6W21WqWMID9oF5+A==
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe
